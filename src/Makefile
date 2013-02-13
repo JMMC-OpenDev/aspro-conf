@@ -166,4 +166,14 @@ install : install_all
 
 	@echo " . . . installation done"
 
+install : install_all
+	@echo "Deploy $(JNLP).jnlp"
+	jmcsDeployJnlp $(JNLP).jnlp
+        
+	@echo "Install $(JNLP).jar"
+# AsproConfig contains the configuration used to package application single jar file
+	@cp $$HOME/public_html/$(JNLP)/$(JNLP).jar $(INSTALL_ROOT)/lib
+        
+	@echo " . . . installation done"
+
 #___oOo___
