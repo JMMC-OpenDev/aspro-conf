@@ -99,7 +99,8 @@ JARFILES        = asproConf
 # <brief description of asproConf jar files>
 asproConf_DIRS     = fr
 
-asproConf_EXTRAS   = fr/jmmc/aspro/model/*.xml
+asproConf_EXTRAS   = fr/jmmc/aspro/model/*.xml \
+                     fr/jmmc/aspro/conf/resource/*.xml
 
 #
 # Java programs
