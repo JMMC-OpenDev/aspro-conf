@@ -147,7 +147,7 @@ CSOURCENAMES = \
 MAKEDIR = $(MCSROOT)/include
 include $(MAKEDIR)/mkfMakefile
 
-JNLP=AsproConf
+JNLP=AsproConfig
 #
 # TARGETS
 # -------
