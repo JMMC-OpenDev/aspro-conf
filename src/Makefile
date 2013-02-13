@@ -93,12 +93,12 @@ PY_SCRIPTS_L   =
 #
 # Jarfiles and their directories
 # ---------------------------------
-JARFILES        =
+JARFILES        = asproConf
 
 #
-# <brief description of jjjfff jar files>
-jjjfff_DIRS     =
-jjjfff_EXTRAS   = 
+# <brief description of asproConf jar files>
+asproConf_DIRS     = fr
+asproConf_EXTRAS   = fr/jmmc/aspro/resource/*.xml
 
 #
 # Java programs
@@ -145,6 +145,7 @@ CSOURCENAMES = \
 MAKEDIR = $(MCSROOT)/include
 include $(MAKEDIR)/mkfMakefile
 
+JNLP=AsproConf
 #
 # TARGETS
 # -------
@@ -158,6 +159,9 @@ man   : do_man
 	@echo " . . . man page(s) done"
 
 install : install_all
+	@echo "Deploy $(JNLP).jnlp"
+	jmcsDeployJnlp $(JNLP).jnlp
+
 	@echo " . . . installation done"
 
 #___oOo___
