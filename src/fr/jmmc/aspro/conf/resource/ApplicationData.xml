@@ -18,15 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.2"/>
-    <compilation date="13/02/2013" compiler="JDK 1.5.0_16"/>
+    <program name="AsproConf" version="2013.3"/>
+    <compilation date="18/02/2013" compiler="JDK 1.5.0_16"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2013.2">
-            <prerelease version="2013.2 beta 1">
+        <release version="2013.3">
+            <prerelease version="2013.3 beta 2">
+                <change type="FEATURE">VLTI: added eso Period 92 = 91</change>
+            </prerelease>
+            <prerelease version="2013.3 beta 1">
+                <change type="FEATURE">CHARA MIRC: fixed MIRC LOW_H mode (8 spectral channels instead of 7)</change>
+                <change type="FEATURE">CHARA MIRC: fixed transmission for MIRC (0.25%)</change>
                 <change type="CHANGE">Initial configuration extracted from Aspro2 package</change>
             </prerelease>
         </release>
