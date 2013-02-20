@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="AsproOIConfigurations.xsl" type="text/xsl"?>
 <!--
- *******************************************************************************
- * JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
- *******************************************************************************
- -->
+*******************************************************************************
+* JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
+*******************************************************************************
+-->
 
 <!--
     Document   : AsproOIConfigurations.xml
@@ -15,15 +15,29 @@
 -->
 
 <a:configurations
-   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-   xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
-   xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
+    xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
 
-  <file>VLTI.xml</file>
-  <file>CHARA.xml</file>
+    <interferometerFile>
+        <file>VLTI.xml</file>
+        <checksum>6900299154889555968</checksum>
+    </interferometerFile>
+    
+    <interferometerFile>
+        <file>CHARA.xml</file>
+        <checksum>2662885295032052736</checksum>
+    </interferometerFile>
+
 <!--
-  <file>MROI.xml</file>
-  -->
-  <file>SUSI.xml</file>
+    <interferometerFile>
+        <file>MROI.xml</file>
+    </interferometerFile>
+-->
+
+    <interferometerFile>
+        <file>SUSI.xml</file>
+        <checksum>2178885348806885376</checksum>
+    </interferometerFile>
   
 </a:configurations>
