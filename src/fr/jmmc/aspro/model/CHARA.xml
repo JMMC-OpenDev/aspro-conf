@@ -500,7 +500,7 @@
 
     <focalInstrument>
       <name>CLASSIC</name>
-      <description>CLASSIC instrument</description>
+      <description>CLASSIC instrument (2T)</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -548,7 +548,7 @@
 
     <focalInstrument>
       <name>PAVO_2T</name>
-      <description>PAVO combiner using 2T</description>
+      <description>PAVO combiner (2T)</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
       <fringeTracker>PAVO_FT</fringeTracker>
@@ -578,7 +578,7 @@
 
     <focalInstrument>
       <name>VEGA_2T</name>
-      <description>VEGA_2T instrument</description>
+      <description>VEGA instrument (2T)</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -871,7 +871,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>CLIMB</name>
-      <description>CLIMB instrument</description>
+      <description>CLIMB instrument (3T)</description>
       <numberChannels>3</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -919,7 +919,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>PAVO_3T</name>
-      <description>PAVO combiner using 3T</description>
+      <description>PAVO combiner (3T)</description>
       <numberChannels>3</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
       <fringeTracker>PAVO_FT</fringeTracker>
@@ -949,7 +949,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>VEGA_3T</name>
-      <description>VEGA_3T instrument</description>
+      <description>VEGA instrument (3T)</description>
       <numberChannels>3</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -1168,7 +1168,7 @@ Configuration d’enregistrement
       <!-- name: Name of the focal instrument (AMBER, MIDI ...) -->
       <name>MIRC</name>
       <!-- description: Description of the instrument -->
-      <description>MIRC instrument using 4 telescopes</description>
+      <description>MIRC instrument (4T)</description>
       <!-- numberChannels : The number of channels used by this instrument -->
       <numberChannels>4</numberChannels>
       <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
@@ -1254,7 +1254,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>VEGA_4T</name>
-      <description>VEGA_4T instrument</description>
+      <description>VEGA instrument (4T)</description>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -1473,7 +1473,7 @@ Configuration d’enregistrement
       <!-- name: Name of the focal instrument (AMBER, MIDI ...) -->
       <name>MIRC_5T</name>
       <!-- description: Description of the instrument -->
-      <description>MIRC instrument using 5 telescopes</description>
+      <description>MIRC instrument (5T)</description>
       <!-- numberChannels : The number of channels used by this instrument -->
       <numberChannels>5</numberChannels>
       <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
@@ -1563,7 +1563,7 @@ Configuration d’enregistrement
       <!-- name: Name of the focal instrument (AMBER, MIDI ...) -->
       <name>MIRC_6T</name>
       <!-- description: Description of the instrument -->
-      <description>MIRC instrument using 6 telescopes</description>
+      <description>MIRC instrument (6T)</description>
       <!-- numberChannels : The number of channels used by this instrument -->
       <numberChannels>6</numberChannels>
       <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
