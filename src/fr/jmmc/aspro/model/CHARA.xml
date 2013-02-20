@@ -500,7 +500,7 @@
 
     <focalInstrument>
       <name>CLASSIC</name>
-      <description></description>
+      <description>CLASSIC instrument</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -578,7 +578,7 @@
 
     <focalInstrument>
       <name>VEGA_2T</name>
-      <description></description>
+      <description>VEGA_2T instrument</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -871,7 +871,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>CLIMB</name>
-      <description></description>
+      <description>CLIMB instrument</description>
       <numberChannels>3</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -949,7 +949,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>VEGA_3T</name>
-      <description></description>
+      <description>VEGA_3T instrument</description>
       <numberChannels>3</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -1254,7 +1254,7 @@ Configuration d’enregistrement
 
     <focalInstrument>
       <name>VEGA_4T</name>
-      <description></description>
+      <description>VEGA_4T instrument</description>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
