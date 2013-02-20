@@ -8654,7 +8654,7 @@
 
     <focalInstrument>
       <name>AMBER</name>
-      <description>AMBER instrument</description>
+      <description>AMBER instrument (3T)</description>
       <numberChannels>3</numberChannels>
       <defaultSamplingTime>60</defaultSamplingTime>
       <fringeTracker>FINITO</fringeTracker>
@@ -8784,7 +8784,7 @@
 
     <focalInstrument>
       <name>MIDI</name>
-      <description>MIDI instrument</description>
+      <description>MIDI instrument (2T)</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>60</defaultSamplingTime>
       <fringeTracker>FINITO</fringeTracker>
@@ -8830,7 +8830,7 @@
 
     <focalInstrument>
       <name>PIONIER</name>
-      <description>PIONIER instrument</description>
+      <description>PIONIER visitor instrument (4T) (IPAG, FR)</description>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>30</defaultSamplingTime>
       <!-- no fringe tracker supported -->
@@ -8920,7 +8920,7 @@
 
     <focalInstrument>
       <name>GRAVITY</name>
-      <description>GRAVITY instrument</description>
+      <description>GRAVITY instrument (4T) (experimental)</description>
       <experimental>true</experimental>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>30</defaultSamplingTime>
@@ -8972,7 +8972,7 @@
 
     <focalInstrument>
       <name>MATISSE</name>
-      <description>MATISSE instrument</description>
+      <description>MATISSE instrument (4T) (experimental)</description>
       <experimental>true</experimental>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>60</defaultSamplingTime>
