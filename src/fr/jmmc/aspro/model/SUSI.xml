@@ -162,7 +162,7 @@
 
     <focalInstrument>
       <name>PAVO_2T</name>
-      <description>PAVO combiner using 2T</description>
+      <description>PAVO combiner (2T)</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
       <fringeTracker>PAVO_FT</fringeTracker>
