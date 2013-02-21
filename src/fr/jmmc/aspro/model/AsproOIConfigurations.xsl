@@ -40,43 +40,35 @@
                         <br/>
                         <a href="http://www.jmmc.fr/aspro-oi/0.1">http://www.jmmc.fr/aspro-oi/0.1</a>
                     </p>
-
-                    <br/>
-                
+                    <br/>                
                     <br/>                                                                      
-                    <xsl:for-each select="/a:configurations/file">   
-                         <xsl:apply-templates mode="content" select="."/>                        
-                    </xsl:for-each>
-                
+                    <xsl:apply-templates mode="content" select="/a:configurations/interferometerFile/file"/>                                        
                 </div>  
                                         
                 <div id="navBar">
-                    <div id="sectionLinks" class="Style13">
-                        <xsl:for-each select="/a:configurations/file">   
-                            <xsl:apply-templates mode="navBar" select="."/>                            
-                        </xsl:for-each>
+                    <div id="sectionLinks" class="Style13">                         
+                        <xsl:apply-templates mode="navBar" select="/a:configurations/interferometerFile/file"/>                                                    
                     </div>
                 </div>
             </body>
         </html>
     </xsl:template>
     
-    <xsl:template match="/a:configurations/file" mode="content">
+    <xsl:template match="/a:configurations/interferometerFile/file" mode="content">
+        
         <xsl:variable name="interferometerSettingFilename" select="."/>                      
         <xsl:variable name="interferometerSetting" select="document($interferometerSettingFilename)/a:interferometerSetting"/>   
         <xsl:variable name="interferometerName" select="$interferometerSetting/description/name"/>
-        <hr/> 
         
-        
-        <a name="interferometer_{$interferometerName}"/>
-           
+        <hr/>                 
+                   
         <h1>            
             <em>
                 <xsl:value-of select="$interferometerName"/>
-            </em> interferometer (
+            </em> interferometer 
+            <a name="interferometer_{$interferometerName}"/>(
             <a href="#top">top</a>)
-        </h1>    
-        
+        </h1>            
         
         <p>
             <!-- use for-each to simplify xpath under description-->
@@ -256,8 +248,9 @@
     </xsl:template>
 
     
-    <!-- Generate on top left menu entry on top of www.jmmc.fr main css-->        
-    <xsl:template match="/a:configurations/file" mode="navBar">
+    <!-- Generate the top left menu entry on top of www.jmmc.fr main css-->        
+    <xsl:template match="/a:configurations/interferometerFile/file" mode="navBar">
+        
         <xsl:variable name="interferometerSettingFilename" select="."/>                      
         <xsl:variable name="interferometerSetting" select="document($interferometerSettingFilename)/a:interferometerSetting"/>   
         <xsl:variable name="interferometerName" select="$interferometerSetting/description/name"/>
