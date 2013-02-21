@@ -30,7 +30,7 @@
             <prerelease version="2013.3 beta 3">
                 <change type="FEATURE">Updated Moon avoidance rules for VLTI (ATs and UTs use same rule): separation > 1 deg 
                     or FLI > 85% and (separation > 10 deg [bright star] or separation > 20 deg [faint star]);
-                    if magV < 9.0 then [bright star] else [faint star]
+                    if magV less than 9.0 then [bright star] else [faint star]
                 </change>
                 <change type="FEATURE">Added checksum to each configuration file to test the configuration integrity</change>
             </prerelease>
