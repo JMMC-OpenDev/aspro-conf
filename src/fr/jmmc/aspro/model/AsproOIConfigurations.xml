@@ -5,7 +5,6 @@
 * JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
 *******************************************************************************
 -->
-
 <!--
     Document   : AsproOIConfigurations.xml
     Created on : 14 octobre 2009, 14:31
@@ -19,6 +18,7 @@
     xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
     xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
     
+    <!-- minimum version corresponds to Aspro2 0.9.4 (march 2013 / CfP 92) -->
     <minVersion>0.9.4</minVersion>
 
     <interferometerFile>
@@ -28,7 +28,7 @@
     
     <interferometerFile>
         <file>CHARA.xml</file>
-        <checksum>2662885295032052736</checksum>
+        <checksum>8702419271271435776</checksum>
     </interferometerFile>
 
 <!--
@@ -39,7 +39,7 @@
 
     <interferometerFile>
         <file>SUSI.xml</file>
-        <checksum>2178885348806885376</checksum>
+        <checksum>7857653018039622656</checksum>
     </interferometerFile>
   
 </a:configurations>
