@@ -19,7 +19,7 @@
     </company>
 
     <program name="AsproConf" version="2013.3"/>
-    <compilation date="20/02/2013" compiler="JDK 1.5.0_16"/>
+    <compilation date="21/02/2013" compiler="JDK 1.5.0_16"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
@@ -28,6 +28,10 @@
         <release version="2013.3">
             <pubDate>Wed, 20 Feb 2013 17:15:00 GMT</pubDate>
             <prerelease version="2013.3 beta 3">
+                <change type="FEATURE">Updated Moon avoidance rules for VLTI (ATs and UTs use same rule): separation > 1 deg 
+                    or FLI > 85% and (separation > 10 deg [bright star] or separation > 20 deg [faint star]);
+                    if magV < 9.0 then [bright star] else [faint star]
+                </change>
                 <change type="FEATURE">Added checksum to each configuration file to test the configuration integrity</change>
             </prerelease>
             <prerelease version="2013.3 beta 2">
