@@ -46,7 +46,7 @@
                 <!-- Main content -->
                 <div id="content">
                     <h1>
-                        <xsl:value-of select="$title"/>         
+                        <a href="http://www.jmmc.fr/aspro"><xsl:value-of select="$title"/></a>
                     </h1>                
                     <p>
                         <xsl:value-of select="$applicationData/text"/>
