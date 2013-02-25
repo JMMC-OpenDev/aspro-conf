@@ -156,7 +156,7 @@
                                                                     <xsl:value-of select="fli"/>% 
                                                                 </xsl:if>                    
                                                                 <xsl:for-each select="flux">
-                                                                    <xsl:if test="fli"> and </xsl:if> 
+                                                                    <xsl:if test="../fli"> and </xsl:if> 
                                                                     <em>
                                                                         <xsl:value-of select="concat('mag', band)"/> 
                                                                     </em>
