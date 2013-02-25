@@ -152,7 +152,7 @@
                                                         <xsl:choose>
                                                             <xsl:when test="fli|flux">
                                                                 when
-                                                                <xsl:if test="fli"> fraction of lunar illumination higher than 
+                                                                <xsl:if test="fli"> FLI&gt;= 
                                                                     <xsl:value-of select="fli"/>% 
                                                                 </xsl:if>                    
                                                                 <xsl:for-each select="flux">
