@@ -23,7 +23,9 @@
     
     <xsl:variable name="applicationData" select="document('../conf/resource/ApplicationData.xml')/ApplicationData"/>
     
-    <xsl:variable name="title">Aspro2 configuration ( Version <xsl:value-of select="$applicationData/program/@version"/> )</xsl:variable>
+    <xsl:variable name="title">Aspro2 configuration ( Version 
+        <xsl:value-of select="$applicationData/program/@version"/> )
+    </xsl:variable>
     
     <xsl:template match="/">
         <html>
@@ -139,9 +141,56 @@
                                         <xsl:value-of select="concat(' ', name(), '=', .)"/>
                                     </xsl:for-each>
                                 </li>      
+                                <li>
+                                    <u>Moon pointing restriction: </u> 
+                                    <ul>
+                                        <xsl:choose>
+                                            <xsl:when test="moonPointingRestriction">                                                
+                                                <xsl:for-each select="moonPointingRestriction/restriction">
+                                                    <li>
+                                                        <xsl:value-of select="concat(separation, ' [deg] ')"/>
+                                                        <xsl:choose>
+                                                            <xsl:when test="fli|flux">
+                                                                when
+                                                                <xsl:if test="fli"> fraction of lunar illumination higher than 
+                                                                    <xsl:value-of select="fli"/>% 
+                                                                </xsl:if>                    
+                                                                <xsl:for-each select="flux">
+                                                                    <xsl:if test="fli"> and </xsl:if> 
+                                                                    <em>
+                                                                        <xsl:value-of select="concat('mag', band)"/> 
+                                                                    </em>
+                                                                    <xsl:value-of select="concat(' ', op)"/>
+                                                                    <em>
+                                                                        <xsl:value-of select="concat(' ', value)"/>
+                                                                    </em>
+                                                                </xsl:for-each>                    
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                by default
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>                                                                                                                                                             
+                                                    </li>                                                                                                                                                                                    
+                                                </xsl:for-each>                                                    
+                                
+                
+                                <li>
+                                    <em>a warning message is issued when separation is lower than  
+                                        <xsl:value-of select="moonPointingRestriction/warningThreshold"/>
+                                    </em>
+                                </li>                
+                                </xsl:when>
+                                <xsl:otherwise>                                
+                                    not yet defined
+                                </xsl:otherwise>                            
+                            </xsl:choose>    
                             </ul>
-                        </li>
-                    </ul>                                                    
+                        </li>                                                                                                                     
+                    </ul>
+                </li>
+            </ul>   
+                    
+                                                                                                                                                                       
                 </xsl:for-each>      
                 
                 <br/>
@@ -175,7 +224,7 @@
                 <a name="instrument_{$instrumentName}_{$interferometerName}"/> 
                 <em>
                     <xsl:value-of select="$instrumentName" />
-                </em> focal instrument (
+                </em> focal instrument ( move to <a href="#interferometer_{$interferometerName}"><xsl:value-of select="$interferometerName"/></a> / 
                 <a href="#top">top</a>)
             </h2>      
             <p> 
