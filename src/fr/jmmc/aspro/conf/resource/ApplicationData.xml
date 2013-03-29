@@ -26,7 +26,7 @@
 
     <releasenotes>
         <release version="2013.314">
-            <pubDate>Thu, 14 Mar 2013 11:05:00 GMT</pubDate>
+            <pubDate>Fri, 29 Mar 2013 09:40:00 GMT</pubDate>
             <prerelease version="2013.314 beta 1">
                 <change type="FEATURE">CHARA VEGA: modified resolution of R2656, R2668 and R2720 modes to have only 2 spectral channels as given by data reduction software</change>
                 <change type="FEATURE">CHARA VEGA: modified parameters BLUE FILTER (CLOSE) and RECORD (B)</change>
