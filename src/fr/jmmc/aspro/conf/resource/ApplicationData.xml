@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.314"/> <!-- 'YYYY.Mdd' -->
-    <compilation date="14/03/2013" compiler="JDK 1.5.0_16"/>
+    <program name="AsproConf" version="2013.405"/> <!-- 'YYYY.Mdd' -->
+    <compilation date="05/04/2013" compiler="JDK 1.5.0_16"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2013.405">
+            <pubDate>Fri, 29 Mar 2013 09:40:00 GMT</pubDate>
+            <prerelease version="2013.314 beta 1">
+                <change type="FEATURE">CHARA CLASSIC / CLIMB: added J band capability (filter centered at 1.2862 um with a width of 0.2780 um)</change>
+            </prerelease>
+        </release>
         <release version="2013.314">
             <pubDate>Fri, 29 Mar 2013 09:40:00 GMT</pubDate>
             <prerelease version="2013.314 beta 1">

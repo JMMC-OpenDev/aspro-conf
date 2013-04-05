@@ -521,6 +521,13 @@
       <fracFluxInInterferometry>1</fracFluxInInterferometry>
 
       <mode>
+        <name>J</name>
+        <resolution>4.6</resolution>
+        <waveLengthMin>1.1472</waveLengthMin>
+        <waveLengthMax>1.4252</waveLengthMax>
+      </mode>
+
+      <mode>
         <name>H</name>
         <resolution>5.9</resolution>
         <waveLengthMin>1.53</waveLengthMin>
@@ -890,6 +897,13 @@ Configuration d’enregistrement
       <nbPixInterferometry>3</nbPixInterferometry>
       <nbPixPhotometry>0</nbPixPhotometry>
       <fracFluxInInterferometry>1</fracFluxInInterferometry>
+
+      <mode>
+        <name>J</name>
+        <resolution>4.6</resolution>
+        <waveLengthMin>1.1472</waveLengthMin>
+        <waveLengthMax>1.4252</waveLengthMax>
+      </mode>
 
       <mode>
         <name>H</name>
