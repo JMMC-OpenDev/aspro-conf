@@ -38,6 +38,11 @@
 -->
 
     <interferometerFile>
+        <file>NPOI.xml</file>
+        <checksum>6853942141630595840</checksum>
+    </interferometerFile>
+
+    <interferometerFile>
         <file>SUSI.xml</file>
         <checksum>7857653018039622656</checksum>
     </interferometerFile>

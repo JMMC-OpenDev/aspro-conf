@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.405"/> <!-- 'YYYY.Mdd' -->
-    <compilation date="05/04/2013" compiler="JDK 1.5.0_16"/>
+    <program name="AsproConf" version="2013.613"/> <!-- 'YYYY.Mdd' -->
+    <compilation date="13/06/2013" compiler="JDK 1.6.0_24"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2013.405">
+            <pubDate>Thu, 13 Jun 2013 15:00:00 GMT</pubDate>
+            <prerelease version="2013.405 beta 1">
+                <change type="FEATURE">Added preliminary NPOI description (tests only - missing switchyard and pops setup)</change>
+            </prerelease>
+        </release>
         <release version="2013.405">
             <pubDate>Fri, 05 Apr 2013 17:00:00 GMT</pubDate>
             <prerelease version="2013.314 beta 1">
