@@ -18,8 +18,8 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.613"/> <!-- 'YYYY.Mdd' -->
-    <compilation date="13/06/2013" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2013.809"/> <!-- 'YYYY.Mdd' -->
+    <compilation date="09/08/2013" compiler="JDK 1.6.0_24"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
@@ -28,6 +28,7 @@
         <release version="2013.809">
             <pubDate>Fri, 09 Aug 2013 14:00:00 GMT</pubDate>
             <prerelease version="2013.809 beta 1">
+                <change type="FEATURE">VLTI: added eso Period 93 = 92</change>
                 <change type="FEATURE">Updated preliminary NPOI description: no zenithal restriction + tip tilt for telescopes; 
                     use 3 characters for station names; fixed AE0 / AC0 offset estimation</change>
             </prerelease>
