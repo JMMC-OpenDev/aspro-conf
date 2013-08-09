@@ -61,40 +61,61 @@ BeautyContest/2004-data2.fits
     <telescope>
       <name>AS</name>
       <diameter>0.12</diameter>
-      <maxElevation>85.0</maxElevation>
+      <!-- no zenithal limit -->
+      <maxElevation>90.0</maxElevation>
 
-      <!-- no AO ? -->
-<!--      
       <adaptiveOptics>
         <band>V</band>
+        <!-- tip tilt -->
         <numberActuators>2</numberActuators>
       </adaptiveOptics>
--->      
+
+      <!--
+        Moon Pointing Restrictions on NPOI:
+        default as 5 deg
+      -->
+      <moonPointingRestriction>
+        <warningThreshold>10</warningThreshold>
+        <restriction>
+          <separation>5.0</separation>
+        </restriction>
+      </moonPointingRestriction>
     </telescope>
 
     <!-- imaging station -->
     <telescope>
       <name>IS</name>
       <diameter>0.12</diameter>
-      <maxElevation>85.0</maxElevation>
+      <!-- no zenithal limit -->
+      <maxElevation>90.0</maxElevation>
 
-      <!-- no AO ? -->
-<!--      
+
       <adaptiveOptics>
         <band>V</band>
+        <!-- tip tilt -->
         <numberActuators>2</numberActuators>
       </adaptiveOptics>
--->      
+
+      <!--
+        Moon Pointing Restrictions on NPOI:
+        default as 5 deg
+      -->
+      <moonPointingRestriction>
+        <warningThreshold>10</warningThreshold>
+        <restriction>
+          <separation>5.0</separation>
+        </restriction>
+      </moonPointingRestriction>
     </telescope>
 
 <!-- 
 station x(E-W direction) y(N-S direction) z(elevation)
-AC -0.4866225, -5.6261545, 0.0095949
-AE 17.0027065,-12.8829861, 0.0092909
-AW -20.3769427,-15.4831804, 0.0081096
-W7 -44.1908188,-32.9754257,-0.0706610
-AN -0.6132186, 17.2268933, 0.0017019
-E6 32.8518190,-13.7440581, 0.0124705
+AC0 -0.4866225, -5.6261545, 0.0095949
+AE0 17.0027065,-12.8829861, 0.0092909
+AW0 -20.3769427,-15.4831804, 0.0081096
+W07 -44.1908188,-32.9754257,-0.0706610
+AN0 -0.6132186, 17.2268933, 0.0017019
+E06 32.8518190,-13.7440581, 0.0124705
 
 From BeautyContest/2004-data1.fits:    
 <th>TEL_NAME</th><th>STA_NAME</th><th>STA_INDEX</th><th>DIAMETER</th><th>STAXYZ</th></tr>
@@ -138,7 +159,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
 
 <!-- astrometric stations -->
     <station>
-      <name>AC</name> <!-- C means center ? -->
+      <name>AC0</name> <!-- C means center ? -->
       <telescope>AS</telescope>
       <relativePosition>
         <posX>3.2427611631967475</posX>
@@ -150,7 +171,8 @@ Station[W07] norm(relativePosition) = 55.1381189313489
         <posZ>-4.597708631338474</posZ>
 -->
       </relativePosition>
-      <delayLineFixedOffset>5.66</delayLineFixedOffset>
+      <!-- distance to center vector projected on east arm -->
+      <delayLineFixedOffset>12.74</delayLineFixedOffset>
 <!-- TODO: configure pop links -->
 <!--
       <popLink>
@@ -177,7 +199,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
 
     <station>
-      <name>AE</name>
+      <name>AE0</name>
       <telescope>AS</telescope>
       <relativePosition>
         <posX>7.414088447352563</posX>
@@ -189,11 +211,12 @@ Station[W07] norm(relativePosition) = 55.1381189313489
         <posZ>-10.53530137559964</posZ>
 -->
       </relativePosition>
-      <delayLineFixedOffset>21.32</delayLineFixedOffset>
+      <!-- distance to center vector projected on east arm -->
+      <delayLineFixedOffset>21.477</delayLineFixedOffset>
     </station>
 
     <station>
-      <name>AW</name>
+      <name>AW0</name>
       <telescope>AS</telescope>
       <relativePosition>
         <posX>8.909948202284827</posX>
@@ -205,11 +228,11 @@ Station[W07] norm(relativePosition) = 55.1381189313489
         <posZ>-12.663415957977643</posZ>
 -->        
       </relativePosition>
-      <delayLineFixedOffset>25.61</delayLineFixedOffset>
+      <delayLineFixedOffset>25.59</delayLineFixedOffset>
     </station>
 
     <station>
-      <name>AN</name>
+      <name>AN0</name>
       <telescope>AS</telescope>
       <relativePosition>
         <posX>-9.903440183719736</posX>
@@ -221,7 +244,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
         <posZ>14.095733816168604</posZ>
 -->
       </relativePosition>
-      <delayLineFixedOffset>17.22</delayLineFixedOffset>
+      <delayLineFixedOffset>17.24</delayLineFixedOffset>
     </station>
 
 <!-- imaging station -->
@@ -229,7 +252,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
 <!-- East stations -->
 
     <station>
-      <name>E2</name>
+      <name>E02</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>1.0395319503252458</posX>
@@ -240,7 +263,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
 
     <station>
-      <name>E3</name>
+      <name>E03</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>1.8801114354868964</posX>
@@ -251,7 +274,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
         
     <station>
-      <name>E5</name>
+      <name>E05</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>4.674405495568339</posX>
@@ -262,7 +285,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
 
     <station>
-      <name>E6</name>
+      <name>E06</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>7.888418622287527</posX>
@@ -274,13 +297,13 @@ Station[W07] norm(relativePosition) = 55.1381189313489
         <posZ>-11.237987915411871</posZ>
 -->        
       </relativePosition>
-      <delayLineFixedOffset>35.53</delayLineFixedOffset>
+      <delayLineFixedOffset>35.6</delayLineFixedOffset>
     </station>
 
 <!-- West stations -->
 
     <station>
-      <name>W3</name>
+      <name>W03</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>2.5585614336136664</posX>
@@ -291,7 +314,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
 
     <station>
-      <name>W5</name>
+      <name>W05</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>6.882242777607997</posX>
@@ -302,7 +325,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
 
     <station>
-      <name>W6</name>
+      <name>W06</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>11.614144035729453</posX>
@@ -313,7 +336,7 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     </station>
 
     <station>
-      <name>W7</name>
+      <name>W07</name>
       <telescope>IS</telescope>
       <relativePosition>
         <posX>18.901656583911606</posX>
@@ -441,21 +464,21 @@ Station[W07] norm(relativePosition) = 55.1381189313489
     <instrument>
       <focalInstrument>CLASSIC_4T</focalInstrument>
 
-<configuration><stations>E6 AE AC AN</stations></configuration>
-<configuration><stations>E6 AE AC AW</stations></configuration>
-<configuration><stations>E6 AE AC W7</stations></configuration>
-<configuration><stations>E6 AE AN AW</stations></configuration>
-<configuration><stations>E6 AE AN W7</stations></configuration>
-<configuration><stations>E6 AE AW W7</stations></configuration>
-<configuration><stations>E6 AC AN AW</stations></configuration>
-<configuration><stations>E6 AC AN W7</stations></configuration>
-<configuration><stations>E6 AC AW W7</stations></configuration>
-<configuration><stations>E6 AN AW W7</stations></configuration>
-<configuration><stations>AE AC AN AW</stations></configuration>
-<configuration><stations>AE AC AN W7</stations></configuration>
-<configuration><stations>AE AC AW W7</stations></configuration>
-<configuration><stations>AE AN AW W7</stations></configuration>
-<configuration><stations>AC AN AW W7</stations></configuration>
+<configuration><stations>E06 AE0 AC0 AN0</stations></configuration>
+<configuration><stations>E06 AE0 AC0 AW0</stations></configuration>
+<configuration><stations>E06 AE0 AC0 W07</stations></configuration>
+<configuration><stations>E06 AE0 AN0 AW0</stations></configuration>
+<configuration><stations>E06 AE0 AN0 W07</stations></configuration>
+<configuration><stations>E06 AE0 AW0 W07</stations></configuration>
+<configuration><stations>E06 AC0 AN0 AW0</stations></configuration>
+<configuration><stations>E06 AC0 AN0 W07</stations></configuration>
+<configuration><stations>E06 AC0 AW0 W07</stations></configuration>
+<configuration><stations>E06 AN0 AW0 W07</stations></configuration>
+<configuration><stations>AE0 AC0 AN0 AW0</stations></configuration>
+<configuration><stations>AE0 AC0 AN0 W07</stations></configuration>
+<configuration><stations>AE0 AC0 AW0 W07</stations></configuration>
+<configuration><stations>AE0 AN0 AW0 W07</stations></configuration>
+<configuration><stations>AC0 AN0 AW0 W07</stations></configuration>
 
     </instrument>
 

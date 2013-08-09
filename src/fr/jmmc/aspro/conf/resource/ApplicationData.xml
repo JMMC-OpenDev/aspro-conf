@@ -25,15 +25,22 @@
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2013.405">
+        <release version="2013.809">
+            <pubDate>Fri, 09 Aug 2013 14:00:00 GMT</pubDate>
+            <prerelease version="2013.809 beta 1">
+                <change type="FEATURE">Updated preliminary NPOI description: no zenithal restriction + tip tilt for telescopes; 
+                    use 3 characters for station names; fixed AE0 / AC0 offset estimation</change>
+            </prerelease>
+        </release>
+        <release version="2013.613">
             <pubDate>Thu, 13 Jun 2013 15:00:00 GMT</pubDate>
-            <prerelease version="2013.405 beta 1">
+            <prerelease version="2013.613 beta 1">
                 <change type="FEATURE">Added preliminary NPOI description (tests only - missing switchyard and pops setup)</change>
             </prerelease>
         </release>
         <release version="2013.405">
             <pubDate>Fri, 05 Apr 2013 17:00:00 GMT</pubDate>
-            <prerelease version="2013.314 beta 1">
+            <prerelease version="2013.405 beta 1">
                 <change type="FEATURE">CHARA CLASSIC / CLIMB: added J band capability (filter centered at 1.2862 um with a width of 0.2780 um)</change>
             </prerelease>
         </release>
