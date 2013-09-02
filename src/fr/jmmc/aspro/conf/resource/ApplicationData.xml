@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.809"/> <!-- 'YYYY.Mdd' -->
-    <compilation date="09/08/2013" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2013.902"/> <!-- 'YYYY.Mdd' -->
+    <compilation date="02/09/2013" compiler="JDK 1.6.0_24"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2013.902">
+            <pubDate>Mon, 02 Sep 2013 16:00:00 GMT</pubDate>
+            <prerelease version="2013.902 beta 1">
+                <change type="FEATURE">VLTI: fixed eso Period 93 = 92 but added A1-G1-K0-I1 if J3 is unavailable</change>
+                <change type="FEATURE">DEMO: added demo interferometer (north pole)</change>
+            </prerelease>
+        </release>
         <release version="2013.809">
             <pubDate>Fri, 09 Aug 2013 14:00:00 GMT</pubDate>
             <prerelease version="2013.809 beta 1">

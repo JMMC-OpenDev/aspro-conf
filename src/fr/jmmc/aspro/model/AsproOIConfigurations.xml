@@ -23,7 +23,7 @@
 
     <interferometerFile>
         <file>VLTI.xml</file>
-        <checksum>8111267871467581440</checksum>
+        <checksum>6116968508922590208</checksum>
     </interferometerFile>
     
     <interferometerFile>
@@ -45,6 +45,11 @@
     <interferometerFile>
         <file>SUSI.xml</file>
         <checksum>7857653018039622656</checksum>
+    </interferometerFile>
+
+    <interferometerFile>
+        <file>DEMO.xml</file>
+        <checksum>8847323779176030208</checksum>
     </interferometerFile>
   
 </a:configurations>

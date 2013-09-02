@@ -9116,7 +9116,7 @@ N 30, 300
 
 
   <!-- configurations are displayed (GUI) in the same order they are present below -->
-  <!-- preliminary P93: no change -->
+  
   <configuration>
     <version>Period 93</version>
     <interferometer>VLTI</interferometer>
@@ -9136,7 +9136,7 @@ N 30, 300
       <configuration>
         <stations>UT2 UT3 UT4</stations>
       </configuration>
-      <!-- A1-G1-K0-J3 -->
+      <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
       <configuration>
         <stations>A1 K0 G1</stations>
       </configuration>
@@ -9144,10 +9144,19 @@ N 30, 300
         <stations>A1 K0 J3</stations>
       </configuration>
       <configuration>
+        <stations>A1 K0 I1</stations>
+      </configuration>
+      <configuration>
         <stations>A1 G1 J3</stations>
       </configuration>
       <configuration>
+        <stations>A1 G1 I1</stations>
+      </configuration>
+      <configuration>
         <stations>K0 G1 J3</stations>
+      </configuration>
+      <configuration>
+        <stations>K0 G1 I1</stations>
       </configuration>
       <!-- D0 H0 G1 I1 -->
       <configuration>
@@ -9198,7 +9207,7 @@ N 30, 300
       <configuration>
         <stations>UT3 UT4</stations>
       </configuration>
-      <!-- A1-G1-K0-J3 -->
+      <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
       <configuration>
         <stations>A1 K0</stations>
       </configuration>
@@ -9209,13 +9218,22 @@ N 30, 300
         <stations>A1 J3</stations>
       </configuration>
       <configuration>
+        <stations>A1 I1</stations>
+      </configuration>
+      <configuration>
         <stations>K0 G1</stations>
       </configuration>
       <configuration>
         <stations>K0 J3</stations>
       </configuration>
       <configuration>
+        <stations>K0 I1</stations>
+      </configuration>
+      <configuration>
         <stations>G1 J3</stations>
+      </configuration>
+      <configuration>
+        <stations>G1 I1</stations>
       </configuration>
       <!-- D0 H0 G1 I1 -->
       <configuration>
@@ -9227,9 +9245,11 @@ N 30, 300
       <configuration>
         <stations>D0 I1</stations>
       </configuration>
+<!--      
       <configuration>
         <stations>G1 I1</stations>
       </configuration>
+-->      
       <configuration>
         <stations>H0 I1</stations>
       </configuration>
@@ -9262,8 +9282,12 @@ N 30, 300
       <configuration>
         <stations>UT1 UT2 UT3 UT4</stations>
       </configuration>
+      <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
       <configuration>
         <stations>A1 G1 K0 J3</stations>
+      </configuration>
+      <configuration>
+        <stations>A1 G1 K0 I1</stations>
       </configuration>
       <configuration>
         <stations>D0 H0 G1 I1</stations>

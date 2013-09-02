@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ *******************************************************************************
+ * JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
+ *******************************************************************************
+ -->
+<!--
+    Document   : DEMO.xml
+    Created on : 2 september 2013
+    Author     : bourgesl
+    Description:
+        Demo interferometer.
+-->
+
+<a:interferometerSetting
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
+  xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
+
+  <description>
+    <name>DEMO</name>
+
+    <description>Interferometer for demo / school</description>
+
+    <!--
+      Coordinates DEMO:
+        lat = +90
+        lon = 0
+        alt = 0
+    -->
+    <position>
+      <posX>0.0</posX>
+      <posY>0.0</posY>
+      <posZ>6367435.0</posZ>
+    </position>
+    
+    <telescope>
+      <name>T</name>
+      <diameter>1.0</diameter>
+      <maxElevation>90.0</maxElevation>
+
+      <adaptiveOptics>
+        <band>V</band>
+        <!-- tip tilt -->
+        <numberActuators>2</numberActuators>
+      </adaptiveOptics>
+
+      <!--
+        Moon Pointing Restrictions on SUSI: 5 deg at least !
+        
+      <moonPointingRestriction>
+        <warningThreshold>10</warningThreshold>
+        <restriction>
+          <separation>5.0</separation>
+        </restriction>
+      </moonPointingRestriction>
+      -->
+
+    </telescope>
+
+    <station>
+      <name>S0</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>0.0</posX>
+        <posY>0.0</posY>
+        <posZ>0.0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>0.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S1</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>5</posX>
+        <posY>0.0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>5.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S2</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>15</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>10.0</delayLineFixedOffset>
+    </station>
+
+    <!-- no channel nor switchyard -->    
+
+    <!-- DL : 
+    = 2 DL with long length -->
+    <delayLine>
+      <name>DL1</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL2</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+
+    <!-- instruments (2T) -->
+
+    <focalInstrument>
+      <name>DEMO_2T</name>
+      <description>DEMO combiner (2T)</description>
+      <numberChannels>2</numberChannels>
+      <defaultSamplingTime>40</defaultSamplingTime>
+
+      <!-- noise parameters -->
+      <transmission>0.01</transmission>
+      <dit>0.1</dit>
+      <ron>0</ron>
+      <detectorSaturation>1000000</detectorSaturation>
+      <instrumentVisibility>1</instrumentVisibility>
+      <instrumentVisibilityBias>0</instrumentVisibilityBias>
+      <instrumentPhaseBias>0</instrumentPhaseBias>
+      <nbPixInterferometry>1</nbPixInterferometry>
+      <nbPixPhotometry>0</nbPixPhotometry>
+      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+
+      <mode>
+        <name>Small</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>1.0</waveLengthMin>
+        <waveLengthMax>1.001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>Wide</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>0.1</waveLengthMin>
+        <waveLengthMax>10.0</waveLengthMax>
+      </mode>
+
+    </focalInstrument>
+
+  </description>
+
+
+  <configuration>
+    <interferometer>DEMO</interferometer>
+
+    <!-- PAVO 2T -->
+    <instrument>
+      <focalInstrument>DEMO_2T</focalInstrument>
+      
+      <!-- The baseline configuration is limited to one telescope from the North and one telescope from the South -->
+      <configuration>
+        <stations>S0 S1</stations>
+      </configuration>
+      <configuration>
+        <stations>S0 S2</stations>
+      </configuration>
+      <configuration>
+        <stations>S1 S2</stations>
+      </configuration>
+    </instrument>
+  </configuration>
+
+</a:interferometerSetting>
