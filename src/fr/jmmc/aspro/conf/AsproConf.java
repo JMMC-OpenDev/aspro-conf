@@ -32,7 +32,11 @@ public final class AsproConf {
         final byte[] bytes = FileUtils.checksum(in);
 
         for (byte b : bytes) {
-            checksum *= (b & 0xFF);
+            long val = b & 0xFF;
+            
+            if (val != 0L) {
+                checksum *= val;
+            }
         }
 
         return Math.abs(checksum);
