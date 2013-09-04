@@ -31,6 +31,11 @@
         <checksum>5145274593910980608</checksum>
     </interferometerFile>
 
+    <interferometerFile>
+        <file>SUSI.xml</file>
+        <checksum>7857653018039622656</checksum>
+    </interferometerFile>
+
 <!--
     <interferometerFile>
         <file>MROI.xml</file>
@@ -43,13 +48,8 @@
     </interferometerFile>
 
     <interferometerFile>
-        <file>SUSI.xml</file>
-        <checksum>7857653018039622656</checksum>
-    </interferometerFile>
-
-    <interferometerFile>
         <file>DEMO.xml</file>
-        <checksum>8847323779176030208</checksum>
+        <checksum>1891537606215824896</checksum>
     </interferometerFile>
   
 </a:configurations>

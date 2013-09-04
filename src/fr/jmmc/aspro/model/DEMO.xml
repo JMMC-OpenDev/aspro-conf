@@ -73,28 +73,186 @@
       <name>S1</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>5</posX>
+        <posX>1</posX>
         <posY>0.0</posY>
         <posZ>0</posZ>
       </relativePosition>
-      <delayLineFixedOffset>5.0</delayLineFixedOffset>
+      <delayLineFixedOffset>1.0</delayLineFixedOffset>
     </station>
 
     <station>
       <name>S2</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>15</posX>
+        <posX>2</posX>
         <posY>0</posY>
         <posZ>0</posZ>
       </relativePosition>
-      <delayLineFixedOffset>10.0</delayLineFixedOffset>
+      <delayLineFixedOffset>2.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S3</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>8</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>8.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S4</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>14</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>14.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S5</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>20</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>20.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S6</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>31</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>31.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S7</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>42</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>42.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S8</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>53</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>53.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S9</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>64</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>64.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S10</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>75</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>75.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S11</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>86</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>86.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S12</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>91</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>91.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S13</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>96</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>96.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S14</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>99</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>99.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S15</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>100</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>100.0</delayLineFixedOffset>
+    </station>
+
+    <station>
+      <name>S16</name>
+      <telescope>T</telescope>
+      <relativePosition>
+        <posX>101</posX>
+        <posY>0</posY>
+        <posZ>0</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>101.0</delayLineFixedOffset>
     </station>
 
     <!-- no channel nor switchyard -->    
 
     <!-- DL : 
-    = 2 DL with long length -->
+    = 8 DL with long length -->
+    <delayLine>
+      <name>DL0</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
     <delayLine>
       <name>DL1</name>
       <maximumThrow>1000000</maximumThrow>
@@ -103,11 +261,67 @@
       <name>DL2</name>
       <maximumThrow>1000000</maximumThrow>
     </delayLine>
+    <delayLine>
+      <name>DL3</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL4</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL5</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL6</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL7</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL8</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL9</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL10</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL11</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL12</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL13</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL14</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL15</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL16</name>
+      <maximumThrow>1000000</maximumThrow>
+    </delayLine>
 
     <!-- instruments (2T) -->
 
     <focalInstrument>
-      <name>DEMO_2T</name>
+      <name>DEMO_2T_SPATIAL</name>
       <description>DEMO combiner (2T)</description>
       <numberChannels>2</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
@@ -131,6 +345,27 @@
         <waveLengthMax>1.001</waveLengthMax>
       </mode>
 
+    </focalInstrument>
+
+    <focalInstrument>
+      <name>DEMO_2T_SPECTRAL</name>
+      <description>DEMO combiner (2T)</description>
+      <numberChannels>2</numberChannels>
+      <defaultSamplingTime>40</defaultSamplingTime>
+
+      <!-- noise parameters -->
+      <transmission>0.01</transmission>
+      <dit>0.1</dit>
+      <ron>0</ron>
+      <detectorSaturation>1000000</detectorSaturation>
+      <instrumentVisibility>1</instrumentVisibility>
+      <instrumentVisibilityBias>0</instrumentVisibilityBias>
+      <instrumentPhaseBias>0</instrumentPhaseBias>
+      <nbPixInterferometry>1</nbPixInterferometry>
+      <nbPixPhotometry>0</nbPixPhotometry>
+      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+
+
       <mode>
         <name>Wide</name>
         <resolution>1000</resolution>
@@ -146,19 +381,21 @@
   <configuration>
     <interferometer>DEMO</interferometer>
 
-    <!-- PAVO 2T -->
     <instrument>
-      <focalInstrument>DEMO_2T</focalInstrument>
+      <focalInstrument>DEMO_2T_SPATIAL</focalInstrument>
+      
+      <!-- The baseline configuration uses all 16 telescopes -->
+      <configuration>
+        <stations>S0 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16</stations>
+      </configuration>
+    </instrument>
+    
+    <instrument>
+      <focalInstrument>DEMO_2T_SPECTRAL</focalInstrument>
       
       <!-- The baseline configuration is limited to one telescope from the North and one telescope from the South -->
       <configuration>
-        <stations>S0 S1</stations>
-      </configuration>
-      <configuration>
-        <stations>S0 S2</stations>
-      </configuration>
-      <configuration>
-        <stations>S1 S2</stations>
+        <stations>S0 S1 S2</stations>
       </configuration>
     </instrument>
   </configuration>
