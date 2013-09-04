@@ -339,10 +339,73 @@
       <fracFluxInInterferometry>1</fracFluxInInterferometry>
 
       <mode>
-        <name>Small</name>
+        <name>B</name>
         <resolution>1000</resolution>
-        <waveLengthMin>1.0</waveLengthMin>
-        <waveLengthMax>1.001</waveLengthMax>
+        <waveLengthMin>0.46</waveLengthMin>
+        <waveLengthMax>0.460001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>V</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>0.55</waveLengthMin>
+        <waveLengthMax>0.550001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>R</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>0.66</waveLengthMin>
+        <waveLengthMax>0.660001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>I</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>0.87</waveLengthMin>
+        <waveLengthMax>0.870001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>J</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>1.23</waveLengthMin>
+        <waveLengthMax>1.230001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>H</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>1.67</waveLengthMin>
+        <waveLengthMax>1.670001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>K</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>2.36</waveLengthMin>
+        <waveLengthMax>2.360001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>L</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>3.46</waveLengthMin>
+        <waveLengthMax>3.460001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>M</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>6.40</waveLengthMin>
+        <waveLengthMax>6.400001</waveLengthMax>
+      </mode>
+
+      <mode>
+        <name>N</name>
+        <resolution>1000</resolution>
+        <waveLengthMin>12</waveLengthMin>
+        <waveLengthMax>12.000001</waveLengthMax>
       </mode>
 
     </focalInstrument>
