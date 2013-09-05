@@ -321,9 +321,10 @@
     <!-- instruments (2T) -->
 
     <focalInstrument>
-      <name>DEMO_2T_SPATIAL</name>
-      <description>DEMO combiner (2T)</description>
-      <numberChannels>2</numberChannels>
+      <name>DEMO_SPATIAL</name>
+      <description>DEMO combiner (16T)</description>
+      <experimental>true</experimental>
+      <numberChannels>16</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
       <!-- noise parameters -->
@@ -411,9 +412,10 @@
     </focalInstrument>
 
     <focalInstrument>
-      <name>DEMO_2T_SPECTRAL</name>
-      <description>DEMO combiner (2T)</description>
-      <numberChannels>2</numberChannels>
+      <name>DEMO_3T_SPECTRAL</name>
+      <description>DEMO combiner (3T)</description>
+      <experimental>true</experimental>
+      <numberChannels>3</numberChannels>
       <defaultSamplingTime>40</defaultSamplingTime>
 
       <!-- noise parameters -->
@@ -445,16 +447,19 @@
     <interferometer>DEMO</interferometer>
 
     <instrument>
-      <focalInstrument>DEMO_2T_SPATIAL</focalInstrument>
+      <focalInstrument>DEMO_SPATIAL</focalInstrument>
       
       <!-- The baseline configuration uses all 16 telescopes -->
       <configuration>
         <stations>S0 S1 S2 S3 S4 S5 S6 S7 S8 S9 S10 S11 S12 S13 S14 S15 S16</stations>
       </configuration>
+      <configuration>
+        <stations>S0 S7</stations>
+      </configuration>
     </instrument>
     
     <instrument>
-      <focalInstrument>DEMO_2T_SPECTRAL</focalInstrument>
+      <focalInstrument>DEMO_3T_SPECTRAL</focalInstrument>
       
       <!-- The baseline configuration is limited to one telescope from the North and one telescope from the South -->
       <configuration>
