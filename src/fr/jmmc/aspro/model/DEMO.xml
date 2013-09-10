@@ -463,7 +463,7 @@
       
       <!-- The baseline configuration is limited to one telescope from the North and one telescope from the South -->
       <configuration>
-        <stations>S0 S1 S2</stations>
+        <stations>S0 S6 S16</stations>
       </configuration>
     </instrument>
   </configuration>
