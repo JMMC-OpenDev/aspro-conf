@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.902"/> <!-- 'YYYY.Mdd' -->
-    <compilation date="02/09/2013" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2013.911"/> <!-- 'YYYY.Mdd' -->
+    <compilation date="11/09/2013" compiler="JDK 1.6.0_24"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2013.911">
+            <pubDate>Wed, 11 Sep 2013 18:00:00 GMT</pubDate>
+            <prerelease version="2013.911 beta 1">
+                <change type="FEATURE">CHARA: modified interferometer setup: fixed array center coordinates, station positions, 
+                    fixed optical path lengths (removed internal, corrected air paths by air refractive index)</change>
+            </prerelease>
+        </release>
         <release version="2013.902">
             <pubDate>Mon, 02 Sep 2013 16:00:00 GMT</pubDate>
             <prerelease version="2013.902 beta 2">
