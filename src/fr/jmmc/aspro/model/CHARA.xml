@@ -24,13 +24,13 @@
 
     <!--
       Coordinates CHARA (= S1) :
-      LONG     -118 3 25.31272
-      LAT       34 13 27.78130
+      LONG     -118 3 25.6858
+      LAT       34 13 33.3065
     -->
     <position>
-      <posX>-2476998.047780274</posX>
-      <posY>-4647390.089884061</posY>
-      <posZ>3582240.6122966344</posZ>
+      <posX>-2476961.3191738687</posX>
+      <posY>-4647300.927731647</posY>
+      <posZ>3582381.678585947</posZ>
     </position>
 
     <telescope>
@@ -93,11 +93,11 @@
       <name>S2</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>-18.36198252387274</posX>
+        <posX>-18.362735874385457</posX>
         <posY>-5.746856889999999</posY>
-        <posZ>28.124060011684616</posZ>
+        <posZ>28.12356814053656</posZ>
       </relativePosition>
-      <delayLineFixedOffset>5.052383853</delayLineFixedOffset>
+      <delayLineFixedOffset>4.677253433072</delayLineFixedOffset>
 
       <popLink>
         <pop>PoP1</pop>
@@ -125,11 +125,11 @@
       <name>E1</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>-176.95599846374608</posX>
+        <posX>-176.9626853357814</posX>
         <posY>125.33247787299999</posY>
-        <posZ>249.63430463197454</posZ>
+        <posZ>249.62956443526477</posZ>
       </relativePosition>
-      <delayLineFixedOffset>15.514294703</delayLineFixedOffset>
+      <delayLineFixedOffset>15.51545686222</delayLineFixedOffset>
 
       <popLink>
         <pop>PoP1</pop>
@@ -157,11 +157,11 @@
       <name>E2</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>-154.01179496849892</posX>
+        <posX>-154.01772654282323</posX>
         <posY>70.394847986</posY>
-        <posZ>221.43749113266915</posZ>
+        <posZ>221.43336555074535</posZ>
       </relativePosition>
-      <delayLineFixedOffset>26.740726013999996</delayLineFixedOffset>
+      <delayLineFixedOffset>26.369130573148</delayLineFixedOffset>
 
       <popLink>
         <pop>PoP1</pop>
@@ -189,11 +189,11 @@
       <name>W1</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>-130.58901935887238</posX>
+        <posX>-130.59364792714624</posX>
         <posY>-175.07192798199998</posY>
-        <posZ>172.79381780170365</posZ>
+        <posZ>172.7903196613771</posZ>
       </relativePosition>
-      <delayLineFixedOffset>29.125834164999997</delayLineFixedOffset>
+      <delayLineFixedOffset>29.126335454573997</delayLineFixedOffset>
 
       <popLink>
         <pop>PoP1</pop>
@@ -221,11 +221,11 @@
       <name>W2</name>
       <telescope>T</telescope>
       <relativePosition>
-        <posX>-111.72863237173488</posX>
+        <posX>-111.73305432799575</posX>
         <posY>-69.091262937</posY>
-        <posZ>165.08039882525827</posZ>
+        <posZ>165.07740589948028</posZ>
       </relativePosition>
-      <delayLineFixedOffset>-8.074806916999998</delayLineFixedOffset>
+      <delayLineFixedOffset>-8.456807516486</delayLineFixedOffset>
 
       <popLink>
         <pop>PoP1</pop>
@@ -270,29 +270,44 @@
 
     <!-- DL : (-1.4 to +44.3) = 45.7 x2 = 91.4 (sep 2013) -->
     <!-- all delay lines have the same throw (july 2011) -->
+    <!--
+    Delay line Front sw Back sw
+	S1	-1.42	44.32
+	S2	-1.42	44.35
+	E1	-1.10	44.54
+	E2	-1.23	44.43
+	W1	-1.42	44.35
+	W2	-1.37	44.29
+    -->
     <delayLine>
-      <name>DL1</name>
-      <maximumThrow>91.4</maximumThrow>
+      <name>DL_S1</name>
+      <station>S1</station>
+      <maximumThrow>91.48</maximumThrow>
     </delayLine>
     <delayLine>
-      <name>DL2</name>
-      <maximumThrow>91.4</maximumThrow>
+      <name>DL_S2</name>
+      <station>S2</station>
+      <maximumThrow>91.54</maximumThrow>
     </delayLine>
     <delayLine>
-      <name>DL3</name>
-      <maximumThrow>91.4</maximumThrow>
+      <name>DL_E1</name>
+      <station>E1</station>
+      <maximumThrow>91.28</maximumThrow>
     </delayLine>
     <delayLine>
-      <name>DL4</name>
-      <maximumThrow>91.4</maximumThrow>
+      <name>DL_E2</name>
+      <station>E2</station>
+      <maximumThrow>91.32</maximumThrow>
     </delayLine>
     <delayLine>
-      <name>DL5</name>
-      <maximumThrow>91.4</maximumThrow>
+      <name>DL_W1</name>
+      <station>W1</station>
+      <maximumThrow>91.54</maximumThrow>
     </delayLine>
     <delayLine>
-      <name>DL6</name>
-      <maximumThrow>91.4</maximumThrow>
+      <name>DL_W2</name>
+      <station>W2</station>
+      <maximumThrow>91.32</maximumThrow>
     </delayLine>
 
     <switchyard>
@@ -300,11 +315,11 @@
         <station>S1</station>
         <channelLink>
           <channel>V1</channel>
-          <opticalLength>0.4162</opticalLength>
+          <opticalLength>0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V2</channel>
-          <opticalLength>0.2081</opticalLength>
+          <opticalLength>0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V3</channel>
@@ -312,15 +327,15 @@
         </channelLink>
         <channelLink>
           <channel>V4</channel>
-          <opticalLength>-0.2081</opticalLength>
+          <opticalLength>-0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V5</channel>
-          <opticalLength>-0.4162</opticalLength>
+          <opticalLength>-0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V6</channel>
-          <opticalLength>-0.6243</opticalLength>
+          <opticalLength>-0.62447053</opticalLength>
         </channelLink>
       </stationLinks>
 
@@ -328,11 +343,11 @@
         <station>S2</station>
         <channelLink>
           <channel>V1</channel>
-          <opticalLength>0.4162</opticalLength>
+          <opticalLength>0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V2</channel>
-          <opticalLength>0.2081</opticalLength>
+          <opticalLength>0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V3</channel>
@@ -340,15 +355,15 @@
         </channelLink>
         <channelLink>
           <channel>V4</channel>
-          <opticalLength>-0.2081</opticalLength>
+          <opticalLength>-0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V5</channel>
-          <opticalLength>-0.4162</opticalLength>
+          <opticalLength>-0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V6</channel>
-          <opticalLength>-0.6243</opticalLength>
+          <opticalLength>-0.62447053</opticalLength>
         </channelLink>
       </stationLinks>
 
@@ -356,11 +371,11 @@
         <station>E1</station>
         <channelLink>
           <channel>V1</channel>
-          <opticalLength>0.4162</opticalLength>
+          <opticalLength>0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V2</channel>
-          <opticalLength>0.2081</opticalLength>
+          <opticalLength>0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V3</channel>
@@ -368,15 +383,15 @@
         </channelLink>
         <channelLink>
           <channel>V4</channel>
-          <opticalLength>-0.2081</opticalLength>
+          <opticalLength>-0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V5</channel>
-          <opticalLength>-0.4162</opticalLength>
+          <opticalLength>-0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V6</channel>
-          <opticalLength>-0.6243</opticalLength>
+          <opticalLength>-0.62447053</opticalLength>
         </channelLink>
       </stationLinks>
 
@@ -384,11 +399,11 @@
         <station>E2</station>
         <channelLink>
           <channel>V1</channel>
-          <opticalLength>0.4162</opticalLength>
+          <opticalLength>0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V2</channel>
-          <opticalLength>0.2081</opticalLength>
+          <opticalLength>0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V3</channel>
@@ -396,15 +411,15 @@
         </channelLink>
         <channelLink>
           <channel>V4</channel>
-          <opticalLength>-0.2081</opticalLength>
+          <opticalLength>-0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V5</channel>
-          <opticalLength>-0.4162</opticalLength>
+          <opticalLength>-0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V6</channel>
-          <opticalLength>-0.6243</opticalLength>
+          <opticalLength>-0.62447053</opticalLength>
         </channelLink>
       </stationLinks>
 
@@ -412,11 +427,11 @@
         <station>W1</station>
         <channelLink>
           <channel>V1</channel>
-          <opticalLength>0.4162</opticalLength>
+          <opticalLength>0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V2</channel>
-          <opticalLength>0.2081</opticalLength>
+          <opticalLength>0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V3</channel>
@@ -424,15 +439,15 @@
         </channelLink>
         <channelLink>
           <channel>V4</channel>
-          <opticalLength>-0.2081</opticalLength>
+          <opticalLength>-0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V5</channel>
-          <opticalLength>-0.4162</opticalLength>
+          <opticalLength>-0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V6</channel>
-          <opticalLength>-0.6243</opticalLength>
+          <opticalLength>-0.62447053</opticalLength>
         </channelLink>
       </stationLinks>
 
@@ -440,11 +455,11 @@
         <station>W2</station>
         <channelLink>
           <channel>V1</channel>
-          <opticalLength>0.4162</opticalLength>
+          <opticalLength>0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V2</channel>
-          <opticalLength>0.2081</opticalLength>
+          <opticalLength>0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V3</channel>
@@ -452,15 +467,15 @@
         </channelLink>
         <channelLink>
           <channel>V4</channel>
-          <opticalLength>-0.2081</opticalLength>
+          <opticalLength>-0.20815684</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V5</channel>
-          <opticalLength>-0.4162</opticalLength>
+          <opticalLength>-0.41631369</opticalLength>
         </channelLink>
         <channelLink>
           <channel>V6</channel>
-          <opticalLength>-0.6243</opticalLength>
+          <opticalLength>-0.62447053</opticalLength>
         </channelLink>
       </stationLinks>
 
