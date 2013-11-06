@@ -59,25 +59,25 @@
                         <a href="http://www.jmmc.fr/aspro-oi/0.1">http://www.jmmc.fr/aspro-oi/0.1</a>
                     </p>                                                                                   
 
+                    <!-- Release Notes -->
+                    <xsl:call-template name="releaseNotes"/>
+                    <br/>
+                    <br/>
+
                     <!-- Main data -->
                     <xsl:apply-templates mode="content" select="/a:configurations/interferometerFile/file"/>                                        
                     
-                    <br/>
-                    <br/>
-                    <!-- Release Notes -->
-                    <xsl:call-template name="releaseNotes"/>
                 </div>  
                                         
-                <div id="navBar">
+                <div id="fixedNavBar">
                     <div id="sectionLinks" class="Style13">                         
-                        <xsl:apply-templates mode="navBar" select="/a:configurations/interferometerFile/file"/>                                                    
                         <li class="Style14">
                             <a href="#releaseNotes">
                                 Release notes
                             </a>
                         </li>        
-                    </div>
-
+                        <xsl:apply-templates mode="navBar" select="/a:configurations/interferometerFile/file"/> 
+                   </div>
                 </div>
             </body>
         </html>
@@ -96,7 +96,7 @@
                 <xsl:value-of select="$interferometerName"/>
             </em> interferometer 
             <a name="interferometer_{$interferometerName}"/>(
-            <a href="#top">top</a>)
+            <a href="#top">top</a>) <b><em><a href="model/{$interferometerSettingFilename}">XML</a></em></b>
         </h1>            
         
         <p>
