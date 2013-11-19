@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.1015"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="15/10/2013" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2013.1119"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="19/11/2013" compiler="JDK 1.6.0_24"/>
   
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2013.1119">
+            <pubDate>Tue, 19 Nov 2013 10:00:00 GMT</pubDate>
+            <prerelease version="2013.1119 beta 1">
+                <change type="FEATURE">VLTI: increased optical path lengths for all delay line (100m)</change>
+            </prerelease>
+        </release>
         <release version="2013.1015">
             <pubDate>Tue, 15 Oct 2013 12:00:00 GMT</pubDate>
             <prerelease version="2013.1015 beta 1">

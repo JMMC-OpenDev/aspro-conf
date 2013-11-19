@@ -7984,29 +7984,30 @@
       <name>Channel8</name>
     </channel>
 
+    <!-- DL: 90m increased to 100m (Nov 2013) -->
     <delayLine>
       <name>DL1</name>
-      <maximumThrow>90</maximumThrow>
+      <maximumThrow>100</maximumThrow>
     </delayLine>
     <delayLine>
       <name>DL2</name>
-      <maximumThrow>90</maximumThrow>
+      <maximumThrow>100</maximumThrow>
     </delayLine>
     <delayLine>
       <name>DL3</name>
-      <maximumThrow>90</maximumThrow>
+      <maximumThrow>100</maximumThrow>
     </delayLine>
     <delayLine>
       <name>DL4</name>
-      <maximumThrow>90</maximumThrow>
+      <maximumThrow>100</maximumThrow>
     </delayLine>
     <delayLine>
       <name>DL5</name>
-      <maximumThrow>90</maximumThrow>
+      <maximumThrow>100</maximumThrow>
     </delayLine>
     <delayLine>
       <name>DL6</name>
-      <maximumThrow>90</maximumThrow>
+      <maximumThrow>100</maximumThrow>
     </delayLine>
 
     <switchyard>
