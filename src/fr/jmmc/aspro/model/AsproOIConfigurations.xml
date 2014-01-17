@@ -17,7 +17,7 @@
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
     xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
     xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
-    
+
     <!-- minimum version corresponds to Aspro2 0.9.4 (march 2013 / CfP 92) -->
     <minVersion>0.9.4</minVersion>
 
@@ -25,10 +25,10 @@
         <file>VLTI.xml</file>
         <checksum>5570146107326988288</checksum>
     </interferometerFile>
-    
+
     <interferometerFile>
         <file>CHARA.xml</file>
-        <checksum>7985414754345779200</checksum>
+        <checksum>4763043041275543552</checksum>
     </interferometerFile>
 
     <interferometerFile>
@@ -36,11 +36,11 @@
         <checksum>7857653018039622656</checksum>
     </interferometerFile>
 
-<!--
-    <interferometerFile>
-        <file>MROI.xml</file>
-    </interferometerFile>
--->
+    <!--
+        <interferometerFile>
+            <file>MROI.xml</file>
+        </interferometerFile>
+    -->
 
     <interferometerFile>
         <file>NPOI.xml</file>
@@ -51,5 +51,5 @@
         <file>DEMO.xml</file>
         <checksum>6567130304335230976</checksum>
     </interferometerFile>
-  
+
 </a:configurations>

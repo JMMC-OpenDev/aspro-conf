@@ -5,11 +5,11 @@
 *******************************************************************************
 -->
 
-<ApplicationData link="http://www.jmmc.fr/aspro2" 
-                 faqlink="http://www.jmmc.fr/aspro2/faq/" 
-                 rsslink="http://www.jmmc.fr/aspro2/aspro2.rss" 
+<ApplicationData link="http://www.jmmc.fr/aspro2"
+                 faqlink="http://www.jmmc.fr/aspro2/faq/"
+                 rsslink="http://www.jmmc.fr/aspro2/aspro2.rss"
                  releaselink="http://www.jmmc.fr/aspro2/releasenotes.htm">
-  
+
     <company>
         <short_name>JMMC</short_name>
         <legal_name>Jean-Marie Mariotti Center</legal_name>
@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2013.1119"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="19/11/2013" compiler="JDK 1.6.0_24"/>
-  
+    <program name="AsproConf" version="2014.0117"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="17/01/2014" compiler="JDK 1.6.0_24"/>
+
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2014.0117">
+            <pubDate>Fri, 17 Jan 2014 11:00:00 GMT</pubDate>
+            <prerelease version="2014.0117 beta 1">
+                <change type="FEATURE">CHARA: increased maximum elevation to 88.5 deg (above 85 deg) (tip tilt improvements) but it is dependant on seeing.</change>
+            </prerelease>
+        </release>
         <release version="2013.1119">
             <pubDate>Tue, 19 Nov 2013 10:00:00 GMT</pubDate>
             <prerelease version="2013.1119 beta 1">
@@ -41,7 +47,7 @@
         <release version="2013.911">
             <pubDate>Wed, 11 Sep 2013 18:00:00 GMT</pubDate>
             <prerelease version="2013.911 beta 1">
-                <change type="FEATURE">CHARA: modified interferometer setup: fixed array center coordinates, station positions, 
+                <change type="FEATURE">CHARA: modified interferometer setup: fixed array center coordinates, station positions,
                     fixed optical path lengths (removed internal, corrected air paths by air refractive index)</change>
             </prerelease>
         </release>
@@ -59,7 +65,7 @@
             <pubDate>Fri, 09 Aug 2013 14:00:00 GMT</pubDate>
             <prerelease version="2013.809 beta 1">
                 <change type="FEATURE">VLTI: added eso Period 93 = 92</change>
-                <change type="FEATURE">Updated preliminary NPOI description: no zenithal restriction + tip tilt for telescopes; 
+                <change type="FEATURE">Updated preliminary NPOI description: no zenithal restriction + tip tilt for telescopes;
                     use 3 characters for station names; fixed AE0 / AC0 offset estimation</change>
             </prerelease>
         </release>
@@ -85,7 +91,7 @@
         <release version="2013.3">
             <pubDate>Wed, 20 Feb 2013 17:15:00 GMT</pubDate>
             <prerelease version="2013.3 beta 3">
-                <change type="FEATURE">Updated Moon avoidance rules for VLTI (ATs and UTs use same rule): separation > 1 deg 
+                <change type="FEATURE">Updated Moon avoidance rules for VLTI (ATs and UTs use same rule): separation > 1 deg
                     or FLI > 85% and (separation > 10 deg [bright star] or separation > 20 deg [faint star]);
                     if magV less than 9.0 then [bright star] else [faint star]
                 </change>
