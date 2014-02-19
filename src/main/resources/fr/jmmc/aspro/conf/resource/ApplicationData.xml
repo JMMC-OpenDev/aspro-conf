@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2014.0117"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="17/01/2014" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2014.0219"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="19/02/2014" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2014.0219">
+            <pubDate>Wed, 19 Feb 2014 18:00:00 GMT</pubDate>
+            <prerelease version="2014.0219 beta 1">
+                <change type="FEATURE">VLTI: added eso Period 94 = 93</change>
+            </prerelease>
+        </release>
         <release version="2014.0117">
             <pubDate>Fri, 17 Jan 2014 11:00:00 GMT</pubDate>
             <prerelease version="2014.0117 beta 1">
