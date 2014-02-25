@@ -12,7 +12,7 @@
     </security>
     <resources>
         <!-- Configuration module -->
-        <jar href="jar/asproConf.jar" />
+        <jar href="jar/aspro-conf-TRUNK.jar" />
     </resources>
     <component-desc/>
 </jnlp>
