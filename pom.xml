@@ -23,6 +23,7 @@
             <groupId>fr.jmmc.jmcs</groupId>
             <artifactId>jmcs</artifactId>
             <version>TRUNK</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
