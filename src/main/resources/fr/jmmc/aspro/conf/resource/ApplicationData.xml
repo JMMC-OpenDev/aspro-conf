@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2014.0219"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="19/02/2014" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2014.0307"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="07/03/2014" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2014.0307">
+            <pubDate>Fri, 07 Mar 2014 23:00:00 GMT</pubDate>
+            <prerelease version="2014.0307 beta 1">
+                <change type="FEATURE">VLTI: updated fixed optical path lengths, configurations to use exact ESO setup [station DL IP] and aspro switchyard</change>
+            </prerelease>
+        </release>
         <release version="2014.0219">
             <pubDate>Wed, 19 Feb 2014 18:00:00 GMT</pubDate>
             <prerelease version="2014.0219 beta 1">
