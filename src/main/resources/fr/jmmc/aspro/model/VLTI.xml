@@ -8006,97 +8006,113 @@
                 <channel>IP1</channel>
                 <opticalLength>134.8395</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.34</maximumThrow>
+                <maximumThrowLow>39.34</maximumThrowLow>
+                <maximumThrowHigh>65.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0795</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.1</maximumThrow>
+                <maximumThrowLow>39.1</maximumThrowLow>
+                <maximumThrowHigh>64.91</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3195</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.86</maximumThrow>
+                <maximumThrowLow>38.86</maximumThrowLow>
+                <maximumThrowHigh>64.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5595</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.62</maximumThrow>
+                <maximumThrowLow>38.62</maximumThrowLow>
+                <maximumThrowHigh>64.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8395</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.5</maximumThrow>
+                <maximumThrowLow>23.5</maximumThrowLow>
+                <maximumThrowHigh>46.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0795</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.26</maximumThrow>
+                <maximumThrowLow>23.26</maximumThrowLow>
+                <maximumThrowHigh>46.6</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3195</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.02</maximumThrow>
+                <maximumThrowLow>23.02</maximumThrowLow>
+                <maximumThrowHigh>46.36</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5595</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>22.78</maximumThrow>
+                <maximumThrowLow>22.78</maximumThrowLow>
+                <maximumThrowHigh>46.12</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8395</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>33.03</maximumThrow>
+                <maximumThrowLow>33.03</maximumThrowLow>
+                <maximumThrowHigh>58.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0795</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.79</maximumThrow>
+                <maximumThrowLow>32.79</maximumThrowLow>
+                <maximumThrowHigh>58.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3195</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.55</maximumThrow>
+                <maximumThrowLow>32.55</maximumThrowLow>
+                <maximumThrowHigh>58.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5595</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.31</maximumThrow>
+                <maximumThrowLow>32.31</maximumThrowLow>
+                <maximumThrowHigh>57.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8395</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.28</maximumThrow>
+                <maximumThrowLow>32.28</maximumThrowLow>
+                <maximumThrowHigh>56.66</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0795</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.04</maximumThrow>
+                <maximumThrowLow>32.04</maximumThrowLow>
+                <maximumThrowHigh>56.42</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3195</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.8</maximumThrow>
+                <maximumThrowLow>31.8</maximumThrowLow>
+                <maximumThrowHigh>56.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5595</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.56</maximumThrow>
+                <maximumThrowLow>31.56</maximumThrowLow>
+                <maximumThrowHigh>55.94</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8105,97 +8121,113 @@
                 <channel>IP1</channel>
                 <opticalLength>150.8475</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.33</maximumThrow>
+                <maximumThrowLow>23.33</maximumThrowLow>
+                <maximumThrowHigh>49.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0875</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.09</maximumThrow>
+                <maximumThrowLow>23.09</maximumThrowLow>
+                <maximumThrowHigh>48.91</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3275</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.85</maximumThrow>
+                <maximumThrowLow>22.85</maximumThrowLow>
+                <maximumThrowHigh>48.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5675</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.61</maximumThrow>
+                <maximumThrowLow>22.61</maximumThrowLow>
+                <maximumThrowHigh>48.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8475</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.5</maximumThrow>
+                <maximumThrowLow>7.5</maximumThrowLow>
+                <maximumThrowHigh>30.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0875</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.26</maximumThrow>
+                <maximumThrowLow>7.26</maximumThrowLow>
+                <maximumThrowHigh>30.6</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3275</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.02</maximumThrow>
+                <maximumThrowLow>7.02</maximumThrowLow>
+                <maximumThrowHigh>30.36</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5675</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>6.78</maximumThrow>
+                <maximumThrowLow>6.78</maximumThrowLow>
+                <maximumThrowHigh>30.12</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8475</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>17.03</maximumThrow>
+                <maximumThrowLow>17.03</maximumThrowLow>
+                <maximumThrowHigh>42.55</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0875</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.79</maximumThrow>
+                <maximumThrowLow>16.79</maximumThrowLow>
+                <maximumThrowHigh>42.31</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3275</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.55</maximumThrow>
+                <maximumThrowLow>16.55</maximumThrowLow>
+                <maximumThrowHigh>42.07</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5675</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.31</maximumThrow>
+                <maximumThrowLow>16.31</maximumThrowLow>
+                <maximumThrowHigh>41.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8475</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.28</maximumThrow>
+                <maximumThrowLow>16.28</maximumThrowLow>
+                <maximumThrowHigh>40.66</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0875</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.04</maximumThrow>
+                <maximumThrowLow>16.04</maximumThrowLow>
+                <maximumThrowHigh>40.42</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3275</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.8</maximumThrow>
+                <maximumThrowLow>15.8</maximumThrowLow>
+                <maximumThrowHigh>40.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5675</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.56</maximumThrow>
+                <maximumThrowLow>15.56</maximumThrowLow>
+                <maximumThrowHigh>39.94</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8204,97 +8236,113 @@
                 <channel>IP1</channel>
                 <opticalLength>126.8355</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>47.34</maximumThrow>
+                <maximumThrowLow>47.34</maximumThrowLow>
+                <maximumThrowHigh>73.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>127.0755</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>47.1</maximumThrow>
+                <maximumThrowLow>47.1</maximumThrowLow>
+                <maximumThrowHigh>72.91</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>127.3155</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>46.86</maximumThrow>
+                <maximumThrowLow>46.86</maximumThrowLow>
+                <maximumThrowHigh>72.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>127.5555</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>46.62</maximumThrow>
+                <maximumThrowLow>46.62</maximumThrowLow>
+                <maximumThrowHigh>72.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>126.8355</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>31.5</maximumThrow>
+                <maximumThrowLow>31.5</maximumThrowLow>
+                <maximumThrowHigh>54.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>127.0755</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>31.26</maximumThrow>
+                <maximumThrowLow>31.26</maximumThrowLow>
+                <maximumThrowHigh>54.6</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>127.3155</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>31.02</maximumThrow>
+                <maximumThrowLow>31.02</maximumThrowLow>
+                <maximumThrowHigh>54.36</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>127.5555</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>30.78</maximumThrow>
+                <maximumThrowLow>30.78</maximumThrowLow>
+                <maximumThrowHigh>54.12</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>126.8355</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>41.03</maximumThrow>
+                <maximumThrowLow>41.03</maximumThrowLow>
+                <maximumThrowHigh>66.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>127.0755</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>40.79</maximumThrow>
+                <maximumThrowLow>40.79</maximumThrowLow>
+                <maximumThrowHigh>66.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>127.3155</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>40.55</maximumThrow>
+                <maximumThrowLow>40.55</maximumThrowLow>
+                <maximumThrowHigh>66.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>127.5555</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>40.31</maximumThrow>
+                <maximumThrowLow>40.31</maximumThrowLow>
+                <maximumThrowHigh>65.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>126.8355</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>40.28</maximumThrow>
+                <maximumThrowLow>40.28</maximumThrowLow>
+                <maximumThrowHigh>64.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>127.0755</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>40.04</maximumThrow>
+                <maximumThrowLow>40.04</maximumThrowLow>
+                <maximumThrowHigh>64.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>127.3155</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>39.8</maximumThrow>
+                <maximumThrowLow>39.8</maximumThrowLow>
+                <maximumThrowHigh>64.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>127.5555</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>39.56</maximumThrow>
+                <maximumThrowLow>39.56</maximumThrowLow>
+                <maximumThrowHigh>63.95</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8303,97 +8351,113 @@
                 <channel>IP1</channel>
                 <opticalLength>142.8275</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>31.35</maximumThrow>
+                <maximumThrowLow>31.35</maximumThrowLow>
+                <maximumThrowHigh>57.17</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0675</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>31.11</maximumThrow>
+                <maximumThrowLow>31.11</maximumThrowLow>
+                <maximumThrowHigh>56.93</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3075</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>30.87</maximumThrow>
+                <maximumThrowLow>30.87</maximumThrowLow>
+                <maximumThrowHigh>56.69</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5475</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>30.63</maximumThrow>
+                <maximumThrowLow>30.63</maximumThrowLow>
+                <maximumThrowHigh>56.45</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>142.8275</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>15.51</maximumThrow>
+                <maximumThrowLow>15.51</maximumThrowLow>
+                <maximumThrowHigh>38.85</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0675</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>15.27</maximumThrow>
+                <maximumThrowLow>15.27</maximumThrowLow>
+                <maximumThrowHigh>38.61</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3075</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>15.03</maximumThrow>
+                <maximumThrowLow>15.03</maximumThrowLow>
+                <maximumThrowHigh>38.37</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5475</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>14.79</maximumThrow>
+                <maximumThrowLow>14.79</maximumThrowLow>
+                <maximumThrowHigh>38.13</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>142.8275</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>25.04</maximumThrow>
+                <maximumThrowLow>25.04</maximumThrowLow>
+                <maximumThrowHigh>50.57</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0675</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>24.8</maximumThrow>
+                <maximumThrowLow>24.8</maximumThrowLow>
+                <maximumThrowHigh>50.33</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3075</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>24.56</maximumThrow>
+                <maximumThrowLow>24.56</maximumThrowLow>
+                <maximumThrowHigh>50.09</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5475</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>24.32</maximumThrow>
+                <maximumThrowLow>24.32</maximumThrowLow>
+                <maximumThrowHigh>49.85</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>142.8275</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>24.3</maximumThrow>
+                <maximumThrowLow>24.3</maximumThrowLow>
+                <maximumThrowHigh>48.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0675</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>24.06</maximumThrow>
+                <maximumThrowLow>24.06</maximumThrowLow>
+                <maximumThrowHigh>48.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3075</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>23.82</maximumThrow>
+                <maximumThrowLow>23.82</maximumThrowLow>
+                <maximumThrowHigh>48.2</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5475</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>23.58</maximumThrow>
+                <maximumThrowLow>23.58</maximumThrowLow>
+                <maximumThrowHigh>47.96</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8402,97 +8466,113 @@
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.35</maximumThrow>
+                <maximumThrowLow>23.35</maximumThrowLow>
+                <maximumThrowHigh>49.17</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.11</maximumThrow>
+                <maximumThrowLow>23.11</maximumThrowLow>
+                <maximumThrowHigh>48.93</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.87</maximumThrow>
+                <maximumThrowLow>22.87</maximumThrowLow>
+                <maximumThrowHigh>48.69</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.63</maximumThrow>
+                <maximumThrowLow>22.63</maximumThrowLow>
+                <maximumThrowHigh>48.45</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.52</maximumThrow>
+                <maximumThrowLow>7.52</maximumThrowLow>
+                <maximumThrowHigh>30.86</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.28</maximumThrow>
+                <maximumThrowLow>7.28</maximumThrowLow>
+                <maximumThrowHigh>30.62</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.04</maximumThrow>
+                <maximumThrowLow>7.04</maximumThrowLow>
+                <maximumThrowHigh>30.38</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>6.8</maximumThrow>
+                <maximumThrowLow>6.8</maximumThrowLow>
+                <maximumThrowHigh>30.14</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>17.05</maximumThrow>
+                <maximumThrowLow>17.05</maximumThrowLow>
+                <maximumThrowHigh>42.57</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.81</maximumThrow>
+                <maximumThrowLow>16.81</maximumThrowLow>
+                <maximumThrowHigh>42.33</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.57</maximumThrow>
+                <maximumThrowLow>16.57</maximumThrowLow>
+                <maximumThrowHigh>42.09</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.33</maximumThrow>
+                <maximumThrowLow>16.33</maximumThrowLow>
+                <maximumThrowHigh>41.85</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.3</maximumThrow>
+                <maximumThrowLow>16.3</maximumThrowLow>
+                <maximumThrowHigh>40.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.06</maximumThrow>
+                <maximumThrowLow>16.06</maximumThrowLow>
+                <maximumThrowHigh>40.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.82</maximumThrow>
+                <maximumThrowLow>15.82</maximumThrowLow>
+                <maximumThrowHigh>40.2</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.58</maximumThrow>
+                <maximumThrowLow>15.58</maximumThrowLow>
+                <maximumThrowHigh>39.96</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8501,73 +8581,85 @@
                 <channel>IP1</channel>
                 <opticalLength>158.8455</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>15.34</maximumThrow>
+                <maximumThrowLow>15.34</maximumThrowLow>
+                <maximumThrowHigh>41.16</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>159.0855</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>15.1</maximumThrow>
+                <maximumThrowLow>15.1</maximumThrowLow>
+                <maximumThrowHigh>40.92</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>159.3255</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>14.86</maximumThrow>
+                <maximumThrowLow>14.86</maximumThrowLow>
+                <maximumThrowHigh>40.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>159.5655</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>14.62</maximumThrow>
+                <maximumThrowLow>14.62</maximumThrowLow>
+                <maximumThrowHigh>40.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>158.8455</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>9.03</maximumThrow>
+                <maximumThrowLow>9.03</maximumThrowLow>
+                <maximumThrowHigh>34.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>159.0855</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>8.79</maximumThrow>
+                <maximumThrowLow>8.79</maximumThrowLow>
+                <maximumThrowHigh>34.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>159.3255</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>8.55</maximumThrow>
+                <maximumThrowLow>8.55</maximumThrowLow>
+                <maximumThrowHigh>34.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>159.5655</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>8.31</maximumThrow>
+                <maximumThrowLow>8.31</maximumThrowLow>
+                <maximumThrowHigh>33.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>158.8455</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>8.28</maximumThrow>
+                <maximumThrowLow>8.28</maximumThrowLow>
+                <maximumThrowHigh>32.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>159.0855</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>8.04</maximumThrow>
+                <maximumThrowLow>8.04</maximumThrowLow>
+                <maximumThrowHigh>32.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>159.3255</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>7.8</maximumThrow>
+                <maximumThrowLow>7.8</maximumThrowLow>
+                <maximumThrowHigh>32.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>159.5655</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>7.56</maximumThrow>
+                <maximumThrowLow>7.56</maximumThrowLow>
+                <maximumThrowHigh>31.95</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8576,61 +8668,71 @@
                 <channel>IP1</channel>
                 <opticalLength>166.8295</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>7.36</maximumThrow>
+                <maximumThrowLow>7.36</maximumThrowLow>
+                <maximumThrowHigh>33.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>167.0695</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>7.12</maximumThrow>
+                <maximumThrowLow>7.12</maximumThrowLow>
+                <maximumThrowHigh>32.94</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>167.3095</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>6.88</maximumThrow>
+                <maximumThrowLow>6.88</maximumThrowLow>
+                <maximumThrowHigh>32.7</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>167.5495</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>6.64</maximumThrow>
+                <maximumThrowLow>6.64</maximumThrowLow>
+                <maximumThrowHigh>32.46</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>166.8295</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>1.05</maximumThrow>
+                <maximumThrowLow>1.05</maximumThrowLow>
+                <maximumThrowHigh>26.58</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>167.0695</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>0.81</maximumThrow>
+                <maximumThrowLow>0.81</maximumThrowLow>
+                <maximumThrowHigh>26.34</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>167.3095</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>0.57</maximumThrow>
+                <maximumThrowLow>0.57</maximumThrowLow>
+                <maximumThrowHigh>26.1</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>167.5495</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>0.33</maximumThrow>
+                <maximumThrowLow>0.33</maximumThrowLow>
+                <maximumThrowHigh>25.86</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>166.8295</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>0.3</maximumThrow>
+                <maximumThrowLow>0.3</maximumThrowLow>
+                <maximumThrowHigh>24.69</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>167.0695</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>0.06</maximumThrow>
+                <maximumThrowLow>0.06</maximumThrowLow>
+                <maximumThrowHigh>24.45</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8642,97 +8744,113 @@
                 <channel>IP1</channel>
                 <opticalLength>118.8405</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>55.33</maximumThrow>
+                <maximumThrowLow>55.33</maximumThrowLow>
+                <maximumThrowHigh>81.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>119.0805</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>55.09</maximumThrow>
+                <maximumThrowLow>55.09</maximumThrowLow>
+                <maximumThrowHigh>80.91</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>119.3205</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>54.85</maximumThrow>
+                <maximumThrowLow>54.85</maximumThrowLow>
+                <maximumThrowHigh>80.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>119.5605</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>54.61</maximumThrow>
+                <maximumThrowLow>54.61</maximumThrowLow>
+                <maximumThrowHigh>80.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>118.8405</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>39.49</maximumThrow>
+                <maximumThrowLow>39.49</maximumThrowLow>
+                <maximumThrowHigh>62.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>119.0805</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>39.25</maximumThrow>
+                <maximumThrowLow>39.25</maximumThrowLow>
+                <maximumThrowHigh>62.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>119.3205</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>39.01</maximumThrow>
+                <maximumThrowLow>39.01</maximumThrowLow>
+                <maximumThrowHigh>62.35</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>119.5605</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>38.77</maximumThrow>
+                <maximumThrowLow>38.77</maximumThrowLow>
+                <maximumThrowHigh>62.11</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>118.8405</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>49.02</maximumThrow>
+                <maximumThrowLow>49.02</maximumThrowLow>
+                <maximumThrowHigh>74.55</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>119.0805</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>48.78</maximumThrow>
+                <maximumThrowLow>48.78</maximumThrowLow>
+                <maximumThrowHigh>74.31</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>119.3205</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>48.54</maximumThrow>
+                <maximumThrowLow>48.54</maximumThrowLow>
+                <maximumThrowHigh>74.07</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>119.5605</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>48.3</maximumThrow>
+                <maximumThrowLow>48.3</maximumThrowLow>
+                <maximumThrowHigh>73.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>118.8405</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>48.27</maximumThrow>
+                <maximumThrowLow>48.27</maximumThrowLow>
+                <maximumThrowHigh>72.66</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>119.0805</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>48.03</maximumThrow>
+                <maximumThrowLow>48.03</maximumThrowLow>
+                <maximumThrowHigh>72.42</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>119.3205</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>47.79</maximumThrow>
+                <maximumThrowLow>47.79</maximumThrowLow>
+                <maximumThrowHigh>72.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>119.5605</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>47.55</maximumThrow>
+                <maximumThrowLow>47.55</maximumThrowLow>
+                <maximumThrowHigh>71.94</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8741,97 +8859,113 @@
                 <channel>IP1</channel>
                 <opticalLength>134.8385</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.34</maximumThrow>
+                <maximumThrowLow>39.34</maximumThrowLow>
+                <maximumThrowHigh>65.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0785</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.1</maximumThrow>
+                <maximumThrowLow>39.1</maximumThrowLow>
+                <maximumThrowHigh>64.91</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3185</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.86</maximumThrow>
+                <maximumThrowLow>38.86</maximumThrowLow>
+                <maximumThrowHigh>64.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5585</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.62</maximumThrow>
+                <maximumThrowLow>38.62</maximumThrowLow>
+                <maximumThrowHigh>64.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8385</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.5</maximumThrow>
+                <maximumThrowLow>23.5</maximumThrowLow>
+                <maximumThrowHigh>46.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0785</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.26</maximumThrow>
+                <maximumThrowLow>23.26</maximumThrowLow>
+                <maximumThrowHigh>46.6</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3185</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.02</maximumThrow>
+                <maximumThrowLow>23.02</maximumThrowLow>
+                <maximumThrowHigh>46.36</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5585</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>22.78</maximumThrow>
+                <maximumThrowLow>22.78</maximumThrowLow>
+                <maximumThrowHigh>46.12</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8385</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>33.03</maximumThrow>
+                <maximumThrowLow>33.03</maximumThrowLow>
+                <maximumThrowHigh>58.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0785</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.79</maximumThrow>
+                <maximumThrowLow>32.79</maximumThrowLow>
+                <maximumThrowHigh>58.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3185</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.55</maximumThrow>
+                <maximumThrowLow>32.55</maximumThrowLow>
+                <maximumThrowHigh>58.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5585</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.31</maximumThrow>
+                <maximumThrowLow>32.31</maximumThrowLow>
+                <maximumThrowHigh>57.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8385</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.28</maximumThrow>
+                <maximumThrowLow>32.28</maximumThrowLow>
+                <maximumThrowHigh>56.66</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0785</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.04</maximumThrow>
+                <maximumThrowLow>32.04</maximumThrowLow>
+                <maximumThrowHigh>56.42</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3185</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.8</maximumThrow>
+                <maximumThrowLow>31.8</maximumThrowLow>
+                <maximumThrowHigh>56.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5585</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.56</maximumThrow>
+                <maximumThrowLow>31.56</maximumThrowLow>
+                <maximumThrowHigh>55.94</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8840,97 +8974,113 @@
                 <channel>IP1</channel>
                 <opticalLength>142.8465</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>31.33</maximumThrow>
+                <maximumThrowLow>31.33</maximumThrowLow>
+                <maximumThrowHigh>57.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0865</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>31.09</maximumThrow>
+                <maximumThrowLow>31.09</maximumThrowLow>
+                <maximumThrowHigh>56.91</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3265</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>30.85</maximumThrow>
+                <maximumThrowLow>30.85</maximumThrowLow>
+                <maximumThrowHigh>56.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5665</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>30.61</maximumThrow>
+                <maximumThrowLow>30.61</maximumThrowLow>
+                <maximumThrowHigh>56.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>142.8465</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>15.49</maximumThrow>
+                <maximumThrowLow>15.49</maximumThrowLow>
+                <maximumThrowHigh>38.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0865</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>15.25</maximumThrow>
+                <maximumThrowLow>15.25</maximumThrowLow>
+                <maximumThrowHigh>38.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3265</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>15.01</maximumThrow>
+                <maximumThrowLow>15.01</maximumThrowLow>
+                <maximumThrowHigh>38.35</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5665</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>14.77</maximumThrow>
+                <maximumThrowLow>14.77</maximumThrowLow>
+                <maximumThrowHigh>38.11</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>142.8465</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>25.02</maximumThrow>
+                <maximumThrowLow>25.02</maximumThrowLow>
+                <maximumThrowHigh>50.55</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0865</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>24.78</maximumThrow>
+                <maximumThrowLow>24.78</maximumThrowLow>
+                <maximumThrowHigh>50.31</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3265</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>24.54</maximumThrow>
+                <maximumThrowLow>24.54</maximumThrowLow>
+                <maximumThrowHigh>50.07</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5665</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>24.3</maximumThrow>
+                <maximumThrowLow>24.3</maximumThrowLow>
+                <maximumThrowHigh>49.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>142.8465</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>24.28</maximumThrow>
+                <maximumThrowLow>24.28</maximumThrowLow>
+                <maximumThrowHigh>48.66</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>143.0865</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>24.04</maximumThrow>
+                <maximumThrowLow>24.04</maximumThrowLow>
+                <maximumThrowHigh>48.42</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>143.3265</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>23.8</maximumThrow>
+                <maximumThrowLow>23.8</maximumThrowLow>
+                <maximumThrowHigh>48.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>143.5665</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>23.56</maximumThrow>
+                <maximumThrowLow>23.56</maximumThrowLow>
+                <maximumThrowHigh>47.94</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -8939,97 +9089,113 @@
                 <channel>IP1</channel>
                 <opticalLength>150.8375</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.34</maximumThrow>
+                <maximumThrowLow>23.34</maximumThrowLow>
+                <maximumThrowHigh>49.16</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0775</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.1</maximumThrow>
+                <maximumThrowLow>23.1</maximumThrowLow>
+                <maximumThrowHigh>48.92</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3175</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.86</maximumThrow>
+                <maximumThrowLow>22.86</maximumThrowLow>
+                <maximumThrowHigh>48.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5575</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.62</maximumThrow>
+                <maximumThrowLow>22.62</maximumThrowLow>
+                <maximumThrowHigh>48.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8375</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.51</maximumThrow>
+                <maximumThrowLow>7.51</maximumThrowLow>
+                <maximumThrowHigh>30.85</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0775</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.27</maximumThrow>
+                <maximumThrowLow>7.27</maximumThrowLow>
+                <maximumThrowHigh>30.61</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3175</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.03</maximumThrow>
+                <maximumThrowLow>7.03</maximumThrowLow>
+                <maximumThrowHigh>30.37</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5575</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>6.79</maximumThrow>
+                <maximumThrowLow>6.79</maximumThrowLow>
+                <maximumThrowHigh>30.13</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8375</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>17.04</maximumThrow>
+                <maximumThrowLow>17.04</maximumThrowLow>
+                <maximumThrowHigh>42.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0775</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.8</maximumThrow>
+                <maximumThrowLow>16.8</maximumThrowLow>
+                <maximumThrowHigh>42.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3175</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.56</maximumThrow>
+                <maximumThrowLow>16.56</maximumThrowLow>
+                <maximumThrowHigh>42.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5575</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.32</maximumThrow>
+                <maximumThrowLow>16.32</maximumThrowLow>
+                <maximumThrowHigh>41.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8375</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.29</maximumThrow>
+                <maximumThrowLow>16.29</maximumThrowLow>
+                <maximumThrowHigh>40.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0775</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.05</maximumThrow>
+                <maximumThrowLow>16.05</maximumThrowLow>
+                <maximumThrowHigh>40.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3175</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.81</maximumThrow>
+                <maximumThrowLow>15.81</maximumThrowLow>
+                <maximumThrowHigh>40.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5575</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.57</maximumThrow>
+                <maximumThrowLow>15.57</maximumThrowLow>
+                <maximumThrowHigh>39.95</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9038,97 +9204,113 @@
                 <channel>IP1</channel>
                 <opticalLength>102.8275</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>71.34</maximumThrow>
+                <maximumThrowLow>71.34</maximumThrowLow>
+                <maximumThrowHigh>97.16</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>103.0675</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>71.1</maximumThrow>
+                <maximumThrowLow>71.1</maximumThrowLow>
+                <maximumThrowHigh>96.92</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>103.3075</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>70.86</maximumThrow>
+                <maximumThrowLow>70.86</maximumThrowLow>
+                <maximumThrowHigh>96.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>103.5475</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>70.62</maximumThrow>
+                <maximumThrowLow>70.62</maximumThrowLow>
+                <maximumThrowHigh>96.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>102.8275</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>55.5</maximumThrow>
+                <maximumThrowLow>55.5</maximumThrowLow>
+                <maximumThrowHigh>78.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>103.0675</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>55.26</maximumThrow>
+                <maximumThrowLow>55.26</maximumThrowLow>
+                <maximumThrowHigh>78.6</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>103.3075</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>55.02</maximumThrow>
+                <maximumThrowLow>55.02</maximumThrowLow>
+                <maximumThrowHigh>78.36</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>103.5475</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>54.78</maximumThrow>
+                <maximumThrowLow>54.78</maximumThrowLow>
+                <maximumThrowHigh>78.12</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>102.8275</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>65.03</maximumThrow>
+                <maximumThrowLow>65.03</maximumThrowLow>
+                <maximumThrowHigh>90.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>103.0675</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>64.79</maximumThrow>
+                <maximumThrowLow>64.79</maximumThrowLow>
+                <maximumThrowHigh>90.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>103.3075</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>64.55</maximumThrow>
+                <maximumThrowLow>64.55</maximumThrowLow>
+                <maximumThrowHigh>90.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>103.5475</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>64.31</maximumThrow>
+                <maximumThrowLow>64.31</maximumThrowLow>
+                <maximumThrowHigh>89.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>102.8275</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>64.28</maximumThrow>
+                <maximumThrowLow>64.28</maximumThrowLow>
+                <maximumThrowHigh>88.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>103.0675</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>64.04</maximumThrow>
+                <maximumThrowLow>64.04</maximumThrowLow>
+                <maximumThrowHigh>88.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>103.3075</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>63.8</maximumThrow>
+                <maximumThrowLow>63.8</maximumThrowLow>
+                <maximumThrowHigh>88.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>103.5475</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>63.56</maximumThrow>
+                <maximumThrowLow>63.56</maximumThrowLow>
+                <maximumThrowHigh>87.95</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9137,97 +9319,113 @@
                 <channel>IP1</channel>
                 <opticalLength>134.8305</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.34</maximumThrow>
+                <maximumThrowLow>39.34</maximumThrowLow>
+                <maximumThrowHigh>65.16</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0705</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.1</maximumThrow>
+                <maximumThrowLow>39.1</maximumThrowLow>
+                <maximumThrowHigh>64.92</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3105</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.86</maximumThrow>
+                <maximumThrowLow>38.86</maximumThrowLow>
+                <maximumThrowHigh>64.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5505</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.62</maximumThrow>
+                <maximumThrowLow>38.62</maximumThrowLow>
+                <maximumThrowHigh>64.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8305</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.51</maximumThrow>
+                <maximumThrowLow>23.51</maximumThrowLow>
+                <maximumThrowHigh>46.85</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0705</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.27</maximumThrow>
+                <maximumThrowLow>23.27</maximumThrowLow>
+                <maximumThrowHigh>46.61</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3105</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.03</maximumThrow>
+                <maximumThrowLow>23.03</maximumThrowLow>
+                <maximumThrowHigh>46.37</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5505</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>22.79</maximumThrow>
+                <maximumThrowLow>22.79</maximumThrowLow>
+                <maximumThrowHigh>46.13</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8305</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>33.04</maximumThrow>
+                <maximumThrowLow>33.04</maximumThrowLow>
+                <maximumThrowHigh>58.57</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0705</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.8</maximumThrow>
+                <maximumThrowLow>32.8</maximumThrowLow>
+                <maximumThrowHigh>58.32</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3105</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.56</maximumThrow>
+                <maximumThrowLow>32.56</maximumThrowLow>
+                <maximumThrowHigh>58.08</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5505</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.32</maximumThrow>
+                <maximumThrowLow>32.32</maximumThrowLow>
+                <maximumThrowHigh>57.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8305</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.29</maximumThrow>
+                <maximumThrowLow>32.29</maximumThrowLow>
+                <maximumThrowHigh>56.67</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0705</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.05</maximumThrow>
+                <maximumThrowLow>32.05</maximumThrowLow>
+                <maximumThrowHigh>56.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.3105</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.81</maximumThrow>
+                <maximumThrowLow>31.81</maximumThrowLow>
+                <maximumThrowHigh>56.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5505</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.57</maximumThrow>
+                <maximumThrowLow>31.57</maximumThrowLow>
+                <maximumThrowHigh>55.95</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9236,97 +9434,113 @@
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.35</maximumThrow>
+                <maximumThrowLow>23.35</maximumThrowLow>
+                <maximumThrowHigh>49.17</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>23.11</maximumThrow>
+                <maximumThrowLow>23.11</maximumThrowLow>
+                <maximumThrowHigh>48.93</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.87</maximumThrow>
+                <maximumThrowLow>22.87</maximumThrowLow>
+                <maximumThrowHigh>48.69</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>22.63</maximumThrow>
+                <maximumThrowLow>22.63</maximumThrowLow>
+                <maximumThrowHigh>48.45</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.52</maximumThrow>
+                <maximumThrowLow>7.52</maximumThrowLow>
+                <maximumThrowHigh>30.86</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.28</maximumThrow>
+                <maximumThrowLow>7.28</maximumThrowLow>
+                <maximumThrowHigh>30.62</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>7.04</maximumThrow>
+                <maximumThrowLow>7.04</maximumThrowLow>
+                <maximumThrowHigh>30.38</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>6.8</maximumThrow>
+                <maximumThrowLow>6.8</maximumThrowLow>
+                <maximumThrowHigh>30.14</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>17.05</maximumThrow>
+                <maximumThrowLow>17.05</maximumThrowLow>
+                <maximumThrowHigh>42.57</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.81</maximumThrow>
+                <maximumThrowLow>16.81</maximumThrowLow>
+                <maximumThrowHigh>42.33</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.57</maximumThrow>
+                <maximumThrowLow>16.57</maximumThrowLow>
+                <maximumThrowHigh>42.09</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>16.33</maximumThrow>
+                <maximumThrowLow>16.33</maximumThrowLow>
+                <maximumThrowHigh>41.85</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>150.8275</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.3</maximumThrow>
+                <maximumThrowLow>16.3</maximumThrowLow>
+                <maximumThrowHigh>40.68</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>151.0675</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>16.06</maximumThrow>
+                <maximumThrowLow>16.06</maximumThrowLow>
+                <maximumThrowHigh>40.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>151.3075</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.82</maximumThrow>
+                <maximumThrowLow>15.82</maximumThrowLow>
+                <maximumThrowHigh>40.2</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>151.5475</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>15.58</maximumThrow>
+                <maximumThrowLow>15.58</maximumThrowLow>
+                <maximumThrowHigh>39.96</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9335,97 +9549,101 @@
                 <channel>IP1</channel>
                 <opticalLength>86.8305</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>87.33</maximumThrow>
+                <maximumThrowLow>87.33</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>87.0705</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>87.09</maximumThrow>
+                <maximumThrowLow>87.09</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>87.3105</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>86.85</maximumThrow>
+                <maximumThrowLow>86.85</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>87.5505</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>86.61</maximumThrow>
+                <maximumThrowLow>86.61</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>86.8305</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>71.49</maximumThrow>
+                <maximumThrowLow>71.49</maximumThrowLow>
+                <maximumThrowHigh>94.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>87.0705</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>71.25</maximumThrow>
+                <maximumThrowLow>71.25</maximumThrowLow>
+                <maximumThrowHigh>94.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>87.3105</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>71.01</maximumThrow>
+                <maximumThrowLow>71.01</maximumThrowLow>
+                <maximumThrowHigh>94.35</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>87.5505</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>70.77</maximumThrow>
+                <maximumThrowLow>70.77</maximumThrowLow>
+                <maximumThrowHigh>94.11</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>86.8305</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>81.02</maximumThrow>
+                <maximumThrowLow>81.02</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>87.0705</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>80.78</maximumThrow>
+                <maximumThrowLow>80.78</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>87.3105</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>80.54</maximumThrow>
+                <maximumThrowLow>80.54</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>87.5505</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>80.3</maximumThrow>
+                <maximumThrowLow>80.3</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>86.8305</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>80.28</maximumThrow>
+                <maximumThrowLow>80.28</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>87.0705</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>80.04</maximumThrow>
+                <maximumThrowLow>80.04</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>87.3105</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>79.8</maximumThrow>
+                <maximumThrowLow>79.8</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>87.5505</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>79.56</maximumThrow>
+                <maximumThrowLow>79.56</maximumThrowLow>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9454,73 +9672,73 @@
                 <channel>IP1</channel>
                 <opticalLength>70.8257</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>87.5</maximumThrow>
+                <maximumThrowLow>87.5</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>71.0657</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>87.26</maximumThrow>
+                <maximumThrowLow>87.26</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>71.3057</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>87.02</maximumThrow>
+                <maximumThrowLow>87.02</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>71.5457</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>86.77</maximumThrow>
+                <maximumThrowLow>86.77</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>70.8257</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>97.03</maximumThrow>
+                <maximumThrowLow>97.03</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>71.0657</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>96.79</maximumThrow>
+                <maximumThrowLow>96.79</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>71.3057</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>96.55</maximumThrow>
+                <maximumThrowLow>96.55</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>71.5457</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>96.31</maximumThrow>
+                <maximumThrowLow>96.31</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>70.8257</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>96.28</maximumThrow>
+                <maximumThrowLow>96.28</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>71.0657</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>96.04</maximumThrow>
+                <maximumThrowLow>96.04</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>71.3057</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>95.8</maximumThrow>
+                <maximumThrowLow>95.8</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>71.5457</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>95.56</maximumThrow>
+                <maximumThrowLow>95.56</maximumThrowLow>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9529,97 +9747,113 @@
                 <channel>IP1</channel>
                 <opticalLength>134.8155</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.36</maximumThrow>
+                <maximumThrowLow>39.36</maximumThrowLow>
+                <maximumThrowHigh>65.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0555</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>39.12</maximumThrow>
+                <maximumThrowLow>39.12</maximumThrowLow>
+                <maximumThrowHigh>64.94</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.2955</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.88</maximumThrow>
+                <maximumThrowLow>38.88</maximumThrowLow>
+                <maximumThrowHigh>64.7</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5355</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>38.64</maximumThrow>
+                <maximumThrowLow>38.64</maximumThrowLow>
+                <maximumThrowHigh>64.46</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8155</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.52</maximumThrow>
+                <maximumThrowLow>23.52</maximumThrowLow>
+                <maximumThrowHigh>46.86</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0555</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.28</maximumThrow>
+                <maximumThrowLow>23.28</maximumThrowLow>
+                <maximumThrowHigh>46.62</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.2955</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>23.04</maximumThrow>
+                <maximumThrowLow>23.04</maximumThrowLow>
+                <maximumThrowHigh>46.38</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5355</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>22.8</maximumThrow>
+                <maximumThrowLow>22.8</maximumThrowLow>
+                <maximumThrowHigh>46.14</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8155</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>33.05</maximumThrow>
+                <maximumThrowLow>33.05</maximumThrowLow>
+                <maximumThrowHigh>58.58</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0555</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.81</maximumThrow>
+                <maximumThrowLow>32.81</maximumThrowLow>
+                <maximumThrowHigh>58.34</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.2955</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.57</maximumThrow>
+                <maximumThrowLow>32.57</maximumThrowLow>
+                <maximumThrowHigh>58.1</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5355</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>32.33</maximumThrow>
+                <maximumThrowLow>32.33</maximumThrowLow>
+                <maximumThrowHigh>57.86</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>134.8155</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.3</maximumThrow>
+                <maximumThrowLow>32.3</maximumThrowLow>
+                <maximumThrowHigh>56.69</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.0555</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>32.06</maximumThrow>
+                <maximumThrowLow>32.06</maximumThrowLow>
+                <maximumThrowHigh>56.45</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.2955</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.82</maximumThrow>
+                <maximumThrowLow>31.82</maximumThrowLow>
+                <maximumThrowHigh>56.21</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.5355</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>31.58</maximumThrow>
+                <maximumThrowLow>31.58</maximumThrowLow>
+                <maximumThrowHigh>55.97</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9638,85 +9872,85 @@
                 <channel>IP5</channel>
                 <opticalLength>73.4953</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>99.86</maximumThrow>
+                <maximumThrowLow>99.86</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>73.7353</opticalLength>
                 <delayLine>DL1</delayLine>
-                <maximumThrow>99.62</maximumThrow>
+                <maximumThrowLow>99.62</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>74.5153</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>83.01</maximumThrow>
+                <maximumThrowLow>83.01</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>74.7553</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>82.77</maximumThrow>
+                <maximumThrowLow>82.77</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>74.9953</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>82.53</maximumThrow>
+                <maximumThrowLow>82.53</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>75.2353</opticalLength>
                 <delayLine>DL2</delayLine>
-                <maximumThrow>82.29</maximumThrow>
+                <maximumThrowLow>82.29</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>80.0153</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>87.04</maximumThrow>
+                <maximumThrowLow>87.04</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>80.2553</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>86.8</maximumThrow>
+                <maximumThrowLow>86.8</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>80.4953</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>86.56</maximumThrow>
+                <maximumThrowLow>86.56</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>80.7353</opticalLength>
                 <delayLine>DL5</delayLine>
-                <maximumThrow>86.32</maximumThrow>
+                <maximumThrowLow>86.32</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>81.5153</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>84.79</maximumThrow>
+                <maximumThrowLow>84.79</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>81.7553</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>84.55</maximumThrow>
+                <maximumThrowLow>84.55</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>81.9953</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>84.31</maximumThrow>
+                <maximumThrowLow>84.31</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>82.2353</opticalLength>
                 <delayLine>DL6</delayLine>
-                <maximumThrow>84.07</maximumThrow>
+                <maximumThrowLow>84.07</maximumThrowLow>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9760,7 +9994,7 @@
                 <channel>IP7</channel>
                 <opticalLength>63.9053</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>99.13</maximumThrow>
+                <maximumThrowLow>99.13</maximumThrowLow>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9769,49 +10003,57 @@
                 <channel>IP1</channel>
                 <opticalLength>111.1613</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>74.25</maximumThrow>
+                <maximumThrowLow>74.25</maximumThrowLow>
+                <maximumThrowHigh>98.56</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>111.4013</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>73.05</maximumThrow>
+                <maximumThrowLow>73.05</maximumThrowLow>
+                <maximumThrowHigh>97.36</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>111.6413</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>71.85</maximumThrow>
+                <maximumThrowLow>71.85</maximumThrowLow>
+                <maximumThrowHigh>96.16</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>111.8813</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>70.65</maximumThrow>
+                <maximumThrowLow>70.65</maximumThrowLow>
+                <maximumThrowHigh>94.96</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>111.1613</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>54.76</maximumThrow>
+                <maximumThrowLow>54.76</maximumThrowLow>
+                <maximumThrowHigh>78.61</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>111.4013</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>53.56</maximumThrow>
+                <maximumThrowLow>53.56</maximumThrowLow>
+                <maximumThrowHigh>77.41</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>111.6413</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>52.36</maximumThrow>
+                <maximumThrowLow>52.36</maximumThrowLow>
+                <maximumThrowHigh>76.21</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>111.8813</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>51.16</maximumThrow>
+                <maximumThrowLow>51.16</maximumThrowLow>
+                <maximumThrowHigh>75.01</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9820,49 +10062,57 @@
                 <channel>IP1</channel>
                 <opticalLength>111.1713</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>74.24</maximumThrow>
+                <maximumThrowLow>74.24</maximumThrowLow>
+                <maximumThrowHigh>98.55</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>111.4113</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>73.04</maximumThrow>
+                <maximumThrowLow>73.04</maximumThrowLow>
+                <maximumThrowHigh>97.35</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>111.6513</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>71.84</maximumThrow>
+                <maximumThrowLow>71.84</maximumThrowLow>
+                <maximumThrowHigh>96.15</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>111.8913</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>70.64</maximumThrow>
+                <maximumThrowLow>70.64</maximumThrowLow>
+                <maximumThrowHigh>94.95</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>111.1713</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>54.75</maximumThrow>
+                <maximumThrowLow>54.75</maximumThrowLow>
+                <maximumThrowHigh>78.6</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>111.4113</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>53.55</maximumThrow>
+                <maximumThrowLow>53.55</maximumThrowLow>
+                <maximumThrowHigh>77.4</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>111.6513</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>52.35</maximumThrow>
+                <maximumThrowLow>52.35</maximumThrowLow>
+                <maximumThrowHigh>76.2</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>111.8913</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>51.15</maximumThrow>
+                <maximumThrowLow>51.15</maximumThrowLow>
+                <maximumThrowHigh>75.0</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9871,49 +10121,57 @@
                 <channel>IP1</channel>
                 <opticalLength>135.1843</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>50.24</maximumThrow>
+                <maximumThrowLow>50.24</maximumThrowLow>
+                <maximumThrowHigh>74.54</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.4243</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>49.04</maximumThrow>
+                <maximumThrowLow>49.04</maximumThrowLow>
+                <maximumThrowHigh>73.34</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.6643</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>47.84</maximumThrow>
+                <maximumThrowLow>47.84</maximumThrowLow>
+                <maximumThrowHigh>72.14</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.9043</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>46.63</maximumThrow>
+                <maximumThrowLow>46.63</maximumThrowLow>
+                <maximumThrowHigh>70.94</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>135.1843</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>30.74</maximumThrow>
+                <maximumThrowLow>30.74</maximumThrowLow>
+                <maximumThrowHigh>54.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>135.4243</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>29.54</maximumThrow>
+                <maximumThrowLow>29.54</maximumThrowLow>
+                <maximumThrowHigh>53.39</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>135.6643</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>28.34</maximumThrow>
+                <maximumThrowLow>28.34</maximumThrowLow>
+                <maximumThrowHigh>52.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>135.9043</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>27.14</maximumThrow>
+                <maximumThrowLow>27.14</maximumThrowLow>
+                <maximumThrowHigh>50.99</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9922,49 +10180,57 @@
                 <channel>IP1</channel>
                 <opticalLength>124.4875</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>61.73</maximumThrow>
+                <maximumThrowLow>61.73</maximumThrowLow>
+                <maximumThrowHigh>86.03</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>124.7275</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>60.53</maximumThrow>
+                <maximumThrowLow>60.53</maximumThrowLow>
+                <maximumThrowHigh>84.83</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>124.9675</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>59.33</maximumThrow>
+                <maximumThrowLow>59.33</maximumThrowLow>
+                <maximumThrowHigh>83.63</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>125.2075</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>58.13</maximumThrow>
+                <maximumThrowLow>58.13</maximumThrowLow>
+                <maximumThrowHigh>82.43</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>125.9875</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>40.74</maximumThrow>
+                <maximumThrowLow>40.74</maximumThrowLow>
+                <maximumThrowHigh>64.58</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>126.2275</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>39.54</maximumThrow>
+                <maximumThrowLow>39.54</maximumThrowLow>
+                <maximumThrowHigh>63.38</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>126.4675</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>38.34</maximumThrow>
+                <maximumThrowLow>38.34</maximumThrowLow>
+                <maximumThrowHigh>62.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>126.7075</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>37.14</maximumThrow>
+                <maximumThrowLow>37.14</maximumThrowLow>
+                <maximumThrowHigh>60.98</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -9973,49 +10239,57 @@
                 <channel>IP1</channel>
                 <opticalLength>140.4845</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>45.74</maximumThrow>
+                <maximumThrowLow>45.74</maximumThrowLow>
+                <maximumThrowHigh>70.04</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>140.7245</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>44.54</maximumThrow>
+                <maximumThrowLow>44.54</maximumThrowLow>
+                <maximumThrowHigh>68.84</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>140.9645</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>43.34</maximumThrow>
+                <maximumThrowLow>43.34</maximumThrowLow>
+                <maximumThrowHigh>67.64</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>141.2045</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>42.14</maximumThrow>
+                <maximumThrowLow>42.14</maximumThrowLow>
+                <maximumThrowHigh>66.44</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>141.9845</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>24.75</maximumThrow>
+                <maximumThrowLow>24.75</maximumThrowLow>
+                <maximumThrowHigh>48.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>142.2245</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>23.54</maximumThrow>
+                <maximumThrowLow>23.54</maximumThrowLow>
+                <maximumThrowHigh>47.39</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>142.4645</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>22.34</maximumThrow>
+                <maximumThrowLow>22.34</maximumThrowLow>
+                <maximumThrowHigh>46.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>142.7045</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>21.14</maximumThrow>
+                <maximumThrowLow>21.14</maximumThrowLow>
+                <maximumThrowHigh>44.99</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -10024,31 +10298,36 @@
                 <channel>IP1</channel>
                 <opticalLength>164.4785</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>21.75</maximumThrow>
+                <maximumThrowLow>21.75</maximumThrowLow>
+                <maximumThrowHigh>46.06</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>164.7185</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>20.55</maximumThrow>
+                <maximumThrowLow>20.55</maximumThrowLow>
+                <maximumThrowHigh>44.86</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>164.9585</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>19.35</maximumThrow>
+                <maximumThrowLow>19.35</maximumThrowLow>
+                <maximumThrowHigh>43.66</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>165.1985</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>18.15</maximumThrow>
+                <maximumThrowLow>18.15</maximumThrowLow>
+                <maximumThrowHigh>42.46</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>165.9785</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>0.76</maximumThrow>
+                <maximumThrowLow>0.76</maximumThrowLow>
+                <maximumThrowHigh>24.61</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -10060,49 +10339,53 @@
                 <channel>IP1</channel>
                 <opticalLength>95.1713</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>90.24</maximumThrow>
+                <maximumThrowLow>90.24</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>95.4113</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>89.04</maximumThrow>
+                <maximumThrowLow>89.04</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>95.6513</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>87.84</maximumThrow>
+                <maximumThrowLow>87.84</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>95.8913</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>86.64</maximumThrow>
+                <maximumThrowLow>86.64</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>95.1713</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>70.74</maximumThrow>
+                <maximumThrowLow>70.74</maximumThrowLow>
+                <maximumThrowHigh>94.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>95.4113</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>69.54</maximumThrow>
+                <maximumThrowLow>69.54</maximumThrowLow>
+                <maximumThrowHigh>93.39</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>95.6513</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>68.34</maximumThrow>
+                <maximumThrowLow>68.34</maximumThrowLow>
+                <maximumThrowHigh>92.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>95.8913</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>67.14</maximumThrow>
+                <maximumThrowLow>67.14</maximumThrowLow>
+                <maximumThrowHigh>90.99</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -10111,49 +10394,53 @@
                 <channel>IP1</channel>
                 <opticalLength>103.1823</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>82.23</maximumThrow>
+                <maximumThrowLow>82.23</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>103.4223</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>81.03</maximumThrow>
+                <maximumThrowLow>81.03</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>103.6623</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>79.83</maximumThrow>
+                <maximumThrowLow>79.83</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>103.9023</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>78.63</maximumThrow>
+                <maximumThrowLow>78.63</maximumThrowLow>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>103.1823</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>62.74</maximumThrow>
+                <maximumThrowLow>62.74</maximumThrowLow>
+                <maximumThrowHigh>86.58</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>103.4223</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>61.54</maximumThrow>
+                <maximumThrowLow>61.54</maximumThrowLow>
+                <maximumThrowHigh>85.38</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>103.6623</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>60.34</maximumThrow>
+                <maximumThrowLow>60.34</maximumThrowLow>
+                <maximumThrowHigh>84.18</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>103.9023</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>59.13</maximumThrow>
+                <maximumThrowLow>59.13</maximumThrowLow>
+                <maximumThrowHigh>82.98</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
@@ -10162,49 +10449,57 @@
                 <channel>IP1</channel>
                 <opticalLength>111.1763</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>74.24</maximumThrow>
+                <maximumThrowLow>74.24</maximumThrowLow>
+                <maximumThrowHigh>98.54</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>111.4163</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>73.04</maximumThrow>
+                <maximumThrowLow>73.04</maximumThrowLow>
+                <maximumThrowHigh>97.34</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>111.6563</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>71.84</maximumThrow>
+                <maximumThrowLow>71.84</maximumThrowLow>
+                <maximumThrowHigh>96.14</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>111.8963</opticalLength>
                 <delayLine>DL3</delayLine>
-                <maximumThrow>70.64</maximumThrow>
+                <maximumThrowLow>70.64</maximumThrowLow>
+                <maximumThrowHigh>94.94</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP1</channel>
                 <opticalLength>111.1763</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>54.74</maximumThrow>
+                <maximumThrowLow>54.74</maximumThrowLow>
+                <maximumThrowHigh>78.59</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP3</channel>
                 <opticalLength>111.4163</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>53.54</maximumThrow>
+                <maximumThrowLow>53.54</maximumThrowLow>
+                <maximumThrowHigh>77.39</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP5</channel>
                 <opticalLength>111.6563</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>52.34</maximumThrow>
+                <maximumThrowLow>52.34</maximumThrowLow>
+                <maximumThrowHigh>76.19</maximumThrowHigh>
             </channelLink>
             <channelLink>
                 <channel>IP7</channel>
                 <opticalLength>111.8963</opticalLength>
                 <delayLine>DL4</delayLine>
-                <maximumThrow>51.14</maximumThrow>
+                <maximumThrowLow>51.14</maximumThrowLow>
+                <maximumThrowHigh>74.99</maximumThrowHigh>
             </channelLink>
         </stationLinks>
         <stationLinks>
