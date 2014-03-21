@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2014.0307"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="07/03/2014" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2014.0321"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="21/03/2014" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2014.0321">
+            <pubDate>Fri, 21 Mar 2014 17:00:00 GMT</pubDate>
+            <prerelease version="2014.0321 beta 1">
+                <change type="FEATURE">VLTI: added DL maximum throw per [station DL IP] corresponding to the VCM pressure limit set to 2.5 bar</change>
+            </prerelease>
+        </release>
         <release version="2014.0307">
             <pubDate>Fri, 07 Mar 2014 23:00:00 GMT</pubDate>
             <prerelease version="2014.0307 beta 1">
