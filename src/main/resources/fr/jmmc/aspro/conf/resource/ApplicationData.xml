@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2014.0429"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="29/04/2014" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2014.0506"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="06/05/2014" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2014.0506">
+            <pubDate>Tue, 06 May 2014 11:00:00 GMT</pubDate>
+            <prerelease version="2014.0506 beta 1">
+                <change type="FEATURE">CHARA: upgraded baseline solution (S2) due to LABAO changes</change>
+            </prerelease>
+        </release>
         <release version="2014.0429">
             <pubDate>Thu, 29 Apr 2014 16:00:00 GMT</pubDate>
             <prerelease version="2014.0429 beta 1">
