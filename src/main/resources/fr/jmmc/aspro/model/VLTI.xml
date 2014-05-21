@@ -8002,15 +8002,15 @@
     <!-- DL restrictions: VCM max pressure set to 2.5 bar (March 2014) -->
     <delayLineRestriction>
         <name>vcm1</name>
-        <description>VCM 2.5 bar</description>
+        <description>VCM &gt; 2.5 bar</description>
     </delayLineRestriction>
     <delayLineRestriction>
         <name>vcm2</name>
-        <description>VCM 2.75 bar</description>
+        <description>VCM &gt; 2.75 bar</description>
     </delayLineRestriction>
     <delayLineRestriction>
         <name>vcm3</name>
-        <description>VCM 3.0 bar</description>
+        <description>VCM &gt; 3.0 bar</description>
     </delayLineRestriction>
 
     <switchyard>
