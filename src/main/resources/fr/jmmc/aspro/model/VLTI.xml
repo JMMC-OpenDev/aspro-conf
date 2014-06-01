@@ -14556,6 +14556,468 @@ N 7.5 - 13.5 um
 
 
     <configuration>
+        <version>AT Relocation</version>
+        <!-- TODO: confirm DL/IP mapping -->
+        <interferometer>VLTI</interferometer>
+        <instrument>
+            <focalInstrument>AMBER</focalInstrument>
+            <!-- UT1 UT2 UT3 UT4 -->
+            <configuration>
+                <stations>UT1 UT2 UT3</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT2 UT4</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT3 UT4</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL1 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT2 UT3 UT4</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
+            <configuration>
+                <stations>A1 K0 G1</stations>
+                <channels>IP1 IP5 IP3</channels>
+                <delayLines>DL5 DL4 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 K0 J3</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 K0 I1</stations>
+                <channels>IP5 IP1 IP3</channels>
+                <delayLines>DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 G1 J3</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 G1 I1</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 G1 J3</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL4 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 G1 I1</stations>
+                <channels>IP1 IP5 IP3</channels>
+                <delayLines>DL4 DL6 DL3</delayLines>
+            </configuration>
+            <!-- D0 H0 G1 I1 -->
+            <configuration>
+                <stations>D0 H0 G1</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL4 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 H0 I1</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G1 I1</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>H0 G1 I1</stations>
+                <channels>IP5 IP1 IP3</channels>
+                <delayLines>DL4 DL6 DL3</delayLines>
+            </configuration>
+            <!-- A1 B2 C1 D0 -->
+            <configuration>
+                <stations>A1 B2 C1</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 B2 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL1 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 C1 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL5 DL2 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL6</delayLines>
+            </configuration>
+            <!-- AT relocation -->
+            <configuration>
+                <stations>D0 H0 C1</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G1 C1</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL5 DL6 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>H0 G1 C1</stations>
+                <channels>IP5 IP3 IP7</channels>
+                <delayLines>DL4 DL6 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 B2 I1</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 I1 D0</stations>
+                <channels>IP3 IP7 IP1</channels>
+                <delayLines>DL5 DL3 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 I1 D0</stations>
+                <channels>IP5 IP7 IP1</channels>
+                <delayLines>DL1 DL3 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 B2 K0</stations>
+                <channels>IP3 IP7 IP1</channels>
+                <delayLines>DL5 DL1 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 C1 K0</stations>
+                <channels>IP3 IP5 IP1</channels>
+                <delayLines>DL5 DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 C1 K0</stations>
+                <channels>IP7 IP5 IP1</channels>
+                <delayLines>DL1 DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 B2 J3</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 D0 J3</stations>
+                <channels>IP3 IP1 IP7</channels>
+                <delayLines>DL5 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 D0 J3</stations>
+                <channels>IP5 IP1 IP7</channels>
+                <delayLines>DL1 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 G1 C1</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL6 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G1 K0 C1</stations>
+                <channels>IP5 IP1 IP7</channels>
+                <delayLines>DL6 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 K0 J3</stations>
+                <channels>IP5 IP1 IP7</channels>
+                <delayLines>DL1 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 H0 J3</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G1 J3</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL5 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>H0 G1 J3</stations>
+                <channels>IP5 IP3 IP7</channels>
+                <delayLines>DL4 DL6 DL3</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MIDI</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT3</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT4</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL1 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT2 UT3</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT2 UT4</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT3 UT4</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 K0</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 G1</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 J3</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 I1</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 G1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL4 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 J3</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 I1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G1 J3</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G1 I1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 H0</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL5 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL5 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 I1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL5 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>H0 I1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>H0 G1</stations>
+                <channels>IP1 IP3</channels>
+                <delayLines>DL4 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 B2</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL1</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 C1</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 D0</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL5 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 C1</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 D0</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL1 DL6</delayLines>
+            </configuration>
+            <configuration>
+                <stations>C1 D0</stations>
+                <channels>IP3 IP1</channels>
+                <delayLines>DL2 DL6</delayLines>
+            </configuration>
+            <!-- AT relocation -->
+            <configuration>
+                <stations>H0 C1</stations>
+                <channels>IP5 IP7</channels>
+                <delayLines>DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G1 C1</stations>
+                <channels>IP3 IP7</channels>
+                <delayLines>DL6 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 I1</stations>
+                <channels>IP5 IP7</channels>
+                <delayLines>DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 K0</stations>
+                <channels>IP7 IP1</channels>
+                <delayLines>DL1 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>C1 K0</stations>
+                <channels>IP5 IP1</channels>
+                <delayLines>DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 J3</stations>
+                <channels>IP5 IP7</channels>
+                <delayLines>DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 J3</stations>
+                <channels>IP1 IP7</channels>
+                <delayLines>DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>H0 J3</stations>
+                <channels>IP5 IP7</channels>
+                <delayLines>DL4 DL3</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>PIONIER</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
+            <configuration>
+                <stations>A1 G1 K0 J3</stations>
+                <channels>IP3 IP5 IP1 IP7</channels>
+                <delayLines>DL5 DL6 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 G1 K0 I1</stations>
+                <channels>IP3 IP5 IP1 IP7</channels>
+                <delayLines>DL5 DL6 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 H0 G1 I1</stations>
+                <channels>IP1 IP5 IP3 IP7</channels>
+                <delayLines>DL5 DL4 DL6 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A1 B2 C1 D0</stations>
+                <channels>IP3 IP7 IP5 IP1</channels>
+                <delayLines>DL5 DL1 DL2 DL6</delayLines>
+            </configuration>
+
+            <!-- ## A1-C1-D0-B2 == H0-I1-D0-G1 -->
+
+            <!-- ## A1-C1-D0-B2 == H0-I1-D0-G1: H0-C1-D0/DL5-G1 -->
+            <configuration>
+                <stations>D0 H0 G1 C1</stations>
+                <channels>IP1 IP5 IP3 IP7</channels>
+                <delayLines>DL5 DL4 DL6 DL2</delayLines>
+            </configuration>
+
+            <!-- ## A1-C1-D0-B2 == H0-I1-D0-G1: A1-I1-D0/DL6-B2 -->
+            <configuration>
+                <stations>A1 B2 I1 D0</stations>
+                <channels>IP3 IP5 IP7 IP1</channels>
+                <delayLines>DL5 DL1 DL3 DL6</delayLines>
+            </configuration>
+
+            <!-- ## A1-C1-D0-B2 == A1-J3-K0-G1 -->
+            <!-- (only the offered triplet have models) -->
+
+            <!-- ## A1-C1-D0-B2 == A1-J3-K0-G1: A1-C1-K0-B2 -->
+            <configuration>
+                <stations>A1 B2 C1 K0</stations>
+                <channels>IP3 IP7 IP5 IP1</channels>
+                <delayLines>DL5 DL1 DL2 DL4</delayLines>
+            </configuration>
+
+            <!-- ## A1-C1-D0-B2 == A1-J3-K0-G1: A1-J3-D0-B2 -->
+            <configuration>
+                <stations>A1 B2 D0 J3</stations>
+                <channels>IP3 IP5 IP1 IP7</channels>
+                <delayLines>DL5 DL1 DL6 DL3</delayLines>
+            </configuration>
+
+            <!-- ## A1-C1-D0-B2 == A1-J3-K0-G1: A1-C1-K0-G1 -->
+            <configuration>
+                <stations>A1 G1 K0 C1</stations>
+                <channels>IP3 IP5 IP1 IP7</channels>
+                <delayLines>DL5 DL6 DL4 DL2</delayLines>
+            </configuration>
+
+            <!-- ## A1-C1-D0-B2 == A1-J3-K0-G1: A1-J3-K0-B2 -->
+            <configuration>
+                <stations>A1 B2 K0 J3</stations>
+                <channels>IP3 IP5 IP1 IP7</channels>
+                <delayLines>DL5 DL1 DL4 DL3</delayLines>
+            </configuration>
+
+            <!-- ## A1-J3-K0-G1 == H0-I1-D0-G1 -->
+            <!-- (only the offered triplet have models) -->
+
+            <!-- ## A1-J3-K0-G1 == H0-I1-D0-G1: A1-I1-K0-G1 (standard) -->
+
+            <!-- ## A1-J3-K0-G1 == H0-I1-D0-G1: H0-J3-D0-G1 -->
+            <configuration>
+                <stations>D0 H0 G1 J3</stations>
+                <channels>IP1 IP5 IP3 IP7</channels>
+                <delayLines>DL5 DL4 DL6 DL3</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
+
+    <configuration>
         <version>Future</version>
         <interferometer>VLTI</interferometer>
 
