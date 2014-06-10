@@ -35,7 +35,7 @@
             <pubDate>Sat, 31 May 2014 02:00:00 GMT</pubDate>
             <prerelease version="2014.0531 beta 1">
                 <change type="FEATURE">VLTI: added 'AT Relocation' period to gather intermediate configurations available
-                    due to ATs relocation between two standard configurations</change>
+                    due to ATs relocation between two standard configurations (and PIONIER_3T for PIONIER with only 3 ATs)</change>
             </prerelease>
         </release>
         <release version="2014.0506">
