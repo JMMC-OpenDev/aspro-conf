@@ -4,3 +4,6 @@ Implementation-Title: AsproConfig
 Implementation-Version: ${project.version}
 Implementation-Vendor: www.jmmc.fr
 Implementation-URL: http://www.jmmc.fr/aspro
+Application-Name: Aspro 2-conf
+Permissions: all-permissions
+Codebase: http://apps.jmmc.fr
