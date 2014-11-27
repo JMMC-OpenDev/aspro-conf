@@ -53,15 +53,17 @@
     </interferometerFile>
 
     <!-- Paranal single-dish mode -->
-    <interferometerFile>
-        <file>PARANAL.xml</file>
-        <checksum>2223723736258075456</checksum>
-    </interferometerFile>
-
+    <!--
+        <interferometerFile>
+            <file>PARANAL.xml</file>
+            <checksum>2223723736258075456</checksum>
+        </interferometerFile>
+    -->
     <!-- Sutherland single-dish mode -->
-    <interferometerFile>
-        <file>SUTHERLAND.xml</file>
-        <checksum>2719640654652112896</checksum>
-    </interferometerFile>
-
+    <!--
+        <interferometerFile>
+            <file>SUTHERLAND.xml</file>
+            <checksum>2719640654652112896</checksum>
+        </interferometerFile>
+    -->
 </a:configurations>
