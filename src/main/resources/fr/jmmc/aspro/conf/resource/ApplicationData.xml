@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2014.0708"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="08/07/2014" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2014.2711"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="27/11/2014" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2014.2711">
+            <pubDate>Thu, 27 Nov 2014 17:00:00 GMT</pubDate>
+            <prerelease version="2014.2711 beta 1">
+                <change type="FEATURE">CHARA: Added a preliminary setup for the new FRIEND instrument</change>
+            </prerelease>
+        </release>
         <release version="2014.0708">
             <pubDate>Tue, 08 Jul 2014 15:00:00 GMT</pubDate>
             <prerelease version="2014.0708 beta 1">
