@@ -619,10 +619,28 @@
       </mode>
 
       <mode>
-        <name>HR</name>
+        <name>HR-600</name>
         <resolution>2300</resolution>
-        <waveLengthMin>0.60</waveLengthMin>
-        <waveLengthMax>0.75</waveLengthMax>
+        <waveLengthMin>0.585</waveLengthMin>
+        <waveLengthMax>0.615</waveLengthMax>
+      </mode>
+      <mode>
+        <name>HR-650</name>
+        <resolution>2300</resolution>
+        <waveLengthMin>0.635</waveLengthMin>
+        <waveLengthMax>0.665</waveLengthMax>
+      </mode>
+      <mode>
+        <name>HR-700</name>
+        <resolution>2300</resolution>
+        <waveLengthMin>0.685</waveLengthMin>
+        <waveLengthMax>0.715</waveLengthMax>
+      </mode>
+      <mode>
+        <name>HR-750</name>
+        <resolution>2300</resolution>
+        <waveLengthMin>0.735</waveLengthMin>
+        <waveLengthMax>0.765</waveLengthMax>
       </mode>
 
     </focalInstrument>
@@ -1032,10 +1050,28 @@ Configuration d’enregistrement
       </mode>
 
       <mode>
-        <name>HR</name>
+        <name>HR-600</name>
         <resolution>2300</resolution>
-        <waveLengthMin>0.60</waveLengthMin>
-        <waveLengthMax>0.75</waveLengthMax>
+        <waveLengthMin>0.585</waveLengthMin>
+        <waveLengthMax>0.615</waveLengthMax>
+      </mode>
+      <mode>
+        <name>HR-650</name>
+        <resolution>2300</resolution>
+        <waveLengthMin>0.635</waveLengthMin>
+        <waveLengthMax>0.665</waveLengthMax>
+      </mode>
+      <mode>
+        <name>HR-700</name>
+        <resolution>2300</resolution>
+        <waveLengthMin>0.685</waveLengthMin>
+        <waveLengthMax>0.715</waveLengthMax>
+      </mode>
+      <mode>
+        <name>HR-750</name>
+        <resolution>2300</resolution>
+        <waveLengthMin>0.735</waveLengthMin>
+        <waveLengthMax>0.765</waveLengthMax>
       </mode>
 
     </focalInstrument>
