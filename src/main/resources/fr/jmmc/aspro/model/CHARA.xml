@@ -2400,156 +2400,152 @@ Configuration d’enregistrement
         </instrument>
 
 
-        <!-- FRIEND (2T/3T) -->
+        <!-- FRIEND (2T/3T) same beams as VEGA -->
         <instrument>
             <focalInstrument>FRIEND_2T</focalInstrument>
-            <!-- FRIEND beams 5-6 -->
             <configuration>
                 <stations>S1 S2</stations>
-                <channels>V5 V6</channels>
+                <channels>V2 V1</channels>
             </configuration>
             <configuration>
-                <stations>S1 E1</stations>
-                <channels>V5 V6</channels>
+                <stations>E1 S1</stations>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
-                <stations>S1 E2</stations>
-                <channels>V5 V6</channels>
+                <stations>E2 S1</stations>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>S1 W1</stations>
-                <channels>V5 V6</channels>
+                <channels>V2 V1</channels>
             </configuration>
             <configuration>
                 <stations>S1 W2</stations>
-                <channels>V5 V6</channels>
+                <channels>V2 V1</channels>
             </configuration>
             <configuration>
-                <stations>S2 E1</stations>
-                <channels>V5 V6</channels>
+                <stations>E1 S2</stations>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
-                <stations>S2 E2</stations>
-                <channels>V5 V6</channels>
+                <stations>E2 S2</stations>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>S2 W1</stations>
-                <channels>V5 V6</channels>
+                <channels>V2 V1</channels>
             </configuration>
             <configuration>
                 <stations>S2 W2</stations>
-                <channels>V5 V6</channels>
+                <channels>V2 V1</channels>
             </configuration>
             <configuration>
                 <stations>E1 E2</stations>
-                <channels>V5 V6</channels>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>E1 W1</stations>
-                <channels>V5 V6</channels>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>E1 W2</stations>
-                <channels>V5 V6</channels>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>E2 W1</stations>
-                <channels>V5 V6</channels>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>E2 W2</stations>
-                <channels>V5 V6</channels>
+                <channels>V1 V2</channels>
             </configuration>
             <configuration>
                 <stations>W1 W2</stations>
-                <channels>V5 V6</channels>
+                <channels>V2 V1</channels>
             </configuration>
         </instrument>
 
-
-        <!-- FRIEND (3T) -->
         <instrument>
             <focalInstrument>FRIEND_3T</focalInstrument>
-            <!-- FRIEND: beams 1-2-3 -->
             <configuration>
-                <stations>S1 S2 E1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>S2 S1 E1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 S2 E2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>S2 S1 E2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 S2 W1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>S2 S1 W1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 S2 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>S2 S1 W2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 E1 E2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>E2 E1 S1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 E1 W1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W1 S1 E1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 E1 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 E1 S1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>E2 W1 S1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 E2 S1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S1 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 W1 S1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S2 E1 E2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>E2 E1 S2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S2 E1 W1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>S2 W1 E1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S2 E1 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 S2 E1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S2 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>E2 S2 W1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S2 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 E2 S2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>S2 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 W1 S2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>E1 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>E2 E1 W1</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>E1 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>E2 E1 W2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>E1 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 W1 E1</stations> <!-- TODO : Fix E3 means E1V3 -->
+                <channels>V2 V1 V3</channels>
             </configuration>
             <configuration>
-                <stations>E2 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
+                <stations>W2 W1 E2</stations>
+                <channels>V2 V1 V3</channels>
             </configuration>
         </instrument>
 
