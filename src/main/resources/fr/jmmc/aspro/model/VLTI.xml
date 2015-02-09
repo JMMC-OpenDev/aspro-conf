@@ -10538,12 +10538,6 @@
       <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
 
       <!-- H band -->
-      <!-- TODO: P96 modes:
-        1) GRISM-H = 6 canaux en bande H: 1.533,1.583,1.633,1.683,1.733,1.772microns
-        2) FREE-H = 1 canal en bande H: 1.65microns
-      -->
-
-      <!-- older modes -->
       <mode>
         <!--
           1) BROAD-H  (broad-band)
@@ -10631,12 +10625,6 @@
       <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
 
       <!-- H band -->
-      <!-- TODO: P96 modes:
-        1) GRISM-H = 6 canaux en bande H: 1.533,1.583,1.633,1.683,1.733,1.772microns
-        2) FREE-H = 1 canal en bande H: 1.65microns
-      -->
-
-      <!-- older modes -->
       <mode>
         <!--
           1) BROAD-H  (broad-band)
@@ -10703,6 +10691,48 @@
 
     </focalInstrument>
 
+    <!-- PIONIER_2 = PIONIER starting from Period 96 (RAPID) with new modes -->
+    <focalInstrument>
+      <name>PIONIER_2</name>
+      <description>PIONIER instrument (4T) with RAPID detector (IPAG, FR)</description>
+      <numberChannels>4</numberChannels>
+      <defaultSamplingTime>30</defaultSamplingTime>
+      <!-- no fringe tracker supported -->
+
+      <!-- noise parameters -->
+      <transmission>0.01</transmission>
+      <dit>0.01</dit>
+      <ron>10</ron>
+      <detectorSaturation>50000</detectorSaturation>
+      <instrumentVisibility>0.9</instrumentVisibility>
+      <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
+      <instrumentVis2CalibrationBias>5.0</instrumentVis2CalibrationBias>
+      <instrumentPhaseBias>2.0</instrumentPhaseBias>
+      <nbPixInterferometry>4</nbPixInterferometry>
+      <nbPixPhotometry>4</nbPixPhotometry>
+      <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+
+      <!-- H band -->
+      <mode>
+        <!--
+          1) GRISM-H = 6 canaux en bande H: 1.533,1.583,1.633,1.683,1.733,1.772microns
+          lbdB = 0,0478 = delta/5
+        -->
+        <name>GRISM-H</name>
+        <resolution>35</resolution>
+        <waveLengthMin>1.5091</waveLengthMin>
+        <waveLengthMax>1.7959</waveLengthMax>
+      </mode>
+      <mode>
+        <!--
+          2) FREE-H = 1 canal en bande H: 1.65microns
+        -->
+        <name>FREE-H</name>
+        <resolution>6</resolution>
+        <waveLengthMin>1.5</waveLengthMin>
+        <waveLengthMax>1.8</waveLengthMax>
+      </mode>
+    </focalInstrument>
 
 
     <!-- future instruments -->
@@ -10970,8 +11000,9 @@ N 7.5 - 13.5 um
             </configuration>
         </instrument>
         <!-- MIDI decommissioned -->
+        <!-- Use PIONIER_2 (new setup) -->
         <instrument>
-            <focalInstrument>PIONIER</focalInstrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
