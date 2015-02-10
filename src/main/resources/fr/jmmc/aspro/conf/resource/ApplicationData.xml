@@ -18,17 +18,17 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2015.0209"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="09/02/2015" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2015.0210"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="10/02/2015" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2015.0209">
-            <pubDate>Mon, 09 Feb 2015 16:00:00 GMT</pubDate>
-            <prerelease version="2015.0209 beta 1">
-                <change type="FEATURE">VLTI: added the PIONIER_2 instrument to define its new setup (instrumental modes = GRISM-H, FREE-H)</change>
+        <release version="2015.0210">
+            <pubDate>Tue, 10 Feb 2015 16:00:00 GMT</pubDate>
+            <prerelease version="2015.0210 beta 1">
+                <change type="FEATURE">VLTI: modified the PIONIER instrument in Period 96 to define its new setup (instrumental modes = GRISM-H, FREE-H)</change>
             </prerelease>
         </release>
         <release version="2015.0205">

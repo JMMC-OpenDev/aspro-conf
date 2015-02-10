@@ -10694,6 +10694,7 @@
     <!-- PIONIER_2 = PIONIER starting from Period 96 (RAPID) with new modes -->
     <focalInstrument>
       <name>PIONIER_2</name>
+      <alias>PIONIER</alias>
       <description>PIONIER instrument (4T) with RAPID detector (IPAG, FR)</description>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>30</defaultSamplingTime>
