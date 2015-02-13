@@ -18,22 +18,21 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2015.0210"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="10/02/2015" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2015.0213"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="13/02/2015" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2015.0210">
-            <pubDate>Tue, 10 Feb 2015 16:00:00 GMT</pubDate>
-            <prerelease version="2015.0210 beta 1">
+        <release version="2015.0213">
+            <pubDate>Fri, 13 Feb 2015 16:00:00 GMT</pubDate>
+            <prerelease version="2015.0213 beta 2">
                 <change type="FEATURE">VLTI: modified the PIONIER instrument in Period 96 to define its new setup (instrumental modes = GRISM-H, FREE-H)</change>
+                <change type="FEATURE">VLTI: use 2 switchyards (VCM and STS) to respectively have the DL restrictions due to VCM pressure limits (before Period 96) and
+                    no DL restrictions with STS (Period 96 and Future)</change>
             </prerelease>
-        </release>
-        <release version="2015.0205">
-            <pubDate>Thu, 05 Feb 2015 17:00:00 GMT</pubDate>
-            <prerelease version="2015.0205 beta 1">
+            <prerelease version="2015.0213 beta 1">
                 <change type="FEATURE">VLTI: added eso Period 96 (AMBER + PIONIER only)</change>
                 <change type="FEATURE">VLTI: disable the DL restrictions due to VCM pressure limits as
                     the STS (star separator / dual feed) should correct properly the pupill</change>

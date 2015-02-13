@@ -332,6 +332,8 @@
     </delayLine>
 
     <switchyard>
+      <name>default</name>
+      <useDelayLineRestriction>false</useDelayLineRestriction>
       <stationLinks>
         <station>S1</station>
         <channelLink>
