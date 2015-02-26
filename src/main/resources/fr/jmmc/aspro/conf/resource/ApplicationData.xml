@@ -18,15 +18,18 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2015.0213"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="13/02/2015" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2015.0226"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="25/02/2015" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2015.0213">
-            <pubDate>Fri, 13 Feb 2015 16:00:00 GMT</pubDate>
+        <release version="2015.0226">
+            <pubDate>Thu, 26 Feb 2015 18:00:00 GMT</pubDate>
+            <prerelease version="2015.0226 beta 1">
+                <change type="FEATURE">VLTI: fixed quadruplets for Period 96 (PIONIER) and Future (MATISSE, GRAVITY)</change>
+            </prerelease>
             <prerelease version="2015.0213 beta 2">
                 <change type="FEATURE">VLTI: modified the PIONIER instrument in Period 96 to define its new setup (instrumental modes = GRISM-H, FREE-H)</change>
                 <change type="FEATURE">VLTI: use 2 switchyards (VCM and STS) to respectively have the DL restrictions due to VCM pressure limits (before Period 96) and

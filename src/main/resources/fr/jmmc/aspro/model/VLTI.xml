@@ -14604,20 +14604,21 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
-            <configuration>
-                <stations>A0 B2 D0 C1</stations>
-                <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL2 DL1 DL5</delayLines>
-            </configuration>
-            <configuration>
-                <stations>K0 G2 D0 J3</stations>
-                <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
-            </configuration>
+            <!-- P96 -->
             <configuration>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL5 DL1</delayLines>
             </configuration>
         </instrument>
     </configuration>
@@ -17808,6 +17809,7 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
+            <!-- before P96 -->
             <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
             <configuration>
                 <stations>A1 G1 K0 J3</stations>
@@ -17831,19 +17833,19 @@ N 7.5 - 13.5 um
             </configuration>
             <!-- P96 -->
             <configuration>
-                <stations>A0 B2 D0 C1</stations>
-                <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL2 DL1 DL5</delayLines>
-            </configuration>
-            <configuration>
-                <stations>K0 G2 D0 J3</stations>
-                <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
-            </configuration>
-            <configuration>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL5 DL1</delayLines>
             </configuration>
         </instrument>
 
@@ -17854,6 +17856,7 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
+            <!-- before P96 -->
             <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
             <configuration>
                 <stations>A1 G1 K0 J3</stations>
@@ -17877,19 +17880,19 @@ N 7.5 - 13.5 um
             </configuration>
             <!-- P96 -->
             <configuration>
-                <stations>A0 B2 D0 C1</stations>
-                <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL6 DL2 DL1 DL5</delayLines>
-            </configuration>
-            <configuration>
-                <stations>K0 G2 D0 J3</stations>
-                <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL4 DL2 DL1 DL3</delayLines>
-            </configuration>
-            <configuration>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL5 DL1</delayLines>
             </configuration>
         </instrument>
     </configuration>
