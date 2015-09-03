@@ -28,6 +28,8 @@
       <posZ>-2654530.4375114734</posZ>
     </position>
 
+    <timezone>America/Santiago</timezone><!-- or Chile/Continental timezone -->
+
     <!--
       Atmospheric Restrictions
       When the wind speed is larger than 12m/s, the telescope should point at least 90 degrees away from wind direction.
@@ -14385,27 +14387,165 @@
     </focalInstrument>
 
     <focalInstrument>
-      <name>MATISSE</name>
-      <description>MATISSE instrument (4T) (experimental)</description>
+      <name>MATISSE_LM</name>
+      <description>MATISSE instrument (4T) (experimental): L and M bands</description>
       <experimental>true</experimental>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>60</defaultSamplingTime>
 
       <!-- noise parameters -->
-      <transmission>0.02</transmission>
-      <dit>0.05</dit>
-      <ron>10</ron>
-      <detectorSaturation>50000</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2.5</instrumentVisibilityBias>
-      <instrumentVis2CalibrationBias>2.5</instrumentVis2CalibrationBias>
-      <instrumentPhaseBias>2.0</instrumentPhaseBias>
-      <nbPixInterferometry>32</nbPixInterferometry>
-      <nbPixPhotometry>32</nbPixPhotometry>
-      <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+      <!-- 0.0085 AT et 0.007 UT (Strehl and quantum efficiency (=50%) included)
+           transmission = Tc/SR = 0.7 (aspro does strehl correction already) -->
+      <transmission>0.0121</transmission>
+
+      <!-- TODO: transmission per telescope (UT or AT) ? -->
+
+      <dit>0.03</dit> <!-- 30 ms -->
+      <!-- deadtime = 0.03 = dit (temps mort entre 2 pauses) -->
+      <ron>15</ron>
+      <detectorSaturation>50000</detectorSaturation> <!-- a revoir -->
+
+      <!-- TODO: instrumentVisibility per telescope (UT or AT) ? -->
+      <!-- LOW_L: UT: 0.5 AT: 0.61 -->
+      <instrumentVisibility>0.61</instrumentVisibility>
+      <!-- no FT -->
+      <instrumentVisibilityBias>0.0</instrumentVisibilityBias>
+      <instrumentVis2CalibrationBias>1.5</instrumentVis2CalibrationBias>
+      <!-- 20.3 mrad -->
+      <instrumentPhaseBias>1.16</instrumentPhaseBias>
+      <!-- LM: 1550 pixels -->
+      <nbPixInterferometry>1550</nbPixInterferometry>
+      <!-- per channel: (1550 / 6) -->
+      <nbPixPhotometry>258</nbPixPhotometry>
+      <!-- SI_PHOT: 0.65 -->
+      <fracFluxInInterferometry>0.65</fracFluxInInterferometry>
 
 <!--
-Modes:  SciPhot (photometry on), HighSens (no photometry), hybrid (LM with photometry, N no photometry)
+Modes:  SI_Phot (photometry on), HighSens (no photometry), hybrid (LM with photometry, N no photometry)
+
+L/M 2.8 - 4.2 um
+M 4.5 - 5.5
+N 7.5 - 13.5 um
+
+        resolution:
+        LM 30, 500
+        L 950, 1 plus haute resolution (3800 - 5000)
+        N 30, 300
+        -->
+
+        <!-- L/M modes -->
+        <mode>
+            <name>SI_PHOT_L_LOW/N_LOW</name> <!-- à la eso -->
+
+            <!-- detector = L -->
+            <!--
+            <detector ref="SI_PHOT_L">
+                <resolution>30</resolution>
+                <waveLengthMin>3.2</waveLengthMin>
+                <waveLengthMax>3.9</waveLengthMax>
+                read given wavelengths, thermal photon number for every channel for 1 dit and 1 telescope (AT or UT)
+                (includes quantum efficiency)
+                </detector>
+            -->
+            <!--
+            <detector ref="SI_PHOT_M">
+                <resolution>35</resolution>
+                <waveLengthMin>4.5</waveLengthMin>
+                <waveLengthMax>5.0</waveLengthMax>
+                read given wavelengths, thermal photon number for every channel for 1 dit
+            -->
+            <!--
+            <detector ref="SI_PHOT_N">
+                <resolution>30</resolution>
+                <waveLengthMin>8.0</waveLengthMin>
+                <waveLengthMax>13</waveLengthMax>
+                read given wavelengths, thermal photon number for every channel for 1 dit
+            -->
+            <resolution>30</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>5.5</waveLengthMax>
+        </mode>
+        <mode>
+            <name>HIGH_SENS_LM_LOW</name>
+            <resolution>30</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>5.5</waveLengthMax>
+        </mode>
+
+        <mode>
+            <name>SI_PHOT_LM_MEDIUM</name>
+            <resolution>500</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>5.5</waveLengthMax>
+        </mode>
+        <mode>
+            <name>HIGH_SENS_LM_MEDIUM</name>
+            <resolution>500</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>5.5</waveLengthMax>
+        </mode>
+
+        <!-- L modes -->
+        <mode>
+            <name>SI_PHOT_L_MEDIUM</name>
+            <resolution>950</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>4.2</waveLengthMax>
+        </mode>
+        <mode>
+            <name>HIGH_SENS_L_MEDIUM</name>
+            <resolution>950</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>4.2</waveLengthMax>
+        </mode>
+
+        <mode>
+            <name>SI_PHOT_L_HIGH</name>
+            <resolution>5000</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>4.2</waveLengthMax>
+        </mode>
+        <mode>
+            <name>HIGH_SENS_L_HIGH</name>
+            <resolution>5000</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>4.2</waveLengthMax>
+        </mode>
+     </focalInstrument>
+
+    <focalInstrument>
+      <name>MATISSE_N</name>
+      <description>MATISSE instrument (4T) (experimental): N band</description>
+      <experimental>true</experimental>
+      <numberChannels>4</numberChannels>
+      <defaultSamplingTime>60</defaultSamplingTime>
+
+
+      <!-- noise parameters -->
+      <!-- 0.004 AT et 0.0038 UT (/0.9 = SR) -->
+      <transmission>0.00444</transmission>
+      <dit>0.03</dit> <!-- 30 ms -->
+      <!-- deadtime = dit (temps mort entre 2 pauses) -->
+      <ron>300</ron>
+      <detectorSaturation>50000</detectorSaturation> <!-- a revoir -->
+
+      <!-- LOW_N: UT: 0.39 AT: 0.45 -->
+
+      <instrumentVisibility>0.45</instrumentVisibility>
+      <!-- no FT -->
+      <instrumentVisibilityBias>0.0</instrumentVisibilityBias>
+      <instrumentVis2CalibrationBias>8.5</instrumentVis2CalibrationBias>
+      <!-- 28.3 mrad -->
+      <instrumentPhaseBias>1.62</instrumentPhaseBias>
+      <!-- LM: 2977 pixels -->
+      <nbPixInterferometry>2977</nbPixInterferometry>
+      <!-- per channel: (2977 / 6) -->
+      <nbPixPhotometry>496</nbPixPhotometry>
+      <!-- SI_PHOT: 0.65 -->
+      <fracFluxInInterferometry>0.65</fracFluxInInterferometry>
+
+<!--
+Modes:  SI_Phot (photometry on), HighSens (no photometry), hybrid (LM with photometry, N no photometry)
 
 L/M 2.8 - 4.2 um
 M 4.5 - 5.5
@@ -14417,63 +14557,9 @@ N 7.5 - 13.5 um
             N 30, 300
             -->
 
-            <!-- L/M modes -->
-            <mode>
-                <name>SCI_PHOT_LM_LOW</name>
-                <resolution>30</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>5.5</waveLengthMax>
-            </mode>
-            <mode>
-                <name>HIGH_SENS_LM_LOW</name>
-                <resolution>30</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>5.5</waveLengthMax>
-            </mode>
-
-            <mode>
-                <name>SCI_PHOT_LM_MEDIUM</name>
-                <resolution>500</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>5.5</waveLengthMax>
-            </mode>
-            <mode>
-                <name>HIGH_SENS_LM_MEDIUM</name>
-                <resolution>500</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>5.5</waveLengthMax>
-            </mode>
-
-            <!-- L modes -->
-            <mode>
-                <name>SCI_PHOT_L_MEDIUM</name>
-                <resolution>950</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>4.2</waveLengthMax>
-            </mode>
-            <mode>
-                <name>HIGH_SENS_L_MEDIUM</name>
-                <resolution>950</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>4.2</waveLengthMax>
-            </mode>
-
-            <mode>
-                <name>SCI_PHOT_L_HIGH</name>
-                <resolution>5000</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>4.2</waveLengthMax>
-            </mode>
-            <mode>
-                <name>HIGH_SENS_L_HIGH</name>
-                <resolution>5000</resolution>
-                <waveLengthMin>2.8</waveLengthMin>
-                <waveLengthMax>4.2</waveLengthMax>
-            </mode>
-
             <!-- N modes -->
             <mode>
-                <name>SCI_PHOT_N_LOW</name>
+                <name>SI_PHOT_N_LOW</name>
                 <resolution>30</resolution>
                 <waveLengthMin>7.5</waveLengthMin>
                 <waveLengthMax>13.5</waveLengthMax>
@@ -14486,7 +14572,7 @@ N 7.5 - 13.5 um
             </mode>
 
             <mode>
-                <name>SCI_PHOT_N_MEDIUM</name>
+                <name>SI_PHOT_N_MEDIUM</name>
                 <resolution>300</resolution>
                 <waveLengthMin>7.5</waveLengthMin>
                 <waveLengthMax>13.5</waveLengthMax>
@@ -14504,6 +14590,126 @@ N 7.5 - 13.5 um
 
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
+    <configuration>
+        <version>Period 97</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <instrument>
+            <focalInstrument>AMBER</focalInstrument>
+            <!-- UT1 UT2 UT3 UT4 -->
+            <configuration>
+                <stations>UT1 UT2 UT3</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT2 UT4</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT3 UT4</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL1 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT2 UT3 UT4</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- A0-B2-D0-C1 -->
+            <configuration>
+                <stations>A0 B2 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL6 DL5 DL1</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL6 DL5 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 D0 C1</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 D0 C1</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL1 DL2</delayLines>
+            </configuration>
+            <!-- K0-G2-D0-J3 -->
+            <configuration>
+                <stations>K0 G2 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL4 DL2 DL1</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 G2 J3</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL4 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 D0 J3</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL4 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G2 D0 J3</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL1 DL3</delayLines>
+            </configuration>
+            <!-- A0-G1-J2-J3 -->
+            <configuration>
+                <stations>A0 G1 J2</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL6 DL5 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 G1 J3</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL6 DL5 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 J2 J3</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL6 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G1 J2 J3</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL4 DL3</delayLines>
+            </configuration>
+        </instrument>
+        <!-- MIDI decommissioned -->
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
+
     <configuration>
         <version>Period 96</version>
         <interferometer>VLTI</interferometer>
@@ -14622,6 +14828,7 @@ N 7.5 - 13.5 um
             </configuration>
         </instrument>
     </configuration>
+
 
     <configuration>
         <version>Period 94</version>
@@ -17850,33 +18057,36 @@ N 7.5 - 13.5 um
         </instrument>
 
         <instrument>
-            <focalInstrument>MATISSE</focalInstrument>
+            <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
-            <!-- before P96 -->
-            <!-- A1-G1-K0-J3 (or A1-G1-K0-I1 if J3 is unavailable) -->
+            <!-- P96 -->
             <configuration>
-                <stations>A1 G1 K0 J3</stations>
-                <channels>IP3 IP5 IP1 IP7</channels>
-                <delayLines>DL5 DL6 DL4 DL3</delayLines>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <stations>A1 G1 K0 I1</stations>
-                <channels>IP3 IP5 IP1 IP7</channels>
-                <delayLines>DL5 DL6 DL4 DL3</delayLines>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <configuration>
-                <stations>D0 H0 G1 I1</stations>
-                <channels>IP1 IP5 IP3 IP7</channels>
-                <delayLines>DL5 DL4 DL6 DL3</delayLines>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
             </configuration>
+        </instrument>
+
+        <instrument>
+            <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
-                <stations>A1 B2 C1 D0</stations>
-                <channels>IP3 IP7 IP5 IP1</channels>
-                <delayLines>DL5 DL1 DL2 DL6</delayLines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P96 -->
             <configuration>

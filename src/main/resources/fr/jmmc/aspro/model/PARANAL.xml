@@ -28,6 +28,8 @@
             <posZ>-2654530.4375114734</posZ>
         </position>
 
+        <timezone>America/Santiago</timezone>
+
         <!--
           Atmospheric Restrictions
           When the wind speed is larger than 12m/s, the telescope should point at least 90 degrees away from wind direction.

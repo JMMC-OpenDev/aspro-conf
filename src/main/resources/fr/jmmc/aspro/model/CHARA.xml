@@ -33,6 +33,8 @@
       <posZ>3582240.6122966344</posZ>
     </position>
 
+    <timezone>America/Los_Angeles</timezone>
+
     <telescope>
       <name>T</name>
       <diameter>1.0</diameter>
