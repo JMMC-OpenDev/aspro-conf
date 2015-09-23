@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2015.0903"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="03/09/2015" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2015.0923"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="23/09/2015" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2015.0923">
+            <pubDate>Wed, 23 Sep 2015 14:00:00 GMT</pubDate>
+            <prerelease version="2015.0923 beta 1">
+                <change type="FEATURE">CHARA: added telescope horizon for S1</change>
+            </prerelease>
+        </release>
         <release version="2015.0903">
             <pubDate>Thu, 03 Sep 2015 14:00:00 GMT</pubDate>
             <prerelease version="2015.0903 beta 1">
