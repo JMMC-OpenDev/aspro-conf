@@ -13935,6 +13935,34 @@
         <maxIntegration>10</maxIntegration>
     </fringeTracker>
 
+    <fringeTracker>
+        <name>MATISSE_LInternal</name>
+        <band>L</band>
+
+        <mode>FringeCoherencer</mode>
+
+        <!-- no idea -->
+        <instrumentVisibility>1.0</instrumentVisibility>
+
+        <magLimit>9</magLimit>
+        <!-- what is the max: 1s ? -->
+        <maxIntegration>1</maxIntegration>
+    </fringeTracker>
+
+    <fringeTracker>
+        <name>MATISSE_NInternal</name>
+        <band>N</band>
+
+        <mode>FringeCoherencer</mode>
+
+        <!-- no idea -->
+        <instrumentVisibility>1.0</instrumentVisibility>
+
+        <magLimit>6</magLimit>
+        <!-- what is the max: 10s ? -->
+        <maxIntegration>10</maxIntegration>
+    </fringeTracker>
+
 
     <focalInstrument>
       <name>AMBER</name>
@@ -14392,6 +14420,8 @@
       <experimental>true</experimental>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>60</defaultSamplingTime>
+      <fringeTracker>MATISSE_LInternal</fringeTracker>
+      <fringeTrackerRequired>false</fringeTrackerRequired>
 
       <!-- noise parameters -->
       <!-- 0.0085 AT et 0.007 UT (Strehl and quantum efficiency (=50%) included)
@@ -14402,8 +14432,17 @@
 
       <dit>0.03</dit> <!-- 30 ms -->
       <!-- deadtime = 0.03 = dit (temps mort entre 2 pauses) -->
+
+      <!--
+        Detector specifications of the Teledyne HAWAII-2RG FPA:
+        Format: 2048 x 2048 pixels, grouped in 32 blocks of 64 x 2048 pixels
+        Pixel size: 18 μm
+        Q.E.: > 90 % in L band
+        Full well capacity: 100,000 e-
+        Readout noise: <10 e- CDS @ 100 kHz, >70 e- @ 1 MHz
+      -->
       <ron>15</ron>
-      <detectorSaturation>50000</detectorSaturation> <!-- a revoir -->
+      <detectorSaturation>100000</detectorSaturation>
 
       <!-- TODO: instrumentVisibility per telescope (UT or AT) ? -->
       <!-- LOW_L: UT: 0.5 AT: 0.61 -->
@@ -14463,26 +14502,66 @@ N 7.5 - 13.5 um
             -->
             <resolution>30</resolution>
             <waveLengthMin>2.8</waveLengthMin>
-            <waveLengthMax>5.5</waveLengthMax>
+            <waveLengthMax>5.0</waveLengthMax>
         </mode>
+
+        <!-- test composition of modes -->
+<!--
+        <mode xsi:type="a:FocalInstrumentComposedMode">
+            <name>SI_PHOT_LM_TEST</name>
+
+            <resolution>NaN</resolution>
+            <waveLengthMin>NaN</waveLengthMin>
+            <waveLengthMax>NaN</waveLengthMax>
+-->
+            <!-- detector = L -->
+<!--
+            <mode>
+                <name>L</name>
+                <resolution>30</resolution>
+                <waveLengthMin>2.8</waveLengthMin>
+                <waveLengthMax>4.0</waveLengthMax>
+-->
+                <!--
+                read given wavelengths, thermal photon number for every channel for 1 dit and 1 telescope (AT or UT)
+                (includes quantum efficiency)
+                -->
+<!--
+            </mode>
+            <mode>
+                <name>M</name>
+                <resolution>35</resolution>
+                <waveLengthMin>4.5</waveLengthMin>
+                <waveLengthMax>5.0</waveLengthMax>
+            </mode>
+        </mode>
+-->
+
+        <mode>
+            <name>SI_PHOT_LM_LOW</name>
+            <resolution>30</resolution>
+            <waveLengthMin>2.8</waveLengthMin>
+            <waveLengthMax>5.0</waveLengthMax>
+        </mode>
+
         <mode>
             <name>HIGH_SENS_LM_LOW</name>
             <resolution>30</resolution>
             <waveLengthMin>2.8</waveLengthMin>
-            <waveLengthMax>5.5</waveLengthMax>
+            <waveLengthMax>5.0</waveLengthMax>
         </mode>
 
         <mode>
             <name>SI_PHOT_LM_MEDIUM</name>
             <resolution>500</resolution>
             <waveLengthMin>2.8</waveLengthMin>
-            <waveLengthMax>5.5</waveLengthMax>
+            <waveLengthMax>5.0</waveLengthMax>
         </mode>
         <mode>
             <name>HIGH_SENS_LM_MEDIUM</name>
             <resolution>500</resolution>
             <waveLengthMin>2.8</waveLengthMin>
-            <waveLengthMax>5.5</waveLengthMax>
+            <waveLengthMax>5.0</waveLengthMax>
         </mode>
 
         <!-- L modes -->
@@ -14519,15 +14598,26 @@ N 7.5 - 13.5 um
       <experimental>true</experimental>
       <numberChannels>4</numberChannels>
       <defaultSamplingTime>60</defaultSamplingTime>
-
+      <fringeTracker>MATISSE_NInternal</fringeTracker>
+      <fringeTrackerRequired>false</fringeTrackerRequired>
 
       <!-- noise parameters -->
       <!-- 0.004 AT et 0.0038 UT (/0.9 = SR) -->
       <transmission>0.00444</transmission>
-      <dit>0.03</dit> <!-- 30 ms -->
+
+      <dit>0.3</dit> <!-- 300 ms -->
+
+      <!--
+        Detector specifications of the Raytheon Aquarius FPA:
+        Format: 1024 x 1024 pixels, grouped in 2 x 32 blocks of 32 x 512 pixels
+        Pixel size: 30 μm
+        QE: > 50 % from 7 to 25 μm
+        Read noise @ 1 MHz CDS: low gain: 1000 e- / high gain: 200 e-, goal is 100 e-
+        Well capacity: low gain: 1.1×107 e- / high gain: 1×106 e-
+      -->
       <!-- deadtime = dit (temps mort entre 2 pauses) -->
       <ron>300</ron>
-      <detectorSaturation>50000</detectorSaturation> <!-- a revoir -->
+      <detectorSaturation>1000000</detectorSaturation> <!-- a revoir -->
 
       <!-- LOW_N: UT: 0.39 AT: 0.45 -->
 
@@ -14561,27 +14651,27 @@ N 7.5 - 13.5 um
             <mode>
                 <name>SI_PHOT_N_LOW</name>
                 <resolution>30</resolution>
-                <waveLengthMin>7.5</waveLengthMin>
-                <waveLengthMax>13.5</waveLengthMax>
+                <waveLengthMin>8.0</waveLengthMin>
+                <waveLengthMax>13.0</waveLengthMax>
             </mode>
             <mode>
                 <name>HIGH_SENS_N_LOW</name>
                 <resolution>30</resolution>
-                <waveLengthMin>7.5</waveLengthMin>
-                <waveLengthMax>13.5</waveLengthMax>
+                <waveLengthMin>8.0</waveLengthMin>
+                <waveLengthMax>13.0</waveLengthMax>
             </mode>
 
             <mode>
                 <name>SI_PHOT_N_MEDIUM</name>
                 <resolution>300</resolution>
-                <waveLengthMin>7.5</waveLengthMin>
-                <waveLengthMax>13.5</waveLengthMax>
+                <waveLengthMin>8.0</waveLengthMin>
+                <waveLengthMax>13.0</waveLengthMax>
             </mode>
             <mode>
                 <name>HIGH_SENS_N_MEDIUM</name>
                 <resolution>300</resolution>
-                <waveLengthMin>7.5</waveLengthMin>
-                <waveLengthMax>13.5</waveLengthMax>
+                <waveLengthMin>8.0</waveLengthMin>
+                <waveLengthMax>13.0</waveLengthMax>
             </mode>
         </focalInstrument>
 
