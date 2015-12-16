@@ -170,20 +170,29 @@
             <name>PAVO_2T</name>
             <description>PAVO combiner (2T)</description>
             <numberChannels>2</numberChannels>
-            <defaultSamplingTime>40</defaultSamplingTime>
             <fringeTracker>PAVO_FT</fringeTracker>
 
-            <!-- noise parameters -->
-            <transmission>0.01</transmission>
-            <dit>0.0045</dit>
-            <ron>20</ron>
-            <detectorSaturation>32700</detectorSaturation>
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <instrumentVisibilityBias>2</instrumentVisibilityBias>
-            <instrumentPhaseBias>1</instrumentPhaseBias>
-            <nbPixInterferometry>4</nbPixInterferometry>
-            <nbPixPhotometry>0</nbPixPhotometry>
-            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <setup>
+                <name>PAVO_2T_SETUP</name>
+                <description>PAVO combiner (2T)</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.0045</dit>
+                <ron>20</ron>
+                <detectorSaturation>32700</detectorSaturation>
+
+                <fracFluxInInterferometry>1</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+                <nbPixInterferometry>4</nbPixInterferometry>
+                <nbPixPhotometry>0</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>2</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
 
             <mode>
                 <name>R</name>

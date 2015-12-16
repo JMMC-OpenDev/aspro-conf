@@ -33,6 +33,8 @@
             <posZ>3560559.831207496</posZ>
         </position>
 
+        <timezone>US/Mountain</timezone>
+
         <telescope>
             <name>T</name>
             <diameter>1.4</diameter>
@@ -407,19 +409,28 @@
             <name>TEST_4T</name>
             <description>sample for MROI instrument</description>
             <numberChannels>4</numberChannels>
-            <defaultSamplingTime>30</defaultSamplingTime>
 
-            <!-- noise parameters -->
-            <transmission>0.1</transmission>
-            <dit>0.01</dit>
-            <ron>10</ron>
-            <detectorSaturation>50000</detectorSaturation>
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <instrumentVisibilityBias>0.1</instrumentVisibilityBias>
-            <instrumentPhaseBias>0.01</instrumentPhaseBias>
-            <nbPixInterferometry>4</nbPixInterferometry>
-            <nbPixPhotometry>4</nbPixPhotometry>
-            <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+            <setup>
+                <name>TEST_4T_SETUP</name>
+                <description>sample for MROI instrument</description>
+                <defaultSamplingTime>30</defaultSamplingTime>
+
+                <dit>0.01</dit>
+                <ron>10</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
+
+                <nbPixInterferometry>4</nbPixInterferometry>
+                <nbPixPhotometry>4</nbPixPhotometry>
+
+                <transmission>0.1</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>0.1</instrumentVisibilityBias>
+                <instrumentPhaseBias>0.01</instrumentPhaseBias>
+            </setup>
 
             <mode>
                 <name>default</name>

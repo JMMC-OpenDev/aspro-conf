@@ -625,19 +625,28 @@
             <name>CLASSIC_4T</name>
             <description>Classic instrument (4T)</description>
             <numberChannels>4</numberChannels>
-            <defaultSamplingTime>30</defaultSamplingTime>
 
-            <!-- noise parameters -->
-            <transmission>0.01</transmission>
-            <dit>0.01</dit>
-            <ron>10</ron>
-            <detectorSaturation>50000</detectorSaturation>
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <instrumentVisibilityBias>0.1</instrumentVisibilityBias>
-            <instrumentPhaseBias>0.01</instrumentPhaseBias>
-            <nbPixInterferometry>4</nbPixInterferometry>
-            <nbPixPhotometry>4</nbPixPhotometry>
-            <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+            <setup>
+                <name>SETUP_CLASSIC_4T</name>
+                <description>Classic instrument (4T)</description>
+                <defaultSamplingTime>30</defaultSamplingTime>
+
+                <dit>0.01</dit>
+                <ron>10</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
+
+                <nbPixInterferometry>4</nbPixInterferometry>
+                <nbPixPhotometry>4</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>0.1</instrumentVisibilityBias>
+                <instrumentPhaseBias>0.01</instrumentPhaseBias>
+            </setup>
 
             <mode>
                 <name>R</name>
@@ -651,31 +660,29 @@
         <focalInstrument>
             <name>VISION_4T</name>
             <description>VISION instrument 4T</description>
-            <!-- numberChannels : The number of channels used by this instrument -->
             <numberChannels>4</numberChannels>
-            <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
-            <defaultSamplingTime>40</defaultSamplingTime>
 
-            <!-- noise parameters -->
-            <transmission>0.01</transmission>
-            <!-- The Detector individual integration time in seconds (typically less than 0.1s) -->
-            <dit>0.010</dit>
-            <!-- ron: The Detector readout noise (typically 10) -->
-            <ron>0.0</ron>
-            <!-- detectorSaturation: The Detector is non-linear above (to avoid saturation/non-linearity) (typically more than 20000) -->
-            <detectorSaturation>65653</detectorSaturation>
-            <!-- instrumentVisibility: The instrumental visibility (multiplicative) [0.0 - 1.0] (typically 0.9) -->
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <!-- instrumentVisibilityBias: The Typical Visibility Bias (percent of V) (typically 1) -->
-            <instrumentVisibilityBias>1</instrumentVisibilityBias>
-            <!-- instrumentPhaseBias: The Typical Phase/Phase Closure Bias in degrees (typically 1) -->
-            <instrumentPhaseBias>1</instrumentPhaseBias>
-            <!-- nbPixInterferometry: The number of pixels to code all fringes together (interferometric channel) -->
-            <nbPixInterferometry>128</nbPixInterferometry>
-            <!-- nbPixPhotometry: The number of pixels to code each photometric channel -->
-            <nbPixPhotometry>128</nbPixPhotometry>
-            <!-- fracFluxInInterferometry: The fraction of flux going into interferometric channel (typically 0.9) -->
-            <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+            <setup>
+                <name>SETUP_VISION_4T</name>
+                <description>VISION instrument 4T</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.010</dit>
+                <ron>0.0</ron>
+                <detectorSaturation>65653</detectorSaturation>
+
+                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
+
+                <nbPixInterferometry>128</nbPixInterferometry>
+                <nbPixPhotometry>128</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
 
             <mode>
                 <name>Low_Res</name>
@@ -698,31 +705,29 @@
         <focalInstrument>
             <name>VISION_5T</name>
             <description>VISION instrument 5T</description>
-            <!-- numberChannels : The number of channels used by this instrument -->
             <numberChannels>5</numberChannels>
-            <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
-            <defaultSamplingTime>40</defaultSamplingTime>
 
-            <!-- noise parameters -->
-            <transmission>0.01</transmission>
-            <!-- The Detector individual integration time in seconds (typically less than 0.1s) -->
-            <dit>0.010</dit>
-            <!-- ron: The Detector readout noise (typically 10) -->
-            <ron>0.0</ron>
-            <!-- detectorSaturation: The Detector is non-linear above (to avoid saturation/non-linearity) (typically more than 20000) -->
-            <detectorSaturation>65653</detectorSaturation>
-            <!-- instrumentVisibility: The instrumental visibility (multiplicative) [0.0 - 1.0] (typically 0.9) -->
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <!-- instrumentVisibilityBias: The Typical Visibility Bias (percent of V) (typically 1) -->
-            <instrumentVisibilityBias>1</instrumentVisibilityBias>
-            <!-- instrumentPhaseBias: The Typical Phase/Phase Closure Bias in degrees (typically 1) -->
-            <instrumentPhaseBias>1</instrumentPhaseBias>
-            <!-- nbPixInterferometry: The number of pixels to code all fringes together (interferometric channel) -->
-            <nbPixInterferometry>128</nbPixInterferometry>
-            <!-- nbPixPhotometry: The number of pixels to code each photometric channel -->
-            <nbPixPhotometry>128</nbPixPhotometry>
-            <!-- fracFluxInInterferometry: The fraction of flux going into interferometric channel (typically 0.9) -->
-            <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+            <setup>
+                <name>SETUP_VISION_5T</name>
+                <description>VISION instrument 5T</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.010</dit>
+                <ron>0.0</ron>
+                <detectorSaturation>65653</detectorSaturation>
+
+                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
+
+                <nbPixInterferometry>128</nbPixInterferometry>
+                <nbPixPhotometry>128</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
 
             <mode>
                 <name>Low_Res</name>
@@ -745,31 +750,29 @@
         <focalInstrument>
             <name>VISION_6T</name>
             <description>VISION instrument 6T</description>
-            <!-- numberChannels : The number of channels used by this instrument -->
             <numberChannels>6</numberChannels>
-            <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
-            <defaultSamplingTime>40</defaultSamplingTime>
 
-            <!-- noise parameters -->
-            <transmission>0.01</transmission>
-            <!-- The Detector individual integration time in seconds (typically less than 0.1s) -->
-            <dit>0.010</dit>
-            <!-- ron: The Detector readout noise (typically 10) -->
-            <ron>0.0</ron>
-            <!-- detectorSaturation: The Detector is non-linear above (to avoid saturation/non-linearity) (typically more than 20000) -->
-            <detectorSaturation>65653</detectorSaturation>
-            <!-- instrumentVisibility: The instrumental visibility (multiplicative) [0.0 - 1.0] (typically 0.9) -->
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <!-- instrumentVisibilityBias: The Typical Visibility Bias (percent of V) (typically 1) -->
-            <instrumentVisibilityBias>1</instrumentVisibilityBias>
-            <!-- instrumentPhaseBias: The Typical Phase/Phase Closure Bias in degrees (typically 1) -->
-            <instrumentPhaseBias>1</instrumentPhaseBias>
-            <!-- nbPixInterferometry: The number of pixels to code all fringes together (interferometric channel) -->
-            <nbPixInterferometry>128</nbPixInterferometry>
-            <!-- nbPixPhotometry: The number of pixels to code each photometric channel -->
-            <nbPixPhotometry>128</nbPixPhotometry>
-            <!-- fracFluxInInterferometry: The fraction of flux going into interferometric channel (typically 0.9) -->
-            <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+            <setup>
+                <name>SETUP_VISION_6T</name>
+                <description>VISION instrument 6T</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.010</dit>
+                <ron>0.0</ron>
+                <detectorSaturation>65653</detectorSaturation>
+
+                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
+
+                <nbPixInterferometry>128</nbPixInterferometry>
+                <nbPixPhotometry>128</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
 
             <mode>
                 <name>Low_Res</name>

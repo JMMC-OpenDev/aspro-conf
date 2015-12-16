@@ -13,6 +13,8 @@
     <resources>
         <!-- Configuration module -->
         <jar href="jar/aspro-conf-TRUNK.jar" />
+        <!-- Atmosphere transmission -->
+        <jar href="jar/aspro-conf-TRUNK-atm.jar" />
     </resources>
     <component-desc/>
 </jnlp>

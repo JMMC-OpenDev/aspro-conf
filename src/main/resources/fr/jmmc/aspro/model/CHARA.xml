@@ -550,19 +550,28 @@
       <name>CLASSIC</name>
       <description>CLASSIC instrument (2T)</description>
       <numberChannels>2</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <transmission>0.10</transmission>
-      <dit>0.002</dit>
-      <ron>10</ron>
-      <detectorSaturation>32700</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>1</instrumentPhaseBias>
-      <nbPixInterferometry>2</nbPixInterferometry>
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup>
+            <name>CLASSIC_SETUP</name>
+            <description>CLASSIC instrument (2T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.002</dit>
+            <ron>10</ron>
+            <detectorSaturation>32700</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>2</nbPixInterferometry>
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <transmission>0.10</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>1</instrumentPhaseBias>
+      </setup>
 
       <mode>
         <name>J</name>
@@ -605,19 +614,28 @@
       <name>FRIEND_2T</name>
       <description>FRIEND instrument (2T)</description>
       <numberChannels>2</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <transmission>0.02</transmission>
-      <dit>0.005</dit>
-      <ron>10</ron>
-      <detectorSaturation>32700</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>1</instrumentPhaseBias>
-      <nbPixInterferometry>4</nbPixInterferometry>
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup>
+            <name>FRIEND_2T_SETUP</name>
+            <description>FRIEND instrument (2T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.005</dit>
+            <ron>10</ron>
+            <detectorSaturation>32700</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>4</nbPixInterferometry>
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <transmission>0.02</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>1</instrumentPhaseBias>
+      </setup>
 
       <mode>
         <name>LR</name>
@@ -658,21 +676,31 @@
       <name>PAVO_2T</name>
       <description>PAVO combiner (2T)</description>
       <numberChannels>2</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
+
       <fringeTracker>PAVO_FT</fringeTracker>
       <fringeTrackerRequired>true</fringeTrackerRequired>
 
-      <!-- noise parameters -->
-      <transmission>0.02</transmission>
-      <dit>0.008</dit>
-      <ron>20</ron>
-      <detectorSaturation>32700</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>1</instrumentPhaseBias>
-      <nbPixInterferometry>4</nbPixInterferometry>
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup>
+            <name>PAVO_2T_SETUP</name>
+            <description>PAVO combiner (2T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.008</dit>
+            <ron>20</ron>
+            <detectorSaturation>32700</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>4</nbPixInterferometry>
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <transmission>0.02</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>1</instrumentPhaseBias>
+      </setup>
 
       <mode>
         <name>R</name>
@@ -688,23 +716,32 @@
       <name>VEGA_2T</name>
       <description>VEGA instrument (2T)</description>
       <numberChannels>2</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <!-- chara transmission = 0.03 -->
-      <!-- instrumentalTransmission = mirrorTransmission * gratingTransmission * slitTransmission = 0.9^13 * 0.6 * 0.3 -->
-      <!-- global transmission = chara transmission * instrumentalTransmission * detectorQuantumEff * 4 = 0.03 * instrumentalTransmission * 0.2 * 4 -->
-      <!-- why x4 ? -->
-      <transmission>0.001098088</transmission>
-      <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
-      <ron>0</ron>
-      <detectorSaturation>3000</detectorSaturation>
-      <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>2</instrumentPhaseBias>
-      <nbPixInterferometry>1</nbPixInterferometry> <!-- per spectral element -->
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup useStrehlCorrection="false">
+            <name>VEGA_2T_SETUP</name>
+            <description>VEGA instrument (2T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
+            <ron>0</ron>
+            <detectorSaturation>3000</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>1</nbPixInterferometry> <!-- per spectral element -->
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <!-- chara transmission = 0.03 -->
+            <!-- instrumentalTransmission = mirrorTransmission * gratingTransmission * slitTransmission = 0.9^13 * 0.6 * 0.3 -->
+            <!-- global transmission = chara transmission * instrumentalTransmission * detectorQuantumEff * 4 = 0.03 * instrumentalTransmission * 0.2 * 4 -->
+            <!-- why x4 ? -->
+            <transmission>0.001098088</transmission>
+            <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>2</instrumentPhaseBias>
+      </setup>
 <!--
       <mode>
         <name>standard</name>
@@ -794,7 +831,6 @@ Configuration d’enregistrement
       <mode>
         <name>R2656</name>
         <resolution>33</resolution> <!-- 33 instead of 6000 to get only 2 channels -->
-        <numberChannels>2</numberChannels>
         <waveLengthMin>0.6337</waveLengthMin>
         <waveLengthMax>0.6787</waveLengthMax>
 
@@ -814,7 +850,6 @@ Configuration d’enregistrement
       <mode>
         <name>R2668</name>
         <resolution>33</resolution> <!-- 33 instead of 6000 to get only 2 channels -->
-        <numberChannels>2</numberChannels>
         <waveLengthMin>0.6455</waveLengthMin>
         <waveLengthMax>0.6905</waveLengthMax>
 
@@ -834,7 +869,6 @@ Configuration d’enregistrement
       <mode>
         <name>R2720</name>
         <resolution>36</resolution> <!-- 36 instead of 6000 to get only 2 channels -->
-        <numberChannels>2</numberChannels>
         <waveLengthMin>0.6975</waveLengthMin>
         <waveLengthMax>0.7425</waveLengthMax>
 
@@ -855,7 +889,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1656</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.6522</waveLengthMin>
         <waveLengthMax>0.6602</waveLengthMax>
 
@@ -875,7 +908,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1589</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.5853</waveLengthMin>
         <waveLengthMax>0.5933</waveLengthMax>
 
@@ -895,7 +927,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1770</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.7659</waveLengthMin>
         <waveLengthMax>0.7739</waveLengthMax>
 
@@ -915,7 +946,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1849</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.8455</waveLengthMin>
         <waveLengthMax>0.8535</waveLengthMax>
 
@@ -935,7 +965,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1854</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.850</waveLengthMin>
         <waveLengthMax>0.858</waveLengthMax>
 
@@ -955,7 +984,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1867</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.8635</waveLengthMin>
         <waveLengthMax>0.8715</waveLengthMax>
 
@@ -981,19 +1009,28 @@ Configuration d’enregistrement
       <name>CLIMB</name>
       <description>CLIMB instrument (3T)</description>
       <numberChannels>3</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <transmission>0.08</transmission>
-      <dit>0.002</dit>
-      <ron>10</ron>
-      <detectorSaturation>32700</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>2</instrumentPhaseBias>
-      <nbPixInterferometry>3</nbPixInterferometry>
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup>
+            <name>CLIMB_SETUP</name>
+            <description>CLIMB instrument (3T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.002</dit>
+            <ron>10</ron>
+            <detectorSaturation>32700</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>3</nbPixInterferometry>
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <transmission>0.08</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>2</instrumentPhaseBias>
+      </setup>
 
       <mode>
         <name>J</name>
@@ -1036,19 +1073,28 @@ Configuration d’enregistrement
       <name>FRIEND_3T</name>
       <description>FRIEND instrument (3T)</description>
       <numberChannels>2</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <transmission>0.02</transmission>
-      <dit>0.005</dit>
-      <ron>10</ron>
-      <detectorSaturation>32700</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>1</instrumentPhaseBias>
-      <nbPixInterferometry>4</nbPixInterferometry>
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup>
+            <name>FRIEND_3T_SETUP</name>
+            <description>FRIEND instrument (3T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.005</dit>
+            <ron>10</ron>
+            <detectorSaturation>32700</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>4</nbPixInterferometry>
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <transmission>0.02</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>1</instrumentPhaseBias>
+      </setup>
 
       <mode>
         <name>LR</name>
@@ -1089,21 +1135,31 @@ Configuration d’enregistrement
       <name>PAVO_3T</name>
       <description>PAVO combiner (3T)</description>
       <numberChannels>3</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
+
       <fringeTracker>PAVO_FT</fringeTracker>
       <fringeTrackerRequired>true</fringeTrackerRequired>
 
-      <!-- noise parameters -->
-      <transmission>0.02</transmission>
-      <dit>0.008</dit>
-      <ron>20</ron>
-      <detectorSaturation>32700</detectorSaturation>
-      <instrumentVisibility>0.9</instrumentVisibility>
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>1</instrumentPhaseBias>
-      <nbPixInterferometry>4</nbPixInterferometry>
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup>
+            <name>PAVO_3T_SETUP</name>
+            <description>PAVO combiner (3T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.008</dit>
+            <ron>20</ron>
+            <detectorSaturation>32700</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>4</nbPixInterferometry>
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <transmission>0.02</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>1</instrumentPhaseBias>
+      </setup>
 
       <mode>
         <name>R</name>
@@ -1119,23 +1175,32 @@ Configuration d’enregistrement
       <name>VEGA_3T</name>
       <description>VEGA instrument (3T)</description>
       <numberChannels>3</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <!-- chara transmission = 0.03 -->
-      <!-- instrumentalTransmission = mirrorTransmission * gratingTransmission * slitTransmission = 0.9^13 * 0.6 * 0.3 -->
-      <!-- global transmission = chara transmission * instrumentalTransmission * detectorQuantumEff * 4 = 0.03 * instrumentalTransmission * 0.2 * 4 -->
-      <!-- why x4 ? -->
-      <transmission>0.001098088</transmission>
-      <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
-      <ron>0</ron>
-      <detectorSaturation>3000</detectorSaturation>
-      <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>2</instrumentPhaseBias>
-      <nbPixInterferometry>1</nbPixInterferometry> <!-- per spectral element -->
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup useStrehlCorrection="false">
+            <name>VEGA_3T_SETUP</name>
+            <description>VEGA instrument (2T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
+            <ron>0</ron>
+            <detectorSaturation>3000</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>1</nbPixInterferometry> <!-- per spectral element -->
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <!-- chara transmission = 0.03 -->
+            <!-- instrumentalTransmission = mirrorTransmission * gratingTransmission * slitTransmission = 0.9^13 * 0.6 * 0.3 -->
+            <!-- global transmission = chara transmission * instrumentalTransmission * detectorQuantumEff * 4 = 0.03 * instrumentalTransmission * 0.2 * 4 -->
+            <!-- why x4 ? -->
+            <transmission>0.001098088</transmission>
+            <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>2</instrumentPhaseBias>
+      </setup>
 
 <!-- VEGA SETUP Parameters -->
 <!--
@@ -1217,7 +1282,6 @@ Configuration d’enregistrement
       <mode>
         <name>R2656</name>
         <resolution>33</resolution> <!-- 33 instead of 6000 to get only 2 channels -->
-        <numberChannels>2</numberChannels>
         <waveLengthMin>0.6337</waveLengthMin>
         <waveLengthMax>0.6787</waveLengthMax>
 
@@ -1237,7 +1301,6 @@ Configuration d’enregistrement
       <mode>
         <name>R2668</name>
         <resolution>33</resolution> <!-- 33 instead of 6000 to get only 2 channels -->
-        <numberChannels>2</numberChannels>
         <waveLengthMin>0.6455</waveLengthMin>
         <waveLengthMax>0.6905</waveLengthMax>
 
@@ -1257,7 +1320,6 @@ Configuration d’enregistrement
       <mode>
         <name>R2720</name>
         <resolution>36</resolution> <!-- 36 instead of 6000 to get only 2 channels -->
-        <numberChannels>2</numberChannels>
         <waveLengthMin>0.6975</waveLengthMin>
         <waveLengthMax>0.7425</waveLengthMax>
 
@@ -1278,7 +1340,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1656</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.6522</waveLengthMin>
         <waveLengthMax>0.6602</waveLengthMax>
 
@@ -1298,7 +1359,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1589</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.5853</waveLengthMin>
         <waveLengthMax>0.5933</waveLengthMax>
 
@@ -1318,7 +1378,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1770</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.7659</waveLengthMin>
         <waveLengthMax>0.7739</waveLengthMax>
 
@@ -1338,7 +1397,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1849</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.8455</waveLengthMin>
         <waveLengthMax>0.8535</waveLengthMax>
 
@@ -1358,7 +1416,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1854</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.850</waveLengthMin>
         <waveLengthMax>0.858</waveLengthMax>
 
@@ -1378,7 +1435,6 @@ Configuration d’enregistrement
       <mode>
         <name>R1867</name>
         <resolution>30000</resolution>
-        <numberChannels>1</numberChannels>
         <waveLengthMin>0.8635</waveLengthMin>
         <waveLengthMax>0.8715</waveLengthMax>
 
@@ -1401,36 +1457,31 @@ Configuration d’enregistrement
 <!-- instruments (4T) -->
 
     <focalInstrument>
-      <!-- name: Name of the focal instrument (AMBER, MIDI ...) -->
       <name>MIRC</name>
-      <!-- description: Description of the instrument -->
       <description>MIRC instrument (4T)</description>
-      <!-- numberChannels : The number of channels used by this instrument -->
       <numberChannels>4</numberChannels>
-      <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- Noise modelling parameters -->
-        <!-- The transmission of interferometer+instrument at observed wavelength (typically 0.01) -->
-        <transmission>0.0025</transmission>
-        <!-- The Detector individual integration time in seconds (typically less than 0.1s) -->
-        <dit>0.01</dit>
-        <!-- ron: The Detector readout noise (typically 10) -->
-        <ron>15</ron>
-        <!-- detectorSaturation: The Detector is non-linear above (to avoid saturation/non-linearity) (typically more than 20000) -->
-        <detectorSaturation>50000</detectorSaturation>
-        <!-- instrumentVisibility: The instrumental visibility (multiplicative) [0.0 - 1.0] (typically 0.9) -->
-        <instrumentVisibility>0.9</instrumentVisibility>
-        <!-- instrumentVisibilityBias: The Typical Visibility Bias (percent of V) (typically 1) -->
-        <instrumentVisibilityBias>1</instrumentVisibilityBias>
-        <!-- instrumentPhaseBias: The Typical Phase/Phase Closure Bias in degrees (typically 1) -->
-        <instrumentPhaseBias>1</instrumentPhaseBias>
-        <!-- nbPixInterferometry: The number of pixels to code all fringes together (interferometric channel) -->
-        <nbPixInterferometry>126</nbPixInterferometry>
-        <!-- nbPixPhotometry: The number of pixels to code each photometric channel -->
-        <nbPixPhotometry>18</nbPixPhotometry>
-        <!-- fracFluxInInterferometry: The fraction of flux going into interferometric channel (typically 0.9) -->
-        <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+      <setup>
+            <name>MIRC_4T_SETUP</name>
+            <description>MIRC instrument (4T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.01</dit>
+            <ron>15</ron>
+            <detectorSaturation>50000</detectorSaturation>
+
+            <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.25</fracFluxInPhotometry>
+
+            <nbPixInterferometry>126</nbPixInterferometry>
+            <nbPixPhotometry>18</nbPixPhotometry>
+
+            <transmission>0.0025</transmission>
+            <instrumentVisibility>0.9</instrumentVisibility>
+
+            <instrumentVisibilityBias>1</instrumentVisibilityBias>
+            <instrumentPhaseBias>1</instrumentPhaseBias>
+      </setup>
 
       <!--
         Instrument predefined modes :
@@ -1492,23 +1543,32 @@ Configuration d’enregistrement
       <name>VEGA_4T</name>
       <description>VEGA instrument (4T)</description>
       <numberChannels>4</numberChannels>
-      <defaultSamplingTime>40</defaultSamplingTime>
 
-      <!-- noise parameters -->
-      <!-- chara transmission = 0.03 -->
-      <!-- instrumentalTransmission = mirrorTransmission * gratingTransmission * slitTransmission = 0.9^13 * 0.6 * 0.3 -->
-      <!-- global transmission = chara transmission * instrumentalTransmission * detectorQuantumEff * 4 = 0.03 * instrumentalTransmission * 0.2 * 4 -->
-      <!-- why x4 ? -->
-      <transmission>0.001098088</transmission>
-      <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
-      <ron>0</ron>
-      <detectorSaturation>3000</detectorSaturation>
-      <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
-      <instrumentVisibilityBias>2</instrumentVisibilityBias>
-      <instrumentPhaseBias>2</instrumentPhaseBias>
-      <nbPixInterferometry>1</nbPixInterferometry> <!-- per spectral element -->
-      <nbPixPhotometry>0</nbPixPhotometry>
-      <fracFluxInInterferometry>1</fracFluxInInterferometry>
+      <setup useStrehlCorrection="false">
+            <name>VEGA_4T_SETUP</name>
+            <description>VEGA instrument (2T)</description>
+            <defaultSamplingTime>40</defaultSamplingTime>
+
+            <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
+            <ron>0</ron>
+            <detectorSaturation>3000</detectorSaturation>
+
+            <fracFluxInInterferometry>1</fracFluxInInterferometry>
+            <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+            <nbPixInterferometry>1</nbPixInterferometry> <!-- per spectral element -->
+            <nbPixPhotometry>0</nbPixPhotometry>
+
+            <!-- chara transmission = 0.03 -->
+            <!-- instrumentalTransmission = mirrorTransmission * gratingTransmission * slitTransmission = 0.9^13 * 0.6 * 0.3 -->
+            <!-- global transmission = chara transmission * instrumentalTransmission * detectorQuantumEff * 4 = 0.03 * instrumentalTransmission * 0.2 * 4 -->
+            <!-- why x4 ? -->
+            <transmission>0.001098088</transmission>
+            <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
+
+            <instrumentVisibilityBias>2</instrumentVisibilityBias>
+            <instrumentPhaseBias>2</instrumentPhaseBias>
+      </setup>
 
 <!-- VEGA SETUP Parameters -->
 <!--
@@ -1590,7 +1650,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R2656</name>
                 <resolution>33</resolution> <!-- 33 instead of 6000 to get only 2 channels -->
-                <numberChannels>2</numberChannels>
                 <waveLengthMin>0.6337</waveLengthMin>
                 <waveLengthMax>0.6787</waveLengthMax>
 
@@ -1643,7 +1702,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R2668</name>
                 <resolution>33</resolution> <!-- 33 instead of 6000 to get only 2 channels -->
-                <numberChannels>2</numberChannels>
                 <waveLengthMin>0.6455</waveLengthMin>
                 <waveLengthMax>0.6905</waveLengthMax>
 
@@ -1696,7 +1754,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R2720</name>
                 <resolution>36</resolution> <!-- 36 instead of 6000 to get only 2 channels -->
-                <numberChannels>2</numberChannels>
                 <waveLengthMin>0.6975</waveLengthMin>
                 <waveLengthMax>0.7425</waveLengthMax>
 
@@ -1750,7 +1807,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R1656</name>
                 <resolution>30000</resolution>
-                <numberChannels>1</numberChannels>
                 <waveLengthMin>0.6522</waveLengthMin>
                 <waveLengthMax>0.6602</waveLengthMax>
 
@@ -1803,7 +1859,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R1589</name>
                 <resolution>30000</resolution>
-                <numberChannels>1</numberChannels>
                 <waveLengthMin>0.5853</waveLengthMin>
                 <waveLengthMax>0.5933</waveLengthMax>
 
@@ -1856,7 +1911,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R1770</name>
                 <resolution>30000</resolution>
-                <numberChannels>1</numberChannels>
                 <waveLengthMin>0.7659</waveLengthMin>
                 <waveLengthMax>0.7739</waveLengthMax>
 
@@ -1909,7 +1963,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R1849</name>
                 <resolution>30000</resolution>
-                <numberChannels>1</numberChannels>
                 <waveLengthMin>0.8455</waveLengthMin>
                 <waveLengthMax>0.8535</waveLengthMax>
 
@@ -1962,7 +2015,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R1854</name>
                 <resolution>30000</resolution>
-                <numberChannels>1</numberChannels>
                 <waveLengthMin>0.850</waveLengthMin>
                 <waveLengthMax>0.858</waveLengthMax>
 
@@ -2015,7 +2067,6 @@ Configuration d’enregistrement
             <mode>
                 <name>R1867</name>
                 <resolution>30000</resolution>
-                <numberChannels>1</numberChannels>
                 <waveLengthMin>0.8635</waveLengthMin>
                 <waveLengthMax>0.8715</waveLengthMax>
 
@@ -2071,36 +2122,31 @@ Configuration d’enregistrement
         <!-- instruments (5T) -->
 
         <focalInstrument>
-            <!-- name: Name of the focal instrument (AMBER, MIDI ...) -->
             <name>MIRC_5T</name>
-            <!-- description: Description of the instrument -->
             <description>MIRC instrument (5T)</description>
-            <!-- numberChannels : The number of channels used by this instrument -->
             <numberChannels>5</numberChannels>
-            <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
-            <defaultSamplingTime>40</defaultSamplingTime>
 
-            <!-- Noise modelling parameters -->
-            <!-- The transmission of interferometer+instrument at observed wavelength (typically 0.01) -->
-            <transmission>0.0025</transmission>
-            <!-- The Detector individual integration time in seconds (typically less than 0.1s) -->
-            <dit>0.01</dit>
-            <!-- ron: The Detector readout noise (typically 10) -->
-            <ron>15</ron>
-            <!-- detectorSaturation: The Detector is non-linear above (to avoid saturation/non-linearity) (typically more than 20000) -->
-            <detectorSaturation>50000</detectorSaturation>
-            <!-- instrumentVisibility: The instrumental visibility (multiplicative) [0.0 - 1.0] (typically 0.9) -->
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <!-- instrumentVisibilityBias: The Typical Visibility Bias (percent of V) (typically 1) -->
-            <instrumentVisibilityBias>1</instrumentVisibilityBias>
-            <!-- instrumentPhaseBias: The Typical Phase/Phase Closure Bias in degrees (typically 1) -->
-            <instrumentPhaseBias>1</instrumentPhaseBias>
-            <!-- nbPixInterferometry: The number of pixels to code all fringes together (interferometric channel) -->
-            <nbPixInterferometry>126</nbPixInterferometry>
-            <!-- nbPixPhotometry: The number of pixels to code each photometric channel -->
-            <nbPixPhotometry>18</nbPixPhotometry>
-            <!-- fracFluxInInterferometry: The fraction of flux going into interferometric channel (typically 0.9) -->
-            <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+            <setup>
+                <name>MIRC_5T_SETUP</name>
+                <description>MIRC instrument (5T)</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.01</dit>
+                <ron>15</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.25</fracFluxInPhotometry>
+
+                <nbPixInterferometry>126</nbPixInterferometry>
+                <nbPixPhotometry>18</nbPixPhotometry>
+
+                <transmission>0.0025</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
 
             <!--
               Instrument predefined modes :
@@ -2161,36 +2207,31 @@ Configuration d’enregistrement
         <!-- instruments (6T) -->
 
         <focalInstrument>
-            <!-- name: Name of the focal instrument (AMBER, MIDI ...) -->
             <name>MIRC_6T</name>
-            <!-- description: Description of the instrument -->
             <description>MIRC instrument (6T)</description>
-            <!-- numberChannels : The number of channels used by this instrument -->
             <numberChannels>6</numberChannels>
-            <!-- defaultSamplingTime: The default sampling time for this instrument (min) -->
-            <defaultSamplingTime>40</defaultSamplingTime>
 
-            <!-- Noise modelling parameters -->
-            <!-- The transmission of interferometer+instrument at observed wavelength (typically 0.01) -->
-            <transmission>0.0025</transmission>
-            <!-- The Detector individual integration time in seconds (typically less than 0.1s) -->
-            <dit>0.01</dit>
-            <!-- ron: The Detector readout noise (typically 10) -->
-            <ron>15</ron>
-            <!-- detectorSaturation: The Detector is non-linear above (to avoid saturation/non-linearity) (typically more than 20000) -->
-            <detectorSaturation>50000</detectorSaturation>
-            <!-- instrumentVisibility: The instrumental visibility (multiplicative) [0.0 - 1.0] (typically 0.9) -->
-            <instrumentVisibility>0.9</instrumentVisibility>
-            <!-- instrumentVisibilityBias: The Typical Visibility Bias (percent of V) (typically 1) -->
-            <instrumentVisibilityBias>1</instrumentVisibilityBias>
-            <!-- instrumentPhaseBias: The Typical Phase/Phase Closure Bias in degrees (typically 1) -->
-            <instrumentPhaseBias>1</instrumentPhaseBias>
-            <!-- nbPixInterferometry: The number of pixels to code all fringes together (interferometric channel) -->
-            <nbPixInterferometry>126</nbPixInterferometry>
-            <!-- nbPixPhotometry: The number of pixels to code each photometric channel -->
-            <nbPixPhotometry>18</nbPixPhotometry>
-            <!-- fracFluxInInterferometry: The fraction of flux going into interferometric channel (typically 0.9) -->
-            <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+            <setup>
+                <name>MIRC_6T_SETUP</name>
+                <description>MIRC instrument (6T)</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.01</dit>
+                <ron>15</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.25</fracFluxInPhotometry>
+
+                <nbPixInterferometry>126</nbPixInterferometry>
+                <nbPixPhotometry>18</nbPixPhotometry>
+
+                <transmission>0.0025</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
 
             <!--
               Instrument predefined modes :

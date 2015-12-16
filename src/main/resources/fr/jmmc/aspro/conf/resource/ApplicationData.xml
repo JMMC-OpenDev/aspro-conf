@@ -18,13 +18,28 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2015.1006"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="06/10/2015" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2015.1216"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="16/12/2015" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2015.1216">
+            <pubDate>Wed, 16 Dec 2015 12:00:00 GMT</pubDate>
+            <prerelease version="2015.1216 beta 1">
+                <change type="FEATURE">VLTI: updated GRAVITY Fringe Tracker and instrument modes (COMBINED, SPLIT)</change>
+                <change type="FEATURE">VLTI: updated telescope shadowing profiles according to ESO new "theoretical" master tables for VLTI horizons
+                    (2015/12/09)</change>
+                <change type="FEATURE">VLTI: added atmospheric transmission (average)</change>
+            </prerelease>
+        </release>
+        <release version="2015.1113">
+            <pubDate>Fri, 13 Nov 2015 17:00:00 GMT</pubDate>
+            <prerelease version="2015.1113 beta 1">
+                <change type="FEATURE">VLTI: updated MATISSE configuration: detailled modes with wavelengths and thermal noise ...</change>
+            </prerelease>
+        </release>
         <release version="2015.1006">
             <pubDate>Tue, 06 Oct 2015 13:00:00 GMT</pubDate>
             <prerelease version="2015.1006 beta 1">
