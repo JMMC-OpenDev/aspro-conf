@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2015.1216"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="16/12/2015" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2015.1218"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="18/12/2015" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2015.1218">
+            <pubDate>Fri, 18 Dec 2015 17:00:00 GMT</pubDate>
+            <prerelease version="2015.1218 beta 1">
+                <change type="FEATURE">VLTI: added GRAVITY quadruplets A0-G1-J2-K0 and C1-G1-J2-K0</change>
+                <change type="FEATURE">VLTI: modified maximum delay line throw to 99 meters</change>
+            </prerelease>
+        </release>
         <release version="2015.1216">
             <pubDate>Wed, 16 Dec 2015 12:00:00 GMT</pubDate>
             <prerelease version="2015.1216 beta 1">

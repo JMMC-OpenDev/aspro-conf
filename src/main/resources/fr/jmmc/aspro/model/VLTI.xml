@@ -548,30 +548,30 @@
         <name>IP7</name>
     </channel>
 
-    <!-- DL: 90m increased to 100m (Nov 2013) -->
+    <!-- DL: 90m increased to 100m (Nov 2013) lower to 99m (dec 2015) -->
     <delayLine>
         <name>DL1</name>
-        <maximumThrow>100.0</maximumThrow>
+        <maximumThrow>99.0</maximumThrow>
     </delayLine>
     <delayLine>
         <name>DL2</name>
-        <maximumThrow>100.0</maximumThrow>
+        <maximumThrow>99.0</maximumThrow>
     </delayLine>
     <delayLine>
         <name>DL3</name>
-        <maximumThrow>100.0</maximumThrow>
+        <maximumThrow>99.0</maximumThrow>
     </delayLine>
     <delayLine>
         <name>DL4</name>
-        <maximumThrow>100.0</maximumThrow>
+        <maximumThrow>99.0</maximumThrow>
     </delayLine>
     <delayLine>
         <name>DL5</name>
-        <maximumThrow>100.0</maximumThrow>
+        <maximumThrow>99.0</maximumThrow>
     </delayLine>
     <delayLine>
         <name>DL6</name>
-        <maximumThrow>100.0</maximumThrow>
+        <maximumThrow>99.0</maximumThrow>
     </delayLine>
 
     <!-- DL restrictions: VCM max pressure set to 2.5 bar (March 2014) -->
@@ -17713,6 +17713,17 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
             </configuration>
+            <!-- P98 -->
+            <configuration>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>C1 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
         </instrument>
 
         <instrument>
@@ -17757,6 +17768,11 @@ N 7.5 - 13.5 um
                 <stations>D0 G2 J3 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
             </configuration>
             <configuration>
                 <stations>A0 B2 C1 D0</stations>
