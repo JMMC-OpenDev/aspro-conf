@@ -17724,6 +17724,12 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- A0DL1 G2DL2 J2DL4 J3DL3 -->
+            <configuration>
+                <stations>A0 G2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL4 DL3</delayLines>
+            </configuration>
         </instrument>
 
         <instrument>
