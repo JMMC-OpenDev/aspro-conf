@@ -6990,12 +6990,11 @@
       </mode>
     </focalInstrument>
 
-
-    <!-- future instruments -->
-
+    <!-- GRAVITY from Period 98 -->
     <focalInstrument>
       <name>GRAVITY</name>
-      <description>GRAVITY instrument (4T) (experimental)</description>
+      <description>GRAVITY instrument (4T)</description>
+      <!-- experimental (todo fix visibility computation like DRS) -->
       <experimental>true</experimental>
       <numberChannels>4</numberChannels>
       <fringeTracker>FT_GRAVITY</fringeTracker>
@@ -7003,7 +7002,7 @@
 
       <setup>
             <name>GRAVITY_SETUP</name>
-            <description>GRAVITY instrument (4T) (experimental)</description>
+            <description>GRAVITY instrument (4T)</description>
             <defaultSamplingTime>30</defaultSamplingTime>
 
             <dit>0.3</dit>
@@ -7079,6 +7078,9 @@
         <waveLengthMax>2.45</waveLengthMax>
       </mode>
     </focalInstrument>
+
+
+    <!-- future instruments -->
 
     <focalInstrument>
       <name>MATISSE_LM</name>
@@ -14250,6 +14252,149 @@ N 7.5 - 13.5 um
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
     <configuration>
+        <version>Period 98</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <instrument>
+            <focalInstrument>AMBER</focalInstrument>
+            <!-- UT1 UT2 UT3 UT4 -->
+            <configuration>
+                <stations>UT1 UT2 UT3</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT2 UT4</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL1 DL2 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT1 UT3 UT4</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL1 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>UT2 UT3 UT4</stations>
+                <channels>IP3 IP1 IP5</channels>
+                <delayLines>DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- A0-B2-C1-D0 -->
+            <configuration>
+                <stations>A0 B2 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL6 DL5 DL1</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL6 DL5 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 D0 C1</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <stations>B2 D0 C1</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL1 DL2</delayLines>
+            </configuration>
+            <!-- D0-G2-J3-K0 -->
+            <configuration>
+                <stations>K0 G2 D0</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL4 DL2 DL1</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 G2 J3</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL4 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>K0 D0 J3</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL4 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G2 D0 J3</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL2 DL1 DL3</delayLines>
+            </configuration>
+            <!-- A0-G1-J2-J3 -->
+            <configuration>
+                <stations>A0 G1 J2</stations>
+                <channels>IP1 IP3 IP5</channels>
+                <delayLines>DL6 DL5 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 G1 J3</stations>
+                <channels>IP1 IP3 IP7</channels>
+                <delayLines>DL6 DL5 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 J2 J3</stations>
+                <channels>IP1 IP5 IP7</channels>
+                <delayLines>DL6 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>G1 J2 J3</stations>
+                <channels>IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL4 DL3</delayLines>
+            </configuration>
+        </instrument>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P98 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
+
+    <configuration>
         <version>Period 97</version>
         <interferometer>VLTI</interferometer>
         <switchyard>sw_STS</switchyard>
@@ -14340,7 +14485,6 @@ N 7.5 - 13.5 um
                 <delayLines>DL5 DL4 DL3</delayLines>
             </configuration>
         </instrument>
-        <!-- MIDI decommissioned -->
         <!-- Use PIONIER_2 (new setup) -->
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
