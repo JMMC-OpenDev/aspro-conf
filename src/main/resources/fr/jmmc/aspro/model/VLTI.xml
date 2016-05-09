@@ -17834,11 +17834,17 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
             </configuration>
-            <!-- P98 Comm2 / 3 -->
+            <!-- P98 Comm2 / 3 / SV -->
             <configuration>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- 9 May 2016: SV -->
+            <configuration>
+                <stations>A0 G1 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
             </configuration>
             <configuration>
                 <stations>C1 G1 J2 K0</stations>

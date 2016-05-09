@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2016.0419"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="19/04/2016" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2016.0509"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="09/05/2016" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2016.0509">
+            <pubDate>Mon, 09 May 2016 14:00:00 GMT</pubDate>
+            <prerelease version="2016.0419 beta 1">
+                <change type="FEATURE">VLTI: added GRAVITY quadruplet A0-G1-C1-D0 (Science verification) in the 'Future' period</change>
+            </prerelease>
+        </release>
         <release version="2016.0419">
             <pubDate>Tue, 19 Apr 2016 14:00:00 GMT</pubDate>
             <prerelease version="2016.0419 beta 1">
@@ -47,7 +53,7 @@
         <release version="2016.0205">
             <pubDate>Fri, 05 Feb 2016 15:00:00 GMT</pubDate>
             <prerelease version="2016.0205 beta 1">
-                <change type="FEATURE">VLTI: added GRAVITY quadruplets A0-G2-J2-J3 (relocation)</change>
+                <change type="FEATURE">VLTI: added GRAVITY quadruplet A0-G2-J2-J3 (relocation)</change>
             </prerelease>
         </release>
         <release version="2015.1218">
