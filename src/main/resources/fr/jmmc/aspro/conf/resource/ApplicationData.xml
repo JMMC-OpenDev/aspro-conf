@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2016.0509"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="09/05/2016" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2016.0610"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="10/06/2016" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2016.0610">
+            <pubDate>Fri, 10 Jun 2016 10:00:00 GMT</pubDate>
+            <prerelease version="2016.0610 beta 1">
+                <change type="FEATURE">VLTI: updated MATISSE_LM modes to have proper values of thermal background photons in the M band</change>
+            </prerelease>
+        </release>
         <release version="2016.0509">
             <pubDate>Mon, 09 May 2016 14:00:00 GMT</pubDate>
             <prerelease version="2016.0419 beta 1">
@@ -75,7 +81,7 @@
         <release version="2015.1113">
             <pubDate>Fri, 13 Nov 2015 17:00:00 GMT</pubDate>
             <prerelease version="2015.1113 beta 1">
-                <change type="FEATURE">VLTI: updated MATISSE configuration: detailled modes with wavelengths and thermal noise ...</change>
+                <change type="FEATURE">VLTI: updated MATISSE configuration: detailled modes with wavelengths and thermal background noise ...</change>
             </prerelease>
         </release>
         <release version="2015.1006">
