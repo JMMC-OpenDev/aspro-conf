@@ -18,20 +18,25 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2016.0905"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="05/09/2016" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2016.0926"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="26/09/2016" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2016.0926">
+            <pubDate>Mon, 26 Sep 2016 14:00:00 GMT</pubDate>
+            <prerelease version="2016.0926 beta 1">
+                <change type="FEATURE">CHARA: added the Future period providing the SPICA instrument in study (visible 6T)</change>
+            </prerelease>
+        </release>
         <release version="2016.0905">
             <pubDate>Mon, 05 Sep 2016 16:00:00 GMT</pubDate>
             <prerelease version="2016.0905 beta 1">
                 <change type="FEATURE">VLTI: added eso Period 99 (= 98)</change>
             </prerelease>
         </release>
-
         <release version="2016.0610">
             <pubDate>Fri, 10 Jun 2016 10:00:00 GMT</pubDate>
             <prerelease version="2016.0610 beta 1">

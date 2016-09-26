@@ -2333,7 +2333,67 @@ Configuration d’enregistrement
             </mode>
         </focalInstrument>
 
+        <!-- future instruments -->
+        <focalInstrument>
+            <name>SPICA_6T</name>
+            <description>SPICA future instrument (6T)</description>
+            <experimental>true</experimental>
+            <numberChannels>6</numberChannels>
+
+            <setup useStrehlCorrection="false">
+                <name>SPICA_6T_SETUP</name>
+                <description>SPICA instrument (6T)</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.03</dit> <!-- exposure time (30ms) -->
+                <ron>1</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.66</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.33</fracFluxInPhotometry>
+
+                <nbPixInterferometry>4</nbPixInterferometry> <!-- per spectral element -->
+                <nbPixPhotometry>4</nbPixPhotometry>
+
+                <transmission>0.01</transmission> <!-- including strehl ? -->
+                <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
+
+                <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
+                <instrumentPhaseBias>1.0</instrumentPhaseBias>
+            </setup>
+
+            <!--
+TODO:
+mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suivants:
+1) LR: 50 canaux spectraux de 6nm chacun répartis uniformément sur 600-900nm
+2) MR660: 200 canaux spectraux de 0.2nm répartis uniformément sur 40nm centrés sur 660nm
+3) MR800: la même chose centrés sur 800nm
+            -->
+            <mode>
+                <name>LR</name>
+                <resolution>125</resolution>
+                <waveLengthMin>0.6</waveLengthMin>
+                <waveLengthMax>0.9</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>MR660</name>
+                <resolution>3300</resolution>
+                <waveLengthMin>0.64</waveLengthMin>
+                <waveLengthMax>0.68</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>MR800</name>
+                <resolution>4000</resolution>
+                <waveLengthMin>0.78</waveLengthMin>
+                <waveLengthMax>0.82</waveLengthMax>
+            </mode>
+
+        </focalInstrument>
+
     </description>
+
 
     <configuration>
         <interferometer>CHARA</interferometer>
@@ -3187,6 +3247,27 @@ Configuration d’enregistrement
             <configuration>
                 <stations>E2 E1 W2 W1</stations>
                 <channels>V2 V1 V3 V4</channels>
+            </configuration>
+        </instrument>
+    </configuration>
+
+
+    <configuration>
+        <version>Future</version>
+        <interferometer>CHARA</interferometer>
+
+        <!-- future instruments -->
+        <instrument>
+            <!-- focalInstrument: The focal instrument associated with this configuration -->
+            <focalInstrument>SPICA_6T</focalInstrument>
+            <!-- SPICA_6T: S1 S2 W1 W2 E1 E2 = beams 1-2-3-4-6-5 -->
+
+            <!-- configuration: The list of configuration for the focal instrument -->
+            <configuration>
+                <!-- stations: The list of stations for this configuration -->
+                <stations>S1 S2 W1 W2 E1 E2</stations>
+                <!-- channels: The list of channels for this configuration -->
+                <channels>V1 V2 V3 V4 V6 V5</channels>
             </configuration>
         </instrument>
     </configuration>
