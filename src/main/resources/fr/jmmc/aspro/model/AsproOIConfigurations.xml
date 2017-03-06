@@ -23,7 +23,7 @@
 
     <interferometerFile>
         <file>VLTI.xml</file>
-        <checksum>1329747983771070464</checksum>
+        <checksum>5465613925937053696</checksum>
     </interferometerFile>
 
     <interferometerFile>
@@ -49,7 +49,7 @@
 
     <interferometerFile>
         <file>DEMO.xml</file>
-        <checksum>8317030904675434496</checksum>
+        <checksum>3923161837402980352</checksum>
     </interferometerFile>
 
     <!-- Paranal single-dish mode -->
