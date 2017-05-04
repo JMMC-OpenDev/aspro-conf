@@ -639,9 +639,9 @@
 
       <mode>
         <name>LR</name>
-        <resolution>400</resolution>
-        <waveLengthMin>0.63</waveLengthMin>
-        <waveLengthMax>0.75</waveLengthMax>
+        <resolution>11</resolution>
+        <waveLengthMin>0.66</waveLengthMin>
+        <waveLengthMax>0.72</waveLengthMax>
       </mode>
 
       <mode>
