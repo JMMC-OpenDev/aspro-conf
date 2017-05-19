@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2017.0504"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="04/05/2017" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2017.0519"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="19/05/2017" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2017.0519">
+            <pubDate>Fri, 19 May 2017 16:00:00 GMT</pubDate>
+            <prerelease version="2017.0519 beta 1">
+                <change type="FEATURE">VLTI: Updated the optical path lengths of the switchyard following the STS installation in 2016</change>
+            </prerelease>
+        </release>
         <release version="2017.0504">
             <pubDate>Thu, 04 May 2017 16:00:00 GMT</pubDate>
             <prerelease version="2017.0504 beta 1">
