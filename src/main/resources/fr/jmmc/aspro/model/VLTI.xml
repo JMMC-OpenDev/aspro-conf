@@ -6524,7 +6524,8 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
         <instrumentVisibility>0.5</instrumentVisibility>
 
         <!-- K=10 (UT), K=8 (AT) -->
-        <magLimit>10</magLimit>
+        <!-- 2017/07 always use FT with GRAVITY -->
+        <magLimit>18</magLimit>
         <!-- up to 60 seconds -->
         <maxIntegration>60</maxIntegration>
     </fringeTracker>
