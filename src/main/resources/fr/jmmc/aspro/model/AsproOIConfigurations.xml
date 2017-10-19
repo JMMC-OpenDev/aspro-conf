@@ -19,7 +19,7 @@
     xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
 
     <!-- minimum version corresponds to Aspro2 0.9.9 (Nov 2015 / CfP 98) -->
-    <minVersion>0.9.9</minVersion>
+    <minVersion>0.9.9.4</minVersion>
 
     <interferometerFile>
         <file>VLTI.xml</file>
