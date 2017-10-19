@@ -2350,6 +2350,13 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="waveLengthRef" type="xsd:double" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The reference wave length of this instrument mode (micrometer) to add noise into background (FFT) image
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
 
             <!-- instrument setup reference -->
             <xsd:element name="setupRef" type="xsd:IDREF" minOccurs="0" maxOccurs="1">
@@ -2461,27 +2468,6 @@
         </xsd:attribute>
     </xsd:complexType>
 
-    <xsd:complexType name="FocalInstrumentComposedMode">
-        <xsd:annotation>
-            <xsd:documentation>
-                This type describes a focal instrument mode (MATISSE LM + N)
-                as a composition of several individual instrument modes
-            </xsd:documentation>
-        </xsd:annotation>
-        <xsd:complexContent>
-            <xsd:extension base="FocalInstrumentMode">
-                <xsd:sequence>
-                    <xsd:element name="mode" type="FocalInstrumentMode" minOccurs="1" maxOccurs="unbounded">
-                        <xsd:annotation>
-                            <xsd:documentation>
-                                The list of focal instrument mode associated to this composed instrument mode
-                            </xsd:documentation>
-                        </xsd:annotation>
-                    </xsd:element>
-                </xsd:sequence>
-            </xsd:extension>
-        </xsd:complexContent>
-    </xsd:complexType>
 
 
 
@@ -2607,23 +2593,23 @@
 
 
 
-
+ 
     <!-- AtmosphereQuality -->
     <xsd:simpleType name="AtmosphereQuality">
         <xsd:annotation>
             <xsd:documentation>
                 Possible values for the AtmosphereQuality :
-                - "Excellent" seeing = 0.4 arc sec
-                - "Good"      seeing = 0.6 arc sec
                 - "Average"   seeing = 1.0 arc sec
+                - "Good"      seeing = 0.6 arc sec
+                - "Excellent" seeing = 0.4 arc sec
                 - "Bad"       seeing = 1.4 arc sec
                 - "Awful"     seeing = 1.8 arc sec
             </xsd:documentation>
         </xsd:annotation>
         <xsd:restriction base="xsd:string">
-            <xsd:enumeration value="Excellent">
+            <xsd:enumeration value="Average">
                 <xsd:annotation>
-                    <xsd:documentation>'Excellent' means seeing = 0.4 arcsec</xsd:documentation>
+                    <xsd:documentation>'Average' means seeing = 1.0 arcsec</xsd:documentation>
                 </xsd:annotation>
             </xsd:enumeration>
             <xsd:enumeration value="Good">
@@ -2631,9 +2617,9 @@
                     <xsd:documentation>'Good' means seeing = 0.6 arcsec</xsd:documentation>
                 </xsd:annotation>
             </xsd:enumeration>
-            <xsd:enumeration value="Average">
+            <xsd:enumeration value="Excellent">
                 <xsd:annotation>
-                    <xsd:documentation>'Average' means seeing = 1.0 arcsec</xsd:documentation>
+                    <xsd:documentation>'Excellent' means seeing = 0.4 arcsec</xsd:documentation>
                 </xsd:annotation>
             </xsd:enumeration>
             <xsd:enumeration value="Bad">
@@ -2756,6 +2742,8 @@
                 - "nb_photon_thermal"
                 - "transmission"
                 - "visibility"
+                - "nb_pix_Interf"
+                - "nb_pix_Photo"
             </xsd:documentation>
         </xsd:annotation>
         <xsd:restriction base="xsd:string">
@@ -2782,6 +2770,16 @@
             <xsd:enumeration value="visibility">
                 <xsd:annotation>
                     <xsd:documentation>'visibility' = instrumental visibility</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="nb_pix_Interf">
+                <xsd:annotation>
+                    <xsd:documentation>'nb_pix_Interf' = number of pixels to code all fringes together (interferometric channel)</xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="nb_pix_Photo">
+                <xsd:annotation>
+                    <xsd:documentation>'nb_pix_Photo' = number of pixels to code each photometric channel</xsd:documentation>
                 </xsd:annotation>
             </xsd:enumeration>
         </xsd:restriction>
