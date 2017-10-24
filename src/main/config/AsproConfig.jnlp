@@ -6,11 +6,11 @@
         <homepage href="http://www.jmmc.fr/aspro2"/>
         <description>This bundles the Aspro 2 configuration</description>
         <offline-allowed/>
-        <update check="background"/>
     </information>
     <security>
         <all-permissions/>
     </security>
+    <update check="background" policy="prompt-update"/>
     <resources>
         <!-- Configuration module -->
         <jar href="jar/aspro-conf-TRUNK.jar" />
