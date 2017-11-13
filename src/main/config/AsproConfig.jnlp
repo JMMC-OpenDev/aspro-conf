@@ -10,7 +10,7 @@
     <security>
         <all-permissions/>
     </security>
-    <update check="timeout" policy="always"/>
+    <update check="always" policy="always"/>
     <resources>
         <!-- Configuration module -->
         <jar href="jar/aspro-conf-TRUNK.jar" />
