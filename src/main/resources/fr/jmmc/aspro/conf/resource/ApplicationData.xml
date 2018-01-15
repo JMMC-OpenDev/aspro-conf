@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2017.1220"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="20/12/2017" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2018.0115"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="15/01/2018" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2018.0115">
+            <pubDate>Mon, 15 Jan 2018 11:00:00 GMT</pubDate>
+            <prerelease version="2018.0115 beta 1">
+                <change type="FEATURE">CHARA: updated VEGA configuration (2018A)</change>
+            </prerelease>
+        </release>
         <release version="2017.1220">
             <pubDate>Wed, 20 Dec 2017 16:00:00 GMT</pubDate>
             <prerelease version="2017.1220 beta 1">
