@@ -3134,19 +3134,19 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
             <focalInstrument>VEGA_4T</focalInstrument>
             <configuration>
                 <stations>W2 W1 S1 S2</stations>
-                <channels>V4 V3 V2 V1</channels>
+                <channels>V3 V4 V2 V1</channels>
             </configuration>
             <configuration>
                 <stations>W2 W1 E2 E1</stations>
-                <channels>V4 V3 V2 V1</channels>
+                <channels>V3 V4 V2 V1</channels>
             </configuration>
             <configuration>
                 <stations>W2 W1 S1 E1</stations>
-                <channels>V4 V3 V2 V1</channels>
+                <channels>V3 V4 V2 V1</channels>
             </configuration>
             <configuration>
                 <stations>W2 W1 S2 E2</stations>
-                <channels>V4 V3 V2 V1</channels>
+                <channels>V3 V4 V2 V1</channels>
             </configuration>
         </instrument>
     </configuration>
