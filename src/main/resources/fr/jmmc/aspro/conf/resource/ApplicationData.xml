@@ -28,7 +28,7 @@
         <release version="2018.0115">
             <pubDate>Mon, 15 Jan 2018 11:00:00 GMT</pubDate>
             <prerelease version="2018.0115 beta 1">
-                <change type="FEATURE">CHARA: updated VEGA configuration (2018A)</change>
+                <change type="FEATURE">CHARA: added VEGA configuration for period 2018A</change>
             </prerelease>
         </release>
         <release version="2017.1220">
