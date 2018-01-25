@@ -13241,6 +13241,22 @@ N 7.5 - 13.5 um
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
             </configuration>
+            <!-- 2018.01.25: new commissionning quaduplets -->
+            <configuration>
+                <stations>A0 D0 G2 J3</stations>
+                <channels>IP1 IP5 IP3 IP7</channels>
+                <delayLines>DL4 DL1 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G1 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
         </instrument>
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
@@ -13291,6 +13307,22 @@ N 7.5 - 13.5 um
                 <stations>A1 B2 C1 D2</stations>
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+            <!-- 2018.01.25: new commissionning quaduplets -->
+            <configuration>
+                <stations>A0 D0 G2 J3</stations>
+                <channels>IP1 IP5 IP3 IP7</channels>
+                <delayLines>DL4 DL1 DL2 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G1 J3 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
         </instrument>
     </configuration>
