@@ -9144,6 +9144,67 @@ N 7.5 - 13.5 um
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
     <configuration>
+        <version>Period 102</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
+    <configuration>
         <version>Period 101</version>
         <interferometer>VLTI</interferometer>
         <switchyard>sw_STS</switchyard>
