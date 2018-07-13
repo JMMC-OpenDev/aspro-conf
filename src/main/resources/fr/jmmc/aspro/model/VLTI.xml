@@ -7127,7 +7127,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
               Full well capacity: 100,000 e-
               Readout noise: <10 e- CDS @ 100 kHz, >70 e- @ 1 MHz
             -->
-            <ron>53.5</ron>
+            <ron>10.1</ron>
             <!-- no saturation possible as dit = 30 ms (always) even with FT -->
             <detectorSaturation>1e20</detectorSaturation>
             <quantumEfficiency>0.9</quantumEfficiency>
@@ -7189,7 +7189,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
               Full well capacity: 100,000 e-
               Readout noise: <10 e- CDS @ 100 kHz, >70 e- @ 1 MHz
             -->
-            <ron>53.5</ron>
+            <ron>10.1</ron>
             <!-- no saturation possible as dit = 30 ms (always) even with FT -->
             <detectorSaturation>1e20</detectorSaturation>
             <quantumEfficiency>0.9</quantumEfficiency>

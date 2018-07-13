@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.0406"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="06/04/2018" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2018.0713"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="13/07/2018" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2018.0713">
+            <pubDate>Fri, 13 Jul 2018 15:00:00 GMT</pubDate>
+            <prerelease version="2018.0713 beta 1">
+                <change type="FEATURE">VLTI: updated MATISSE_LM instrument: ron adjusted (10.1 e-)</change>
+            </prerelease>
+        </release>
         <release version="2018.0406">
             <pubDate>Fri, 06 Apr 2018 15:00:00 GMT</pubDate>
             <prerelease version="2018.0406 beta 1">
