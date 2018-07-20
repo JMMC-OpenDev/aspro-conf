@@ -44,9 +44,11 @@
       <!-- Alt / Az mounted and cannot observe at zenith distances less than 2 degrees (2016.4) -->
       <maxElevation>88.0</maxElevation>
 
+      <!-- TODO: define CIAO IR for GRAVITY -->
       <adaptiveOptics>
         <band>V</band>
         <!-- MACAO / VLTI -->
+        <magLimit>16</magLimit>
         <numberActuators>64</numberActuators>
       </adaptiveOptics>
 
@@ -87,9 +89,11 @@
       <!-- Alt / Az mounted and cannot observe at zenith distances less than 2 degrees (2016.4) -->
       <maxElevation>88.0</maxElevation>
 
+      <!-- TODO: define NAOMI (magLimit=11) -->
       <adaptiveOptics>
         <band>V</band>
-        <!-- tip tilt -->
+        <!-- STRAP tip-tilt correctors -->
+        <magLimit>11</magLimit>
         <numberActuators>2</numberActuators>
       </adaptiveOptics>
 
@@ -6524,8 +6528,8 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
         <instrumentVisibility>0.5</instrumentVisibility>
 
         <!-- K=10 (UT), K=8 (AT) -->
-        <!-- 2017/07 always use FT with GRAVITY -->
-        <magLimit>18</magLimit>
+        <!-- 2018/07: use lower limit (SC+3m = 13.5) -->
+        <magLimit>14</magLimit>
         <!-- up to 60 seconds -->
         <maxIntegration>60</maxIntegration>
     </fringeTracker>
@@ -7096,6 +7100,47 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 
 
     <!-- future instruments -->
+
+    <!-- GRAVITY FT -->
+    <focalInstrument>
+      <name>GRAVITY_FT</name>
+      <description>GRAVITY Fringe tracker as instrument (4T)</description>
+      <!-- experimental (todo fix visibility computation like DRS) -->
+      <experimental>true</experimental>
+      <numberChannels>4</numberChannels>
+
+      <setup>
+            <name>GRAVITY_FT_SETUP</name>
+            <description>GRAVITY Fringe tracker (4T)</description>
+            <defaultSamplingTime>30</defaultSamplingTime>
+            <!-- 1Khz -->
+            <dit>0.001</dit>
+            <ron>1</ron>
+            <detectorSaturation>50000</detectorSaturation>
+
+            <fracFluxInInterferometry>0.3</fracFluxInInterferometry>
+            <fracFluxInPhotometry>1.0</fracFluxInPhotometry>
+
+            <!-- 1px per channel -->
+            <nbPixInterferometry>1</nbPixInterferometry>
+            <nbPixPhotometry>1</nbPixPhotometry>
+
+            <transmission>0.01</transmission>
+            <!-- half of light is going to SCIENCE (50% * 95% efficiency) -->
+            <instrumentVisibility>0.48</instrumentVisibility>
+
+            <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
+            <instrumentVis2CalibrationBias>0.0</instrumentVis2CalibrationBias>
+            <instrumentPhaseBias>1.0</instrumentPhaseBias>
+      </setup>
+
+      <mode>
+        <name>LOW</name>
+        <resolution>22</resolution>
+        <waveLengthMin>1.95</waveLengthMin>
+        <waveLengthMax>2.45</waveLengthMax>
+      </mode>
+    </focalInstrument>
 
     <focalInstrument>
       <name>MATISSE_LM</name>
@@ -13207,6 +13252,53 @@ N 7.5 - 13.5 um
         <switchyard>sw_STS</switchyard>
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+            <!-- P98 Comm2 / 3 / SV -->
+            <configuration>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- 9 May 2016: SV -->
+            <configuration>
+                <stations>A0 G1 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+            <configuration>
+                <stations>C1 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- A0DL1 G2DL2 J2DL4 J3DL3 -->
+            <configuration>
+                <stations>A0 G2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL4 DL3</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>

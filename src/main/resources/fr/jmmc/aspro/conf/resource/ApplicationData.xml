@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.0713"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="13/07/2018" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2018.0720"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="20/07/2018" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2018.0720">
+            <pubDate>Fri, 20 Jul 2018 09:00:00 GMT</pubDate>
+            <prerelease version="2018.0720 beta 1">
+                <change type="FEATURE">VLTI: added GRAVITY_FT instrument in the 'Future' period to check FT performance on faint objects</change>
+                <change type="FEATURE">VLTI: added magnitude limits for adaptive optics systems (STRAP / MACAO)</change>
+            </prerelease>
+        </release>
         <release version="2018.0713">
             <pubDate>Fri, 13 Jul 2018 15:00:00 GMT</pubDate>
             <prerelease version="2018.0713 beta 1">
