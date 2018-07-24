@@ -47,7 +47,7 @@
       <!-- TODO: define CIAO IR for GRAVITY -->
       <adaptiveOptics>
         <band>V</band>
-        <!-- MACAO / VLTI -->
+        <!-- MACAO / VLTI: The guide star must be brighter than V = 16 -->
         <magLimit>16</magLimit>
         <numberActuators>64</numberActuators>
       </adaptiveOptics>
@@ -92,8 +92,8 @@
       <!-- TODO: define NAOMI (magLimit=11) -->
       <adaptiveOptics>
         <band>V</band>
-        <!-- STRAP tip-tilt correctors -->
-        <magLimit>11</magLimit>
+        <!-- STRAP tip-tilt correctors: The sensitivity of STRAP on the ATs is V =13.5. -->
+        <magLimit>13.5</magLimit>
         <numberActuators>2</numberActuators>
       </adaptiveOptics>
 
