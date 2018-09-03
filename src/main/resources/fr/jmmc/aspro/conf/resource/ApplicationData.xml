@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.0720"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="20/07/2018" compiler="JDK 1.6.0_24"/>
-
+    <program name="AsproConf" version="2018.0903"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="03/09/2018" compiler="JDK 1.6.0_24"/>
+ESO
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2018.0903">
+            <pubDate>Mon, 09 Sep 2018 17:00:00 GMT</pubDate>
+            <prerelease version="2018.0903 beta 1">
+                <change type="FEATURE">VLTI: added ESO Period 103 (refined MATISSE instrument modes)</change>
+            </prerelease>
+        </release>
         <release version="2018.0720">
             <pubDate>Fri, 20 Jul 2018 09:00:00 GMT</pubDate>
             <prerelease version="2018.0720 beta 1">
@@ -47,7 +53,7 @@
         <release version="2018.0302">
             <pubDate>Fri, 02 Mar 2018 15:00:00 GMT</pubDate>
             <prerelease version="2018.0302 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 102 (AMBER removed)</change>
+                <change type="FEATURE">VLTI: added ESO Period 102 (AMBER removed)</change>
             </prerelease>
         </release>
         <release version="2018.0213">
@@ -89,7 +95,7 @@
         <release version="2017.0907">
             <pubDate>Thu, 07 Sep 2017 16:00:00 GMT</pubDate>
             <prerelease version="2017.0907 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 101 (= 100)</change>
+                <change type="FEATURE">VLTI: added ESO Period 101 (= 100)</change>
             </prerelease>
         </release>
         <release version="2017.0711">
@@ -113,7 +119,7 @@
         <release version="2017.0306">
             <pubDate>Mon, 06 Mar 2017 16:00:00 GMT</pubDate>
             <prerelease version="2017.0306 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 100 with the quadruplet "all south" Large (A0-G1-J2-K0) for GRAVITY</change>
+                <change type="FEATURE">VLTI: added ESO Period 100 with the quadruplet "all south" Large (A0-G1-J2-K0) for GRAVITY</change>
             </prerelease>
         </release>
         <release version="2016.0926">
@@ -125,7 +131,7 @@
         <release version="2016.0905">
             <pubDate>Mon, 05 Sep 2016 16:00:00 GMT</pubDate>
             <prerelease version="2016.0905 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 99 (= 98)</change>
+                <change type="FEATURE">VLTI: added ESO Period 99 (= 98)</change>
             </prerelease>
         </release>
         <release version="2016.0610">
@@ -156,7 +162,7 @@
         <release version="2016.0304">
             <pubDate>Fri, 04 Mar 2016 14:00:00 GMT</pubDate>
             <prerelease version="2016.0304 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 98 including GRAVITY</change>
+                <change type="FEATURE">VLTI: added ESO Period 98 including GRAVITY</change>
             </prerelease>
         </release>
         <release version="2016.0205">
@@ -202,7 +208,7 @@
         <release version="2015.0903">
             <pubDate>Thu, 03 Sep 2015 14:00:00 GMT</pubDate>
             <prerelease version="2015.0903 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 97 = 96</change>
+                <change type="FEATURE">VLTI: added ESO Period 97 = 96</change>
                 <change type="FEATURE">Added timezone identifier to every interferometer</change>
             </prerelease>
         </release>
@@ -217,7 +223,7 @@
                     no DL restrictions with STS (Period 96 and Future)</change>
             </prerelease>
             <prerelease version="2015.0213 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 96 (AMBER + PIONIER only)</change>
+                <change type="FEATURE">VLTI: added ESO Period 96 (AMBER + PIONIER only)</change>
                 <change type="FEATURE">VLTI: disable the DL restrictions due to VCM pressure limits as
                     the STS (star separator / dual feed) should correct properly the pupill</change>
             </prerelease>
@@ -277,7 +283,7 @@
         <release version="2014.0219">
             <pubDate>Wed, 19 Feb 2014 18:00:00 GMT</pubDate>
             <prerelease version="2014.0219 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 94 = 93</change>
+                <change type="FEATURE">VLTI: added ESO Period 94 = 93</change>
             </prerelease>
         </release>
         <release version="2014.0117">
@@ -312,14 +318,14 @@
                 <change type="FEATURE">CHARA VEGA: modified parameters TRACKING (R), BLUE FILTER (OPEN) and RECORD (RB)</change>
             </prerelease>
             <prerelease version="2013.902 beta 1">
-                <change type="FEATURE">VLTI: fixed eso Period 93 = 92 but added A1-G1-K0-I1 if J3 is unavailable</change>
+                <change type="FEATURE">VLTI: fixed ESO Period 93 = 92 but added A1-G1-K0-I1 if J3 is unavailable</change>
                 <change type="FEATURE">DEMO: added demo interferometer (north pole)</change>
             </prerelease>
         </release>
         <release version="2013.809">
             <pubDate>Fri, 09 Aug 2013 14:00:00 GMT</pubDate>
             <prerelease version="2013.809 beta 1">
-                <change type="FEATURE">VLTI: added eso Period 93 = 92</change>
+                <change type="FEATURE">VLTI: added ESO Period 93 = 92</change>
                 <change type="FEATURE">Updated preliminary NPOI description: no zenithal restriction + tip tilt for telescopes;
                     use 3 characters for station names; fixed AE0 / AC0 offset estimation</change>
             </prerelease>
@@ -353,7 +359,7 @@
                 <change type="FEATURE">Added checksum to each configuration file to test the configuration integrity</change>
             </prerelease>
             <prerelease version="2013.3 beta 2">
-                <change type="FEATURE">VLTI: added eso Period 92 = 91</change>
+                <change type="FEATURE">VLTI: added ESO Period 92 = 91</change>
             </prerelease>
             <prerelease version="2013.3 beta 1">
                 <change type="FEATURE">CHARA MIRC: fixed MIRC LOW_H mode (8 spectral channels instead of 7)</change>

@@ -875,6 +875,29 @@
                 </xsd:annotation>
             </xsd:element>
 
+            <!-- User-defined keyword values (scale, rotation) -->
+            <xsd:element name="scaleX" type="xsd:double" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        image scale (i.e. pixel increments) on the horizontal axis (RA) in rad
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="scaleY" type="xsd:double" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        image scale (i.e. pixel increments) on the vertical axis (DEC) in rad
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+
+            <xsd:element name="rotation" type="xsd:double" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        rotation angle in degrees
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -1038,6 +1061,23 @@
                     </xsd:appinfo>
                 </xsd:annotation>
             </xsd:element>
+
+            <xsd:element name="group" type="TargetGroup" minOccurs="0" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The list of target groups
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+
+            <xsd:element name="groupMembers" type="TargetGroupMembers" minOccurs="0" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The targets associated to the target groups (globally)
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+
             <xsd:element name="targetInfo" type="TargetInformation" minOccurs="0" maxOccurs="unbounded">
                 <xsd:annotation>
                     <xsd:documentation>
@@ -1071,6 +1111,7 @@
                     </xsd:appinfo>
                 </xsd:annotation>
             </xsd:element>
+
             <xsd:element name="description" type="xsd:string" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>
@@ -1082,7 +1123,103 @@
             <xsd:element name="calibrators" type="xsd:IDREFS" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>
-                        The list of targets considered as calibrators for this target
+                        The list of targets considered as calibrators for this specific target
+                    </xsd:documentation>
+                    <xsd:appinfo>
+                        <jaxb:property>
+                            <jaxb:baseType name="Target" />
+                        </jaxb:property>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+
+            <xsd:element name="groupMembers" type="TargetGroupMembers" minOccurs="0" maxOccurs="unbounded">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The targets associated to the target groups for this specific target (locally)
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+
+
+    <!-- TargetGroup -->
+    <xsd:complexType name="TargetGroup">
+        <xsd:annotation>
+            <xsd:documentation>
+                This type describes a group of targets.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Group name
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="category" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Group category
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="description" type="xsd:string">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Description of this group
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="color" type="xsd:string" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        Optional color (hex) representing this group
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="required">
+            <xsd:annotation>
+                <xsd:documentation>
+                    Identifier for this group (derived from the name)
+                </xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+    </xsd:complexType>
+
+
+
+
+    <!-- TargetGroupMembers -->
+    <xsd:complexType name="TargetGroupMembers">
+        <xsd:annotation>
+            <xsd:documentation>
+                This type describes the list of targets for the associated target group.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="groupRef" type="xsd:IDREF">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The group identifier
+                    </xsd:documentation>
+                    <xsd:appinfo>
+                        <jaxb:property>
+                            <jaxb:baseType name="TargetGroup" />
+                        </jaxb:property>
+                    </xsd:appinfo>
+                </xsd:annotation>
+            </xsd:element>
+
+            <xsd:element name="targets" type="xsd:IDREFS" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The list of targets associated to this group
                     </xsd:documentation>
                     <xsd:appinfo>
                         <jaxb:property>
@@ -2329,6 +2466,14 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="version" type="xsd:string" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The Version which only offers this instrument mode (VLTI)
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+
             <xsd:element name="resolution" type="xsd:double" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>
@@ -2357,6 +2502,13 @@
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="waveLengthBandRef" type="xsd:double" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The maximal bandwith for the reference wave length of this instrument mode (micrometer) that can be read by the detector within 1 DIT
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
 
             <!-- instrument setup reference -->
             <xsd:element name="setupRef" type="xsd:IDREF" minOccurs="0" maxOccurs="1">
@@ -2376,18 +2528,8 @@
             <xsd:element name="dit" type="xsd:double" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>
-                        The detector individual integration time in seconds (typically less than 0.1s)
-                        optimized for this instrument mode
-                    </xsd:documentation>
-                </xsd:annotation>
-            </xsd:element>
-
-            <!-- minimum dit -->
-            <xsd:element name="ditMin" type="xsd:double" minOccurs="0">
-                <xsd:annotation>
-                    <xsd:documentation>
-                        The minimum detector individual integration time in seconds (typically less than 0.1s)
-                        for this instrument mode (to read once the detector)
+                        The optimal detector individual integration time in seconds (typically less than 0.1s)
+                        for this instrument mode
                     </xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
@@ -2593,7 +2735,7 @@
 
 
 
- 
+
     <!-- AtmosphereQuality -->
     <xsd:simpleType name="AtmosphereQuality">
         <xsd:annotation>
