@@ -6573,7 +6573,6 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
             <instrumentVisibility>0.9</instrumentVisibility>
 
             <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-            <instrumentVis2CalibrationBias>5.0</instrumentVis2CalibrationBias>
             <instrumentPhaseBias>2.0</instrumentPhaseBias>
       </setup>
 
@@ -6767,7 +6766,6 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
             <instrumentVisibility>0.9</instrumentVisibility>
 
             <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-            <instrumentVis2CalibrationBias>5.0</instrumentVis2CalibrationBias>
             <instrumentPhaseBias>2.0</instrumentPhaseBias>
       </setup>
 
@@ -6863,7 +6861,6 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
             <instrumentVisibility>0.9</instrumentVisibility>
 
             <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-            <instrumentVis2CalibrationBias>5.0</instrumentVis2CalibrationBias>
             <instrumentPhaseBias>2.0</instrumentPhaseBias>
       </setup>
 
@@ -6961,7 +6958,6 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
             <instrumentVisibility>0.9</instrumentVisibility>
 
             <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-            <instrumentVis2CalibrationBias>5.0</instrumentVis2CalibrationBias>
             <instrumentPhaseBias>2.0</instrumentPhaseBias>
       </setup>
 
@@ -7000,7 +6996,10 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
       <setup>
             <name>GRAVITY_SETUP</name>
             <description>GRAVITY instrument (4T)</description>
-            <defaultSamplingTime>30</defaultSamplingTime>
+
+            <!-- OSO: 2x 300s (Object) + 300s (Sky) -->
+            <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
+            <defaultSamplingTime>60</defaultSamplingTime>
 
 <!--
 Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
@@ -7009,6 +7008,9 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 4000 	640x2048 	300
 -->
             <dit>0.3</dit>
+            <!-- frame = 1.5 DIT (Sky % Object) -->
+            <frameRatio>1.5</frameRatio>
+
             <ron>10</ron>
             <detectorSaturation>50000</detectorSaturation>
 
@@ -7022,7 +7024,6 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <instrumentVisibility>0.9</instrumentVisibility>
 
             <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-            <instrumentVis2CalibrationBias>5.0</instrumentVis2CalibrationBias>
             <instrumentPhaseBias>2.0</instrumentPhaseBias>
       </setup>
 
@@ -7096,8 +7097,9 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
       <setup>
             <name>GRAVITY_FT_SETUP</name>
             <description>GRAVITY Fringe tracker (4T)</description>
+
             <defaultTotalIntegrationTime>1</defaultTotalIntegrationTime>
-            <defaultSamplingTime>30</defaultSamplingTime>
+            <defaultSamplingTime>60</defaultSamplingTime>
             <!-- 1Khz -->
             <dit>0.001</dit>
             <ron>1</ron>
@@ -7115,7 +7117,6 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <instrumentVisibility>0.48</instrumentVisibility>
 
             <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-            <instrumentVis2CalibrationBias>0.0</instrumentVis2CalibrationBias>
             <instrumentPhaseBias>1.0</instrumentPhaseBias>
       </setup>
 

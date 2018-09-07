@@ -30,6 +30,7 @@
             <prerelease version="2018.0903 beta 1">
                 <change type="FEATURE">VLTI: added ESO Period 103 (added MATISSE and GRAVITY_FT instruments)</change>
                 <change type="FEATURE">VLTI: updated MATISSE setup (L / N modes, DIT, overheads)</change>
+                <change type="FEATURE">VLTI: updated GRAVITY setup (fixed default integration time)</change>
             </prerelease>
         </release>
         <release version="2018.0720">
