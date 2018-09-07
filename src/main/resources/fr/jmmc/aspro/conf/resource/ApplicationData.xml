@@ -18,23 +18,24 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.0903"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="03/09/2018" compiler="JDK 1.6.0_24"/>
-ESO
+    <program name="AsproConf" version="2018.0907"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="07/09/2018" compiler="JDK 1.6.0_24"/>
+
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2018.0903">
+        <release version="2018.0907">
             <pubDate>Mon, 09 Sep 2018 17:00:00 GMT</pubDate>
             <prerelease version="2018.0903 beta 1">
-                <change type="FEATURE">VLTI: added ESO Period 103 (refined MATISSE instrument modes)</change>
+                <change type="FEATURE">VLTI: added ESO Period 103 (added MATISSE and GRAVITY_FT instruments)</change>
+                <change type="FEATURE">VLTI: updated MATISSE setup (L / N modes, DIT, overheads)</change>
             </prerelease>
         </release>
         <release version="2018.0720">
             <pubDate>Fri, 20 Jul 2018 09:00:00 GMT</pubDate>
             <prerelease version="2018.0720 beta 1">
-                <change type="FEATURE">VLTI: added GRAVITY_FT instrument in the 'Future' period to check FT performance on faint objects</change>
+                <change type="FEATURE">VLTI: added GRAVITY_FT instrument in the 'Future' period to check FT performance on faint or over-resolved objects</change>
                 <change type="FEATURE">VLTI: added magnitude limits for adaptive optics systems (STRAP / MACAO)</change>
             </prerelease>
         </release>
