@@ -18,16 +18,16 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.0907"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="07/09/2018" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2018.0911"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="11/09/2018" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2018.0907">
-            <pubDate>Mon, 09 Sep 2018 17:00:00 GMT</pubDate>
-            <prerelease version="2018.0903 beta 1">
+        <release version="2018.0911">
+            <pubDate>Tue, 11 Sep 2018 14:00:00 GMT</pubDate>
+            <prerelease version="2018.0911 beta 1">
                 <change type="FEATURE">VLTI: added ESO Period 103 (added MATISSE and GRAVITY_FT instruments)</change>
                 <change type="FEATURE">VLTI: updated MATISSE setup (L / N modes, DIT, overheads)</change>
                 <change type="FEATURE">VLTI: updated GRAVITY setup (fixed default integration time)</change>
