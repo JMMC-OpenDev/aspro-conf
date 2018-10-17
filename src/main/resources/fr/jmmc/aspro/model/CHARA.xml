@@ -2397,6 +2397,7 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
 
     <configuration>
         <interferometer>CHARA</interferometer>
+        <switchyard>default</switchyard>
 
         <!-- instruments (CLASSIC, CLIMB, JOUFLU, MIRC 4T/6T, PAVO 2T/3T, VEGA 2T/3T/4T) -->
 
@@ -3256,6 +3257,7 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
     <configuration>
         <version>2018B</version>
         <interferometer>CHARA</interferometer>
+        <switchyard>default</switchyard>
 
         <!-- instruments (CLASSIC, CLIMB, JOUFLU, MIRC 4T/6T, PAVO 2T/3T, VEGA 2T/3T/4T) -->
 
@@ -3582,8 +3584,6 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
         </instrument>
 
 
-
-
         <!-- PAVO 2T/3T -->
         <instrument>
             <focalInstrument>PAVO_2T</focalInstrument>
@@ -3855,6 +3855,7 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
     <configuration>
         <version>2018A</version>
         <interferometer>CHARA</interferometer>
+        <switchyard>default</switchyard>
 
         <instrument>
             <focalInstrument>MIRC_5T</focalInstrument>
@@ -4017,6 +4018,7 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
     <configuration>
         <version>Future</version>
         <interferometer>CHARA</interferometer>
+        <switchyard>default</switchyard>
 
         <!-- future instruments -->
         <instrument>
