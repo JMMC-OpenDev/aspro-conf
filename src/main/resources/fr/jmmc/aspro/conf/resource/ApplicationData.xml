@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.1017"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="17/10/2018" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2018.1130"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="30/11/2018" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2018.1130">
+            <pubDate>Fri, 30 Nov 2018 16:00:00 GMT</pubDate>
+            <prerelease version="2018.1130 beta 1">
+                <change type="FEATURE">VLTI: refined AdaptiveOptics definition (MACAO / STRAP) + added CIAO / NAOMI</change>
+            </prerelease>
+        </release>
         <release version="2018.1017">
             <pubDate>Wed, 17 Oct 2018 12:00:00 GMT</pubDate>
             <prerelease version="2018.1017 beta 1">

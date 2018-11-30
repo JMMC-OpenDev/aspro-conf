@@ -18,12 +18,12 @@
     xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
     xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
 
-    <!-- minimum version corresponds to Aspro2 (Sep 2018 / CfP 103) -->
-    <minVersion>0.9.9.5</minVersion>
+    <!-- minimum version corresponds to Aspro2 (Nov 2018 / CfP 103) -->
+    <minVersion>0.9.9.6</minVersion>
 
     <interferometerFile>
         <file>VLTI.xml</file>
-        <checksum>71682693741412352</checksum>
+        <checksum>16770551599628288</checksum>
     </interferometerFile>
 
     <interferometerFile>
