@@ -59,7 +59,7 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
         <name>MACAO</name>
         <band>V</band>
         <setup>
-            <name>MACAO_SETUP</name>
+            <name>MACAO</name>
             <numberSubPupils>60</numberSubPupils>
             <dit>0.80</dit> <!-- 1050 Hz -->
             <ron>1.0</ron>
@@ -72,6 +72,7 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
       <adaptiveOptics>
         <name>CIAO</name>
         <band>K</band>
+        <instrumentBand>K</instrumentBand> <!-- GRAVITY ONLY -->
         <setup>
             <name>CIAO_OFF_AXIS</name>
             <numberSubPupils>81</numberSubPupils>
@@ -132,10 +133,10 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
         <name>STRAP</name>
         <band>V</band>
         <setup>
-            <name>STRAP_SETUP</name>
-            <numberSubPupils>2</numberSubPupils>
-            <dit>1.0</dit> <!-- 1000 Hz ? -->
-            <ron>1.0</ron>
+            <name>STRAP</name>
+            <numberSubPupils>4</numberSubPupils>
+            <dit>1.5</dit> <!-- ?? Hz -->
+            <ron>0.1</ron>
             <quantumEfficiency>0.80</quantumEfficiency>
         </setup>
         <!-- STRAP tip-tilt correctors: The sensitivity of STRAP on the ATs is V = 13.5 (max) => 12 is 'safe' -->
@@ -159,7 +160,7 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
             <ron>0.011</ron> <!-- 1e- / 90 (gain = g * KI = 100 * 0.9 = 90) -->
             <quantumEfficiency>0.95</quantumEfficiency>
         </setup>
-        <!-- CIAO / VLTI: The guide star must be brighter than K = 10 (max) -->
+        <!-- NAOMI / VLTI: The guide star must be brighter than R = 16 (max) -->
         <magLimit>16</magLimit>
       </adaptiveOptics>
 

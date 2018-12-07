@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.1130"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="30/11/2018" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2018.1207"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="07/12/2018" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2018.1207">
+            <pubDate>Fri, 07 Dec 2018 13:00:00 GMT</pubDate>
+            <prerelease version="2018.1207 beta 1">
+                <change type="FEATURE">VLTI: refined AdaptiveOptics setups (STRAP)</change>
+            </prerelease>
+        </release>
         <release version="2018.1130">
             <pubDate>Fri, 30 Nov 2018 16:00:00 GMT</pubDate>
             <prerelease version="2018.1130 beta 1">
