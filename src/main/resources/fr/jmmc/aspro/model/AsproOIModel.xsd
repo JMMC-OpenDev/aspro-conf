@@ -931,6 +931,15 @@
             </xsd:element>
 
             <!-- fringe tracker mode -->
+            <xsd:element name="aoSetup" type="xsd:string" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>
+                        The Adaptive Optics Setup (among possible Adaptive Optics available)
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+
+            <!-- fringe tracker mode -->
             <xsd:element name="fringeTrackerMode" type="xsd:string" minOccurs="0">
                 <xsd:annotation>
                     <xsd:documentation>
