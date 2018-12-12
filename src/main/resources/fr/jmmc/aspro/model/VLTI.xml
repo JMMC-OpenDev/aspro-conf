@@ -13709,6 +13709,25 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- dec 2018 -->
+            <!-- Astro2Small -->
+            <configuration>
+                <stations>A0 B2 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <!-- Small2Medium -->
+            <configuration>
+                <stations>K0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <!-- Medium2Large -->
+            <configuration>
+                <stations>A0 G1 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
         </instrument>
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
@@ -13775,6 +13794,25 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
                 <stations>A0 B2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- dec 2018 -->
+            <!-- Astro2Small -->
+            <configuration>
+                <stations>A0 B2 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <!-- Small2Medium -->
+            <configuration>
+                <stations>K0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <!-- Medium2Large -->
+            <configuration>
+                <stations>A0 G1 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
         </instrument>
     </configuration>
