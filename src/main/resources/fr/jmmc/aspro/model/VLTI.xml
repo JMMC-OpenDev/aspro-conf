@@ -69,17 +69,11 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
         <magLimit>16</magLimit>
       </adaptiveOptics>
 
+      <!-- CIAO IR wavefront sensor specific to GRAVITY -->
       <adaptiveOptics>
         <name>CIAO</name>
         <band>K</band>
-        <instrumentBand>K</instrumentBand> <!-- GRAVITY ONLY -->
-        <setup>
-            <name>CIAO_OFF_AXIS</name>
-            <numberSubPupils>81</numberSubPupils>
-            <dit>1.75</dit> <!-- 500 Hz -->
-            <ron>6.5</ron>
-            <quantumEfficiency>0.70</quantumEfficiency>
-        </setup>
+        <instrumentBand>K</instrumentBand>
         <setup>
             <name>CIAO_ON_AXIS</name>
             <numberSubPupils>81</numberSubPupils>
@@ -87,6 +81,13 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
             <ron>5.0</ron>
             <quantumEfficiency>0.70</quantumEfficiency>
             <transmission>0.5</transmission> <!-- 50% in FT, 50% in instrument -->
+        </setup>
+        <setup>
+            <name>CIAO_OFF_AXIS</name>
+            <numberSubPupils>81</numberSubPupils>
+            <dit>1.75</dit> <!-- 500 Hz -->
+            <ron>6.5</ron>
+            <quantumEfficiency>0.70</quantumEfficiency>
         </setup>
         <!-- CIAO / VLTI: The guide star must be brighter than K = 10 (max) -->
         <magLimit>10.5</magLimit>
@@ -129,20 +130,7 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
       <!-- Alt / Az mounted and cannot observe at zenith distances less than 2 degrees (2016.4) -->
       <maxElevation>88.0</maxElevation>
 
-      <adaptiveOptics>
-        <name>STRAP</name>
-        <band>V</band>
-        <setup>
-            <name>STRAP</name>
-            <numberSubPupils>4</numberSubPupils>
-            <dit>1.5</dit> <!-- ?? Hz -->
-            <ron>0.1</ron>
-            <quantumEfficiency>0.80</quantumEfficiency>
-        </setup>
-        <!-- STRAP tip-tilt correctors: The sensitivity of STRAP on the ATs is V = 13.5 (max) => 12 is 'safe' -->
-        <magLimit>13.5</magLimit>
-      </adaptiveOptics>
-
+      <!-- NAOMI: AT AO commissioned in nov  -->
       <adaptiveOptics>
         <name>NAOMI</name>
         <band>R</band>
@@ -162,6 +150,21 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
         </setup>
         <!-- NAOMI / VLTI: The guide star must be brighter than R = 16 (max) -->
         <magLimit>16</magLimit>
+      </adaptiveOptics>
+
+      <!-- STRAP: first tip tilt system on ATs -->
+      <adaptiveOptics>
+        <name>STRAP</name>
+        <band>V</band>
+        <setup>
+            <name>STRAP</name>
+            <numberSubPupils>4</numberSubPupils>
+            <dit>1.5</dit> <!-- ?? Hz -->
+            <ron>0.1</ron>
+            <quantumEfficiency>0.80</quantumEfficiency>
+        </setup>
+        <!-- STRAP tip-tilt correctors: The sensitivity of STRAP on the ATs is V = 13.5 (max) => 12 is 'safe' -->
+        <magLimit>13.5</magLimit>
       </adaptiveOptics>
 
       <!--

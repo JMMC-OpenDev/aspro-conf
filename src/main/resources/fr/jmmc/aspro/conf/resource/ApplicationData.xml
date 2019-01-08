@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2018.1212"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="12/12/2018" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2019.0108"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="08/01/2019" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2019.0108">
+            <pubDate>Tue, 08 Jan 2019 15:00:00 GMT</pubDate>
+            <prerelease version="2019.0108 beta 1">
+                <change type="FEATURE">VLTI: change order for AdaptiveOptics items (NAOMI first)</change>
+            </prerelease>
+        </release>
         <release version="2018.1212">
             <pubDate>Wed, 12 Dec 2018 16:00:00 GMT</pubDate>
             <prerelease version="2018.1212 beta 1">
