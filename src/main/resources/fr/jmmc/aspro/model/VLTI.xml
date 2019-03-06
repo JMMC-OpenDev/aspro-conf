@@ -95,6 +95,7 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
 
       <!--
         Moon Pointing Restrictions on UT = Same rules as AT
+        TODO: still valid in 2019 ?
       -->
       <moonPointingRestriction>
         <warningThreshold>20.0</warningThreshold>
@@ -169,9 +170,10 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
 
       <!--
         Moon Pointing Restrictions on AT:
-        For a FLI above 85% guiding will be impossible if the target is too close to the moon.
-          - For a star brighter than 9th magnitude, guiding is not possible for a moon distance smaller than 10 degrees.
-          - For a star fainter  than 9th magnitude, guiding is not possible for a moon distance smaller than 20 degrees.
+        - If the FLI is ≥95%, and the guide star is fainter than 9th magnitude in the R-band,
+        guiding is not possible for distances to the moon lower than 5 degrees.
+        - If the FLI is ≥95%, and the guide star is brighter than 9th magnitude in the R-band,
+        guiding is not possible for distances to the moon lower than 3 degrees.
       -->
       <moonPointingRestriction>
         <warningThreshold>20.0</warningThreshold>
@@ -179,22 +181,22 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
           <separation>1.0</separation>
         </restriction>
         <restriction>
-          <fli>85.0</fli>
+          <fli>95.0</fli>
           <flux>
-              <band>V</band>
+              <band>R</band>
               <op>lower</op>
               <value>9.0</value>
           </flux>
-          <separation>10.0</separation>
+          <separation>5.0</separation>
         </restriction>
         <restriction>
-          <fli>85.0</fli>
+          <fli>95.0</fli>
           <flux>
-              <band>V</band>
+              <band>R</band>
               <op>higher</op>
               <value>9.0</value>
           </flux>
-          <separation>20.0</separation>
+          <separation>3.0</separation>
         </restriction>
       </moonPointingRestriction>
 
@@ -9350,6 +9352,146 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
+    <configuration>
+        <version>Period 104</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY_FT</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+        <!-- MATISSE offered with same configurations as PIONIER -->
+        <instrument>
+            <focalInstrument>MATISSE_LM</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MATISSE_N</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
     <configuration>
         <version>Period 103</version>
         <interferometer>VLTI</interferometer>

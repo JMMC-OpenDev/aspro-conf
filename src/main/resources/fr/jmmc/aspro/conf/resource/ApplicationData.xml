@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2019.0108"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="08/01/2019" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2019.0306"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="06/03/2019" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2019.0306">
+            <pubDate>Wed, 06 Mar 2019 16:00:00 GMT</pubDate>
+            <prerelease version="2019.0306 beta 1">
+                <change type="FEATURE">VLTI: added ESO Period 104 (= 103)</change>
+                <change type="FEATURE">VLTI: fixed moon constraints for NAOMI / ATs</change>
+            </prerelease>
+        </release>
         <release version="2019.0108">
             <pubDate>Tue, 08 Jan 2019 15:00:00 GMT</pubDate>
             <prerelease version="2019.0108 beta 1">
