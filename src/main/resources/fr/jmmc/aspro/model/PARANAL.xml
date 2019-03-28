@@ -23,9 +23,9 @@
         <description>ESO Paranal Observatory (VLT UTs, ATs, VISTA and VST)</description>
 
         <position>
-            <posX>1942014.1545180853</posX>
-            <posY>-5455311.818167002</posY>
-            <posZ>-2654530.4375114734</posZ>
+            <posX>1946409.9709899623</posX>
+            <posY>-5467660.10589381</posY>
+            <posZ>-2642728.3998888675</posZ>
         </position>
 
         <timezone>America/Santiago</timezone><!-- or Chile/Continental timezone -->

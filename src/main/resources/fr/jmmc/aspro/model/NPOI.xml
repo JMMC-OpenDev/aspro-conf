@@ -27,21 +27,14 @@
         longitude = -111.535 deg
         altitude = 2200.66 meters.
 
-        Computed by AsproGenConfig:
-    <position>
-      <posX>-1912993.323267053</posX>
-      <posY>-4847730.169323824</posY>
-      <posZ>3662270.769851256</posZ>
-    </position>
-
         The Earth centered positions I get by using AIPS are:
         Array BX=  -1918330.53593    BY=  -4861255.23840    BZ=   3647911.86843
         which take into account the fact that the Earth is not spherical.
     -->
     <position>
-      <posX>-1918330.53593</posX>
-      <posY>-4861255.23840</posY>
-      <posZ>3647911.86843</posZ>
+      <posX>-1918339.14820342</posX>
+      <posY>-4861277.062827713</posY>
+      <posZ>3647919.7752522016</posZ>
     </position>
 
     <timezone>US/Arizona</timezone>

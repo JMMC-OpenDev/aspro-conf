@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2019.0307"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="07/03/2019" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2019.0328"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="28/03/2019" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2019.0328">
+            <pubDate>Thu, 28 Mar 2019 16:00:00 GMT</pubDate>
+            <prerelease version="2019.0328 beta 1">
+                <change type="FEATURE">VLTI: updated station positions to fix telescope elevation above ground</change>
+                <change type="FEATURE">Fixed array center coordinates to geocentric coordinates (WGS84)</change>
+            </prerelease>
+        </release>
         <release version="2019.0307">
             <pubDate>Tue, 07 Mar 2019 17:00:00 GMT</pubDate>
             <prerelease version="2019.0307 beta 1">
