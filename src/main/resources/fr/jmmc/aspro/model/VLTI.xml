@@ -10564,8 +10564,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <waveLengthRef>3.5</waveLengthRef>
             <waveLengthBandRef>0.3</waveLengthBandRef>
             <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
-            <!-- dit: 200ms ? -->
-            <dit>0.2</dit>
+            <!-- dit: 111ms -->
+            <dit>0.111</dit>
             <!-- lambda: 2.8 - 5.3 -->
             <!-- delta lambda: 0.3 ? -->
 
