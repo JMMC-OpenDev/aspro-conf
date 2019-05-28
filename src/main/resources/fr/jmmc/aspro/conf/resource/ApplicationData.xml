@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2019.0329"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="29/03/2019" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2019.0528"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="28/05/2019" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2019.0528">
+            <pubDate>Tue, 28 May 2019 14:00:00 GMT</pubDate>
+            <prerelease version="2019.0528 beta 1">
+                <change type="FEATURE">VLTI: updated telescope shadowing profiles according to the ESO VLTI horizon file (UT dome provisioning)</change>
+            </prerelease>
+        </release>
         <release version="2019.0329">
             <pubDate>Fri, 29 Mar 2019 10:00:00 GMT</pubDate>
             <prerelease version="2019.0329 beta 2">
