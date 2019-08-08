@@ -18,16 +18,16 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2019.0807"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="07/08/2019" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2019.0808"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="08/08/2019" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-        <release version="2019.0807">
-            <pubDate>Wed, 07 Aug 2019 16:00:00 GMT</pubDate>
-            <prerelease version="2019.0807 beta 1">
+        <release version="2019.0808">
+            <pubDate>Thu, 08 Aug 2019 16:00:00 GMT</pubDate>
+            <prerelease version="2019.0808 beta 1">
                 <change type="FEATURE">VLTI: updated MATISSE setup P104 (LMN wavelength tables, new instrument modes)</change>
             </prerelease>
         </release>

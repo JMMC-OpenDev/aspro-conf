@@ -7250,6 +7250,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 
             <!-- sequence for SI_PHOT Hybrid observations -->
             <sequence>
+                <!-- 2019.8: 'fake' SKY obs to get ratio(chopping) to 2.0 -->
+              <exposure type="SKY" mode="PHOTOMETRY" unit="4" beams="4"/>   <!-- 4' I+P (ABCD) -->
               <!-- 4' I+P sans chopping -->
               <exposure type="SCIENCE" mode="ALL" unit="4" beams="4"/>      <!-- 4' I+P (ABCD) -->
 
