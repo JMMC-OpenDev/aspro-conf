@@ -544,6 +544,19 @@
       <maxIntegration>1</maxIntegration>
     </fringeTracker>
 
+    <fringeTracker>
+      <name>FT_SPICA</name>
+      <band>H</band>
+
+      <mode>GroupTrack</mode>
+      <mode>FringeTrack</mode>
+
+      <instrumentVisibility>0.8</instrumentVisibility>
+      <magLimit>10.0</magLimit>
+      <maxIntegration>0.2</maxIntegration>
+    </fringeTracker>
+
+
 <!-- instruments (2T) -->
 
     <focalInstrument>
@@ -1597,6 +1610,7 @@ Configuration d’enregistrement
             <dit>0.015</dit> <!-- exposure time (15ms) every 25ms -->
             <ron>0</ron>
             <detectorSaturation>3000</detectorSaturation>
+            <quantumEfficiency>0.9</quantumEfficiency>
 
             <fracFluxInInterferometry>1</fracFluxInInterferometry>
             <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
@@ -2339,24 +2353,29 @@ Configuration d’enregistrement
             <description>SPICA future instrument (6T)</description>
             <experimental>true</experimental>
             <numberChannels>6</numberChannels>
+            <fringeTracker>FT_SPICA</fringeTracker>
+            <fringeTrackerRequired>true</fringeTrackerRequired>
 
             <setup useStrehlCorrection="false">
                 <name>SPICA_6T_SETUP</name>
                 <description>SPICA instrument (6T)</description>
-                <defaultSamplingTime>40</defaultSamplingTime>
 
-                <dit>0.03</dit> <!-- exposure time (30ms) -->
-                <ron>1</ron>
-                <detectorSaturation>50000</detectorSaturation>
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
+                <defaultSamplingTime>30</defaultSamplingTime>
 
-                <fracFluxInInterferometry>0.66</fracFluxInInterferometry>
-                <fracFluxInPhotometry>0.33</fracFluxInPhotometry>
+                <dit>0.02</dit> <!-- exposure time (20ms) -->
+                <ron>0.1</ron> <!-- 100 / 1000 = gain -->
+                <detectorSaturation>800000</detectorSaturation>
 
-                <nbPixInterferometry>4</nbPixInterferometry> <!-- per spectral element -->
-                <nbPixPhotometry>4</nbPixPhotometry>
+                <fracFluxInInterferometry>0.80</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.20</fracFluxInPhotometry>
 
-                <transmission>0.01</transmission> <!-- including strehl ? -->
-                <instrumentVisibility>1.0</instrumentVisibility> <!-- 1.0 -->
+                <!-- per spectral element -->
+                <nbPixInterferometry>600</nbPixInterferometry>  <!-- 300 (spatial) x 2 (spectral) -->
+                <nbPixPhotometry>4</nbPixPhotometry> <!-- 2 (spatial) x 2 (spectral) -->
+
+                <transmission>0.00132927</transmission> <!-- tinst * toa * strehl = ( 0.017*(0.95^4)*0.8*0.6 ) * 0.8 * 0.25 -->
+                <instrumentVisibility>0.8</instrumentVisibility>
 
                 <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
                 <instrumentPhaseBias>1.0</instrumentPhaseBias>
@@ -2371,9 +2390,9 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
             -->
             <mode>
                 <name>LR</name>
-                <resolution>125</resolution>
+                <resolution>140</resolution>
                 <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.9</waveLengthMax>
+                <waveLengthMax>0.85</waveLengthMax>
             </mode>
 
             <mode>
