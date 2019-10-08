@@ -2356,7 +2356,7 @@ Configuration d’enregistrement
             <fringeTracker>FT_SPICA</fringeTracker>
             <fringeTrackerRequired>true</fringeTrackerRequired>
 
-            <setup useStrehlCorrection="false">
+            <setup>
                 <name>SPICA_6T_SETUP</name>
                 <description>SPICA instrument (6T)</description>
 
@@ -2374,7 +2374,8 @@ Configuration d’enregistrement
                 <nbPixInterferometry>600</nbPixInterferometry>  <!-- 300 (spatial) x 2 (spectral) -->
                 <nbPixPhotometry>4</nbPixPhotometry> <!-- 2 (spatial) x 2 (spectral) -->
 
-                <transmission>0.00132927</transmission> <!-- tinst * toa * strehl = ( 0.017*(0.95^4)*0.8*0.6 ) * 0.8 * 0.25 -->
+                <!-- strehl is hard-coded (0.25 excellent/good, 0.15 average, 0.10 others) -->
+                <transmission>0.00531710</transmission> <!-- tinst * toa = ( 0.017*(0.95^4)*0.8*0.6 ) * 0.8 -->
                 <instrumentVisibility>0.8</instrumentVisibility>
 
                 <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
