@@ -7049,9 +7049,8 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
     <focalInstrument>
       <name>GRAVITY</name>
       <description>GRAVITY instrument (4T)</description>
-      <!-- experimental (todo fix visibility computation like DRS) -->
-      <experimental>true</experimental>
       <numberChannels>4</numberChannels>
+      <visDiff>true</visDiff>
       <fringeTracker>FT_GRAVITY</fringeTracker>
       <fringeTrackerRequired>true</fringeTrackerRequired>
 
@@ -7152,9 +7151,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
     <focalInstrument>
       <name>GRAVITY_FT</name>
       <description>GRAVITY Fringe tracker (4T)</description>
-      <!-- experimental (todo fix visibility computation like DRS) -->
-      <experimental>true</experimental>
       <numberChannels>4</numberChannels>
+      <visDiff>true</visDiff>
 
       <setup>
             <name>GRAVITY_FT_SETUP</name>
@@ -7199,8 +7197,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
     <focalInstrument>
         <name>MATISSE_LM</name>
         <description>MATISSE ESO instrument (4T): L and M bands</description>
-        <experimental>true</experimental>
         <numberChannels>4</numberChannels>
+        <visDiff>true</visDiff>
 
         <setup includeAtmosphereCorrection="false">
             <name>MATISSE_LM_SI_PHOT_SETUP</name>
@@ -10955,8 +10953,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
     <focalInstrument>
         <name>MATISSE_N</name>
         <description>MATISSE ESO instrument (4T): N band</description>
-        <experimental>true</experimental>
         <numberChannels>4</numberChannels>
+        <visDiff>true</visDiff>
 
         <setup includeAtmosphereCorrection="false">
             <name>MATISSE_N_HIGH_SENS_SETUP</name>
@@ -16161,7 +16159,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
-            <!-- experimental MATISSE -->
+            <!-- MATISSE -->
             <configuration>
                 <stations>G1 G2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
@@ -16265,7 +16263,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
-            <!-- experimental MATISSE -->
+            <!-- MATISSE -->
             <configuration>
                 <stations>G1 G2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>

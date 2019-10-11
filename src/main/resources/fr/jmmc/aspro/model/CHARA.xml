@@ -42,6 +42,7 @@
       <maxElevation>88.5</maxElevation>
 
       <adaptiveOptics>
+        <name>TIP_TILT</name>
         <band>V</band>
         <!-- tip tilt -->
         <numberActuators>2</numberActuators>
@@ -2351,8 +2352,8 @@ Configuration d’enregistrement
         <focalInstrument>
             <name>SPICA_6T</name>
             <description>SPICA future instrument (6T)</description>
-            <experimental>true</experimental>
             <numberChannels>6</numberChannels>
+            <visDiff>true</visDiff>
             <fringeTracker>FT_SPICA</fringeTracker>
             <fringeTrackerRequired>true</fringeTrackerRequired>
 
@@ -2401,6 +2402,13 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
                 <resolution>3300</resolution>
                 <waveLengthMin>0.64</waveLengthMin>
                 <waveLengthMax>0.68</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>MR_FULL</name>
+                <resolution>3000</resolution>
+                <waveLengthMin>0.6</waveLengthMin>
+                <waveLengthMax>0.85</waveLengthMax>
             </mode>
 
             <mode>
