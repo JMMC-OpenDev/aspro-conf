@@ -42,10 +42,16 @@
       <maxElevation>88.5</maxElevation>
 
       <adaptiveOptics>
-        <name>TIP_TILT</name>
+        <name>AO_TIP_TILT</name>
         <band>V</band>
         <!-- tip tilt -->
-        <numberActuators>2</numberActuators>
+        <setup>
+            <name>TIP_TILT</name>
+            <numberSubPupils>60</numberSubPupils>
+            <dit>2.50</dit> <!-- 400 Hz -->
+            <ron>4.0</ron>
+            <quantumEfficiency>0.70</quantumEfficiency>
+        </setup>
       </adaptiveOptics>
 
       <!--
@@ -60,6 +66,39 @@
       </moonPointingRestriction>
 
     </telescope>
+
+
+    <telescope>
+      <name>T_2M</name>
+      <diameter>2.0</diameter>
+      <maxElevation>88.5</maxElevation>
+
+      <adaptiveOptics>
+        <name>AO_TIP_TILT_2M</name>
+        <band>V</band>
+        <!-- tip tilt -->
+        <setup>
+            <name>TIP_TILT_2M</name>
+            <numberSubPupils>60</numberSubPupils>
+            <dit>2.50</dit> <!-- 400 Hz -->
+            <ron>4.0</ron>
+            <quantumEfficiency>0.70</quantumEfficiency>
+        </setup>
+      </adaptiveOptics>
+
+      <!--
+        Moon Pointing Restrictions on CHARA:
+        Theo: Bright light like that into the system would certainly stop tiptilt and tracking. If you want to enter numbers I would say to use for a star brighter than 12th magnitude guiding is not possible for a moon distance smaller than 5 degrees.
+      -->
+      <moonPointingRestriction>
+        <warningThreshold>10</warningThreshold>
+        <restriction>
+          <separation>5.0</separation>
+        </restriction>
+      </moonPointingRestriction>
+
+    </telescope>
+
 
     <station>
       <name>S1</name>
@@ -131,6 +170,73 @@
       <horizon>
         <point><azimuth>0.0</azimuth><elevation>20.0</elevation></point><point><azimuth>65.0</azimuth><elevation>20.0</elevation></point><point><azimuth>65.0</azimuth><elevation>20.0</elevation></point><point><azimuth>70.0</azimuth><elevation>21.0</elevation></point><point><azimuth>80.0</azimuth><elevation>30.0</elevation></point><point><azimuth>90.0</azimuth><elevation>31.0</elevation></point><point><azimuth>100.0</azimuth><elevation>31.0</elevation></point><point><azimuth>110.0</azimuth><elevation>30.0</elevation></point><point><azimuth>120.0</azimuth><elevation>22.0</elevation></point><point><azimuth>130.0</azimuth><elevation>20.0</elevation></point><point><azimuth>235.0</azimuth><elevation>20.0</elevation></point><point><azimuth>238.0</azimuth><elevation>25.0</elevation></point><point><azimuth>243.0</azimuth><elevation>25.5</elevation></point><point><azimuth>244.0</azimuth><elevation>26.0</elevation></point><point><azimuth>246.0</azimuth><elevation>25.5</elevation></point><point><azimuth>248.0</azimuth><elevation>25.0</elevation></point><point><azimuth>250.0</azimuth><elevation>25.0</elevation></point><point><azimuth>253.0</azimuth><elevation>24.0</elevation></point><point><azimuth>258.0</azimuth><elevation>21.0</elevation></point><point><azimuth>275.0</azimuth><elevation>20.0</elevation></point><point><azimuth>288.0</azimuth><elevation>30.0</elevation></point><point><azimuth>290.0</azimuth><elevation>30.0</elevation></point><point><azimuth>292.0</azimuth><elevation>33.0</elevation></point><point><azimuth>294.0</azimuth><elevation>37.0</elevation></point><point><azimuth>300.0</azimuth><elevation>41.0</elevation></point><point><azimuth>303.0</azimuth><elevation>41.0</elevation></point><point><azimuth>305.0</azimuth><elevation>40.0</elevation></point><point><azimuth>310.0</azimuth><elevation>44.0</elevation></point><point><azimuth>315.0</azimuth><elevation>46.0</elevation></point><point><azimuth>318.0</azimuth><elevation>47.0</elevation></point><point><azimuth>320.0</azimuth><elevation>48.0</elevation></point><point><azimuth>323.0</azimuth><elevation>48.0</elevation></point><point><azimuth>324.0</azimuth><elevation>49.0</elevation></point><point><azimuth>328.0</azimuth><elevation>48.0</elevation></point><point><azimuth>330.0</azimuth><elevation>47.0</elevation></point><point><azimuth>335.0</azimuth><elevation>46.0</elevation></point><point><azimuth>340.0</azimuth><elevation>34.0</elevation></point><point><azimuth>344.0</azimuth><elevation>30.0</elevation></point><point><azimuth>345.0</azimuth><elevation>30.0</elevation></point><point><azimuth>348.0</azimuth><elevation>27.0</elevation></point><point><azimuth>350.0</azimuth><elevation>27.0</elevation></point><point><azimuth>353.0</azimuth><elevation>23.0</elevation></point><point><azimuth>355.0</azimuth><elevation>20.0</elevation></point><point><azimuth>355.0</azimuth><elevation>20.0</elevation></point><point><azimuth>360.0</azimuth><elevation>20.0</elevation></point><point><azimuth>360.0</azimuth><elevation>90.0</elevation></point><point><azimuth>0.0</azimuth><elevation>90.0</elevation></point>
       </horizon>
+    </station>
+
+    <!-- Future S3 at P4 station -->
+    <station>
+      <name>P4</name>
+      <telescope>T_2M</telescope>
+       <relativePosition>
+        <posX>-96.11344056348469</posX>
+        <posY>65.9010162</posY>
+        <posZ>144.9905388559922</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>-8.456807516486</delayLineFixedOffset> <!-- like W2 -->
+
+      <!-- middle like W1 -->
+      <popLink>
+        <pop>PoP1</pop>
+        <opticalLength>-73.10947999999999</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP2</pop>
+        <opticalLength>-36.536268</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP3</pop>
+        <opticalLength>0.0</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP4</pop>
+        <opticalLength>36.594083999999995</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP5</pop>
+        <opticalLength>69.905974</opticalLength>
+      </popLink>
+    </station>
+
+    <station>
+      <name>P5</name>
+      <telescope>T_2M</telescope>
+      <relativePosition>
+        <posX>-80.71931299697918</posX>
+        <posY>48.299941999999994</posY>
+        <posZ>123.76589712771442</posZ>
+      </relativePosition>
+      <delayLineFixedOffset>-8.456807516486</delayLineFixedOffset> <!-- like W2 -->
+
+      <!-- middle like W1 -->
+      <popLink>
+        <pop>PoP1</pop>
+        <opticalLength>-73.10947999999999</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP2</pop>
+        <opticalLength>-36.536268</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP3</pop>
+        <opticalLength>0.0</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP4</pop>
+        <opticalLength>36.594083999999995</opticalLength>
+      </popLink>
+      <popLink>
+        <pop>PoP5</pop>
+        <opticalLength>69.905974</opticalLength>
+      </popLink>
     </station>
 
     <station>
@@ -295,6 +401,9 @@
     <channel>
       <name>V6</name>
     </channel>
+    <channel>
+      <name>V7</name>
+    </channel>
 
     <!-- DL : (-1.4 to +44.3) = 45.7 x2 = 91.4 (sep 2013) -->
     <!-- all delay lines have the same throw (july 2011) -->
@@ -316,6 +425,16 @@
       <name>DL_S2</name>
       <station>S2</station>
       <maximumThrow>91.54</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL_P4</name>
+      <station>P4</station>
+      <maximumThrow>91.5</maximumThrow>
+    </delayLine>
+    <delayLine>
+      <name>DL_P5</name>
+      <station>P5</station>
+      <maximumThrow>91.5</maximumThrow>
     </delayLine>
     <delayLine>
       <name>DL_E1</name>
@@ -509,6 +628,22 @@
         </channelLink>
       </stationLinks>
 
+      <!-- P4/5 Future -->
+      <stationLinks>
+        <station>P4</station>
+        <channelLink>
+          <channel>V7</channel>
+          <opticalLength>0</opticalLength>
+        </channelLink>
+      </stationLinks>
+
+      <stationLinks>
+        <station>P5</station>
+        <channelLink>
+          <channel>V7</channel>
+          <opticalLength>0</opticalLength>
+        </channelLink>
+      </stationLinks>
     </switchyard>
 
     <!-- pop on CHARA -->
@@ -2420,6 +2555,159 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
 
         </focalInstrument>
 
+        <!-- 7T (Future ?) -->
+        <focalInstrument>
+            <name>MIRC_7T</name>
+            <description>MIRC instrument (7T)</description>
+            <numberChannels>7</numberChannels>
+
+            <setup>
+                <name>MIRC_7T_SETUP</name>
+                <description>MIRC instrument (7T)</description>
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.01</dit>
+                <ron>15</ron>
+                <detectorSaturation>50000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.25</fracFluxInPhotometry>
+
+                <nbPixInterferometry>126</nbPixInterferometry>
+                <nbPixPhotometry>18</nbPixPhotometry>
+
+                <transmission>0.0025</transmission>
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
+
+            <!--
+              Instrument predefined modes :
+              Each mode describes a focal instrument mode (AMBER : "Low_HK" ... "Medium_K_1_2300" ... "High_K_1_2481").
+              It has a wavelength range (waveLengthMin - waveLengthMax), a spectral resolution (resolution)
+              and optionaly a number of channels (numberChannels)
+            -->
+            <mode>
+                <!-- name: The name of this instrument mode -->
+                <name>Low_H</name>
+                <!-- resolution: The spectral resolution of this instrument mode -->
+                <resolution>41</resolution>
+                <!--
+                  The number of spectral channels of this instrument mode (optional)
+                  <numberChannels>n</numberChannels>
+                -->
+                <!-- 1.476 - 1.755 (8 channels) -->
+                <!-- waveLengthMin: The lower wave length of this instrument mode -->
+                <waveLengthMin>1.4551</waveLengthMin>
+                <!-- waveLengthMax: The upper wave length of this instrument mode -->
+                <waveLengthMax>1.7724</waveLengthMax>
+            </mode>
+            <mode>
+                <name>Low_K</name>
+                <resolution>40</resolution>
+                <waveLengthMin>2.0</waveLengthMin>
+                <waveLengthMax>2.5</waveLengthMax>
+            </mode>
+            <mode>
+                <name>Medium_H</name>
+                <resolution>150</resolution>
+                <!-- 1.476 - 1.755 (26 channels) -->
+                <waveLengthMin>1.4704</waveLengthMin>
+                <waveLengthMax>1.7606</waveLengthMax>
+            </mode>
+            <mode>
+                <name>Medium_K</name>
+                <resolution>150</resolution>
+                <waveLengthMin>2.0</waveLengthMin>
+                <waveLengthMax>2.5</waveLengthMax>
+            </mode>
+            <mode>
+                <name>High_H</name>
+                <resolution>400</resolution>
+                <!-- 1.476 - 1.755 (70 channels) -->
+                <waveLengthMin>1.4740</waveLengthMin>
+                <waveLengthMax>1.7570</waveLengthMax>
+            </mode>
+            <mode>
+                <name>High_K</name>
+                <resolution>400</resolution>
+                <waveLengthMin>2.0</waveLengthMin>
+                <waveLengthMax>2.5</waveLengthMax>
+            </mode>
+        </focalInstrument>
+
+        <focalInstrument>
+            <name>SPICA_7T</name>
+            <description>SPICA future instrument (7T)</description>
+            <numberChannels>7</numberChannels>
+            <visDiff>true</visDiff>
+            <fringeTracker>FT_SPICA</fringeTracker>
+            <fringeTrackerRequired>true</fringeTrackerRequired>
+
+            <setup>
+                <name>SPICA_7T_SETUP</name>
+                <description>SPICA instrument (7T)</description>
+
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
+                <defaultSamplingTime>30</defaultSamplingTime>
+
+                <dit>0.02</dit> <!-- exposure time (20ms) -->
+                <ron>0.1</ron> <!-- 100 / 1000 = gain -->
+                <detectorSaturation>800000</detectorSaturation>
+
+                <fracFluxInInterferometry>0.80</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.20</fracFluxInPhotometry>
+
+                <!-- per spectral element -->
+                <nbPixInterferometry>600</nbPixInterferometry>  <!-- 300 (spatial) x 2 (spectral) -->
+                <nbPixPhotometry>4</nbPixPhotometry> <!-- 2 (spatial) x 2 (spectral) -->
+
+                <!-- strehl is hard-coded (0.25 excellent/good, 0.15 average, 0.10 others) -->
+                <transmission>0.00531710</transmission> <!-- tinst * toa = ( 0.017*(0.95^4)*0.8*0.6 ) * 0.8 -->
+                <instrumentVisibility>0.8</instrumentVisibility>
+
+                <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
+                <instrumentPhaseBias>1.0</instrumentPhaseBias>
+            </setup>
+
+            <!--
+TODO:
+mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suivants:
+1) LR: 50 canaux spectraux de 6nm chacun répartis uniformément sur 600-900nm
+2) MR660: 200 canaux spectraux de 0.2nm répartis uniformément sur 40nm centrés sur 660nm
+3) MR800: la même chose centrés sur 800nm
+            -->
+            <mode>
+                <name>LR</name>
+                <resolution>140</resolution>
+                <waveLengthMin>0.6</waveLengthMin>
+                <waveLengthMax>0.85</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>MR660</name>
+                <resolution>3300</resolution>
+                <waveLengthMin>0.64</waveLengthMin>
+                <waveLengthMax>0.68</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>MR_FULL</name>
+                <resolution>3000</resolution>
+                <waveLengthMin>0.6</waveLengthMin>
+                <waveLengthMax>0.85</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>MR800</name>
+                <resolution>4000</resolution>
+                <waveLengthMin>0.78</waveLengthMin>
+                <waveLengthMax>0.82</waveLengthMax>
+            </mode>
+
+        </focalInstrument>
     </description>
 
 
@@ -4060,6 +4348,30 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
                 <stations>S1 S2 W1 W2 E1 E2</stations>
                 <!-- channels: The list of channels for this configuration -->
                 <channels>V1 V2 V3 V4 V6 V5</channels>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MIRC_7T</focalInstrument>
+
+            <configuration>
+                <stations>S1 S2 W1 W2 E1 E2 P4</stations>
+                <channels>V1 V2 V3 V4 V5 V6 V7</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W1 W2 E1 E2 P5</stations>
+                <channels>V1 V2 V3 V4 V5 V6 V7</channels>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>SPICA_7T</focalInstrument>
+
+            <configuration>
+                <stations>S1 S2 W1 W2 E1 E2 P4</stations>
+                <channels>V1 V2 V3 V4 V5 V6 V7</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W1 W2 E1 E2 P5</stations>
+                <channels>V1 V2 V3 V4 V5 V6 V7</channels>
             </configuration>
         </instrument>
     </configuration>
