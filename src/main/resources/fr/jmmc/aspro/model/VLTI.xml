@@ -6607,6 +6607,20 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
         <maxIntegration>60</maxIntegration>
     </fringeTracker>
 
+    <fringeTracker>
+        <name>GRAV4MAT</name>
+        <band>K</band>
+
+        <mode>FringeTrack</mode>
+
+        <instrumentVisibility>0.95</instrumentVisibility>
+
+        <!-- K=10 (UT), K=8 (AT) -->
+        <magLimit>10.0</magLimit>
+        <!-- up to 10 seconds -->
+        <maxIntegration>10</maxIntegration>
+    </fringeTracker>
+
 
 
     <focalInstrument>
@@ -7198,6 +7212,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <name>MATISSE_LM</name>
         <description>MATISSE ESO instrument (4T): L and M bands</description>
         <numberChannels>4</numberChannels>
+        <fringeTracker>GRAV4MAT</fringeTracker>
+        <fringeTrackerRequired>false</fringeTrackerRequired>
         <visDiff>true</visDiff>
 
         <setup includeAtmosphereCorrection="false">
@@ -10954,6 +10970,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <name>MATISSE_N</name>
         <description>MATISSE ESO instrument (4T): N band</description>
         <numberChannels>4</numberChannels>
+        <fringeTracker>GRAV4MAT</fringeTracker>
+        <fringeTrackerRequired>false</fringeTrackerRequired>
         <visDiff>true</visDiff>
 
         <setup includeAtmosphereCorrection="false">
