@@ -18,13 +18,21 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2019.1129"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="29/11/2019" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2020.0124"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="24/01/2020" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+
+        <release version="2020.0124">
+            <pubDate>Fri, 24 Jan 2020 10:00:00 GMT</pubDate>
+            <prerelease version="2020.0124 beta 1">
+                <change type="FEATURE">VLTI: added GRAV4MAT (optional FT in K band) for MATISSE</change>
+                <change type="FEATURE">VLTI Future: added relocation baselines for PIONIER</change>
+            </prerelease>
+        </release>
         <release version="2019.1129">
             <pubDate>Fri, 29 Nov 2019 16:00:00 GMT</pubDate>
             <prerelease version="2019.1129 beta 1">

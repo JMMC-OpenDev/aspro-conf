@@ -7159,8 +7159,6 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
     </focalInstrument>
 
 
-    <!-- future instruments -->
-
     <!-- GRAVITY FT -->
     <focalInstrument>
       <name>GRAVITY_FT</name>
@@ -15920,6 +15918,77 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <version>Future</version>
         <interferometer>VLTI</interferometer>
         <switchyard>sw_STS</switchyard>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P96 -->
+            <configuration>
+                <altName>Large</altName>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium</altName>
+                <stations>D0 G2 J3 K0</stations>
+                <channels>IP5 IP3 IP7 IP1</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <stations>A0 B2 C1 D0</stations>
+                <channels>IP1 IP3 IP7 IP5</channels>
+                <delayLines>DL6 DL5 DL2 DL1</delayLines>
+            </configuration>
+            <!-- P104: relocation -->
+            <configuration>
+                <!-- Small<>Medium -->
+                <altName>Small / Medium</altName>
+                <stations>K0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <!-- Small<>Medium or Medium<>Large -->
+                <altName>Medium / Large</altName>
+                <stations>A0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <!-- Medium<>Large -->
+                <altName>Large / Medium</altName>
+                <stations>K0 G1 D0 J3</stations>
+                <channels>IP7 IP3 IP1 IP5</channels>
+                <delayLines>DL3 DL5 DL6 DL4</delayLines>
+            </configuration>
+            <configuration>
+                <!-- Small<>Large -->
+                <altName>Medium / Large</altName>
+                <stations>A0 B2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <!-- Small<>Large -->
+                <altName>Medium</altName>
+                <stations>A0 G1 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <!-- Medium<>Astrometric -->
+                <altName>Medium / Large</altName>
+                <stations>A0 G2 D0 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+        </instrument>
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
