@@ -18,14 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2020.0124"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="24/01/2020" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2020.0129"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="29/01/2020" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
-
+        <release version="2020.0129">
+            <pubDate>Wed, 29 Jan 2020 14:00:00 GMT</pubDate>
+            <prerelease version="2020.0129 beta 1">
+                <change type="FEATURE">VLTI: updated MATISSE LM / N noise parameters</change>
+                <change type="FEATURE">VLTI: fixed GRAV4MAT dit for MATISSE LM modes</change>
+            </prerelease>
+        </release>
         <release version="2020.0124">
             <pubDate>Fri, 24 Jan 2020 10:00:00 GMT</pubDate>
             <prerelease version="2020.0124 beta 1">

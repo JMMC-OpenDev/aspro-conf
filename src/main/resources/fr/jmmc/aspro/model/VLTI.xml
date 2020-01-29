@@ -6578,8 +6578,8 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
         <name>FINITO</name>
         <band>H</band>
 
-        <mode>GroupTrack</mode>
-        <mode>FringeTrack</mode>
+        <mode>GroupTrack FINITO</mode>
+        <mode>FringeTrack FINITO</mode>
 
         <instrumentVisibility>0.9</instrumentVisibility>
         <!--
@@ -6595,7 +6595,7 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
         <name>FT_GRAVITY</name>
         <band>K</band>
 
-        <mode>FringeTrack</mode>
+        <mode>FringeTrack GRAVITY</mode>
 
         <!-- split 50% (FT) / 50% SCI -->
         <instrumentVisibility>0.5</instrumentVisibility>
@@ -6608,16 +6608,15 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
     </fringeTracker>
 
     <fringeTracker>
-        <name>GRAV4MAT</name>
+        <name>GRA4MAT</name>
         <band>K</band>
 
-        <mode>FringeTrack_LOW</mode>
-        <mode>FringeTrack_MED-HIGH</mode>
+        <mode>FringeTrack GRA4MAT</mode>
 
         <instrumentVisibility>0.95</instrumentVisibility>
 
-        <!-- K=10 (UT), K=8 (AT) -->
-        <magLimit>10.0</magLimit>
+        <!-- K=8.5 max for MATISSE -->
+        <magLimit>8.5</magLimit>
         <!-- up to 10 seconds -->
         <maxIntegration>10</maxIntegration>
     </fringeTracker>
@@ -7211,7 +7210,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <numberChannels>4</numberChannels>
         <visDiff>true</visDiff>
 
-        <fringeTracker>GRAV4MAT</fringeTracker>
+        <fringeTracker>GRA4MAT</fringeTracker>
         <fringeTrackerRequired>false</fringeTrackerRequired>
 
         <setup includeAtmosphereCorrection="false">
@@ -7289,6 +7288,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 75ms / 156ms -->
             <dit>0.075</dit>
             <frameTime>0.156</frameTime>
+
+            <!-- FT setup (LOW) -->
+            <ft_dit>1.0</ft_dit>
+            <ft_frameTime>1.117</ft_frameTime>
 
             <!-- lambda: 2.86 - 4.18 -->
 
@@ -7382,6 +7385,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 111ms / 222ms -->
             <dit>0.111</dit>
             <frameTime>0.222</frameTime>
+
+            <!-- FT setup (LOW) -->
+            <ft_dit>1.0</ft_dit>
+            <ft_frameTime>1.117</ft_frameTime>
 
             <!-- lambda: 2.86 - 4.90 (cut between 4.2 to 4.45) -->
 
@@ -7525,6 +7532,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <dit>0.060</dit>
             <frameTime>0.120</frameTime>
 
+            <!-- FT setup (LOW) -->
+            <ft_dit>1.0</ft_dit>
+            <ft_frameTime>1.117</ft_frameTime>
+
             <!-- lambda: 4.48 - 5.00 -->
 
             <table>
@@ -7596,6 +7607,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 111ms / 228ms -->
             <dit>0.111</dit>
             <frameTime>0.228</frameTime>
+
+            <!-- FT setup (MED/HIGH) -->
+            <ft_dit>10.0</ft_dit>
+            <ft_frameTime>11.074</ft_frameTime>
 
             <!-- lambda: 2.8 - 5.0 (cut between 4.2 to 4.45) -->
             <!-- delta lambda: 0.16 -->
@@ -9176,6 +9191,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 111ms / 228ms -->
             <dit>0.111</dit>
             <frameTime>0.228</frameTime>
+
+            <!-- FT setup (MED/HIGH) -->
+            <ft_dit>10.0</ft_dit>
+            <ft_frameTime>11.074</ft_frameTime>
 
             <!-- lambda: 2.8 - 4.20 -->
             <!-- delta lambda: 0.08 -->
@@ -11100,7 +11119,6 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             </table>
         </mode>
 
-
         <!-- VERY HIGH resolution -->
 
         <mode>
@@ -11113,6 +11131,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 111ms / 228ms -->
             <dit>0.111</dit>
             <frameTime>0.228</frameTime>
+
+            <!-- FT setup (MED/HIGH) -->
+            <ft_dit>10.0</ft_dit>
+            <ft_frameTime>11.074</ft_frameTime>
 
             <!-- lambda: 3.68 - 4.13 -->
             <!-- delta lambda: 0.02 -->
@@ -13109,6 +13131,10 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <dit>0.111</dit>
             <frameTime>0.228</frameTime>
 
+            <!-- FT setup (MED/HIGH) -->
+            <ft_dit>10.0</ft_dit>
+            <ft_frameTime>11.074</ft_frameTime>
+
             <!-- lambda: 4.57 - 5.0 -->
             <!-- delta lambda: 0.02 -->
 
@@ -14634,9 +14660,11 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <numberChannels>4</numberChannels>
         <visDiff>true</visDiff>
 
-        <fringeTracker>GRAV4MAT</fringeTracker>
+        <!-- 2020.1: GRA4MAT disabled in N band as it provides no gain -->
+<!--
+        <fringeTracker>GRA4MAT</fringeTracker>
         <fringeTrackerRequired>false</fringeTrackerRequired>
-
+-->
         <setup includeAtmosphereCorrection="false">
             <name>MATISSE_N_HIGH_SENS_SETUP</name>
             <description>MATISSE instrument (4T): N band in HIGH_SENS mode</description>
@@ -14702,6 +14730,11 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 20ms / 26ms -->
             <dit>0.020</dit>
             <frameTime>0.026</frameTime>
+
+            <!-- FT setup (no longer DIT because of detector saturation) -->
+            <!-- dit: 20ms / 26ms -->
+            <ft_dit>0.020</ft_dit>
+            <ft_frameTime>0.026</ft_frameTime>
 
             <!-- lambda: 7.90 - 13.03 -->
 
@@ -14853,6 +14886,11 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- dit: 75ms / 84ms -->
             <dit>0.075</dit>
             <frameTime>0.084</frameTime>
+
+            <!-- FT setup (no longer DIT because of detector saturation) -->
+            <!-- dit: 20ms / 26ms -->
+            <ft_dit>0.020</ft_dit>
+            <ft_frameTime>0.026</ft_frameTime>
 
             <!-- lambda: 7.90 - 13.00 -->
 
