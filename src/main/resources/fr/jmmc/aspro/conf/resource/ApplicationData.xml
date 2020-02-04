@@ -28,6 +28,7 @@
         <release version="2020.0204">
             <pubDate>Tue, 04 Feb 2020 11:00:00 GMT</pubDate>
             <prerelease version="2020.0204 beta 1">
+                <change type="FEATURE">VLTI: discarded STRAP, the former tip tilt correction on ATs</change>
                 <change type="FEATURE">VLTI Future: added all relocation baselines for all instruments (Period 105)</change>
             </prerelease>
         </release>

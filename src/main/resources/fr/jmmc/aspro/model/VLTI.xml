@@ -154,19 +154,22 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
       </adaptiveOptics>
 
       <!-- STRAP: first tip tilt system on ATs -->
+      <!-- decomissioned in 2018.11 -->
+      <!--
       <adaptiveOptics>
         <name>AO_STRAP</name>
         <band>V</band>
         <setup>
             <name>STRAP</name>
             <numberSubPupils>4</numberSubPupils>
-            <dit>1.5</dit> <!-- ?? Hz -->
+            <dit>1.5</dit>
             <ron>0.1</ron>
             <quantumEfficiency>0.80</quantumEfficiency>
         </setup>
-        <!-- STRAP tip-tilt correctors: The sensitivity of STRAP on the ATs is V = 13.5 (max) => 12 is 'safe' -->
+        - STRAP tip-tilt correctors: The sensitivity of STRAP on the ATs is V = 13.5 (max) => 12 is 'safe' -
         <magLimit>13.5</magLimit>
       </adaptiveOptics>
+      -->
 
       <!--
         Moon Pointing Restrictions on AT:
