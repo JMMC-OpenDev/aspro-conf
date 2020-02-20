@@ -25,6 +25,12 @@
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2020.0220">
+            <pubDate>Thu, 20 Feb 2020 16:00:00 GMT</pubDate>
+            <prerelease version="2020.0220 beta 1">
+                <change type="FEATURE">VLTI: added ESO Period 106 (= 105)</change>
+            </prerelease>
+        </release>
         <release version="2020.0204">
             <pubDate>Tue, 04 Feb 2020 11:00:00 GMT</pubDate>
             <prerelease version="2020.0204 beta 1">
