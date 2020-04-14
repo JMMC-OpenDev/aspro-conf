@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2020.0204"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="04/02/2020" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2020.0414"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="14/04/2020" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2020.0414">
+            <pubDate>Thu, 14 Apr 2020 15:00:00 GMT</pubDate>
+            <prerelease version="2020.0414 beta 1">
+                <change type="FEATURE">VLTI: fixed AMBER Low_JHK (K only)</change>
+            </prerelease>
+        </release>
         <release version="2020.0220">
             <pubDate>Thu, 20 Feb 2020 16:00:00 GMT</pubDate>
             <prerelease version="2020.0220 beta 1">
