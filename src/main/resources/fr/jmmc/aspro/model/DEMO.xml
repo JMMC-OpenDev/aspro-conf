@@ -326,7 +326,7 @@
             <name>DEMO_SPATIAL</name>
             <description>DEMO combiner (16T)</description>
             <numberChannels>16</numberChannels>
-            <visDiff>true</visDiff>
+            <visDiff>false</visDiff>
 
             <setup>
                 <name>DEMO_SPATIAL_SETUP</name>
@@ -426,7 +426,7 @@
             <name>DEMO_3T_SPECTRAL</name>
             <description>DEMO combiner (3T)</description>
             <numberChannels>3</numberChannels>
-            <visDiff>true</visDiff>
+            <visDiff>false</visDiff>
 
             <setup>
                 <name>DEMO_3T_SPECTRAL_SETUP</name>
