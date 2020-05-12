@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2020.0414"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="14/04/2020" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2020.0512"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="12/05/2020" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2020.0512">
+            <pubDate>Thu, 12 May 2020 15:00:00 GMT</pubDate>
+            <prerelease version="2020.0512 beta 1">
+                <change type="FEATURE">DEMO: compute pure theoretical VisAmp/Phi (not differential)</change>
+            </prerelease>
+        </release>
         <release version="2020.0414">
             <pubDate>Thu, 14 Apr 2020 15:00:00 GMT</pubDate>
             <prerelease version="2020.0414 beta 1">
