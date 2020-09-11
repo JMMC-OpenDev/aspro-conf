@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2020.0512"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="12/05/2020" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2020.0911"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="11/09/2020" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2020.0911">
+            <pubDate>Fri, 11 Sep 2020 16:00:00 GMT</pubDate>
+            <prerelease version="2020.0911 beta 1">
+                <change type="FEATURE">VLTI: fixed max elevation to 87 deg (zenithal avoidance is 3 deg) for ATs / UTs</change>
+            </prerelease>
+        </release>
         <release version="2020.0512">
             <pubDate>Thu, 12 May 2020 15:00:00 GMT</pubDate>
             <prerelease version="2020.0512 beta 1">

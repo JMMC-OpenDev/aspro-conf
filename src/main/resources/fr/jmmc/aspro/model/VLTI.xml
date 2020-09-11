@@ -52,8 +52,8 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
     <telescope>
       <name>UT</name>
       <diameter>8.2</diameter>
-      <!-- Alt / Az mounted and cannot observe at zenith distances less than 2 degrees (2016.4) -->
-      <maxElevation>88.0</maxElevation>
+      <!-- Alt / Az mounted and cannot observe at zenith distances less than 3 degrees (2020.9) -->
+      <maxElevation>87.0</maxElevation>
 
       <adaptiveOptics>
         <name>AO_MACAO</name>
@@ -128,8 +128,8 @@ The limiting magnitudes in the visible which allow the pupil alignment are:
     <telescope>
       <name>AT</name>
       <diameter>1.8</diameter>
-      <!-- Alt / Az mounted and cannot observe at zenith distances less than 2 degrees (2016.4) -->
-      <maxElevation>88.0</maxElevation>
+      <!-- Alt / Az mounted and cannot observe at zenith distances less than 3 degrees (2020.9) -->
+      <maxElevation>87.0</maxElevation>
 
       <!-- NAOMI: AT AO commissioned in nov  -->
       <adaptiveOptics>
