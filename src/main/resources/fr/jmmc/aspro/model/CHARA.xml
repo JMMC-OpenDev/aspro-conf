@@ -42,14 +42,14 @@
       <maxElevation>88.5</maxElevation>
 
       <adaptiveOptics>
-        <name>AO_TIP_TILT</name>
+        <name>AO_CHARA</name>
         <band>V</band>
-        <!-- tip tilt -->
+        <!-- adaptive optics CHARA -->
         <setup>
-            <name>TIP_TILT</name>
-            <numberSubPupils>60</numberSubPupils>
-            <dit>2.50</dit> <!-- 400 Hz -->
-            <ron>4.0</ron>
+            <name>AO</name>
+            <numberSubPupils>72</numberSubPupils> <!-- 36 sub pupils x 2px -->
+            <dit>2.0</dit> <!-- 500 Hz -->
+            <ron>0.14</ron> <!-- gain 4e- / 30 -->
             <quantumEfficiency>0.70</quantumEfficiency>
         </setup>
       </adaptiveOptics>
@@ -64,7 +64,6 @@
           <separation>5.0</separation>
         </restriction>
       </moonPointingRestriction>
-
     </telescope>
 
 
@@ -74,14 +73,14 @@
       <maxElevation>88.5</maxElevation>
 
       <adaptiveOptics>
-        <name>AO_TIP_TILT_2M</name>
+        <name>AO_CHARA_2M</name>
         <band>V</band>
         <!-- tip tilt -->
         <setup>
-            <name>TIP_TILT_2M</name>
-            <numberSubPupils>60</numberSubPupils>
-            <dit>2.50</dit> <!-- 400 Hz -->
-            <ron>4.0</ron>
+            <name>AO_2M</name>
+            <numberSubPupils>72</numberSubPupils> <!-- 36 sub pupils x 2px -->
+            <dit>2.0</dit> <!-- 500 Hz -->
+            <ron>0.14</ron> <!-- gain 4e- / 30 -->
             <quantumEfficiency>0.70</quantumEfficiency>
         </setup>
       </adaptiveOptics>
@@ -96,7 +95,6 @@
           <separation>5.0</separation>
         </restriction>
       </moonPointingRestriction>
-
     </telescope>
 
 
@@ -2483,6 +2481,170 @@ Configuration d’enregistrement
             </mode>
         </focalInstrument>
 
+        <focalInstrument>
+            <name>MIRCX_6T</name>
+            <description>MIRCX instrument (6T)</description>
+            <numberChannels>6</numberChannels>
+
+            <setup>
+                <name>MIRCX_6T_SETUP</name>
+                <description>MIRCX default instrument setup</description>
+
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime> <!-- 10 min science acquisition -->
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.0028</dit> <!-- 2.8 ms ie 350Hz -->
+                <ron>1.0</ron> <!-- roughly 1e- -->
+                <detectorSaturation>50000</detectorSaturation> <!-- ?? -->
+                <quantumEfficiency>0.5</quantumEfficiency>
+
+                <fracFluxInInterferometry>0.80</fracFluxInInterferometry> <!-- 80% on interferometry -->
+                <fracFluxInPhotometry>0.20</fracFluxInPhotometry> <!-- 20% on photometry -->
+
+                <!-- number of pixel per spectral channel (depends on resolution) -->
+                <!-- The prism R = 50
+                mode uses a 320 × 17 pixel window on the detector with
+                N reads = 12 and N loops = 8. The grism R = 190 mode uses a
+                320 × 44 pixel window with N reads = 8 and N reads = 6.
+                -->
+                <nbPixInterferometry>100</nbPixInterferometry>
+                <nbPixPhotometry>10</nbPixPhotometry>
+
+                <transmission>0.01</transmission> <!-- TODO: estimate overall transmission (CHARA + instrument) but without strehl / AO / QE -->
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
+
+            <!--
+              Instrument predefined modes :
+              Each mode describes a focal instrument mode (AMBER : "Low_HK" ... "Medium_K_1_2300" ... "High_K_1_2481").
+              It has a wavelength range (waveLengthMin - waveLengthMax), a spectral resolution (resolution)
+              and optionaly a number of channels (numberChannels)
+            -->
+
+<!-- Low_J, Medium_J and High_J -->
+<!--
+The MIRCX J band mode is actually H+J in terms of wavelength as we fringe track in H.
+
+The filter is a Notch, with a gap between the H and J bands.
+The short wavelength range is 1.1001 to 1.2699 um with 6 spectral channels (R~42)
+The longer wavelength range is 1.4510 to 1.7286 with 10 spectral channels (R~53)
+
+"1.729045E-06","3.989927E-08"
+"1.714839E-06","3.989927E-08"
+"1.683684E-06","3.989927E-08"
+"1.651781E-06","3.989927E-08"
+"1.619131E-06","3.989927E-08"
+"1.585732E-06","3.989927E-08"
+"1.551585E-06","3.989927E-08"
+"1.516691E-06","3.989927E-08"
+"1.481048E-06","3.989927E-08"
+"1.444657E-06","3.989927E-08"
+"1.415200E-06","3.989927E-08"
+
+"1.271032E-06","3.989927E-08"
+"1.251484E-06","3.989927E-08"
+"1.210605E-06","3.989927E-08"
+"1.168979E-06","3.989927E-08"
+"1.126604E-06","3.989927E-08"
+"1.090657E-06","3.989927E-08"
+
+R = 50, R = 190 and R = 1035 dispersion elements
+-->
+
+            <mode>
+                <name>Low_J</name>
+<!--
+                <resolution>50</resolution>
+                <waveLengthMin>1.07</waveLengthMin>
+                <waveLengthMax>1.75</waveLengthMax>
+-->
+                <table>
+                    <column quantity="lambda"/>
+                    <column quantity="delta_lambda"/>
+<!--
+                    <column quantity="nb_pix_Interf"/>
+                    <column quantity="nb_pix_Photo"/>
+-->
+                    <data>
+1.090657E-06    3.989927E-08
+1.126604E-06    3.989927E-08
+1.168979E-06    3.989927E-08
+1.210605E-06    3.989927E-08
+1.251484E-06    3.989927E-08
+1.271032E-06    3.989927E-08
+1.415200E-06    3.989927E-08
+1.444657E-06    3.989927E-08
+1.481048E-06    3.989927E-08
+1.516691E-06    3.989927E-08
+1.551585E-06    3.989927E-08
+1.585732E-06    3.989927E-08
+1.619131E-06    3.989927E-08
+1.651781E-06    3.989927E-08
+1.683684E-06    3.989927E-08
+1.714839E-06    3.989927E-08
+1.729045E-06    3.989927E-08
+                    </data>
+                </table>
+            </mode>
+            <mode>
+                <name>Med_J</name>
+                <resolution>190</resolution>
+                <waveLengthMin>1.07</waveLengthMin>
+                <waveLengthMax>1.75</waveLengthMax>
+            </mode>
+            <mode>
+                <name>High_J</name>
+                <resolution>1035</resolution>
+                <waveLengthMin>1.07</waveLengthMin>
+                <waveLengthMax>1.75</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>Low_H</name>
+<!--
+                <resolution>50</resolution>
+                <waveLengthMin>1.41</waveLengthMin>
+                <waveLengthMax>1.77</waveLengthMax>
+-->
+                <table>
+                    <column quantity="lambda"/>
+                    <column quantity="delta_lambda"/>
+<!--
+                    <column quantity="nb_pix_Interf"/>
+                    <column quantity="nb_pix_Photo"/>
+-->
+                    <data>
+1.415200E-06    3.989927E-08
+1.444657E-06    3.989927E-08
+1.481048E-06    3.989927E-08
+1.516691E-06    3.989927E-08
+1.551585E-06    3.989927E-08
+1.585732E-06    3.989927E-08
+1.619131E-06    3.989927E-08
+1.651781E-06    3.989927E-08
+1.683684E-06    3.989927E-08
+1.714839E-06    3.989927E-08
+1.729045E-06    3.989927E-08
+                    </data>
+                </table>
+            </mode>
+            <mode>
+                <name>Medium_H</name>
+                <resolution>190</resolution>
+                <waveLengthMin>1.40</waveLengthMin>
+                <waveLengthMax>1.75</waveLengthMax>
+            </mode>
+            <mode>
+                <name>High_H</name>
+                <resolution>1035</resolution>
+                <waveLengthMin>1.40</waveLengthMin>
+                <waveLengthMax>1.75</waveLengthMax>
+            </mode>
+        </focalInstrument>
+
         <!-- future instruments -->
         <focalInstrument>
             <name>SPICA_6T</name>
@@ -3189,6 +3351,20 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
         <instrument>
             <!-- focalInstrument: The focal instrument associated with this configuration -->
             <focalInstrument>MIRC_6T</focalInstrument>
+            <!-- MIRC: S1 S2 W1 W2 E1 E2 = beams 1-2-3-4-6-5 -->
+
+            <!-- configuration: The list of configuration for the focal instrument -->
+            <configuration>
+                <!-- stations: The list of stations for this configuration (U1 U2 U4) -->
+                <stations>S1 S2 W1 W2 E1 E2</stations>
+                <!-- channels: The list of channels for this configuration (V1 V2) used by CHARA instruments -->
+                <channels>V1 V2 V3 V4 V6 V5</channels>
+            </configuration>
+        </instrument>
+
+        <instrument>
+            <!-- focalInstrument: The focal instrument associated with this configuration -->
+            <focalInstrument>MIRCX_6T</focalInstrument>
             <!-- MIRC: S1 S2 W1 W2 E1 E2 = beams 1-2-3-4-6-5 -->
 
             <!-- configuration: The list of configuration for the focal instrument -->
