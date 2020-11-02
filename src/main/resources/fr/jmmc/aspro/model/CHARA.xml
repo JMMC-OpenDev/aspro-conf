@@ -2507,8 +2507,8 @@ Configuration d’enregistrement
                 N reads = 12 and N loops = 8. The grism R = 190 mode uses a
                 320 × 44 pixel window with N reads = 8 and N reads = 6.
                 -->
-                <nbPixInterferometry>100</nbPixInterferometry>
-                <nbPixPhotometry>10</nbPixPhotometry>
+                <nbPixInterferometry>150</nbPixInterferometry>
+                <nbPixPhotometry>2</nbPixPhotometry>
 
                 <transmission>0.01</transmission> <!-- TODO: estimate overall transmission (CHARA + instrument) but without strehl / AO / QE -->
                 <instrumentVisibility>0.9</instrumentVisibility>
@@ -2718,88 +2718,6 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
         </focalInstrument>
 
         <!-- 7T (Future ?) -->
-        <focalInstrument>
-            <name>MIRC_7T</name>
-            <description>MIRC instrument (7T)</description>
-            <numberChannels>7</numberChannels>
-
-            <setup>
-                <name>MIRC_7T_SETUP</name>
-                <description>MIRC instrument (7T)</description>
-                <defaultSamplingTime>40</defaultSamplingTime>
-
-                <dit>0.01</dit>
-                <ron>15</ron>
-                <detectorSaturation>50000</detectorSaturation>
-
-                <fracFluxInInterferometry>0.75</fracFluxInInterferometry>
-                <fracFluxInPhotometry>0.25</fracFluxInPhotometry>
-
-                <nbPixInterferometry>126</nbPixInterferometry>
-                <nbPixPhotometry>18</nbPixPhotometry>
-
-                <transmission>0.0025</transmission>
-                <instrumentVisibility>0.9</instrumentVisibility>
-
-                <instrumentVisibilityBias>1</instrumentVisibilityBias>
-                <instrumentPhaseBias>1</instrumentPhaseBias>
-            </setup>
-
-            <!--
-              Instrument predefined modes :
-              Each mode describes a focal instrument mode (AMBER : "Low_HK" ... "Medium_K_1_2300" ... "High_K_1_2481").
-              It has a wavelength range (waveLengthMin - waveLengthMax), a spectral resolution (resolution)
-              and optionaly a number of channels (numberChannels)
-            -->
-            <mode>
-                <!-- name: The name of this instrument mode -->
-                <name>Low_H</name>
-                <!-- resolution: The spectral resolution of this instrument mode -->
-                <resolution>41</resolution>
-                <!--
-                  The number of spectral channels of this instrument mode (optional)
-                  <numberChannels>n</numberChannels>
-                -->
-                <!-- 1.476 - 1.755 (8 channels) -->
-                <!-- waveLengthMin: The lower wave length of this instrument mode -->
-                <waveLengthMin>1.4551</waveLengthMin>
-                <!-- waveLengthMax: The upper wave length of this instrument mode -->
-                <waveLengthMax>1.7724</waveLengthMax>
-            </mode>
-            <mode>
-                <name>Low_K</name>
-                <resolution>40</resolution>
-                <waveLengthMin>2.0</waveLengthMin>
-                <waveLengthMax>2.5</waveLengthMax>
-            </mode>
-            <mode>
-                <name>Medium_H</name>
-                <resolution>150</resolution>
-                <!-- 1.476 - 1.755 (26 channels) -->
-                <waveLengthMin>1.4704</waveLengthMin>
-                <waveLengthMax>1.7606</waveLengthMax>
-            </mode>
-            <mode>
-                <name>Medium_K</name>
-                <resolution>150</resolution>
-                <waveLengthMin>2.0</waveLengthMin>
-                <waveLengthMax>2.5</waveLengthMax>
-            </mode>
-            <mode>
-                <name>High_H</name>
-                <resolution>400</resolution>
-                <!-- 1.476 - 1.755 (70 channels) -->
-                <waveLengthMin>1.4740</waveLengthMin>
-                <waveLengthMax>1.7570</waveLengthMax>
-            </mode>
-            <mode>
-                <name>High_K</name>
-                <resolution>400</resolution>
-                <waveLengthMin>2.0</waveLengthMin>
-                <waveLengthMax>2.5</waveLengthMax>
-            </mode>
-        </focalInstrument>
-
         <focalInstrument>
             <name>SPICA_7T</name>
             <description>SPICA future instrument (7T)</description>
@@ -4524,18 +4442,6 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
                 <stations>S1 S2 W1 W2 E1 E2</stations>
                 <!-- channels: The list of channels for this configuration -->
                 <channels>V1 V2 V3 V4 V6 V5</channels>
-            </configuration>
-        </instrument>
-        <instrument>
-            <focalInstrument>MIRC_7T</focalInstrument>
-
-            <configuration>
-                <stations>S1 S2 W1 W2 E1 E2 P4</stations>
-                <channels>V1 V2 V3 V4 V5 V6 V7</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 W1 W2 E1 E2 P5</stations>
-                <channels>V1 V2 V3 V4 V5 V6 V7</channels>
             </configuration>
         </instrument>
         <instrument>
