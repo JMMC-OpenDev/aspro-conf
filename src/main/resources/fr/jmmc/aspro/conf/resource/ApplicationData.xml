@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2020.1016"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="16/10/2020" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2021.0128"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="28/01/2021" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2021.0128">
+            <pubDate>Thu, 28 Jan 2021 14:00:00 GMT</pubDate>
+            <prerelease version="2021.0128 beta 1">
+                <change type="FEATURE">CHARA: updated the SPICA instrument modes in the Future period</change>
+            </prerelease>
+        </release>
         <release version="2020.1016">
             <pubDate>Fri, 16 Oct 2020 14:00:00 GMT</pubDate>
             <prerelease version="2020.1016 beta 1">

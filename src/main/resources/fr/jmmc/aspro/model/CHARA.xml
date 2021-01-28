@@ -2681,38 +2681,62 @@ R = 50, R = 190 and R = 1035 dispersion elements
             </setup>
 
             <!--
-TODO:
-mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suivants:
-1) LR: 50 canaux spectraux de 6nm chacun répartis uniformément sur 600-900nm
-2) MR660: 200 canaux spectraux de 0.2nm répartis uniformément sur 40nm centrés sur 660nm
-3) MR800: la même chose centrés sur 800nm
+            2021.01.27:
+                mode,resolution,wlen min (nm), wlen max (nm), nb channels
+                LR, 140, 0.6, 0.9, 60
+                MR640, 4400, 600, 685, 500
+                MR720, 4400, 680, 765, 500
+                MR800, 4400, 760, 845, 500
+                MR855, 4400, 815, 900, 500
+                HR(lambda(nm)), 13100, lambda-29/2, lambda+29/2, 500**
             -->
             <mode>
                 <name>LR</name>
-                <resolution>140</resolution>
+                <resolution>150</resolution> <!-- not 140 for 60 channels -->
                 <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.85</waveLengthMax>
+                <waveLengthMax>0.9</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
             <mode>
-                <name>MR660</name>
-                <resolution>3300</resolution>
-                <waveLengthMin>0.64</waveLengthMin>
-                <waveLengthMax>0.68</waveLengthMax>
+                <name>MR640</name>
+                <resolution>3779</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.600</waveLengthMin>
+                <waveLengthMax>0.685</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
             <mode>
-                <name>MR_FULL</name>
-                <resolution>3000</resolution>
-                <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.85</waveLengthMax>
+                <name>MR720</name>
+                <resolution>4250</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.680</waveLengthMin>
+                <waveLengthMax>0.765</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
             <mode>
                 <name>MR800</name>
-                <resolution>4000</resolution>
-                <waveLengthMin>0.78</waveLengthMin>
-                <waveLengthMax>0.82</waveLengthMax>
+                <resolution>4720</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.760</waveLengthMin>
+                <waveLengthMax>0.845</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
+            </mode>
+
+            <mode>
+                <name>MR855</name>
+                <resolution>5044</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.815</waveLengthMin>
+                <waveLengthMax>0.900</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
+            </mode>
+
+            <mode>
+                <name>HR</name>
+                <resolution>12931</resolution> <!-- not 13100 for 500 channels -->
+                <waveLengthMin>0.6</waveLengthMin>
+                <waveLengthMax>0.9</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthBandRef>0.29</waveLengthBandRef>
             </mode>
 
         </focalInstrument>
@@ -2753,40 +2777,63 @@ mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suiva
             </setup>
 
             <!--
-TODO:
-mode VEGA 6T (eventuellement dans une version beta à part) avec les modes suivants:
-1) LR: 50 canaux spectraux de 6nm chacun répartis uniformément sur 600-900nm
-2) MR660: 200 canaux spectraux de 0.2nm répartis uniformément sur 40nm centrés sur 660nm
-3) MR800: la même chose centrés sur 800nm
+            2021.01.27:
+                mode,resolution,wlen min (nm), wlen max (nm), nb channels
+                LR, 140, 0.6, 0.9, 60
+                MR640, 4400, 600, 685, 500
+                MR720, 4400, 680, 765, 500
+                MR800, 4400, 760, 845, 500
+                MR855, 4400, 815, 900, 500
+                HR(lambda(nm)), 13100, lambda-29/2, lambda+29/2, 500**
             -->
             <mode>
                 <name>LR</name>
-                <resolution>140</resolution>
+                <resolution>150</resolution> <!-- not 140 for 60 channels -->
                 <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.85</waveLengthMax>
+                <waveLengthMax>0.9</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
             <mode>
-                <name>MR660</name>
-                <resolution>3300</resolution>
-                <waveLengthMin>0.64</waveLengthMin>
-                <waveLengthMax>0.68</waveLengthMax>
+                <name>MR640</name>
+                <resolution>3779</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.600</waveLengthMin>
+                <waveLengthMax>0.685</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
             <mode>
-                <name>MR_FULL</name>
-                <resolution>3000</resolution>
-                <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.85</waveLengthMax>
+                <name>MR720</name>
+                <resolution>4250</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.680</waveLengthMin>
+                <waveLengthMax>0.765</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
             <mode>
                 <name>MR800</name>
-                <resolution>4000</resolution>
-                <waveLengthMin>0.78</waveLengthMin>
-                <waveLengthMax>0.82</waveLengthMax>
+                <resolution>4720</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.760</waveLengthMin>
+                <waveLengthMax>0.845</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
             </mode>
 
+            <mode>
+                <name>MR855</name>
+                <resolution>5044</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.815</waveLengthMin>
+                <waveLengthMax>0.900</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
+            </mode>
+
+            <mode>
+                <name>HR</name>
+                <resolution>12931</resolution> <!-- not 13100 for 500 channels -->
+                <waveLengthMin>0.6</waveLengthMin>
+                <waveLengthMax>0.9</waveLengthMax>
+                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthBandRef>0.29</waveLengthBandRef>
+            </mode>
         </focalInstrument>
     </description>
 
