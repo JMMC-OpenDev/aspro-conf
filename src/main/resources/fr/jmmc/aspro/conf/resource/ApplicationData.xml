@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2021.0128"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="28/01/2021" compiler="JDK 1.6.0_24"/>
+    <program name="AsproConf" version="2021.0212"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="12/02/2021" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2021.0212">
+            <pubDate>Fri, 12 Feb 2021 18:00:00 GMT</pubDate>
+            <prerelease version="2021.0212 beta 1">
+                <change type="FEATURE">VLTI MATISSE: generate absolute VISAMP/VISPHI (not differential visibilities)</change>
+            </prerelease>
+        </release>
         <release version="2021.0128">
             <pubDate>Thu, 28 Jan 2021 14:00:00 GMT</pubDate>
             <prerelease version="2021.0128 beta 1">
