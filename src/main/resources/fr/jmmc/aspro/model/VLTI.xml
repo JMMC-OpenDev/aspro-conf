@@ -7213,7 +7213,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <name>MATISSE_LM</name>
         <description>MATISSE ESO instrument (4T): L and M bands</description>
         <numberChannels>4</numberChannels>
-        <visDiff>true</visDiff>
+        <visDiff>false</visDiff>
 
         <fringeTracker>GRA4MAT</fringeTracker>
         <fringeTrackerRequired>false</fringeTrackerRequired>
@@ -14663,7 +14663,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <name>MATISSE_N</name>
         <description>MATISSE ESO instrument (4T): N band</description>
         <numberChannels>4</numberChannels>
-        <visDiff>true</visDiff>
+        <visDiff>false</visDiff>
 
         <!-- 2020.1: GRA4MAT disabled in N band as it provides no gain -->
 <!--
