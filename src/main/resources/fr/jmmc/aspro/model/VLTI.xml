@@ -15762,6 +15762,163 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
     <configuration>
+        <version>Period 108</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium</altName>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Astrometric</altName>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium</altName>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY_FT</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Astrometric</altName>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium</altName>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <!-- MATISSE offered with same configurations as PIONIER -->
+        <instrument>
+            <focalInstrument>MATISSE_LM</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium</altName>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MATISSE_N</focalInstrument>
+            <configuration>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium</altName>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
+    <configuration>
         <version>Period 106</version>
         <interferometer>VLTI</interferometer>
         <switchyard>sw_STS</switchyard>
