@@ -49,9 +49,16 @@
       <maxElevation>90.0</maxElevation>
 
       <adaptiveOptics>
+        <name>AS_TIP_TILT</name>
         <band>V</band>
         <!-- tip tilt -->
-        <numberActuators>2</numberActuators>
+        <setup>
+            <name>TIP_TILT_AS</name>
+            <numberSubPupils>4</numberSubPupils>
+            <dit>2.0</dit> <!-- 500 Hz -->
+            <ron>1.0</ron> <!-- 1e- -->
+            <quantumEfficiency>0.70</quantumEfficiency>
+        </setup>
       </adaptiveOptics>
 
       <!--
@@ -73,11 +80,17 @@
       <!-- no zenithal limit -->
       <maxElevation>90.0</maxElevation>
 
-
       <adaptiveOptics>
+        <name>IS_TIP_TILT</name>
         <band>V</band>
         <!-- tip tilt -->
-        <numberActuators>2</numberActuators>
+        <setup>
+            <name>TIP_TILT_IS</name>
+            <numberSubPupils>4</numberSubPupils>
+            <dit>2.0</dit> <!-- 500 Hz -->
+            <ron>1.0</ron> <!-- 1e- -->
+            <quantumEfficiency>0.70</quantumEfficiency>
+        </setup>
       </adaptiveOptics>
 
       <!--

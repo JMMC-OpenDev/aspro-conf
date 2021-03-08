@@ -41,13 +41,21 @@
         <telescope>
             <name>UT</name>
             <diameter>8.2</diameter>
-            <!-- Eso CfP: They are Alt / Az mounted and cannot observe at zenith distances less than 4 degrees -->
-            <maxElevation>86.0</maxElevation>
+            <!-- Alt / Az mounted and cannot observe at zenith distances less than 3 degrees (2020.9) -->
+            <maxElevation>87.0</maxElevation>
 
             <adaptiveOptics>
-                <band>V</band>
-                <!-- MACAO / VLTI -->
-                <numberActuators>64</numberActuators>
+              <name>AO_MACAO</name>
+              <band>V</band>
+              <setup>
+                  <name>MACAO</name>
+                  <numberSubPupils>60</numberSubPupils>
+                  <dit>0.80</dit> <!-- 1050 Hz -->
+                  <ron>1.0</ron>
+                  <quantumEfficiency>0.70</quantumEfficiency>
+              </setup>
+              <!-- MACAO / VLTI: The guide star must be brighter than V = 16 (max) => 15 or 14 is 'safe' -->
+              <magLimit>16</magLimit>
             </adaptiveOptics>
 
             <!--
@@ -84,13 +92,29 @@
         <telescope>
             <name>AT</name>
             <diameter>1.8</diameter>
-            <!-- Idem UT as it is undefined for AT -->
-            <maxElevation>86.0</maxElevation>
+            <!-- Alt / Az mounted and cannot observe at zenith distances less than 3 degrees (2020.9) -->
+            <maxElevation>87.0</maxElevation>
 
+            <!-- NAOMI: AT AO commissioned in nov  -->
             <adaptiveOptics>
-                <band>V</band>
-                <!-- tip tilt -->
-                <numberActuators>2</numberActuators>
+              <name>AO_NAOMI</name>
+              <band>R</band>
+              <setup>
+                  <name>NAOMI_BRIGHT</name>
+                  <numberSubPupils>81</numberSubPupils> <!-- 9 x 9 -->
+                  <dit>2.0</dit> <!-- 500 Hz -->
+                  <ron>0.025</ron> <!-- 1e- / 40 (gain = g * KI = 100 * 0.4 = 40) -->
+                  <quantumEfficiency>0.95</quantumEfficiency>
+              </setup>
+              <setup>
+                  <name>NAOMI_FAINT</name>
+                  <numberSubPupils>49</numberSubPupils> <!-- 7 x 7 -->
+                  <dit>5.0</dit> <!-- 100Hz -->
+                  <ron>0.011</ron> <!-- 1e- / 90 (gain = g * KI = 100 * 0.9 = 90) -->
+                  <quantumEfficiency>0.95</quantumEfficiency>
+              </setup>
+              <!-- NAOMI / VLTI: The guide star must be brighter than R = 16 (max) -->
+              <magLimit>16</magLimit>
             </adaptiveOptics>
 
             <!--
@@ -25044,7 +25068,6 @@
                 <instrumentVisibility>NaN</instrumentVisibility>
 
                 <instrumentVisibilityBias>NaN</instrumentVisibilityBias>
-                <instrumentVis2CalibrationBias>NaN</instrumentVis2CalibrationBias>
                 <instrumentPhaseBias>NaN</instrumentPhaseBias>
             </setup>
 

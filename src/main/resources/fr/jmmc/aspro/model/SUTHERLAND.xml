@@ -41,9 +41,16 @@
             <maxElevation>86.0</maxElevation>
 
             <adaptiveOptics>
-                <band>V</band>
-                <!-- tip tilt -->
-                <numberActuators>2</numberActuators>
+              <name>T1m_TIP_TILT</name>
+              <band>V</band>
+              <!-- tip tilt -->
+              <setup>
+                  <name>TIP_TILT_T1m</name>
+                  <numberSubPupils>4</numberSubPupils>
+                  <dit>2.0</dit> <!-- 500 Hz -->
+                  <ron>1.0</ron> <!-- 1e- -->
+                  <quantumEfficiency>0.70</quantumEfficiency>
+              </setup>
             </adaptiveOptics>
 
             <!--
@@ -64,9 +71,16 @@
             <maxElevation>86.0</maxElevation>
 
             <adaptiveOptics>
-                <band>V</band>
-                <!-- tip tilt on each 91 mirrors -->
-                <numberActuators>90</numberActuators>
+              <name>T10m_TIP_TILT</name>
+              <band>V</band>
+              <!-- tip tilt -->
+              <setup>
+                  <name>TIP_TILT_T10m</name>
+                  <numberSubPupils>90</numberSubPupils>
+                  <dit>2.0</dit> <!-- 500 Hz -->
+                  <ron>1.0</ron> <!-- 1e- -->
+                  <quantumEfficiency>0.70</quantumEfficiency>
+              </setup>
             </adaptiveOptics>
 
             <!--
@@ -137,7 +151,6 @@
                 <instrumentVisibility>NaN</instrumentVisibility>
 
                 <instrumentVisibilityBias>NaN</instrumentVisibilityBias>
-                <instrumentVis2CalibrationBias>NaN</instrumentVis2CalibrationBias>
                 <instrumentPhaseBias>NaN</instrumentPhaseBias>
             </setup>
 
