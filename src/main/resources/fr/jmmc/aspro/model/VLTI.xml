@@ -6630,6 +6630,12 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
       <name>AMBER</name>
       <description>AMBER instrument (3T) decomissioned in P102</description>
       <numberChannels>3</numberChannels>
+
+      <oiVisData>true</oiVisData>
+      <oiVisAmpDiff>true</oiVisAmpDiff>
+      <oiVisPhiDiff>true</oiVisPhiDiff>
+      <oiVis2Extra>true</oiVis2Extra>
+
       <fringeTracker>FINITO</fringeTracker>
       <fringeTrackerRequired>false</fringeTrackerRequired>
 
@@ -6771,6 +6777,7 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
       <name>MIDI</name>
       <description>MIDI instrument (2T) decommissioned in P95</description>
       <numberChannels>2</numberChannels>
+
       <fringeTracker>FINITO</fringeTracker>
       <fringeTrackerRequired>false</fringeTrackerRequired>
 
@@ -6826,6 +6833,10 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
       <name>PIONIER</name>
       <description>PIONIER as visitor instrument (4T) (IPAG, FR)</description>
       <numberChannels>4</numberChannels>
+
+      <oiVis>false</oiVis>
+      <oiVis2Extra>true</oiVis2Extra>
+
       <!-- no fringe tracker supported -->
 
       <setup>
@@ -7018,6 +7029,10 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
       <alias>PIONIER</alias>
       <description>PIONIER instrument (4T) with RAPID detector (IPAG, FR)</description>
       <numberChannels>4</numberChannels>
+
+      <oiVis>false</oiVis>
+      <oiVis2Extra>true</oiVis2Extra>
+
       <!-- no fringe tracker supported -->
 
       <setup>
@@ -7069,7 +7084,12 @@ Pour les 4 autres DL, c’est de 11 à 111 mètres.
       <name>GRAVITY</name>
       <description>GRAVITY instrument (4T)</description>
       <numberChannels>4</numberChannels>
-      <visDiff>true</visDiff>
+
+      <oiVisData>true</oiVisData>
+      <oiVisAmpDiff>true</oiVisAmpDiff>
+      <oiVisPhiDiff>true</oiVisPhiDiff>
+      <oiVis2Extra>true</oiVis2Extra>
+
       <fringeTracker>FT_GRAVITY</fringeTracker>
       <fringeTrackerRequired>true</fringeTrackerRequired>
 
@@ -7167,7 +7187,11 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
       <name>GRAVITY_FT</name>
       <description>GRAVITY Fringe tracker (4T)</description>
       <numberChannels>4</numberChannels>
-      <visDiff>true</visDiff>
+
+      <oiVisData>true</oiVisData>
+      <oiVisAmpDiff>true</oiVisAmpDiff>
+      <oiVisPhiDiff>true</oiVisPhiDiff>
+      <oiVis2Extra>true</oiVis2Extra>
 
       <setup>
             <name>GRAVITY_FT_SETUP</name>
@@ -7213,7 +7237,11 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <name>MATISSE_LM</name>
         <description>MATISSE ESO instrument (4T): L and M bands</description>
         <numberChannels>4</numberChannels>
-        <visDiff>false</visDiff>
+
+        <oiVisData>true</oiVisData>
+        <oiVisAmpDiff>false</oiVisAmpDiff>
+        <oiVisPhiDiff>true</oiVisPhiDiff>
+        <oiVis2Extra>true</oiVis2Extra>
 
         <fringeTracker>GRA4MAT</fringeTracker>
         <fringeTrackerRequired>false</fringeTrackerRequired>
@@ -7265,6 +7293,44 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <instrumentVisibilityBias>6.2</instrumentVisibilityBias>
             <!-- 5 + 5.2 = 10.2 mrad -->
             <instrumentPhaseBias>0.6</instrumentPhaseBias>
+
+            <!--
+                <instrumentBias|calibrationBias type="" unit="" band="" atmosphereQuality="" telescope="">0.0</instrumentBias>
+                    type: '[ VIS VISPHI T3PHI PHOT ]'
+                    unit: '[ ABS REL JY ]'
+                    band: '[ L M N ]'
+                    atmosphereQuality: '[ Average Good Excellent Worse Bad Awful ]'
+                    telescope: '[ UT AT ]'
+            -->
+
+            <!-- systematic errors  -->
+            <instrumentBias type="VIS" unit="REL">0.003</instrumentBias>    <!-- LM: 0.3 %   VIS (abs) -->
+            <instrumentBias type="VISPHI">0.8</instrumentBias>              <!-- LM: 0.8 deg VISPHI (diff) -->
+            <instrumentBias type="T3PHI">0.1</instrumentBias>               <!-- LM: 0.1 deg T3PHI -->
+
+            <instrumentBias type="PHOT" unit="JY" band="L" telescope="AT">0.110</instrumentBias>   <!-- L AT: 0.110 jy -->
+            <instrumentBias type="PHOT" unit="JY" band="L" telescope="UT">0.008</instrumentBias>   <!-- L UT: 0.008 jy -->
+
+            <instrumentBias type="PHOT" unit="JY" band="M" telescope="AT">0.190</instrumentBias>   <!-- M AT: 0.190 jy -->
+            <instrumentBias type="PHOT" unit="JY" band="M" telescope="UT">0.016</instrumentBias>   <!-- M UT: 0.016 jy -->
+
+            <!-- calibration errors -->
+            <calibrationBias type="VIS" band="L" atmosphereQuality="Good">0.021</calibrationBias>
+            <calibrationBias type="VIS" band="L" atmosphereQuality="Excellent">0.02</calibrationBias>
+            <calibrationBias type="VIS" band="L">0.08</calibrationBias> <!-- Average or lower (default) -->
+
+            <calibrationBias type="VIS" band="M" atmosphereQuality="Good">0.02</calibrationBias>
+            <calibrationBias type="VIS" band="M" atmosphereQuality="Excellent">0.015</calibrationBias>
+            <calibrationBias type="VIS" band="M">0.05</calibrationBias> <!-- Average or lower (default) -->
+
+            <calibrationBias type="T3PHI" band="L" atmosphereQuality="Good">0.26</calibrationBias>
+            <calibrationBias type="T3PHI" band="L" atmosphereQuality="Excellent">0.16</calibrationBias>
+            <calibrationBias type="T3PHI" band="L">0.3</calibrationBias> <!-- Average or lower (default) -->
+
+            <calibrationBias type="T3PHI" band="M" atmosphereQuality="Good">0.24</calibrationBias>
+            <calibrationBias type="T3PHI" band="M" atmosphereQuality="Excellent">0.15</calibrationBias>
+            <calibrationBias type="T3PHI" band="M">0.25</calibrationBias> <!-- Average or lower (default) -->
+
 
             <!-- sequence for SI_PHOT Hybrid observations -->
             <sequence>
@@ -14663,7 +14729,11 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <name>MATISSE_N</name>
         <description>MATISSE ESO instrument (4T): N band</description>
         <numberChannels>4</numberChannels>
-        <visDiff>false</visDiff>
+
+        <oiVisData>true</oiVisData>
+        <oiVisAmpDiff>false</oiVisAmpDiff>
+        <oiVisPhiDiff>true</oiVisPhiDiff>
+        <oiVis2Extra>true</oiVis2Extra>
 
         <!-- 2020.1: GRA4MAT disabled in N band as it provides no gain -->
 <!--
@@ -14713,6 +14783,33 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <instrumentVisibilityBias>13.0</instrumentVisibilityBias>
             <!-- 8.7 + 17 = 25.7 mrad -->
             <instrumentPhaseBias>1.5</instrumentPhaseBias>
+
+            <!--
+                <instrumentBias|calibrationBias type="" unit="" band="" atmosphereQuality="" telescope="">0.0</instrumentBias>
+                    type: '[ VIS VISPHI T3PHI PHOT ]'
+                    unit: '[ ABS REL JY ]'
+                    band: '[ L M N ]'
+                    atmosphereQuality: '[ Average Good Excellent Worse Bad Awful ]'
+                    telescope: '[ UT AT ]'
+            -->
+
+            <!-- systematic errors  -->
+            <instrumentBias type="VIS" unit="REL">0.002</instrumentBias>    <!-- N: 0.2 %   VIS (abs) -->
+            <instrumentBias type="VISPHI">0.1</instrumentBias>              <!-- N: 0.1 deg VISPHI (diff) -->
+            <instrumentBias type="T3PHI">0.1</instrumentBias>               <!-- N: 0.1 deg T3PHI -->
+
+            <instrumentBias type="PHOT" unit="JY" telescope="AT">2.3</instrumentBias>   <!-- N AT: 2.3 jy -->
+            <instrumentBias type="PHOT" unit="JY" telescope="UT">0.08</instrumentBias>  <!-- N UT: 0.08 jy -->
+
+            <!-- calibration errors -->
+            <calibrationBias type="VIS" atmosphereQuality="Good">0.02</calibrationBias>
+            <calibrationBias type="VIS" atmosphereQuality="Excellent">0.015</calibrationBias>
+            <calibrationBias type="VIS">0.045</calibrationBias> <!-- Average or lower (default) -->
+
+            <calibrationBias type="T3PHI" atmosphereQuality="Good">0.49</calibrationBias>
+            <calibrationBias type="T3PHI" atmosphereQuality="Excellent">0.29</calibrationBias>
+            <calibrationBias type="T3PHI">1.75</calibrationBias> <!-- Average or lower (default) -->
+
 
             <!-- sequence for HIGH_SENS observations -->
             <sequence>

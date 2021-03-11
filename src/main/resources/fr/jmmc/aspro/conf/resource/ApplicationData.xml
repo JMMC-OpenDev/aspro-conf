@@ -18,7 +18,7 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2021.0308"/> <!-- 'YYYY.MMdd' -->
+    <program name="AsproConf" version="2021.0311"/> <!-- 'YYYY.MMdd' -->
     <compilation date="08/03/2021" compiler="JDK 1.6.0_24"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
@@ -26,16 +26,18 @@
 
     <releasenotes>
         2021.0308
-        <release version="2021.0308">
-            <pubDate>Mon, 08 Mar 2021 18:00:00 GMT</pubDate>
+        <release version="2021.0311">
+            <pubDate>Tue, 11 Mar 2021 16:00:00 GMT</pubDate>
             <prerelease version="2021.0308 beta 1">
+                <change type="FEATURE">VLTI MATISSE: added instrument and calibration biases (abs vis, closure and differential phases, photometry)
+                    depending on telescopes (UT / AT), L/M/N bands, atmosphere quality (excellent, good, average)</change>
                 <change type="FEATURE">VLTI: added ESO Period 108 (= 106)</change>
             </prerelease>
         </release>
         <release version="2021.0212">
             <pubDate>Fri, 12 Feb 2021 18:00:00 GMT</pubDate>
             <prerelease version="2021.0212 beta 1">
-                <change type="FEATURE">VLTI MATISSE: generate absolute VISAMP/VISPHI (not differential visibilities)</change>
+                <change type="FEATURE">VLTI MATISSE: generate absolute VISAMP / differential VISPHI (not both differential visibilities)</change>
             </prerelease>
         </release>
         <release version="2021.0128">

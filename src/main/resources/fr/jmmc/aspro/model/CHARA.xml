@@ -698,6 +698,8 @@
       <description>CLASSIC instrument (2T)</description>
       <numberChannels>2</numberChannels>
 
+      <oiVis2Extra>true</oiVis2Extra>
+
       <setup>
             <name>CLASSIC_SETUP</name>
             <description>CLASSIC instrument (2T)</description>
@@ -1202,6 +1204,8 @@ Configuration d’enregistrement
       <description>CLIMB instrument (3T)</description>
       <numberChannels>3</numberChannels>
 
+      <oiVis2Extra>true</oiVis2Extra>
+
       <setup>
             <name>CLIMB_SETUP</name>
             <description>CLIMB instrument (3T)</description>
@@ -1652,6 +1656,8 @@ Configuration d’enregistrement
       <name>MIRC</name>
       <description>MIRC instrument (4T)</description>
       <numberChannels>4</numberChannels>
+
+      <oiVis2Extra>true</oiVis2Extra>
 
       <setup>
             <name>MIRC_4T_SETUP</name>
@@ -2319,6 +2325,8 @@ Configuration d’enregistrement
             <description>MIRC instrument (5T)</description>
             <numberChannels>5</numberChannels>
 
+            <oiVis2Extra>true</oiVis2Extra>
+
             <setup>
                 <name>MIRC_5T_SETUP</name>
                 <description>MIRC instrument (5T)</description>
@@ -2404,6 +2412,8 @@ Configuration d’enregistrement
             <description>MIRC instrument (6T)</description>
             <numberChannels>6</numberChannels>
 
+            <oiVis2Extra>true</oiVis2Extra>
+
             <setup>
                 <name>MIRC_6T_SETUP</name>
                 <description>MIRC instrument (6T)</description>
@@ -2485,6 +2495,8 @@ Configuration d’enregistrement
             <name>MIRCX_6T</name>
             <description>MIRCX instrument (6T)</description>
             <numberChannels>6</numberChannels>
+
+            <oiVis2Extra>true</oiVis2Extra>
 
             <setup>
                 <name>MIRCX_6T_SETUP</name>
@@ -2650,7 +2662,12 @@ R = 50, R = 190 and R = 1035 dispersion elements
             <name>SPICA_6T</name>
             <description>SPICA future instrument (6T)</description>
             <numberChannels>6</numberChannels>
-            <visDiff>true</visDiff>
+
+            <oiVisData>true</oiVisData>
+            <oiVisAmpDiff>true</oiVisAmpDiff>
+            <oiVisPhiDiff>true</oiVisPhiDiff>
+            <oiVis2Extra>true</oiVis2Extra>
+
             <fringeTracker>FT_SPICA</fringeTracker>
             <fringeTrackerRequired>true</fringeTrackerRequired>
 
@@ -2746,7 +2763,12 @@ R = 50, R = 190 and R = 1035 dispersion elements
             <name>SPICA_7T</name>
             <description>SPICA future instrument (7T)</description>
             <numberChannels>7</numberChannels>
-            <visDiff>true</visDiff>
+
+            <oiVisData>true</oiVisData>
+            <oiVisAmpDiff>true</oiVisAmpDiff>
+            <oiVisPhiDiff>true</oiVisPhiDiff>
+            <oiVis2Extra>true</oiVis2Extra>
+
             <fringeTracker>FT_SPICA</fringeTracker>
             <fringeTrackerRequired>true</fringeTrackerRequired>
 
