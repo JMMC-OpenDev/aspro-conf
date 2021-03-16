@@ -7289,11 +7289,6 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <transmission>NaN</transmission>
             <instrumentVisibility>NaN</instrumentVisibility>
 
-            <!-- 0.012 + 0.05 = 0.062 -->
-            <instrumentVisibilityBias>6.2</instrumentVisibilityBias>
-            <!-- 5 + 5.2 = 10.2 mrad -->
-            <instrumentPhaseBias>0.6</instrumentPhaseBias>
-
             <!--
                 <instrumentBias|calibrationBias type="" unit="" band="" atmosphereQuality="" telescope="">0.0</instrumentBias>
                     type: '[ VIS VISPHI T3PHI PHOT ]'
@@ -14778,11 +14773,6 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 
             <transmission>NaN</transmission>
             <instrumentVisibility>NaN</instrumentVisibility>
-
-            <!-- 0.03 + 0.1 = 0.13 -->
-            <instrumentVisibilityBias>13.0</instrumentVisibilityBias>
-            <!-- 8.7 + 17 = 25.7 mrad -->
-            <instrumentPhaseBias>1.5</instrumentPhaseBias>
 
             <!--
                 <instrumentBias|calibrationBias type="" unit="" band="" atmosphereQuality="" telescope="">0.0</instrumentBias>
