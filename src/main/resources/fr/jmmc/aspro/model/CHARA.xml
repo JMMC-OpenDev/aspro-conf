@@ -2720,7 +2720,7 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>3779</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.600</waveLengthMin>
                 <waveLengthMax>0.685</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -2728,7 +2728,7 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>4250</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.680</waveLengthMin>
                 <waveLengthMax>0.765</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -2736,7 +2736,7 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>4720</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.760</waveLengthMin>
                 <waveLengthMax>0.845</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -2744,16 +2744,17 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>5044</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.815</waveLengthMin>
                 <waveLengthMax>0.900</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
                 <name>HR</name>
                 <resolution>12931</resolution> <!-- not 13100 for 500 channels -->
-                <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.9</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
-                <waveLengthBandRef>0.29</waveLengthBandRef>
+                <waveLengthMin>0.600</waveLengthMin>
+                <waveLengthMax>0.900</waveLengthMax>
+                <waveLengthRef>0.550</waveLengthRef>
+                <waveLengthBandRef>0.029</waveLengthBandRef>
+                <ft_waveLengthBandRef>0.029</ft_waveLengthBandRef>
             </mode>
 
         </focalInstrument>
@@ -2821,7 +2822,7 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>3779</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.600</waveLengthMin>
                 <waveLengthMax>0.685</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -2829,7 +2830,7 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>4250</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.680</waveLengthMin>
                 <waveLengthMax>0.765</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -2837,7 +2838,7 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>4720</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.760</waveLengthMin>
                 <waveLengthMax>0.845</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -2845,17 +2846,19 @@ R = 50, R = 190 and R = 1035 dispersion elements
                 <resolution>5044</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.815</waveLengthMin>
                 <waveLengthMax>0.900</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
                 <name>HR</name>
                 <resolution>12931</resolution> <!-- not 13100 for 500 channels -->
-                <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.9</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
-                <waveLengthBandRef>0.29</waveLengthBandRef>
+                <waveLengthMin>0.600</waveLengthMin>
+                <waveLengthMax>0.900</waveLengthMax>
+                <waveLengthRef>0.550</waveLengthRef>
+                <waveLengthBandRef>0.029</waveLengthBandRef>
+                <ft_waveLengthBandRef>0.029</ft_waveLengthBandRef>
             </mode>
+
         </focalInstrument>
     </description>
 

@@ -11189,8 +11189,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
 
         <mode>
             <name>SI_PHOT_L_VERY_HIGH</name>
-            <!-- use 3.5 microns as reference channel -->
-            <waveLengthRef>3.5</waveLengthRef>
+            <!-- use 3.9 microns as reference channel -->
+            <waveLengthRef>3.9</waveLengthRef>
             <waveLengthBandRef>0.02</waveLengthBandRef>
             <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
 
@@ -15856,6 +15856,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -15863,18 +15865,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -15883,6 +15888,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -15890,6 +15897,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -15897,18 +15905,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -15917,6 +15928,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -15924,6 +15937,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -15931,18 +15945,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -15952,6 +15969,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -15959,18 +15978,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -15979,6 +16001,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -15986,18 +16010,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16013,6 +16040,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16020,18 +16049,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16040,6 +16072,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16047,6 +16081,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16054,18 +16089,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16074,6 +16112,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16081,6 +16121,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16088,18 +16129,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16109,6 +16153,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16116,18 +16162,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16136,6 +16185,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16143,18 +16194,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16170,6 +16224,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16177,18 +16233,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16197,6 +16256,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16204,6 +16265,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16211,18 +16273,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16231,6 +16296,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16238,6 +16305,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16245,18 +16313,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16266,6 +16337,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16273,18 +16346,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16293,6 +16369,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16300,18 +16378,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16327,6 +16408,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16334,18 +16417,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16354,6 +16440,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16361,6 +16449,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16368,18 +16457,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16388,6 +16480,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16395,6 +16489,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16402,18 +16497,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16423,6 +16521,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16430,18 +16530,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16450,6 +16553,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16457,18 +16562,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
@@ -16484,6 +16592,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16491,18 +16601,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P96 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>D0 G2 J3 K0</stations>
                 <channels>IP5 IP3 IP7 IP1</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 C1 D0</stations>
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
@@ -16511,6 +16624,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16518,6 +16633,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16525,18 +16641,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P96 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>D0 G2 J3 K0</stations>
                 <channels>IP5 IP3 IP7 IP1</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 C1 D0</stations>
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
@@ -16545,6 +16664,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16552,6 +16673,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -16559,18 +16681,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P96 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>D0 G2 J3 K0</stations>
                 <channels>IP5 IP3 IP7 IP1</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 C1 D0</stations>
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
@@ -16580,6 +16705,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16587,18 +16714,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P96 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>D0 G2 J3 K0</stations>
                 <channels>IP5 IP3 IP7 IP1</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 C1 D0</stations>
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
@@ -16607,6 +16737,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -16614,18 +16746,21 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P96 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>D0 G2 J3 K0</stations>
                 <channels>IP5 IP3 IP7 IP1</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 C1 D0</stations>
                 <channels>IP1 IP3 IP7 IP5</channels>
                 <delayLines>DL6 DL5 DL2 DL1</delayLines>
@@ -20182,6 +20317,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>PIONIER_2</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -20189,97 +20326,113 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105: relocation -->
             <configuration>
-                <altName>Medium -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>K0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>A0 B2 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Medium]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>A0 G1 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Small / Large -&gt; Small [Medium, Large]</altName>
+                <altName>Medium -&gt; Small / Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Astrometric -&gt; Small [Medium, Large]</altName>
+                <altName>Astrometric -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium / Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium / Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Medium -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Large / Medium -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Medium -&gt; Large / Medium -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
@@ -20288,6 +20441,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -20295,6 +20450,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -20302,97 +20458,113 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105: relocation -->
             <configuration>
-                <altName>Medium -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>K0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>A0 B2 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Medium]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>A0 G1 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Small / Large -&gt; Small [Medium, Large]</altName>
+                <altName>Medium -&gt; Small / Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Astrometric -&gt; Small [Medium, Large]</altName>
+                <altName>Astrometric -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium / Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium / Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Medium -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Large / Medium -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Medium -&gt; Large / Medium -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
@@ -20401,6 +20573,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>GRAVITY_FT</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -20408,6 +20582,7 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
                 <altName>Astrometric</altName>
+                <altBaselines>astrometric</altBaselines>
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
@@ -20415,97 +20590,113 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105: relocation -->
             <configuration>
-                <altName>Medium -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>K0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>A0 B2 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Medium]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>A0 G1 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Small / Large -&gt; Small [Medium, Large]</altName>
+                <altName>Medium -&gt; Small / Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Astrometric -&gt; Small [Medium, Large]</altName>
+                <altName>Astrometric -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium / Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium / Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Medium -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Large / Medium -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Medium -&gt; Large / Medium -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
@@ -20514,6 +20705,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_LM</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -20521,97 +20714,113 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105: relocation -->
             <configuration>
-                <altName>Medium -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>K0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>A0 B2 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Medium]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>A0 G1 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Small / Large -&gt; Small [Medium, Large]</altName>
+                <altName>Medium -&gt; Small / Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Astrometric -&gt; Small [Medium, Large]</altName>
+                <altName>Astrometric -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium / Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium / Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Medium -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Large / Medium -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Medium -&gt; Large / Medium -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
@@ -20620,6 +20829,8 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
         <instrument>
             <focalInstrument>MATISSE_N</focalInstrument>
             <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL1 DL2 DL3 DL4</delayLines>
@@ -20627,97 +20838,113 @@ Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
             <!-- P105 -->
             <configuration>
                 <altName>Large</altName>
+                <altBaselines>large</altBaselines>
                 <stations>A0 G1 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>K0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
                 <altName>Small</altName>
+                <altBaselines>small</altBaselines>
                 <stations>A0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105: relocation -->
             <configuration>
-                <altName>Medium -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>K0 B2 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Small, Medium, Large]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>small,medium,large</altBaselines>
                 <stations>A0 B2 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 J2 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Small / Astrometric -&gt; Small [Medium]</altName>
+                <altName>Large -&gt; Small / Astrometric -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
                 <stations>A0 G1 D0 C1</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Small -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Small / Large -&gt; Small [Medium, Large]</altName>
+                <altName>Medium -&gt; Small / Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Astrometric -&gt; Small [Medium, Large]</altName>
+                <altName>Astrometric -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 B2 D0 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium / Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium / Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Large / Medium -&gt; Large [Medium, Large]</altName>
+                <altName>Small -&gt; Large / Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Small -&gt; Medium [Medium, Large]</altName>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 B2 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Large -&gt; Medium [Medium, Large]</altName>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>K0 G1 D0 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL4 DL5 DL1 DL3</delayLines>
             </configuration>
             <configuration>
-                <altName>Medium -&gt; Large / Medium -&gt; Astrometric [Medium, Large]</altName>
+                <altName>Medium -&gt; Large / Medium -&gt; Astrometric</altName>
+                <altBaselines>medium,large</altBaselines>
                 <stations>A0 G2 J2 J3</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL2 DL4 DL3</delayLines>
