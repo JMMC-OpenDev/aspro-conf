@@ -29,6 +29,10 @@
             <pubDate>Fri, 03 Sep 2021 09:00:00 GMT</pubDate>
             <prerelease version="2021.0903 beta 1">
                 <change type="FEATURE">VLTI: added ESO Period 109 (= 108)</change>
+                <change type="FEATURE">CHARA: added period CHARA 2021B (default) and 2022A (with SPICA) to give offered instruments;
+                    former CHARA still lists all current and past instruments</change>
+                <change type="FEATURE">CHARA: added MIRCX_4T/5T, SPICA_4T/5T for degenerated 6T configurations</change>
+                <change type="BUGFIX">CHARA: formatting and cleanup in the CHARA configuration file</change>
             </prerelease>
         </release>
         <release version="2021.0521">
