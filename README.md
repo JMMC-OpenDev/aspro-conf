@@ -27,7 +27,7 @@ The XLST script `AsproOIConfigurations.xsl` let you generate HTML pages to bette
 
 
 All configuration files are in the [`src/main/resources/fr/jmmc/aspro/model`](https://github.com/JMMC-OpenDev/aspro-conf/tree/master/src/main/resources/fr/jmmc/aspro/model) folder:
-- `AsproOIConfigurations.xml`:
+- `AsproOIConfigurations.xml`: ASPRO2's inventory to list enabled configuration files (+ checksum to trust their content)
 - optical interferometers
   - `VLTI.xml`: ESO VLTI interferometer [Very Large Telescope Interferometer](https://www.eso.org/sci/facilities/paranal/telescopes/vlti.html)
   - `CHARA.xml`: CHARA interferometer [Center for High Angular Resolution Astronomy](http://www.chara.gsu.edu/)
