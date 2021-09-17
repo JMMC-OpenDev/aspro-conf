@@ -17,20 +17,20 @@ This module contains several XML files describing optical interferometers & thei
 See [ASPRO2 configuration description](http://www.jmmc.fr/twiki/bin/view/Jmmc/Software/JmmcAspro2#Supported_interferometers_and_in)
 
 These XML files are based on few XML schemas (xsd) to validate their syntax and internal references:
-- `AsproOIModel.xsd`: the ASPRO2 data model for the interferometer description and observation settings (asprox)
+- [`AsproOIModel.xsd`](https://github.com/JMMC-OpenDev/aspro-conf/tree/master/src/main/resources/fr/jmmc/aspro/model/AsproOIModel.xsd): the ASPRO2 data model for the interferometer description and observation settings (asprox)
 - `AsproRawObsModel.xsd`: the ASPRO2 data model for raw observations (obsportal)
 - `targetModel.xsd`: the data model for geometric / analytical models (shared between ASPRO2 and LITpro)
 
-These xml schemas are documented (thanks to xsddoc) at: [ASPRO2 data model](http://apps.jmmc.fr/~swmgr/xsddoc/aspro-oi/0.1/html).
+These xml schemas are documented (thanks to xsddoc) with HTML pages at: [ASPRO2 data model](http://apps.jmmc.fr/~swmgr/xsddoc/aspro-oi/0.1/html).
 
-The XLST script `AsproOIConfigurations.xsl` let you generate HTML pages to better read the configuration file. See the [Latest Aspro Configuration](http://apps.jmmc.fr/~swmgr/AsproOIConfigurations/)
+The XLST script `AsproOIConfigurations.xsl` let you generate HTML pages to better read the configuration file: see the [Latest Aspro Configuration](http://apps.jmmc.fr/~swmgr/AsproOIConfigurations/)
 
 
 All configuration files are in the [`src/main/resources/fr/jmmc/aspro/model`](https://github.com/JMMC-OpenDev/aspro-conf/tree/master/src/main/resources/fr/jmmc/aspro/model) folder:
 - `AsproOIConfigurations.xml`: ASPRO2's inventory to list enabled configuration files (+ checksum to trust their content)
 - optical interferometers
-  - `VLTI.xml`: ESO VLTI interferometer [Very Large Telescope Interferometer](https://www.eso.org/sci/facilities/paranal/telescopes/vlti.html)
-  - `CHARA.xml`: CHARA interferometer [Center for High Angular Resolution Astronomy](http://www.chara.gsu.edu/)
+  - [`VLTI.xml`](https://github.com/JMMC-OpenDev/aspro-conf/tree/master/src/main/resources/fr/jmmc/aspro/model/VLTI.xml): ESO VLTI interferometer [Very Large Telescope Interferometer](https://www.eso.org/sci/facilities/paranal/telescopes/vlti.html)
+  - [`CHARA.xml`](https://github.com/JMMC-OpenDev/aspro-conf/tree/master/src/main/resources/fr/jmmc/aspro/model/CHARA.xml): CHARA interferometer [Center for High Angular Resolution Astronomy](http://www.chara.gsu.edu/)
   - `NPOI.xml`: NPOI interferometer
   - `SUSI.xml`: SUSI interferometer
   - `DEMO.xml`: DEMO interferometer (VLTI schools)
