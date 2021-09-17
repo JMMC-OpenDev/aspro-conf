@@ -7,7 +7,7 @@ This module contains the ASPRO2 configuration files developed by the JMMC techni
 
 See [ASPRO2](https://jmmc.fr/aspro)
 See [ASPRO2 @ github](https://github.com/JMMC-OpenDev/aspro)
-See [JMMC OpenDev @ github](https://jmmc.fr/JMMC-OpenDev)
+See [JMMC OpenDev @ github](https://github.com/JMMC-OpenDev)
 
 
 ## Documentation
