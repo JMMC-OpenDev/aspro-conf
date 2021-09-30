@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- *******************************************************************************
- * JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
- *******************************************************************************
- -->
+*******************************************************************************
+* JMMC project ( http://www.jmmc.fr ) - Copyright (C) CNRS.
+*******************************************************************************
+-->
 <!--
     Document   : DEMO.xml
     Created on : 2 september 2013
@@ -13,48 +13,48 @@
 -->
 
 <a:interferometerSetting
-  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-  xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
-  xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
+    xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
 
-  <description>
-    <name>DEMO</name>
+    <description>
+        <name>DEMO</name>
 
-    <description>Interferometer for demo / school</description>
+        <description>Interferometer for demo / school</description>
 
-    <!--
-      Coordinates DEMO:
-        lat = +90
-        lon = 0
-        alt = 0
-    -->
-    <position>
-      <posX>0.0</posX>
-      <posY>0.0</posY>
-      <posZ>6356752.0</posZ>
-    </position>
+        <!--
+          Coordinates DEMO:
+            lat = +90
+            lon = 0
+            alt = 0
+        -->
+        <position>
+            <posX>0.0</posX>
+            <posY>0.0</posY>
+            <posZ>6356752.0</posZ>
+        </position>
 
-    <timezone>GMT</timezone>
+        <timezone>GMT</timezone>
 
-    <telescope>
-      <name>T</name>
-      <diameter>1.0</diameter>
-      <maxElevation>90.0</maxElevation>
+        <telescope>
+            <name>T</name>
+            <diameter>1.0</diameter>
+            <maxElevation>90.0</maxElevation>
 
-      <adaptiveOptics>
-        <name>AO_TIP_TILT</name>
-        <band>V</band>
-        <!-- tip tilt -->
-        <setup>
-            <name>TIP_TILT</name>
-            <numberSubPupils>4</numberSubPupils>
-            <dit>2.0</dit> <!-- 500 Hz -->
-            <ron>1.0</ron> <!-- 1e- -->
-            <quantumEfficiency>0.70</quantumEfficiency>
-        </setup>
-      </adaptiveOptics>
+            <adaptiveOptics>
+                <name>AO_TIP_TILT</name>
+                <band>V</band>
+                <!-- tip tilt -->
+                <setup>
+                    <name>TIP_TILT</name>
+                    <numberSubPupils>4</numberSubPupils>
+                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <ron>1.0</ron> <!-- 1e- -->
+                    <quantumEfficiency>0.70</quantumEfficiency>
+                </setup>
+            </adaptiveOptics>
 
-      <!--
+            <!--
         Moon Pointing Restrictions on SUSI: 5 deg at least !
 
             <moonPointingRestriction>
