@@ -42,16 +42,16 @@
             <maxElevation>85.0</maxElevation>
 
             <adaptiveOptics>
-              <name>AO_TIP_TILT</name>
-              <band>V</band>
-              <!-- tip tilt -->
-              <setup>
-                  <name>TIP_TILT</name>
-                  <numberSubPupils>4</numberSubPupils>
-                  <dit>2.0</dit> <!-- 500 Hz -->
-                  <ron>1.0</ron> <!-- 1e- -->
-                  <quantumEfficiency>0.70</quantumEfficiency>
-              </setup>
+                <name>AO_TIP_TILT</name>
+                <band>V</band>
+                <!-- tip tilt -->
+                <setup>
+                    <name>TIP_TILT</name>
+                    <numberSubPupils>4</numberSubPupils>
+                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <ron>1.0</ron> <!-- 1e- -->
+                    <quantumEfficiency>0.70</quantumEfficiency>
+                </setup>
             </adaptiveOptics>
 
             <!--
@@ -176,7 +176,6 @@
         <focalInstrument>
             <name>PAVO_2T</name>
             <description>PAVO combiner (2T)</description>
-            <numberChannels>2</numberChannels>
             <fringeTracker>PAVO_FT</fringeTracker>
 
             <setup>

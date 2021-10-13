@@ -332,7 +332,7 @@
         <focalInstrument>
             <name>DEMO_SPATIAL</name>
             <description>DEMO combiner (16T)</description>
-            <numberChannels>16</numberChannels>
+
             <visDiff>false</visDiff>
 
             <setup>
@@ -432,7 +432,7 @@
         <focalInstrument>
             <name>DEMO_3T_SPECTRAL</name>
             <description>DEMO combiner (3T)</description>
-            <numberChannels>3</numberChannels>
+
             <visDiff>false</visDiff>
 
             <setup>

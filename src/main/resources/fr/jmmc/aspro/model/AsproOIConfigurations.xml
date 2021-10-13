@@ -23,50 +23,58 @@
 
     <interferometerFile>
         <file>VLTI.xml</file>
-        <checksum>764776109110722560</checksum>
+        <checksum>5428249544349444096</checksum>
     </interferometerFile>
 
     <interferometerFile>
         <file>CHARA.xml</file>
-        <checksum>8157922522877607936</checksum>
+        <checksum>4800628522515169280</checksum>
     </interferometerFile>
+
+    <!--
+        <interferometerFile>
+            <file>CHARA_7T.xml</file>
+            <checksum>0</checksum>
+        </interferometerFile>
+    -->
 
     <interferometerFile>
         <file>SUSI.xml</file>
-        <checksum>6150546636637569024</checksum>
+        <checksum>488570143609225216</checksum>
     </interferometerFile>
 
     <!--
         <interferometerFile>
             <file>MROI.xml</file>
+            <checksum>0</checksum>
         </interferometerFile>
     -->
 
     <interferometerFile>
         <file>NPOI.xml</file>
-        <checksum>63946813041254400</checksum>
+        <checksum>2972561160241283072</checksum>
     </interferometerFile>
 
     <interferometerFile>
         <file>DEMO.xml</file>
-        <checksum>7773118768980717568</checksum>
+        <checksum>5253697984269823232</checksum>
     </interferometerFile>
 
     <!-- Paranal single-dish mode -->
     <interferometerFile>
         <file>PARANAL.xml</file>
-        <checksum>1395209007831973888</checksum>
+        <checksum>6715633234203107328</checksum>
     </interferometerFile>
 
     <!-- Sutherland single-dish mode -->
     <interferometerFile>
         <file>SUTHERLAND.xml</file>
-        <checksum>8832000609428176896</checksum>
+        <checksum>4926057570756657152</checksum>
     </interferometerFile>
 
     <interferometerFile>
         <file>OHP.xml</file>
-        <checksum>8354644580783620096</checksum>
+        <checksum>6468340912329092096</checksum>
     </interferometerFile>
 
 </a:configurations>
