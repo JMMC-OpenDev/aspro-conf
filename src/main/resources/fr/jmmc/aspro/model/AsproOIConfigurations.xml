@@ -18,29 +18,22 @@
     xmlns:a='http://www.jmmc.fr/aspro-oi/0.1'
     xsi:schemaLocation='http://www.jmmc.fr/aspro-oi/0.1 AsproOIModel.xsd'>
 
-    <!-- minimum version corresponds to Aspro2 (March 2019) -->
-    <minVersion>0.9.9.6</minVersion>
+    <!-- minimum version corresponds to Aspro2 (Feb 2022) -->
+    <minVersion>22.03</minVersion>
 
     <interferometerFile>
         <file>VLTI.xml</file>
-        <checksum>5428249544349444096</checksum>
+        <checksum>5477027188933962240</checksum>
     </interferometerFile>
 
     <interferometerFile>
         <file>CHARA.xml</file>
-        <checksum>4800628522515169280</checksum>
+        <checksum>4028785837782433792</checksum>
     </interferometerFile>
-
-    <!--
-        <interferometerFile>
-            <file>CHARA_7T.xml</file>
-            <checksum>0</checksum>
-        </interferometerFile>
-    -->
 
     <interferometerFile>
         <file>SUSI.xml</file>
-        <checksum>488570143609225216</checksum>
+        <checksum>8451359549008568320</checksum>
     </interferometerFile>
 
     <!--
@@ -52,12 +45,12 @@
 
     <interferometerFile>
         <file>NPOI.xml</file>
-        <checksum>2972561160241283072</checksum>
+        <checksum>3109222965658216448</checksum>
     </interferometerFile>
 
     <interferometerFile>
         <file>DEMO.xml</file>
-        <checksum>5253697984269823232</checksum>
+        <checksum>8220421056534413312</checksum>
     </interferometerFile>
 
     <!-- Paranal single-dish mode -->

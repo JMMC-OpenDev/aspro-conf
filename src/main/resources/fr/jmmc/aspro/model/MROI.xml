@@ -410,14 +410,14 @@
         <!-- No pop on MROI -->
 
 
-        <!-- instruments (4T) -->
+        <!-- instruments -->
 
         <focalInstrument>
-            <name>TEST_4T</name>
+            <name>TEST</name>
             <description>sample for MROI instrument</description>
 
             <setup>
-                <name>TEST_4T_SETUP</name>
+                <name>TEST_SETUP</name>
                 <description>sample for MROI instrument</description>
                 <defaultSamplingTime>30</defaultSamplingTime>
 
@@ -454,7 +454,7 @@
         <!-- instruments (4T) -->
 
         <instrument>
-            <focalInstrument>TEST_4T</focalInstrument>
+            <focalInstrument>TEST</focalInstrument>
 
             <!--
             !    MROI

@@ -6627,7 +6627,6 @@
         <focalInstrument>
             <name>AMBER</name>
             <description>AMBER instrument (3T) decomissioned in P102</description>
-            <numberChannels>3</numberChannels>
 
             <oiVisData>true</oiVisData>
             <oiVisAmpDiff>true</oiVisAmpDiff>
@@ -6774,7 +6773,6 @@
         <focalInstrument>
             <name>MIDI</name>
             <description>MIDI instrument (2T) decommissioned in P95</description>
-            <numberChannels>2</numberChannels>
 
             <fringeTracker>FINITO</fringeTracker>
             <fringeTrackerRequired>false</fringeTrackerRequired>
@@ -6830,7 +6828,6 @@
         <focalInstrument>
             <name>PIONIER</name>
             <description>PIONIER as visitor instrument (4T) (IPAG, FR)</description>
-            <numberChannels>4</numberChannels>
 
             <oiVis>false</oiVis>
             <oiVis2Extra>true</oiVis2Extra>
@@ -6926,107 +6923,11 @@
 
         </focalInstrument>
 
-        <focalInstrument>
-            <name>PIONIER_3T</name>
-            <description>PIONIER visitor instrument (3T) (IPAG, FR)</description>
-            <numberChannels>3</numberChannels>
-            <!-- no fringe tracker supported -->
-
-            <setup>
-                <name>PIONIER_3T_SETUP</name>
-                <description>PIONIER visitor instrument (3T) (IPAG, FR)</description>
-                <defaultSamplingTime>30</defaultSamplingTime>
-
-                <dit>0.01</dit>
-                <ron>10</ron>
-                <detectorSaturation>50000</detectorSaturation>
-
-                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
-                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
-
-                <nbPixInterferometry>4</nbPixInterferometry>
-                <nbPixPhotometry>4</nbPixPhotometry>
-
-                <transmission>0.01</transmission>
-                <instrumentVisibility>0.9</instrumentVisibility>
-
-                <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-                <instrumentPhaseBias>2.0</instrumentPhaseBias>
-            </setup>
-
-            <!-- H band -->
-            <mode>
-                <!--
-                  1) BROAD-H  (broad-band)
-                  lbd  = [1.68108e-06];
-                  lbdB = [2.45e-07];
-                -->
-                <name>BROAD-H</name>
-                <resolution>7</resolution>
-                <waveLengthMin>1.55858</waveLengthMin>
-                <waveLengthMax>1.80358</waveLengthMax>
-            </mode>
-            <mode>
-                <!--
-                  2) SMALL-H
-                  lbd = [1.59e-06,1.678e-06,1.768e-06];
-                  lbdB = lbd*0 + 9.35e-08;
-                -->
-                <name>SMALL-H</name>
-                <resolution>18</resolution>
-                <waveLengthMin>1.53775</waveLengthMin>
-                <waveLengthMax>1.81825</waveLengthMax>
-            </mode>
-            <mode>
-                <!--
-                  3) LARGE-H
-                  lbd = [1.81373,1.77345,1.72029,1.66879,1.61622,1.56531,1.52855] *1e-6;
-                  lbdB = lbd*0 + 4.08333e-08;
-                  note: channels are not contiguous, so bandwidth = 4.4 microns !
-                -->
-                <name>LARGE-H</name>
-                <resolution>35</resolution>
-                <waveLengthMin>1.504785</waveLengthMin>
-                <waveLengthMax>1.8375</waveLengthMax>
-            </mode>
-
-            <!-- K band -->
-            <mode>
-                <!--
-                  1) BROAD-K  (broad-band)
-                  lbd  = [2.051e-06];
-                  lbdB = [1.75e-07];
-                -->
-                <name>BROAD-K</name>
-                <resolution>12</resolution>
-                <waveLengthMin>1.9635</waveLengthMin>
-                <waveLengthMax>2.1385</waveLengthMax>
-            </mode>
-            <!--
-              2) SMALL-K
-              pas encore connu
-            -->
-            <mode>
-                <!--
-                  3) LARGE-K
-                  lbd = [2.17433,2.13937,2.09438,2.04813,2.00948,1.9702,1.935] *1e-6;
-                  lbdB = lbd*0 + 3.5e-08;
-                  note: channels are not contiguous, so bandwidth = 3.9 microns !
-                -->
-                <name>LARGE-K</name>
-                <resolution>51</resolution>
-                <waveLengthMin>1.915</waveLengthMin>
-                <waveLengthMax>2.195</waveLengthMax>
-            </mode>
-
-        </focalInstrument>
-
         <!-- PIONIER_2 = PIONIER starting from Period 96 (RAPID) with new modes -->
         <focalInstrument>
             <name>PIONIER_2</name>
             <alias>PIONIER</alias>
-            <description>PIONIER instrument (4T) with RAPID detector (IPAG, FR)</description>
-            <numberChannels>4</numberChannels>
+            <description>PIONIER instrument (4T) with RAPID detector</description>
 
             <oiVis>false</oiVis>
             <oiVis2Extra>true</oiVis2Extra>
@@ -7035,7 +6936,7 @@
 
             <setup>
                 <name>PIONIER_2_SETUP</name>
-                <description>PIONIER instrument (4T) with RAPID detector (IPAG, FR)</description>
+                <description>PIONIER instrument (4T) with RAPID detector</description>
                 <defaultSamplingTime>30</defaultSamplingTime>
 
                 <dit>0.01</dit>
@@ -7081,7 +6982,6 @@
         <focalInstrument>
             <name>GRAVITY</name>
             <description>GRAVITY instrument (4T)</description>
-            <numberChannels>4</numberChannels>
 
             <oiVisData>true</oiVisData>
             <oiVisAmpDiff>true</oiVisAmpDiff>
@@ -7184,7 +7084,6 @@
         <focalInstrument>
             <name>GRAVITY_FT</name>
             <description>GRAVITY Fringe tracker (4T)</description>
-            <numberChannels>4</numberChannels>
 
             <oiVisData>true</oiVisData>
             <oiVisAmpDiff>true</oiVisAmpDiff>
@@ -7234,7 +7133,6 @@
         <focalInstrument>
             <name>MATISSE_LM</name>
             <description>MATISSE ESO instrument (4T): L and M bands</description>
-            <numberChannels>4</numberChannels>
 
             <oiVisData>true</oiVisData>
             <oiVisAmpDiff>false</oiVisAmpDiff>
@@ -14721,7 +14619,6 @@
         <focalInstrument>
             <name>MATISSE_N</name>
             <description>MATISSE ESO instrument (4T): N band</description>
-            <numberChannels>4</numberChannels>
 
             <oiVisData>true</oiVisData>
             <oiVisAmpDiff>false</oiVisAmpDiff>

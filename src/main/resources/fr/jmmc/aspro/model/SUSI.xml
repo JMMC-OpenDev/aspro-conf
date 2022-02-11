@@ -174,12 +174,13 @@
         <!-- instruments (2T) -->
 
         <focalInstrument>
-            <name>PAVO_2T</name>
+            <name>PAVO</name>
+            <altName>PAVO_2T</altName>
             <description>PAVO combiner (2T)</description>
             <fringeTracker>PAVO_FT</fringeTracker>
 
             <setup>
-                <name>PAVO_2T_SETUP</name>
+                <name>PAVO_SETUP</name>
                 <description>PAVO combiner (2T)</description>
                 <defaultSamplingTime>40</defaultSamplingTime>
 
@@ -214,9 +215,9 @@
     <configuration>
         <interferometer>SUSI</interferometer>
 
-        <!-- PAVO 2T -->
+        <!-- PAVO (2T) -->
         <instrument>
-            <focalInstrument>PAVO_2T</focalInstrument>
+            <focalInstrument>PAVO</focalInstrument>
 
             <!-- The baseline configuration is limited to one telescope from the North and one telescope from the South -->
             <configuration>

@@ -625,14 +625,16 @@
             </pop>
         -->
 
-        <!-- instruments (4T) -->
+        <!-- instruments -->
 
+        <!-- CLASSIC (4T) -->
         <focalInstrument>
-            <name>CLASSIC_4T</name>
+            <name>CLASSIC</name>
+            <altName>CLASSIC_4T</altName>
             <description>Classic instrument (4T)</description>
 
             <setup>
-                <name>SETUP_CLASSIC_4T</name>
+                <name>SETUP_CLASSIC</name>
                 <description>Classic instrument (4T)</description>
                 <defaultSamplingTime>30</defaultSamplingTime>
 
@@ -662,101 +664,18 @@
         </focalInstrument>
 
 
+        <!-- VISION (4T-6T) -->
         <focalInstrument>
-            <name>VISION_4T</name>
-            <description>VISION instrument 4T</description>
+            <name>VISION</name>
+            <altName>VISION_4T</altName>
+            <altName>VISION_5T</altName>
+            <altName>VISION_6T</altName>
+
+            <description>VISION instrument</description>
 
             <setup>
-                <name>SETUP_VISION_4T</name>
-                <description>VISION instrument 4T</description>
-                <defaultSamplingTime>40</defaultSamplingTime>
-
-                <dit>0.010</dit>
-                <ron>0.0</ron>
-                <detectorSaturation>65653</detectorSaturation>
-
-                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
-                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
-
-                <nbPixInterferometry>128</nbPixInterferometry>
-                <nbPixPhotometry>128</nbPixPhotometry>
-
-                <transmission>0.01</transmission>
-                <instrumentVisibility>0.9</instrumentVisibility>
-
-                <instrumentVisibilityBias>1</instrumentVisibilityBias>
-                <instrumentPhaseBias>1</instrumentPhaseBias>
-            </setup>
-
-            <mode>
-                <name>Low_Res</name>
-                <resolution>200</resolution>
-                <waveLengthMin>0.580</waveLengthMin>
-                <waveLengthMax>0.850</waveLengthMax>
-            </mode>
-            <mode>
-                <name>Hi_Res</name>
-                <resolution>2000</resolution>
-                <waveLengthMin>0.580</waveLengthMin>
-                <waveLengthMax>0.850</waveLengthMax>
-            </mode>
-
-        </focalInstrument>
-
-
-        <!-- instruments (5T) -->
-
-        <focalInstrument>
-            <name>VISION_5T</name>
-            <description>VISION instrument 5T</description>
-
-            <setup>
-                <name>SETUP_VISION_5T</name>
-                <description>VISION instrument 5T</description>
-                <defaultSamplingTime>40</defaultSamplingTime>
-
-                <dit>0.010</dit>
-                <ron>0.0</ron>
-                <detectorSaturation>65653</detectorSaturation>
-
-                <fracFluxInInterferometry>0.8</fracFluxInInterferometry>
-                <fracFluxInPhotometry>0.2</fracFluxInPhotometry>
-
-                <nbPixInterferometry>128</nbPixInterferometry>
-                <nbPixPhotometry>128</nbPixPhotometry>
-
-                <transmission>0.01</transmission>
-                <instrumentVisibility>0.9</instrumentVisibility>
-
-                <instrumentVisibilityBias>1</instrumentVisibilityBias>
-                <instrumentPhaseBias>1</instrumentPhaseBias>
-            </setup>
-
-            <mode>
-                <name>Low_Res</name>
-                <resolution>200</resolution>
-                <waveLengthMin>0.580</waveLengthMin>
-                <waveLengthMax>0.850</waveLengthMax>
-            </mode>
-            <mode>
-                <name>Hi_Res</name>
-                <resolution>2000</resolution>
-                <waveLengthMin>0.580</waveLengthMin>
-                <waveLengthMax>0.850</waveLengthMax>
-            </mode>
-
-        </focalInstrument>
-
-
-        <!-- instruments (6T) -->
-
-        <focalInstrument>
-            <name>VISION_6T</name>
-            <description>VISION instrument 6T</description>
-
-            <setup>
-                <name>SETUP_VISION_6T</name>
-                <description>VISION instrument 6T</description>
+                <name>SETUP_VISION</name>
+                <description>VISION instrument setup</description>
                 <defaultSamplingTime>40</defaultSamplingTime>
 
                 <dit>0.010</dit>
@@ -799,10 +718,8 @@
     <configuration>
         <interferometer>NPOI</interferometer>
 
-        <!-- instruments (4T) -->
-
         <instrument>
-            <focalInstrument>CLASSIC_4T</focalInstrument>
+            <focalInstrument>CLASSIC</focalInstrument>
 
             <configuration>
                 <stations>E06 AE0 AC0 AN0</stations>
@@ -852,8 +769,31 @@
         </instrument>
 
         <instrument>
-            <focalInstrument>VISION_4T</focalInstrument>
-
+            <focalInstrument>VISION</focalInstrument>
+            <!-- 6T -->
+            <configuration>
+                <stations>AW0 AE0 AC0 AN0 E06 W07</stations>
+            </configuration>
+            <!-- 5T -->
+            <configuration>
+                <stations>AW0 AE0 AC0 AN0 E06</stations>
+            </configuration>
+            <configuration>
+                <stations>AW0 AE0 AC0 AN0 W07</stations>
+            </configuration>
+            <configuration>
+                <stations>AW0 AE0 AC0 E06 W07</stations>
+            </configuration>
+            <configuration>
+                <stations>AW0 AE0 AN0 E06 W07</stations>
+            </configuration>
+            <configuration>
+                <stations>AW0 AC0 AN0 E06 W07</stations>
+            </configuration>
+            <configuration>
+                <stations>AE0 AC0 AN0 E06 W07</stations>
+            </configuration>
+            <!-- 4T -->
             <configuration>
                 <stations>AW0 AE0 AC0 AN0</stations>
             </configuration>
@@ -898,43 +838,6 @@
             </configuration>
             <configuration>
                 <stations>AC0 AN0 E06 W07</stations>
-            </configuration>
-        </instrument>
-
-
-        <!-- instruments (5T) -->
-
-        <instrument>
-            <focalInstrument>VISION_5T</focalInstrument>
-
-            <configuration>
-                <stations>AW0 AE0 AC0 AN0 E06</stations>
-            </configuration>
-            <configuration>
-                <stations>AW0 AE0 AC0 AN0 W07</stations>
-            </configuration>
-            <configuration>
-                <stations>AW0 AE0 AC0 E06 W07</stations>
-            </configuration>
-            <configuration>
-                <stations>AW0 AE0 AN0 E06 W07</stations>
-            </configuration>
-            <configuration>
-                <stations>AW0 AC0 AN0 E06 W07</stations>
-            </configuration>
-            <configuration>
-                <stations>AE0 AC0 AN0 E06 W07</stations>
-            </configuration>
-        </instrument>
-
-
-        <!-- instruments (6T) -->
-
-        <instrument>
-            <focalInstrument>VISION_6T</focalInstrument>
-
-            <configuration>
-                <stations>AW0 AE0 AC0 AN0 E06 W07</stations>
             </configuration>
         </instrument>
 
