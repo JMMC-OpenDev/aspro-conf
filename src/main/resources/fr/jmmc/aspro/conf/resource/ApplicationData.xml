@@ -18,18 +18,27 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2022.0211"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="02/11/2021" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2022.0228"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="28/02/2022" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2022.0228">
+            <pubDate>Mon, 28 Feb 2022 17:00:00 GMT</pubDate>
+            <prerelease version="2022.0228 beta 1">
+                <change type="FEATURE">CHARA: MIRCX changed to 'MIRCX-MYSTIC' with new observing modes in K band</change>
+                <change type="FEATURE">VLTI: added ESO Period 110 (= 109)</change>
+            </prerelease>
+        </release>
         <release version="2022.0211">
             <pubDate>Fri, 11 Feb 2022 17:00:00 GMT</pubDate>
             <prerelease version="2022.0211 beta 1">
                 <change type="FEATURE">CHARA: adopt unified instruments to ease maintenance:
                     no more 2T/3T/4T/5T/6T duplicated instruments in the configuration file</change>
+                <change type="FEATURE">NPOI adopt unified instruments to ease maintenance:
+                    no more 4T/5T/6T duplicated instruments in the configuration file</change>
             </prerelease>
         </release>
         <release version="2021.1008">

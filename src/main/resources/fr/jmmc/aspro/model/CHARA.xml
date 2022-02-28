@@ -1970,11 +1970,12 @@
 
         <!-- MIRC-X (4T-6T) -->
         <focalInstrument>
-            <name>MIRCX</name>
+            <name>MIRCX-MYSTIC</name>
             <altName>MIRCX_4T</altName>
             <altName>MIRCX_5T</altName>
             <altName>MIRCX_6T</altName>
-            <description>MIRCX instrument (4T-6T)</description>
+            <altName>MIRCX</altName>
+            <description>MIRCX / MYSTIC instruments (4T-6T)</description>
 
             <oiVis2Extra>true</oiVis2Extra>
 
@@ -2000,6 +2001,36 @@
                 320 × 44 pixel window with N reads = 8 and N reads = 6.
                 -->
                 <nbPixInterferometry>150</nbPixInterferometry>
+                <nbPixPhotometry>2</nbPixPhotometry>
+
+                <transmission>0.01</transmission> <!-- TODO: estimate overall transmission (CHARA + instrument) but without strehl / AO / QE -->
+                <instrumentVisibility>0.9</instrumentVisibility>
+
+                <instrumentVisibilityBias>1</instrumentVisibilityBias>
+                <instrumentPhaseBias>1</instrumentPhaseBias>
+            </setup>
+
+            <setup>
+                <name>MYSTIC_SETUP</name>
+                <description>MYSTIC instrument setup (4T-6T)</description>
+
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime> <!-- 10 min science acquisition -->
+                <defaultSamplingTime>40</defaultSamplingTime>
+
+                <dit>0.025</dit> <!-- 25ms (but ? -->
+                <ron>1.5</ron> <!-- roughly 1e- -->
+                <detectorSaturation>50000</detectorSaturation> <!-- ?? -->
+                <quantumEfficiency>0.7</quantumEfficiency>
+
+                <fracFluxInInterferometry>0.80</fracFluxInInterferometry> <!-- 80% on interferometry -->
+                <fracFluxInPhotometry>0.20</fracFluxInPhotometry> <!-- 20% on photometry -->
+
+                <!-- number of pixel per spectral channel (depends on resolution) -->
+                <!-- (3500 Hz full frame 320x256)
+                    how many pixels per spectral channel ? (default ~ any resolution)
+                    to define pixels per mode, use table[nb_pix_Interf columns and
+                -->
+                <nbPixInterferometry>100</nbPixInterferometry>
                 <nbPixPhotometry>2</nbPixPhotometry>
 
                 <transmission>0.01</transmission> <!-- TODO: estimate overall transmission (CHARA + instrument) but without strehl / AO / QE -->
@@ -2046,19 +2077,35 @@
             R = 50, R = 190 and R = 1035 dispersion elements
             -->
 
+            <!--
+            Example of a complete table columns:
+            <table>
+                   <column quantity="lambda"/>
+                   <column quantity="delta_lambda"/>
+                   <column quantity="nb_photon_thermal"/>
+                   <column quantity="transmission"/>
+                   <column quantity="visibility"/>
+                   <column quantity="nb_pix_Interf"/>
+                   <column quantity="nb_pix_Photo"/>
+                   <data>
+                   </data>
+            </table>
+             -->
+
             <mode>
                 <name>Low_J</name>
+                <setupRef>MIRCX_SETUP</setupRef>
                 <!--
-                                <resolution>50</resolution>
-                                <waveLengthMin>1.07</waveLengthMin>
-                                <waveLengthMax>1.75</waveLengthMax>
+                    <resolution>50</resolution>
+                    <waveLengthMin>1.07</waveLengthMin>
+                    <waveLengthMax>1.75</waveLengthMax>
                 -->
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
                     <!--
-                                        <column quantity="nb_pix_Interf"/>
-                                        <column quantity="nb_pix_Photo"/>
+                        <column quantity="nb_pix_Interf"/>
+                        <column quantity="nb_pix_Photo"/>
                     -->
                     <data>
                         1.090657E-06    3.989927E-08
@@ -2083,12 +2130,14 @@
             </mode>
             <mode>
                 <name>Med_J</name>
+                <setupRef>MIRCX_SETUP</setupRef>
                 <resolution>190</resolution>
                 <waveLengthMin>1.07</waveLengthMin>
                 <waveLengthMax>1.75</waveLengthMax>
             </mode>
             <mode>
                 <name>High_J</name>
+                <setupRef>MIRCX_SETUP</setupRef>
                 <resolution>1035</resolution>
                 <waveLengthMin>1.07</waveLengthMin>
                 <waveLengthMax>1.75</waveLengthMax>
@@ -2096,17 +2145,18 @@
 
             <mode>
                 <name>Low_H</name>
+                <setupRef>MIRCX_SETUP</setupRef>
                 <!--
-                                <resolution>50</resolution>
-                                <waveLengthMin>1.41</waveLengthMin>
-                                <waveLengthMax>1.77</waveLengthMax>
+                    <resolution>50</resolution>
+                    <waveLengthMin>1.41</waveLengthMin>
+                    <waveLengthMax>1.77</waveLengthMax>
                 -->
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
                     <!--
-                                        <column quantity="nb_pix_Interf"/>
-                                        <column quantity="nb_pix_Photo"/>
+                        <column quantity="nb_pix_Interf"/>
+                        <column quantity="nb_pix_Photo"/>
                     -->
                     <data>
                         1.415200E-06    3.989927E-08
@@ -2125,15 +2175,41 @@
             </mode>
             <mode>
                 <name>Medium_H</name>
+                <setupRef>MIRCX_SETUP</setupRef>
                 <resolution>190</resolution>
                 <waveLengthMin>1.40</waveLengthMin>
                 <waveLengthMax>1.75</waveLengthMax>
             </mode>
             <mode>
                 <name>High_H</name>
+                <setupRef>MIRCX_SETUP</setupRef>
                 <resolution>1035</resolution>
                 <waveLengthMin>1.40</waveLengthMin>
                 <waveLengthMax>1.75</waveLengthMax>
+            </mode>
+
+            <!-- MYSTIC (K) modes -->
+            <!-- R=50, 300, 900 -->
+            <mode>
+                <name>Low_K</name>
+                <setupRef>MYSTIC_SETUP</setupRef>
+                <resolution>52</resolution>
+                <waveLengthMin>1.9595</waveLengthMin>
+                <waveLengthMax>2.4105</waveLengthMax>
+            </mode>
+            <mode>
+                <name>Med_K</name>
+                <setupRef>MYSTIC_SETUP</setupRef>
+                <resolution>300</resolution>
+                <waveLengthMin>1.9595</waveLengthMin>
+                <waveLengthMax>2.4105</waveLengthMax>
+            </mode>
+            <mode>
+                <name>High_K</name>
+                <setupRef>MYSTIC_SETUP</setupRef>
+                <resolution>900</resolution>
+                <waveLengthMin>1.9595</waveLengthMin>
+                <waveLengthMax>2.4105</waveLengthMax>
             </mode>
         </focalInstrument>
 
@@ -2849,6 +2925,822 @@
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
     <configuration>
+        <version>2022B</version>
+        <interferometer>CHARA</interferometer>
+        <switchyard>default</switchyard>
+
+        <!-- instruments (CLASSIC, CLIMB, MIRCX, PAVO) -->
+
+        <!-- CLASSIC (2T) -->
+        <instrument>
+            <focalInstrument>CLASSIC</focalInstrument>
+            <!-- CLASSIC: beams 5-6 -->
+            <configuration>
+                <stations>S1 S2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- CLIMB (3T) -->
+        <instrument>
+            <focalInstrument>CLIMB</focalInstrument>
+            <!-- CLIMB: beams 1-2-3 -->
+            <configuration>
+                <stations>S1 S2 E1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- MIRCX-MYSTIC (4T-6T) -->
+        <instrument>
+            <focalInstrument>MIRCX-MYSTIC</focalInstrument>
+            <!-- 6T -->
+            <configuration>
+                <stations>E1 W2 W1 S2 S1 E2</stations>
+                <channels>V1 V2 V3 V4 V5 V6</channels>
+            </configuration>
+            <!-- 5T -->
+            <configuration>
+                <stations>E1 W2 W1 S2 S1</stations>
+                <channels>V1 V2 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S2 E2</stations>
+                <channels>V1 V2 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S1 E2</stations>
+                <channels>V1 V2 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 S1 E2</stations>
+                <channels>V1 V2 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 S1 E2</stations>
+                <channels>V1 V3 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 S1 E2</stations>
+                <channels>V2 V3 V4 V5 V6</channels>
+            </configuration>
+            <!-- 4T -->
+            <configuration>
+                <stations>E1 W2 W1 S2</stations>
+                <channels>V1 V2 V3 V4</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S1</stations>
+                <channels>V1 V2 V3 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 E2</stations>
+                <channels>V1 V2 V3 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 S1</stations>
+                <channels>V1 V2 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 E2</stations>
+                <channels>V1 V2 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S1 E2</stations>
+                <channels>V1 V2 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 S1</stations>
+                <channels>V1 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 E2</stations>
+                <channels>V1 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S1 E2</stations>
+                <channels>V1 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 S2 S1 E2</stations>
+                <channels>V1 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 S1</stations>
+                <channels>V2 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 E2</stations>
+                <channels>V2 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S1 E2</stations>
+                <channels>V2 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 S2 S1 E2</stations>
+                <channels>V2 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 S2 S1 E2</stations>
+                <channels>V3 V4 V5 V6</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- PAVO 2T/3T -->
+        <instrument>
+            <focalInstrument>PAVO</focalInstrument>
+            <!-- PAVO: beams 1-2-3 -->
+            <!-- 3T -->
+            <configuration>
+                <stations>S1 S2 E1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <!-- 2T -->
+            <configuration>
+                <stations>S1 S2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+        </instrument>
+    </configuration>
+
+
+    <configuration>
+        <version>2022A</version>
+        <interferometer>CHARA</interferometer>
+        <switchyard>default</switchyard>
+
+        <!-- instruments (CLASSIC, CLIMB, MIRCX, PAVO) -->
+
+        <!-- CLASSIC (2T) -->
+        <instrument>
+            <focalInstrument>CLASSIC</focalInstrument>
+            <!-- CLASSIC: beams 5-6 -->
+            <configuration>
+                <stations>S1 S2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 W2</stations>
+                <channels>V5 V6</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- CLIMB (3T) -->
+        <instrument>
+            <focalInstrument>CLIMB</focalInstrument>
+            <!-- CLIMB: beams 1-2-3 -->
+            <configuration>
+                <stations>S1 S2 E1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- MIRCX-MYSTIC (4T-6T) -->
+        <instrument>
+            <focalInstrument>MIRCX-MYSTIC</focalInstrument>
+            <!-- 6T -->
+            <configuration>
+                <stations>E1 W2 W1 S2 S1 E2</stations>
+                <channels>V1 V2 V3 V4 V5 V6</channels>
+            </configuration>
+            <!-- 5T -->
+            <configuration>
+                <stations>E1 W2 W1 S2 S1</stations>
+                <channels>V1 V2 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S2 E2</stations>
+                <channels>V1 V2 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S1 E2</stations>
+                <channels>V1 V2 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 S1 E2</stations>
+                <channels>V1 V2 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 S1 E2</stations>
+                <channels>V1 V3 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 S1 E2</stations>
+                <channels>V2 V3 V4 V5 V6</channels>
+            </configuration>
+            <!-- 4T -->
+            <configuration>
+                <stations>E1 W2 W1 S2</stations>
+                <channels>V1 V2 V3 V4</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S1</stations>
+                <channels>V1 V2 V3 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 E2</stations>
+                <channels>V1 V2 V3 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 S1</stations>
+                <channels>V1 V2 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 E2</stations>
+                <channels>V1 V2 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S1 E2</stations>
+                <channels>V1 V2 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 S1</stations>
+                <channels>V1 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 E2</stations>
+                <channels>V1 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S1 E2</stations>
+                <channels>V1 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 S2 S1 E2</stations>
+                <channels>V1 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 S1</stations>
+                <channels>V2 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 E2</stations>
+                <channels>V2 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S1 E2</stations>
+                <channels>V2 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 S2 S1 E2</stations>
+                <channels>V2 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 S2 S1 E2</stations>
+                <channels>V3 V4 V5 V6</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- PAVO 2T/3T -->
+        <instrument>
+            <focalInstrument>PAVO</focalInstrument>
+            <!-- PAVO: beams 1-2-3 -->
+            <!-- 3T -->
+            <configuration>
+                <stations>S1 S2 E1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 S2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 E2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W1</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1 W2</stations>
+                <channels>V1 V2 V3</channels>
+            </configuration>
+            <!-- 2T -->
+            <configuration>
+                <stations>S1 S2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 E2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S1 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 E2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>S2 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 E2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W1</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>E2 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 W2</stations>
+                <channels>V1 V2</channels>
+            </configuration>
+        </instrument>
+    </configuration>
+
+
+    <configuration>
         <version>2021B</version>
         <interferometer>CHARA</interferometer>
         <switchyard>default</switchyard>
@@ -3008,9 +3900,9 @@
             </configuration>
         </instrument>
 
-        <!-- MIRCX (4T-6T) -->
+        <!-- MIRCX-MYSTIC (4T-6T) -->
         <instrument>
-            <focalInstrument>MIRCX</focalInstrument>
+            <focalInstrument>MIRCX-MYSTIC</focalInstrument>
             <!-- 6T -->
             <configuration>
                 <stations>E1 W2 W1 S2 S1 E2</stations>
@@ -4464,9 +5356,9 @@
         </instrument>
 
 
-        <!-- MIRCX (4T-6T) -->
+        <!-- MIRCX-MYSTIC (4T-6T) -->
         <instrument>
-            <focalInstrument>MIRCX</focalInstrument>
+            <focalInstrument>MIRCX-MYSTIC</focalInstrument>
             <!-- 6T -->
             <configuration>
                 <stations>E1 W2 W1 S2 S1 E2</stations>
@@ -4913,414 +5805,6 @@
             <configuration>
                 <stations>W2 W1</stations>
                 <channels>V2 V3</channels>
-            </configuration>
-        </instrument>
-    </configuration>
-
-
-    <configuration>
-        <version>2022A</version>
-        <interferometer>CHARA</interferometer>
-        <switchyard>default</switchyard>
-
-        <!-- instruments (CLASSIC, CLIMB, MIRCX, PAVO) -->
-
-        <!-- CLASSIC (2T) -->
-        <instrument>
-            <focalInstrument>CLASSIC</focalInstrument>
-            <!-- CLASSIC: beams 5-6 -->
-            <configuration>
-                <stations>S1 S2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 W1</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 W2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 W1</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 W2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 E2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E2 W1</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E2 W2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>W1 W2</stations>
-                <channels>V5 V6</channels>
-            </configuration>
-        </instrument>
-
-
-        <!-- CLIMB (3T) -->
-        <instrument>
-            <focalInstrument>CLIMB</focalInstrument>
-            <!-- CLIMB: beams 1-2-3 -->
-            <configuration>
-                <stations>S1 S2 E1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 E2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1 E2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1 E2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E2 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-        </instrument>
-
-
-        <!-- MIRCX (4T-6T) -->
-        <instrument>
-            <focalInstrument>MIRCX</focalInstrument>
-            <!-- 6T -->
-            <configuration>
-                <stations>E1 W2 W1 S2 S1 E2</stations>
-                <channels>V1 V2 V3 V4 V5 V6</channels>
-            </configuration>
-            <!-- 5T -->
-            <configuration>
-                <stations>E1 W2 W1 S2 S1</stations>
-                <channels>V1 V2 V3 V4 V5</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 W1 S2 E2</stations>
-                <channels>V1 V2 V3 V4 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 W1 S1 E2</stations>
-                <channels>V1 V2 V3 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 S2 S1 E2</stations>
-                <channels>V1 V2 V4 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1 S2 S1 E2</stations>
-                <channels>V1 V3 V4 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>W2 W1 S2 S1 E2</stations>
-                <channels>V2 V3 V4 V5 V6</channels>
-            </configuration>
-            <!-- 4T -->
-            <configuration>
-                <stations>E1 W2 W1 S2</stations>
-                <channels>V1 V2 V3 V4</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 W1 S1</stations>
-                <channels>V1 V2 V3 V5</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 W1 E2</stations>
-                <channels>V1 V2 V3 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 S2 S1</stations>
-                <channels>V1 V2 V4 V5</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 S2 E2</stations>
-                <channels>V1 V2 V4 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2 S1 E2</stations>
-                <channels>V1 V2 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1 S2 S1</stations>
-                <channels>V1 V3 V4 V5</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1 S2 E2</stations>
-                <channels>V1 V3 V4 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1 S1 E2</stations>
-                <channels>V1 V3 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 S2 S1 E2</stations>
-                <channels>V1 V4 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>W2 W1 S2 S1</stations>
-                <channels>V2 V3 V4 V5</channels>
-            </configuration>
-            <configuration>
-                <stations>W2 W1 S2 E2</stations>
-                <channels>V2 V3 V4 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>W2 W1 S1 E2</stations>
-                <channels>V2 V3 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>W2 S2 S1 E2</stations>
-                <channels>V2 V4 V5 V6</channels>
-            </configuration>
-            <configuration>
-                <stations>W1 S2 S1 E2</stations>
-                <channels>V3 V4 V5 V6</channels>
-            </configuration>
-        </instrument>
-
-
-        <!-- PAVO 2T/3T -->
-        <instrument>
-            <focalInstrument>PAVO</focalInstrument>
-            <!-- PAVO: beams 1-2-3 -->
-            <!-- 3T -->
-            <configuration>
-                <stations>S1 S2 E1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 E2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 S2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1 E2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1 E2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 E2 W1</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 E2 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <configuration>
-                <stations>E2 W1 W2</stations>
-                <channels>V1 V2 V3</channels>
-            </configuration>
-            <!-- 2T -->
-            <configuration>
-                <stations>S1 S2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E1</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 E2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 W1</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S1 W2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E1</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 E2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 W1</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>S2 W2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 E2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W1</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>E1 W2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>E2 W1</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>E2 W2</stations>
-                <channels>V1 V2</channels>
-            </configuration>
-            <configuration>
-                <stations>W1 W2</stations>
-                <channels>V1 V2</channels>
             </configuration>
         </instrument>
     </configuration>
