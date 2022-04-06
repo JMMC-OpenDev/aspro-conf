@@ -7244,9 +7244,9 @@
 
             <mode>
                 <name>SI_PHOT_L_LOW</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 3.5 microns as reference channel -->
                 <waveLengthRef>3.5</waveLengthRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- dit: 75ms / 156ms -->
                 <dit>0.075</dit>
                 <frameTime>0.156</frameTime>
@@ -7341,9 +7341,9 @@
 
             <mode>
                 <name>SI_PHOT_LM_LOW</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 3.5 microns as reference channel -->
                 <waveLengthRef>3.5</waveLengthRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- dit: 111ms / 222ms -->
                 <dit>0.111</dit>
                 <frameTime>0.222</frameTime>
@@ -7487,9 +7487,9 @@
 
             <mode>
                 <name>SI_PHOT_M_LOW</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 4.75 microns as reference channel -->
                 <waveLengthRef>4.75</waveLengthRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- dit: 60ms / 120ms -->
                 <dit>0.060</dit>
                 <frameTime>0.120</frameTime>
@@ -7562,10 +7562,10 @@
 
             <mode>
                 <name>SI_PHOT_LM_MEDIUM</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 3.5 microns as reference channel -->
                 <waveLengthRef>3.5</waveLengthRef>
                 <waveLengthBandRef>0.16</waveLengthBandRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- dit: 111ms / 228ms -->
                 <dit>0.111</dit>
                 <frameTime>0.228</frameTime>
@@ -9145,10 +9145,10 @@
 
             <mode>
                 <name>SI_PHOT_L_HIGH</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 3.5 microns as reference channel -->
                 <waveLengthRef>3.5</waveLengthRef>
                 <waveLengthBandRef>0.08</waveLengthBandRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
 
                 <!-- dit: 111ms / 228ms -->
                 <dit>0.111</dit>
@@ -11085,10 +11085,10 @@
 
             <mode>
                 <name>SI_PHOT_L_VERY_HIGH</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 3.9 microns as reference channel -->
                 <waveLengthRef>3.9</waveLengthRef>
                 <waveLengthBandRef>0.02</waveLengthBandRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
 
                 <!-- dit: 111ms / 228ms -->
                 <dit>0.111</dit>
@@ -13084,10 +13084,10 @@
 
             <mode>
                 <name>SI_PHOT_M_VERY_HIGH</name>
+                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
                 <!-- use 4.75 microns as reference channel -->
                 <waveLengthRef>4.75</waveLengthRef>
                 <waveLengthBandRef>0.02</waveLengthBandRef>
-                <setupRef>MATISSE_LM_SI_PHOT_SETUP</setupRef>
 
                 <!-- dit: 111ms / 228ms -->
                 <dit>0.111</dit>
@@ -14710,9 +14710,9 @@
 
             <mode>
                 <name>HIGH_SENS_N_LOW</name>
+                <setupRef>MATISSE_N_HIGH_SENS_SETUP</setupRef>
                 <!-- use 10.5 microns as reference channel -->
                 <waveLengthRef>10.5</waveLengthRef>
-                <setupRef>MATISSE_N_HIGH_SENS_SETUP</setupRef>
 
                 <!-- dit: 20ms / 26ms -->
                 <dit>0.020</dit>
@@ -14866,9 +14866,9 @@
 
             <mode>
                 <name>HIGH_SENS_N_HIGH</name>
+                <setupRef>MATISSE_N_HIGH_SENS_SETUP</setupRef>
                 <!-- use 10.5 microns as reference channel -->
                 <waveLengthRef>10.5</waveLengthRef>
-                <setupRef>MATISSE_N_HIGH_SENS_SETUP</setupRef>
 
                 <!-- dit: 75ms / 84ms -->
                 <dit>0.075</dit>
