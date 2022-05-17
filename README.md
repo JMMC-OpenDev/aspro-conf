@@ -9,6 +9,8 @@ See [ASPRO2](https://www.jmmc.fr/aspro)
 See [ASPRO2 @ github](https://github.com/JMMC-OpenDev/aspro)
 See [JMMC OpenDev @ github](https://github.com/JMMC-OpenDev)
 
+See [CI nightly builds](https://github.com/JMMC-OpenDev/jmmc-java-build/actions/workflows/build.yml)
+
 
 ## Documentation
 
@@ -49,3 +51,5 @@ Requirements:
 - Maven 3.6+
 
 See [JMMC Java Build](https://github.com/JMMC-OpenDev/jmmc-java-build)
+See [CI nightly builds](https://github.com/JMMC-OpenDev/jmmc-java-build/actions/workflows/build.yml)
+
