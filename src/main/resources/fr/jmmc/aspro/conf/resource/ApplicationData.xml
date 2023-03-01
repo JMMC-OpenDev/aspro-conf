@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2022.0228"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="28/02/2022" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2023.0301"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="01/03/2023" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2023.0301">
+            <pubDate>Wed, 01 Mar 2023 14:00:00 GMT</pubDate>
+            <prerelease version="2023.0301 beta 1">
+                <change type="FEATURE">VLTI: added ESO Period 112 (new Extended baseline + new relocations in the 'Future' period)</change>
+            </prerelease>
+        </release>
         <release version="2022.0909">
             <pubDate>Fri, 09 Sep 2022 14:00:00 GMT</pubDate>
             <prerelease version="2022.0909 beta 1">
