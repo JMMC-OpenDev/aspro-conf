@@ -15788,7 +15788,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -15830,7 +15830,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -15872,7 +15872,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -15915,7 +15915,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -15957,7 +15957,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -16006,7 +16006,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
@@ -16038,7 +16038,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
@@ -16078,7 +16078,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
             <configuration>
@@ -16119,7 +16119,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
@@ -16151,7 +16151,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
@@ -21019,7 +21019,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -21260,7 +21260,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -21501,7 +21501,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -21742,7 +21742,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
@@ -21983,7 +21983,7 @@
                 <altBaselines>UTs</altBaselines>
                 <stations>UT1 UT2 UT3 UT4</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
-                <delayLines>DL1 DL2 DL3 DL4</delayLines>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
             </configuration>
             <!-- P112 Extended = double-path DL -->
             <configuration>
