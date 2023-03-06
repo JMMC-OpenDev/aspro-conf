@@ -311,12 +311,12 @@
         <!-- all delay lines have the same throw (july 2011) -->
         <!--
         Delay line Front sw Back sw
-        S1	-1.42	44.32
-        S2	-1.42	44.35
-        E1	-1.10	44.54
-        E2	-1.23	44.43
-        W1	-1.42	44.35
-        W2	-1.37	44.29
+        S1    -1.42    44.32
+        S2    -1.42    44.35
+        E1    -1.10    44.54
+        E2    -1.23    44.43
+        W1    -1.42    44.35
+        W2    -1.37    44.29
         -->
         <delayLine>
             <name>DL_S1</name>
@@ -1038,23 +1038,23 @@
                         <column quantity="nb_pix_Photo"/>
                     -->
                     <data>
-                        1.090657E-06    3.989927E-08
-                        1.126604E-06    3.989927E-08
-                        1.168979E-06    3.989927E-08
-                        1.210605E-06    3.989927E-08
-                        1.251484E-06    3.989927E-08
-                        1.271032E-06    3.989927E-08
-                        1.415200E-06    3.989927E-08
-                        1.444657E-06    3.989927E-08
-                        1.481048E-06    3.989927E-08
-                        1.516691E-06    3.989927E-08
-                        1.551585E-06    3.989927E-08
-                        1.585732E-06    3.989927E-08
-                        1.619131E-06    3.989927E-08
-                        1.651781E-06    3.989927E-08
-                        1.683684E-06    3.989927E-08
-                        1.714839E-06    3.989927E-08
-                        1.729045E-06    3.989927E-08
+1.090657E-06    3.989927E-08
+1.126604E-06    3.989927E-08
+1.168979E-06    3.989927E-08
+1.210605E-06    3.989927E-08
+1.251484E-06    3.989927E-08
+1.271032E-06    3.989927E-08
+1.415200E-06    3.989927E-08
+1.444657E-06    3.989927E-08
+1.481048E-06    3.989927E-08
+1.516691E-06    3.989927E-08
+1.551585E-06    3.989927E-08
+1.585732E-06    3.989927E-08
+1.619131E-06    3.989927E-08
+1.651781E-06    3.989927E-08
+1.683684E-06    3.989927E-08
+1.714839E-06    3.989927E-08
+1.729045E-06    3.989927E-08
                     </data>
                 </table>
             </mode>
@@ -1089,17 +1089,17 @@
                         <column quantity="nb_pix_Photo"/>
                     -->
                     <data>
-                        1.415200E-06    3.989927E-08
-                        1.444657E-06    3.989927E-08
-                        1.481048E-06    3.989927E-08
-                        1.516691E-06    3.989927E-08
-                        1.551585E-06    3.989927E-08
-                        1.585732E-06    3.989927E-08
-                        1.619131E-06    3.989927E-08
-                        1.651781E-06    3.989927E-08
-                        1.683684E-06    3.989927E-08
-                        1.714839E-06    3.989927E-08
-                        1.729045E-06    3.989927E-08
+1.415200E-06    3.989927E-08
+1.444657E-06    3.989927E-08
+1.481048E-06    3.989927E-08
+1.516691E-06    3.989927E-08
+1.551585E-06    3.989927E-08
+1.585732E-06    3.989927E-08
+1.619131E-06    3.989927E-08
+1.651781E-06    3.989927E-08
+1.683684E-06    3.989927E-08
+1.714839E-06    3.989927E-08
+1.729045E-06    3.989927E-08
                     </data>
                 </table>
             </mode>
@@ -1228,63 +1228,133 @@
             </setup>
 
             <!--
-            2021.01.27:
+            2023.02.07:
                 mode,resolution,wlen min (nm), wlen max (nm), nb channels
-                LR, 140, 0.6, 0.9, 60
-                MR640, 4400, 600, 685, 500
-                MR720, 4400, 680, 765, 500
-                MR800, 4400, 760, 845, 500
-                MR855, 4400, 815, 900, 500
-                HR(lambda(nm)), 13100, lambda-29/2, lambda+29/2, 500**
+                LR, 140, 0.6, 0.9, 60 (but resolution is not constant)
+                MR640, 4344, 600, 685, 500
+                MR720, 4344, 680, 765, 500
+                MR800, 4344, 760, 845, 500
+                MR855, 4344, 815, 900, 500
+                HR(lambda(nm)), 13213, lambda-29.06/2, lambda+29.06/2, 500
             -->
             <mode>
                 <name>LR</name>
-                <resolution>150</resolution> <!-- not 140 for 60 channels -->
-                <waveLengthMin>0.6</waveLengthMin>
-                <waveLengthMax>0.9</waveLengthMax>
-                <waveLengthRef>0.55</waveLengthRef>
+                <!--
+                    <resolution>150</resolution>
+                    <waveLengthMin>0.6</waveLengthMin>
+                    <waveLengthMax>0.9</waveLengthMax>
+                -->
+                <table>
+                    <column quantity="lambda"/>
+                    <column quantity="delta_lambda"/>
+                    <!--
+                        <column quantity="nb_pix_Interf"/>
+                        <column quantity="nb_pix_Photo"/>
+                    -->
+                    <data>
+0.6142E-06    0.0036E-06
+0.6178E-06    0.0036E-06
+0.6214E-06    0.0036E-06
+0.6250E-06    0.0036E-06
+0.6287E-06    0.0036E-06
+0.6323E-06    0.0037E-06
+0.6360E-06    0.0037E-06
+0.6396E-06    0.0037E-06
+0.6433E-06    0.0037E-06
+0.6470E-06    0.0037E-06
+0.6508E-06    0.0038E-06
+0.6545E-06    0.0038E-06
+0.6583E-06    0.0038E-06
+0.6622E-06    0.0038E-06
+0.6660E-06    0.0039E-06
+0.6699E-06    0.0039E-06
+0.6738E-06    0.0039E-06
+0.6778E-06    0.0040E-06
+0.6818E-06    0.0040E-06
+0.6858E-06    0.0041E-06
+0.6899E-06    0.0041E-06
+0.6941E-06    0.0042E-06
+0.6982E-06    0.0042E-06
+0.7025E-06    0.0043E-06
+0.7068E-06    0.0043E-06
+0.7111E-06    0.0044E-06
+0.7155E-06    0.0044E-06
+0.7200E-06    0.0045E-06
+0.7245E-06    0.0046E-06
+0.7291E-06    0.0046E-06
+0.7337E-06    0.0047E-06
+0.7385E-06    0.0048E-06
+0.7433E-06    0.0048E-06
+0.7481E-06    0.0049E-06
+0.7531E-06    0.0050E-06
+0.7581E-06    0.0051E-06
+0.7632E-06    0.0051E-06
+0.7684E-06    0.0052E-06
+0.7736E-06    0.0053E-06
+0.7790E-06    0.0054E-06
+0.7844E-06    0.0055E-06
+0.7900E-06    0.0056E-06
+0.7956E-06    0.0057E-06
+0.8013E-06    0.0058E-06
+0.8071E-06    0.0059E-06
+0.8130E-06    0.0060E-06
+0.8190E-06    0.0061E-06
+0.8252E-06    0.0062E-06
+0.8314E-06    0.0063E-06
+0.8377E-06    0.0064E-06
+0.8442E-06    0.0065E-06
+0.8507E-06    0.0066E-06
+0.8574E-06    0.0067E-06
+0.8642E-06    0.0068E-06
+0.8711E-06    0.0070E-06
+0.8781E-06    0.0071E-06
+0.8852E-06    0.0072E-06
+0.8925E-06    0.0073E-06
+0.8999E-06    0.0074E-06
+                    </data>
+                </table>
             </mode>
 
             <mode>
                 <name>MR640</name>
-                <resolution>3779</resolution> <!-- not 4400 for 500 channels -->
+                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.600</waveLengthMin>
-                <waveLengthMax>0.685</waveLengthMax>
+                <waveLengthMax>0.688</waveLengthMax>
                 <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
                 <name>MR720</name>
-                <resolution>4250</resolution> <!-- not 4400 for 500 channels -->
+                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.680</waveLengthMin>
-                <waveLengthMax>0.765</waveLengthMax>
+                <waveLengthMax>0.768</waveLengthMax>
                 <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
                 <name>MR800</name>
-                <resolution>4720</resolution> <!-- not 4400 for 500 channels -->
+                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.760</waveLengthMin>
-                <waveLengthMax>0.845</waveLengthMax>
+                <waveLengthMax>0.848</waveLengthMax>
                 <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
                 <name>MR855</name>
-                <resolution>5044</resolution> <!-- not 4400 for 500 channels -->
+                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.815</waveLengthMin>
-                <waveLengthMax>0.900</waveLengthMax>
+                <waveLengthMax>0.903</waveLengthMax>
                 <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
                 <name>HR</name>
-                <resolution>12931</resolution> <!-- not 13100 for 500 channels -->
+                <resolution>13213</resolution> <!-- not 13100 for 500 channels -->
                 <waveLengthMin>0.600</waveLengthMin>
                 <waveLengthMax>0.900</waveLengthMax>
                 <waveLengthRef>0.550</waveLengthRef>
-                <waveLengthBandRef>0.029</waveLengthBandRef>
-                <ft_waveLengthBandRef>0.029</ft_waveLengthBandRef>
+                <waveLengthBandRef>0.0291</waveLengthBandRef>
+                <ft_waveLengthBandRef>0.0291</ft_waveLengthBandRef>
             </mode>
         </focalInstrument>
 

@@ -29,6 +29,7 @@
             <pubDate>Mon, 06 Mar 2023 15:00:00 GMT</pubDate>
             <prerelease version="2023.0306 beta 1">
                 <change type="FEATURE">VLTI: fixed ESO Period 111 and 112 for UTs (UT1 on DL5, not DL1)</change>
+                <change type="FEATURE">CHARA: updated SPICA instrument modes (LR)</change>
             </prerelease>
         </release>
         <release version="2023.0302">
