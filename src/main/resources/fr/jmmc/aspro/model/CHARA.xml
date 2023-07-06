@@ -1194,8 +1194,8 @@
             <description>SPICA instrument (4T-6T)</description>
 
             <oiVisData>true</oiVisData>
-            <oiVisAmpDiff>true</oiVisAmpDiff>
-            <oiVisPhiDiff>true</oiVisPhiDiff>
+            <oiVisAmpDiff>false</oiVisAmpDiff>
+            <oiVisPhiDiff>false</oiVisPhiDiff>
             <oiVis2Extra>true</oiVis2Extra>
 
             <fringeTracker>FT_SPICA</fringeTracker>

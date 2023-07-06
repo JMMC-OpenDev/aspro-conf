@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2023.0306"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="06/03/2023" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2023.0706"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="07/06/2023" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2023.0307">
+            <pubDate>Thu, 07 Jul 2023 10:00:00 GMT</pubDate>
+            <prerelease version="2023.0307 beta 1">
+                <change type="FEATURE">CHARA: fixed SPICA instrument configuration to compute absolute visibilities (VISAMP/VISPHI), not differential in OI_VIS tables</change>
+            </prerelease>
+        </release>
         <release version="2023.0306">
             <pubDate>Mon, 06 Mar 2023 15:00:00 GMT</pubDate>
             <prerelease version="2023.0306 beta 1">
