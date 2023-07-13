@@ -6647,9 +6647,11 @@
 
             <mode>FringeTrack GRA4MAT</mode>
 
-            <instrumentVisibility>0.95</instrumentVisibility>
+            <!-- ideal for MATISSE -->
+            <instrumentVisibility>1.0</instrumentVisibility>
 
             <!-- K=8.5 max for MATISSE -->
+            <!-- TODO: check atmospheric conditions -->
             <magLimit>8.5</magLimit>
             <!-- up to 10 seconds -->
             <maxIntegration>10</maxIntegration>
@@ -7285,8 +7287,8 @@
                 <frameTime>0.156</frameTime>
 
                 <!-- FT setup (LOW) -->
-                <ft_dit>1.0</ft_dit>
-                <ft_frameTime>1.117</ft_frameTime>
+                <ft_dit>0.6</ft_dit>
+                <ft_frameTime>1.205</ft_frameTime>
 
                 <!-- lambda: 2.86 - 4.18 -->
 
@@ -7382,8 +7384,8 @@
                 <frameTime>0.222</frameTime>
 
                 <!-- FT setup (LOW) -->
-                <ft_dit>1.0</ft_dit>
-                <ft_frameTime>1.117</ft_frameTime>
+                <ft_dit>0.6</ft_dit>
+                <ft_frameTime>1.205</ft_frameTime>
 
                 <!-- lambda: 2.86 - 4.90 (cut between 4.2 to 4.45) -->
 
@@ -7528,8 +7530,8 @@
                 <frameTime>0.120</frameTime>
 
                 <!-- FT setup (LOW) -->
-                <ft_dit>1.0</ft_dit>
-                <ft_frameTime>1.117</ft_frameTime>
+                <ft_dit>0.6</ft_dit>
+                <ft_frameTime>1.205</ft_frameTime>
 
                 <!-- lambda: 4.48 - 5.00 -->
 
@@ -7604,8 +7606,8 @@
                 <frameTime>0.228</frameTime>
 
                 <!-- FT setup (MED/HIGH) -->
-                <ft_dit>10.0</ft_dit>
-                <ft_frameTime>11.074</ft_frameTime>
+                <ft_dit>3.0</ft_dit>
+                <ft_frameTime>4.074</ft_frameTime>
 
                 <!-- lambda: 2.8 - 5.0 (cut between 4.2 to 4.45) -->
                 <!-- delta lambda: 0.16 -->
@@ -9188,8 +9190,8 @@
                 <frameTime>0.228</frameTime>
 
                 <!-- FT setup (MED/HIGH) -->
-                <ft_dit>10.0</ft_dit>
-                <ft_frameTime>11.074</ft_frameTime>
+                <ft_dit>5.0</ft_dit>
+                <ft_frameTime>6.074</ft_frameTime>
 
                 <!-- lambda: 2.8 - 4.20 -->
                 <!-- delta lambda: 0.08 -->
