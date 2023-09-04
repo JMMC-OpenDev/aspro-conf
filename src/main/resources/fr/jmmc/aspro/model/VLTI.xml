@@ -95,7 +95,6 @@
 
             <!--
               Moon Pointing Restrictions on UT = Same rules as AT
-              TODO: still valid in 2019 ?
             -->
             <moonPointingRestriction>
                 <warningThreshold>20.0</warningThreshold>
@@ -6651,9 +6650,11 @@
             <instrumentVisibility>1.0</instrumentVisibility>
 
             <!-- K=8.5 max for MATISSE -->
-            <!-- TODO: check atmospheric conditions -->
-            <magLimit>8.5</magLimit>
-            <!-- up to 10 seconds -->
+            <magLimit atmosphereQuality="Excellent">8.5</magLimit>
+            <magLimit atmosphereQuality="Good">8.0</magLimit>
+            <magLimit>7.0</magLimit> <!-- Average or lower (default) -->
+
+            <!-- up to 10 seconds (see specific ft_dit in MATISSE instrument modes) -->
             <maxIntegration>10</maxIntegration>
         </fringeTracker>
 
@@ -7173,6 +7174,12 @@
             <oiVisAmpDiff>false</oiVisAmpDiff>
             <oiVisPhiDiff>true</oiVisPhiDiff>
             <oiVis2Extra>true</oiVis2Extra>
+
+            <spatialFilter>
+                <!-- 1.5 lambda / diameter for LM at 3.5 µm -->
+                <scalingFactor>1.5</scalingFactor>
+                <waveLengthRef>3.5</waveLengthRef>
+            </spatialFilter>
 
             <fringeTracker>GRA4MAT</fringeTracker>
             <fringeTrackerRequired>false</fringeTrackerRequired>
@@ -14660,6 +14667,12 @@
             <oiVisPhiDiff>true</oiVisPhiDiff>
             <oiVis2Extra>true</oiVis2Extra>
 
+            <spatialFilter>
+                <!-- 2.0 lambda / diameter for N at 10.5 µm -->
+                <scalingFactor>2.0</scalingFactor>
+                <waveLengthRef>10.5</waveLengthRef>
+            </spatialFilter>
+
             <!-- 2020.1: GRA4MAT disabled in N band as it provides no gain -->
             <!--
                     <fringeTracker>GRA4MAT</fringeTracker>
@@ -14910,9 +14923,9 @@
                 <frameTime>0.084</frameTime>
 
                 <!-- FT setup (no longer DIT because of detector saturation) -->
-                <!-- dit: 20ms / 26ms -->
-                <ft_dit>0.020</ft_dit>
-                <ft_frameTime>0.026</ft_frameTime>
+                <!-- dit: 75ms / 84ms -->
+                <ft_dit>0.075</ft_dit>
+                <ft_frameTime>0.084</ft_frameTime>
 
                 <!-- lambda: 7.90 - 13.00 -->
 

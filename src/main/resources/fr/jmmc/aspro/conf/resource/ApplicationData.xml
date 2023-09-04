@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2023.0713"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="13/07/2023" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2023.0904"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="04/09/2023" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2023.0904">
+            <pubDate>Mon, 04 Sep 2023 16:00:00 GMT</pubDate>
+            <prerelease version="2023.0904 beta 1">
+                <change type="FEATURE">VLTI: fixed MATISSE LM/N spatial filter parameters (apodization)</change>
+                <change type="FEATURE">VLTI: fixed limiting magnitudes for GRA4MAT observations (MATISSE)</change>
+            </prerelease>
+        </release>
         <release version="2023.0713">
             <pubDate>Thu, 13 Jul 2023 17:00:00 GMT</pubDate>
             <prerelease version="2023.0713 beta 1">
