@@ -28,6 +28,7 @@
         <release version="2023.0911">
             <pubDate>Mon, 11 Sep 2023 12:00:00 GMT</pubDate>
             <prerelease version="2023.0911 beta 1">
+                <change type="FEATURE">CHARA: added semester 2024A</change>
                 <change type="FEATURE">VLTI: added transmission loss (30%) for the double-path configuration (extended)</change>
                 <change type="FEATURE">VLTI: fixed limiting magnitudes for GRAVITY fringe tracker</change>
                 <change type="FEATURE">VLTI: added ESO Period 113 (= 112)</change>
