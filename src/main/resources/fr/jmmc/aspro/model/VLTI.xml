@@ -638,6 +638,12 @@
         <delayLineMode>
             <name>DBL_PATH</name>
             <description>double-path</description>
+            <!--
+            From MATISSE: The extended AT-array configuration relies on additional optics to increase the delay line stroke
+            and thus sky coverage. For MATISSE, these additional reflections mean that all limiting fluxes below have to be considered
+            as to be 30% worse for observations on the extended configuration.
+            -->
+            <transmission>0.7</transmission>
         </delayLineMode>
 
         <!-- DL: fixed may 2016:
@@ -6630,12 +6636,22 @@
 
             <mode>FringeTrack GRAVITY</mode>
 
+            <!-- TODO: change ratio if SCI != FT (dual) ? -->
             <!-- split 50% (FT) / 50% SCI -->
             <instrumentVisibility>0.5</instrumentVisibility>
 
-            <!-- K=10 (UT), K=8 (AT) -->
-            <!-- 2018/07: use lower limit (SC+3m = 13.5) -->
-            <magLimit>13.5</magLimit>
+            <!-- K=8.0-10.0 max on UTs (+0.5 for off-axis) -->
+            <magLimit atmosphereQuality="Excellent" telescope="UT">10.5</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="UT">10.0</magLimit>
+            <magLimit atmosphereQuality="Average" telescope="UT">9.5</magLimit>
+            <magLimit telescope="UT">8.5</magLimit> <!-- WORSE or lower atm (default) -->
+
+            <!-- K=7.0-9.0 max on ATs (+0.5 for off-axis) -->
+            <magLimit atmosphereQuality="Excellent" telescope="AT">9.5</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="AT">9.0</magLimit>
+            <magLimit atmosphereQuality="Average" telescope="AT">8.5</magLimit>
+            <magLimit>7.5</magLimit> <!-- Worse or lower atm (default) -->
+
             <!-- up to 60 seconds -->
             <maxIntegration>60</maxIntegration>
         </fringeTracker>
@@ -6649,10 +6665,15 @@
             <!-- ideal for MATISSE -->
             <instrumentVisibility>1.0</instrumentVisibility>
 
-            <!-- K=8.5 max for MATISSE -->
-            <magLimit atmosphereQuality="Excellent">8.5</magLimit>
-            <magLimit atmosphereQuality="Good">8.0</magLimit>
-            <magLimit>7.0</magLimit> <!-- Average or lower (default) -->
+            <!-- K=9.0-10.5 max for MATISSE on UTs -->
+            <magLimit atmosphereQuality="Excellent" telescope="UT">10.5</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="UT">10.0</magLimit>
+            <magLimit telescope="UT">9.0</magLimit> <!-- Average or lower atm (default) -->
+
+            <!-- K=7.0-8.5 max for MATISSE on ATs -->
+            <magLimit atmosphereQuality="Excellent" telescope="AT">8.5</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="AT">8.0</magLimit>
+            <magLimit>7.0</magLimit> <!-- Average or lower atm (default) -->
 
             <!-- up to 10 seconds (see specific ft_dit in MATISSE instrument modes) -->
             <maxIntegration>10</maxIntegration>
@@ -15792,6 +15813,224 @@
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
     <configuration>
+        <version>Period 113</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY_FT</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <!-- MATISSE offered with same configurations as PIONIER -->
+        <instrument>
+            <focalInstrument>MATISSE_LM</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MATISSE_N</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
+    <configuration>
         <version>Period 112</version>
         <interferometer>VLTI</interferometer>
         <switchyard>sw_STS</switchyard>
@@ -21053,6 +21292,14 @@
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
             <!-- P105 -->
             <configuration>
                 <altName>Medium</altName>
@@ -21293,6 +21540,14 @@
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
@@ -21535,6 +21790,14 @@
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
             <!-- P105 -->
             <configuration>
                 <altName>Medium</altName>
@@ -21776,6 +22039,14 @@
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
             <!-- P105 -->
             <configuration>
                 <altName>Medium</altName>
@@ -22016,6 +22287,14 @@
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
