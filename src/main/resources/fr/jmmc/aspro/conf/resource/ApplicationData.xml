@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2023.0911"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="11/09/2023" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2023.0914"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="14/09/2023" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2023.0914">
+            <pubDate>Thu, 14 Sep 2023 14:00:00 GMT</pubDate>
+            <prerelease version="2023.0914 beta 1">
+                <change type="FEATURE">CHARA: added SPICA to semester 2024A</change>
+            </prerelease>
+        </release>
         <release version="2023.0911">
             <pubDate>Mon, 11 Sep 2023 12:00:00 GMT</pubDate>
             <prerelease version="2023.0911 beta 1">

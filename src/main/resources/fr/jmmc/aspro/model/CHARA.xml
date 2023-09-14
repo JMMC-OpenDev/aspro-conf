@@ -1239,11 +1239,6 @@
             -->
             <mode>
                 <name>LR</name>
-                <!--
-                    <resolution>150</resolution>
-                    <waveLengthMin>0.6</waveLengthMin>
-                    <waveLengthMax>0.9</waveLengthMax>
-                -->
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -1320,7 +1315,6 @@
                 <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.600</waveLengthMin>
                 <waveLengthMax>0.688</waveLengthMax>
-                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -1328,7 +1322,6 @@
                 <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.680</waveLengthMin>
                 <waveLengthMax>0.768</waveLengthMax>
-                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -1336,7 +1329,6 @@
                 <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.760</waveLengthMin>
                 <waveLengthMax>0.848</waveLengthMax>
-                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -1344,7 +1336,6 @@
                 <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
                 <waveLengthMin>0.815</waveLengthMin>
                 <waveLengthMax>0.903</waveLengthMax>
-                <waveLengthRef>0.550</waveLengthRef>
             </mode>
 
             <mode>
@@ -1352,7 +1343,7 @@
                 <resolution>13213</resolution> <!-- not 13100 for 500 channels -->
                 <waveLengthMin>0.600</waveLengthMin>
                 <waveLengthMax>0.900</waveLengthMax>
-                <waveLengthRef>0.550</waveLengthRef>
+                <waveLengthRef>0.720</waveLengthRef>
                 <waveLengthBandRef>0.0291</waveLengthBandRef>
                 <ft_waveLengthBandRef>0.0291</ft_waveLengthBandRef>
             </mode>
@@ -2327,6 +2318,104 @@
             <configuration>
                 <stations>W1 W2</stations>
                 <channels>V1 V2</channels>
+            </configuration>
+        </instrument>
+
+
+        <!-- SPICA (4T-6T) -->
+        <instrument>
+            <focalInstrument>SPICA</focalInstrument>
+            <!-- SPICA 6T like MIRC-MYSTIC (22.09) -->
+            <!-- 6T -->
+            <configuration>
+                <stations>E1 W2 W1 S2 S1 E2</stations>
+                <channels>V1 V2 V3 V4 V5 V6</channels>
+            </configuration>
+            <!-- 5T -->
+            <configuration>
+                <stations>E1 W2 W1 S2 S1</stations>
+                <channels>V1 V2 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S2 E2</stations>
+                <channels>V1 V2 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S1 E2</stations>
+                <channels>V1 V2 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 S1 E2</stations>
+                <channels>V1 V2 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 S1 E2</stations>
+                <channels>V1 V3 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 S1 E2</stations>
+                <channels>V2 V3 V4 V5 V6</channels>
+            </configuration>
+            <!-- 4T -->
+            <configuration>
+                <stations>E1 W2 W1 S2</stations>
+                <channels>V1 V2 V3 V4</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 S1</stations>
+                <channels>V1 V2 V3 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 W1 E2</stations>
+                <channels>V1 V2 V3 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 S1</stations>
+                <channels>V1 V2 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S2 E2</stations>
+                <channels>V1 V2 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W2 S1 E2</stations>
+                <channels>V1 V2 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 S1</stations>
+                <channels>V1 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S2 E2</stations>
+                <channels>V1 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 W1 S1 E2</stations>
+                <channels>V1 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>E1 S2 S1 E2</stations>
+                <channels>V1 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 S1</stations>
+                <channels>V2 V3 V4 V5</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S2 E2</stations>
+                <channels>V2 V3 V4 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 W1 S1 E2</stations>
+                <channels>V2 V3 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W2 S2 S1 E2</stations>
+                <channels>V2 V4 V5 V6</channels>
+            </configuration>
+            <configuration>
+                <stations>W1 S2 S1 E2</stations>
+                <channels>V3 V4 V5 V6</channels>
             </configuration>
         </instrument>
     </configuration>
