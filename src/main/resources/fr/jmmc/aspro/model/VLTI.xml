@@ -6636,9 +6636,10 @@
 
             <mode>FringeTrack GRAVITY</mode>
 
-            <!-- TODO: change ratio if SCI != FT (dual) ? -->
-            <!-- split 50% (FT) / 50% SCI -->
-            <instrumentVisibility>0.5</instrumentVisibility>
+            <!-- TODO: indicate associated instrument and mode -->
+
+            <!-- TODO: change transmission for on-axis / off-axis (1.0 or 0.5) -->
+            <instrumentVisibility>1.0</instrumentVisibility>
 
             <!-- K=8.0-10.0 max on UTs (+0.5 for off-axis) -->
             <magLimit atmosphereQuality="Excellent" telescope="UT">10.5</magLimit>
@@ -6652,8 +6653,8 @@
             <magLimit atmosphereQuality="Average" telescope="AT">8.5</magLimit>
             <magLimit>7.5</magLimit> <!-- Worse or lower atm (default) -->
 
-            <!-- up to 60 seconds -->
-            <maxIntegration>60</maxIntegration>
+            <!-- up to 100 seconds -->
+            <maxIntegration>100</maxIntegration>
         </fringeTracker>
 
         <fringeTracker>
@@ -7064,20 +7065,22 @@
                 -->
                 <dit>0.3</dit>
 
-                <ron>10</ron>
+                <ron>3.5</ron>
                 <detectorSaturation>50000</detectorSaturation>
+                <quantumEfficiency>0.81</quantumEfficiency>
 
-                <fracFluxInInterferometry>0.3</fracFluxInInterferometry>
-                <fracFluxInPhotometry>1.0</fracFluxInPhotometry>
+                <fracFluxInInterferometry>1.0</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
 
-                <nbPixInterferometry>4</nbPixInterferometry>
-                <nbPixPhotometry>4</nbPixPhotometry>
+                <!-- 1px per channel (4px for fringes ?) -->
+                <nbPixInterferometry>4.0</nbPixInterferometry>
+                <nbPixPhotometry>0</nbPixPhotometry>
 
                 <transmission>0.01</transmission>
                 <instrumentVisibility>0.9</instrumentVisibility>
 
-                <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
-                <instrumentPhaseBias>2.0</instrumentPhaseBias>
+                <instrumentVisibilityBias>0.5</instrumentVisibilityBias>
+                <instrumentPhaseBias>1.0</instrumentPhaseBias>
             </setup>
 
             <mode>
@@ -7151,34 +7154,30 @@
                 <name>GRAVITY_FT_SETUP</name>
                 <description>GRAVITY Fringe tracker (4T)</description>
 
-                <defaultTotalIntegrationTime>1</defaultTotalIntegrationTime>
+                <!-- OSO: 2x 300s (Object) + 300s (Sky) -->
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
                 <defaultSamplingTime>60</defaultSamplingTime>
-                <!-- 1Khz -->
+
+                <!-- 1 khz -->
                 <dit>0.001</dit>
-                <ron>1</ron>
+                <ron>0.57</ron>
                 <detectorSaturation>50000</detectorSaturation>
+                <quantumEfficiency>0.8</quantumEfficiency>
 
                 <fracFluxInInterferometry>1.0</fracFluxInInterferometry>
                 <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
 
-                <!-- 1px per channel -->
-                <nbPixInterferometry>1</nbPixInterferometry>
+                <!-- 1px per channel (4px for fringes ?) -->
+                <nbPixInterferometry>4.0</nbPixInterferometry>
                 <nbPixPhotometry>0</nbPixPhotometry>
 
                 <transmission>0.01</transmission>
-                <!-- half of light is going to SCIENCE (50% * 95% efficiency) -->
-                <instrumentVisibility>0.48</instrumentVisibility>
+                <instrumentVisibility>0.9</instrumentVisibility>
 
-                <instrumentVisibilityBias>1.0</instrumentVisibilityBias>
+                <instrumentVisibilityBias>0.5</instrumentVisibilityBias>
                 <instrumentPhaseBias>1.0</instrumentPhaseBias>
             </setup>
 
-            <mode>
-                <name>KALMAN</name>
-                <resolution>1</resolution>
-                <waveLengthMin>1.95</waveLengthMin>
-                <waveLengthMax>2.45</waveLengthMax>
-            </mode>
             <mode>
                 <name>LOW</name>
                 <resolution>22</resolution>

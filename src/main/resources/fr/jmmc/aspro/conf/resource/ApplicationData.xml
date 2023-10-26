@@ -25,6 +25,12 @@
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2023.1026">
+            <pubDate>Thu, 26 Oct 2023 16:00:00 GMT</pubDate>
+            <prerelease version="2023.1026 beta 1">
+                <change type="FEATURE">VLTI: updated GRAVITY &amp; GRAVITY_FT noise parameters</change>
+            </prerelease>
+        </release>
         <release version="2023.0914">
             <pubDate>Thu, 14 Sep 2023 14:00:00 GMT</pubDate>
             <prerelease version="2023.0914 beta 1">
