@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2023.1205"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="05/12/2023" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2023.1214"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="14/12/2023" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2023.1214">
+            <pubDate>Thu, 14 Dec 2023 20:00:00 GMT</pubDate>
+            <prerelease version="2023.1214 beta 1">
+                <change type="FEATURE">VLTI: fixed transmission profiles for GRAVITY &amp; GRAVITY_FT</change>
+                <change type="FEATURE">VLTI: refined GPAO_NGS_VIS (UT)</change>
+            </prerelease>
+        </release>
         <release version="2023.1205">
             <pubDate>Tue, 05 Dec 2023 16:00:00 GMT</pubDate>
             <prerelease version="2023.1205 beta 1">
