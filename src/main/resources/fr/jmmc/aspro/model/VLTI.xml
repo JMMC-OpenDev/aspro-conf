@@ -7089,16 +7089,10 @@
                 <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
                 <defaultSamplingTime>60</defaultSamplingTime>
 
-                <!--
-                Spectral Resolution 	Number of Pixels 	Minimum DIT (ms)
-                22 	640x10 	1.5
-                500 	640x256 	30
-                4000 	640x2048 	300
-                -->
-                <dit>0.3</dit>
+                <dit>0.3</dit> <!-- shortest dit -->
 
                 <ron>NaN</ron>
-                <detectorSaturation>20000</detectorSaturation>
+                <detectorSaturation>32768</detectorSaturation>
                 <quantumEfficiency>0.81</quantumEfficiency>
 
                 <fracFluxInInterferometry>1.0</fracFluxInInterferometry>
@@ -7120,6 +7114,8 @@
                   1) COMBINED LOW R~50 (13 canaux)
                 -->
                 <name>LOW-COMBINED</name>
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -7155,6 +7151,8 @@
                   1) SPLIT LOW R~50 (13 canaux)
                 -->
                 <name>LOW-SPLIT</name>
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -7190,6 +7188,8 @@
                   2) COMBINED MEDIUM R~1100 (233 canaux)
                 -->
                 <name>MEDIUM-COMBINED</name>
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -7444,6 +7444,8 @@
                   2) SPLIT MEDIUM R~1100 (233 canaux)
                 -->
                 <name>MEDIUM-SPLIT</name>
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -7698,9 +7700,8 @@
                   3) COMBINED HIGH R~8000 (1628 canaux spectraux)
                 -->
                 <name>HIGH-COMBINED</name>
-                <resolution>8000</resolution>
-                <waveLengthMin>1.95</waveLengthMin>
-                <waveLengthMax>2.45</waveLengthMax>
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -9350,6 +9351,8 @@
                   3) SPLIT HIGH R~8000 (1628 canaux spectraux)
                 -->
                 <name>HIGH-SPLIT</name>
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
@@ -11016,9 +11019,9 @@
                 <defaultSamplingTime>60</defaultSamplingTime>
 
                 <!-- 1 khz -->
-                <dit>0.001</dit>
+                <dit>0.001</dit> <!-- shortest dit -->
                 <ron>0.57</ron>
-                <detectorSaturation>32000</detectorSaturation>
+                <detectorSaturation>32768</detectorSaturation>
                 <quantumEfficiency>0.8</quantumEfficiency>
 
                 <fracFluxInInterferometry>1.0</fracFluxInInterferometry>
@@ -11037,11 +11040,8 @@
 
             <mode>
                 <name>LOW</name>
-<!--
-                <resolution>22</resolution>
-                <waveLengthMin>1.95</waveLengthMin>
-                <waveLengthMax>2.45</waveLengthMax>
--->
+                <!-- use 2.2 microns as reference channel -->
+                <waveLengthRef>2.2</waveLengthRef>
                 <table>
                     <column quantity="lambda"/>
                     <column quantity="delta_lambda"/>
