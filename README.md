@@ -1,19 +1,21 @@
-# Aspro2-conf    ![JMMC logo](doc/JMMC-logo.jpg)
-
+# ![JMMC logo](https://github.com/JMMC-OpenDev/.github/blob/main/doc/JMMC-logo.jpg) OpenDev - ASPRO2-conf
 This module contains the ASPRO2 configuration files developed by the JMMC technical team.
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+
+## License
+See [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 
-See [ASPRO2](https://www.jmmc.fr/aspro)
-See [ASPRO2 @ github](https://github.com/JMMC-OpenDev/aspro)
-See [JMMC OpenDev @ github](https://github.com/JMMC-OpenDev)
-
-See [CI nightly builds](https://github.com/JMMC-OpenDev/jmmc-java-build/actions/workflows/build.yml)
+## Links:
+- [ASPRO2](https://www.jmmc.fr/aspro)
+- [ASPRO2 @ github](https://github.com/JMMC-OpenDev/aspro)
+- [JMMC OpenDev @ github](https://github.com/JMMC-OpenDev/)
+- [JMMC releases](https://www.jmmc.fr/releases/)
+- [CI nightly builds](https://github.com/JMMC-OpenDev/jmmc-java-build/actions/workflows/build.yml)
+- [JMMC Web site](https://www.jmmc.fr)
 
 
 ## Documentation
-
 This module contains several XML files describing optical interferometers & their instruments, mainly VLTI & CHARA.
 
 See [ASPRO2 configuration description](http://www.jmmc.fr/twiki/bin/view/Jmmc/Software/JmmcAspro2#Supported_interferometers_and_in)
@@ -43,7 +45,6 @@ Finally aspro-conf contains 1 atmosphere transmission profile (ESO VLTI seasonal
 
 
 ## Build
-
 This JMMC module uses java / maven to build the jar file, to be integrated into ASPRO2 software.
 
 Requirements:
@@ -52,4 +53,3 @@ Requirements:
 
 See [JMMC Java Build](https://github.com/JMMC-OpenDev/jmmc-java-build)
 See [CI nightly builds](https://github.com/JMMC-OpenDev/jmmc-java-build/actions/workflows/build.yml)
-
