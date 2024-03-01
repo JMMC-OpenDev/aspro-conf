@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2023.1214"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="14/12/2023" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2024.0301"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="01/03/2024" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2024.0301">
+            <pubDate>Thu, 01 Mar 2024 20:00:00 GMT</pubDate>
+            <prerelease version="2023.0301 beta 1">
+                <change type="FEATURE">VLTI: added GPAO_NGS_IR and made GPAO_NGS_VIS the default AO (UT)</change>
+            </prerelease>
+        </release>
         <release version="2023.1214">
             <pubDate>Thu, 14 Dec 2023 20:00:00 GMT</pubDate>
             <prerelease version="2023.1214 beta 1">
