@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2024.0301"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="01/03/2024" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2024.0304"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="04/03/2024" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2024.0304">
+            <pubDate>Mon, 04 Mar 2024 16:00:00 GMT</pubDate>
+            <prerelease version="2023.0304 beta 1">
+                <change type="FEATURE">CHARA: corrected AO parameters</change>
+                <change type="FEATURE">VLTI: fixed GPAO_NGS_IR and CIAO parameters (GRAVITY UT)</change>
+            </prerelease>
+        </release>
         <release version="2024.0301">
             <pubDate>Thu, 01 Mar 2024 20:00:00 GMT</pubDate>
             <prerelease version="2023.0301 beta 1">

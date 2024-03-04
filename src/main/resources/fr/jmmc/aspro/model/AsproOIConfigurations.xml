@@ -23,12 +23,12 @@
 
     <interferometerFile>
         <file>VLTI.xml</file>
-        <checksum>7175283360375767040</checksum>
+        <checksum>8620636580714008576</checksum>
     </interferometerFile>
 
     <interferometerFile>
         <file>CHARA.xml</file>
-        <checksum>3220352304617095168</checksum>
+        <checksum>6368730079985827840</checksum>
     </interferometerFile>
 
     <interferometerFile>
