@@ -68,7 +68,7 @@
             Bande Rmag
             -->
             <adaptiveOptics>
-                <name>AO_GPAO</name>
+                <name>AO_GPAO_NGS_VIS</name>
                 <band>R</band>
                 <setup>
                     <name>GPAO_NGS_VIS</name>
@@ -78,16 +78,24 @@
                     <ron>0.25</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
                 </setup>
+                <!-- GPAO NGS / VLTI: The guide star must be brighter than G = 12.5 (max) -->
+                <magLimit>12.5</magLimit>
+            </adaptiveOptics>
+
+            <adaptiveOptics>
+                <name>AO_GPAO_NGS_IR</name>
+                <band>K</band>
+                <instrumentBand>K</instrumentBand>
                 <setup>
                     <name>GPAO_NGS_IR</name>
                     <numberSubPupils>81</numberSubPupils>
-                    <numberActuators>44</numberActuators>
+                    <numberActuators>60</numberActuators>
                     <dit>2.0</dit> <!-- 500 Hz -->
-                    <ron>6.5</ron>
+                    <ron>60.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
                 </setup>
-                <!-- GPAO NGS / VLTI: The guide star must be brighter than R = 16 (max) -->
-                <magLimit>16</magLimit>
+                <!-- GPAO_NGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
+                <magLimit>10.5</magLimit>
             </adaptiveOptics>
 
             <!-- CIAO IR wavefront sensor specific to GRAVITY -->
@@ -98,18 +106,18 @@
                 <setup>
                     <name>CIAO_ON_AXIS</name>
                     <numberSubPupils>81</numberSubPupils>
-                    <numberActuators>50</numberActuators>
-                    <dit>1.5</dit>
-                    <ron>5.0</ron>
+                    <numberActuators>70</numberActuators>
+                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <ron>30.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
-                    <transmission>0.5</transmission> <!-- 50% in FT, 50% in instrument -->
+                    <transmission>0.5</transmission> <!-- 50% in AO, 50% in instrument -->
                 </setup>
                 <setup>
                     <name>CIAO_OFF_AXIS</name>
                     <numberSubPupils>81</numberSubPupils>
-                    <numberActuators>44</numberActuators>
+                    <numberActuators>60</numberActuators>
                     <dit>2.0</dit> <!-- 500 Hz -->
-                    <ron>6.5</ron>
+                    <ron>60.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
                 </setup>
                 <!-- CIAO / VLTI: The guide star must be brighter than K = 10 (max) -->
@@ -7117,6 +7125,8 @@
                 <instrumentPhaseBias>1.0</instrumentPhaseBias>
             </setup>
 
+            <!-- GRAVITY (not FAINT): laser_on = True / ut_trans_improvement = 1.0 -->
+            <!-- 2024.03.02 -->
             <mode>
                 <!--
                   1) COMBINED LOW R~50 (13 canaux)
@@ -7132,10 +7142,6 @@
                     <column quantity="B_bkg"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	A_bkg	B_bkg	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 2.000000e-06	7.046e-08	1019.494964367	-6.539872527	18.040516005	0.004765082	0.007412350
 2.037000e-06	1.243e-07	383.616326283	-12.303952964	24.874664453	0.013490694	0.020985525
@@ -7169,10 +7175,6 @@
                     <column quantity="B_bkg"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	A_bkg	B_bkg	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 2.000000e-06	7.046e-08	574.685288443	1.099133436	13.363990057	0.002382541	0.003706175
 2.037000e-06	1.243e-07	237.512287005	0.326786880	13.948990931	0.006745347	0.010492762
@@ -7206,10 +7208,6 @@
                     <column quantity="B_bkg"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	A_bkg	B_bkg	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 1.970000e-06	4.397e-09	184.593367224	9.467556914	1.895809409	0.015307310	0.023811371
 1.972198e-06	4.397e-09	185.923822447	9.456902615	1.817172126	0.019702581	0.030648459
@@ -7462,10 +7460,6 @@
                     <column quantity="B_bkg"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	A_bkg	B_bkg	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 1.970000e-06	4.397e-09	100.855592141	9.379392561	4.365122518	0.007653655	0.011905686
 1.972198e-06	4.397e-09	103.020568870	9.527713870	4.134329001	0.009851290	0.015324230
@@ -7718,10 +7712,6 @@
                     <column quantity="B_bkg"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	A_bkg	B_bkg	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 1.970000e-06	5.286e-10	30.477332240	10.019392467	5.333368582	0.026606871	0.041388466
 1.970264e-06	5.286e-10	30.239729141	9.915524954	5.397245017	0.025218152	0.039228236
@@ -9369,10 +9359,6 @@
                     <column quantity="B_bkg"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	A_bkg	B_bkg	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 1.970000e-06	5.286e-10	31.265681648	8.608703741	5.791881080	0.013303436	0.020694233
 1.970264e-06	5.286e-10	31.617916753	8.728691106	5.704380777	0.012609076	0.019614118
@@ -11046,6 +11032,8 @@
                 <instrumentPhaseBias>1.0</instrumentPhaseBias>
             </setup>
 
+            <!-- GRAVITY (not FAINT): laser_on = True / ut_trans_improvement = 1.0 -->
+            <!-- 2024.03.02 -->
             <mode>
                 <name>LOW</name>
                 <!-- use 2.2 microns as reference channel -->
@@ -11056,10 +11044,6 @@
                     <column quantity="nb_photon_thermal"/>
                     <column quantity="transmission" telescope="AT"/>
                     <column quantity="transmission" telescope="UT"/>
-                    <!--
-# lambda	dlambda	nb_photon_thermal	trans_AT	trans_UT
-                    -->
-                    <!-- 2023.12.14 -->
                     <data>
 2.000790e-06	4.250e-08	6.000e+03	0.014771936	0.022978567
 2.071220e-06	4.250e-08	6.000e+03	0.065422218	0.101767894
