@@ -19718,6 +19718,14 @@
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
             <!-- P105 -->
             <configuration>
                 <altName>Medium</altName>
@@ -19759,6 +19767,14 @@
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
@@ -19803,6 +19819,14 @@
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
             </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
             <!-- P105 -->
             <configuration>
                 <altName>Medium</altName>
@@ -19844,6 +19868,14 @@
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>
@@ -19887,6 +19919,14 @@
                 <stations>A0 G1 J2 K0</stations>
                 <channels>IP1 IP3 IP5 IP7</channels>
                 <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
             </configuration>
             <!-- P105 -->
             <configuration>

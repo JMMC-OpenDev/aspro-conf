@@ -30,7 +30,7 @@
             <prerelease version="2024.0909 beta 1">
                 <change type="FEATURE">CHARA: added semester 2025A</change>
                 <change type="FEATURE">VLTI: removed CIAO and MACAO as available adaptive optics for UTs</change>
-                <change type="FEATURE">VLTI: added ESO Period 115 (= 114)</change>
+                <change type="FEATURE">VLTI: added ESO Period 115 (= 114) + new offered medium configuration 'A0 B5 D0 G1'</change>
             </prerelease>
         </release>
         <release version="2024.0321">
