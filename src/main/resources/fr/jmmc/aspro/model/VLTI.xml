@@ -78,7 +78,7 @@
                     <ron>0.25</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
                 </setup>
-                <!-- GPAO NGS / VLTI: The guide star must be brighter than G = 12.5 (max) -->
+                <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 12.5 (max) -->
                 <magLimit>12.5</magLimit>
             </adaptiveOptics>
 
@@ -86,6 +86,7 @@
                 <name>AO_GPAO_NGS_IR</name>
                 <band>K</band>
                 <instrumentBand>K</instrumentBand>
+                <!-- GPAO_NGS_IR = CIAO_OFF_AXIS -->
                 <setup>
                     <name>GPAO_NGS_IR</name>
                     <numberSubPupils>81</numberSubPupils>
@@ -95,10 +96,12 @@
                     <quantumEfficiency>0.70</quantumEfficiency>
                 </setup>
                 <!-- GPAO_NGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
-                <magLimit>10.5</magLimit>
+                <magLimit>10.0</magLimit>
             </adaptiveOptics>
 
             <!-- CIAO IR wavefront sensor specific to GRAVITY -->
+            <!-- renamed as NGS-IR in 2024.08 -->
+            <!--
             <adaptiveOptics>
                 <name>AO_CIAO</name>
                 <band>K</band>
@@ -107,23 +110,26 @@
                     <name>CIAO_ON_AXIS</name>
                     <numberSubPupils>81</numberSubPupils>
                     <numberActuators>70</numberActuators>
-                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <dit>2.0</dit> // 500 Hz
                     <ron>30.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
-                    <transmission>0.5</transmission> <!-- 50% in AO, 50% in instrument -->
+                    <transmission>0.5</transmission> // 50% in AO, 50% in instrument
                 </setup>
                 <setup>
                     <name>CIAO_OFF_AXIS</name>
                     <numberSubPupils>81</numberSubPupils>
                     <numberActuators>60</numberActuators>
-                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <dit>2.0</dit> // 500 Hz
                     <ron>60.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
                 </setup>
-                <!-- CIAO / VLTI: The guide star must be brighter than K = 10 (max) -->
-                <magLimit>10.5</magLimit>
+                // CIAO / VLTI: The guide star must be brighter than K = 10 (max)
+                <magLimit>10.0</magLimit>
             </adaptiveOptics>
+            -->
 
+            <!-- decomissioned in 2024.08 -->
+            <!--
             <adaptiveOptics>
                 <name>AO_MACAO</name>
                 <band>V</band>
@@ -131,13 +137,14 @@
                     <name>MACAO</name>
                     <numberSubPupils>60</numberSubPupils>
                     <numberActuators>50</numberActuators>
-                    <dit>0.80</dit> <!-- 1050 Hz -->
+                    <dit>0.80</dit> // 1050 Hz
                     <ron>1.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
                 </setup>
-                <!-- MACAO / VLTI: The guide star must be brighter than V = 16 (max) => 15 or 14 is 'safe' -->
+                // MACAO / VLTI: The guide star must be brighter than V = 16 (max) => 15 or 14 is 'safe'
                 <magLimit>16</magLimit>
             </adaptiveOptics>
+            -->
 
             <!--
               Moon Pointing Restrictions on UT = Same rules as AT
@@ -195,8 +202,8 @@
                     <ron>0.32</ron> <!-- 64e- / 200 -->
                     <quantumEfficiency>0.10</quantumEfficiency> <!-- transmission totale -->
                 </setup>
-                <!-- NAOMI / VLTI: The guide star must be brighter than R = 16 (max) -->
-                <magLimit>16</magLimit>
+                <!-- NAOMI / VLTI: The guide star must be brighter than G = 15 (max) -->
+                <magLimit>15.0</magLimit>
             </adaptiveOptics>
 
             <!-- STRAP: first tip tilt system on ATs -->
@@ -19681,6 +19688,224 @@
 
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
+    <configuration>
+        <version>Period 115</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY_FT</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <!-- MATISSE offered with same configurations as PIONIER -->
+        <instrument>
+            <focalInstrument>MATISSE_LM</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MATISSE_N</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
     <configuration>
         <version>Period 114</version>
         <interferometer>VLTI</interferometer>
