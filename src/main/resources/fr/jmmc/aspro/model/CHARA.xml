@@ -1239,6 +1239,13 @@
                 MR800, 4344, 760, 845, 500
                 MR855, 4344, 815, 900, 500
                 HR(lambda(nm)), 13213, lambda-29.06/2, lambda+29.06/2, 500
+            2024.12.04:
+                MR updates (add MR685, rename MR855->MR850):
+                MR640, 3678, 0.593, 0.6817, 500
+                MR685, 3936, 0.6377, 0.7264, 500
+                MR720, 4134, 0.6728, 0.7616, 500
+                MR800, 4582, 0.7557, 0.8445, 500
+                MR850, 4978, 0.8285, 0.9183, 500
             -->
             <mode>
                 <name>LR</name>
@@ -1315,34 +1322,42 @@
 
             <mode>
                 <name>MR640</name>
-                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
-                <waveLengthMin>0.600</waveLengthMin>
-                <waveLengthMax>0.688</waveLengthMax>
+                <resolution>3678</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.593</waveLengthMin>
+                <waveLengthMax>0.6817</waveLengthMax>
                 <waveLengthRef>0.640</waveLengthRef>
             </mode>
 
             <mode>
+                <name>MR685</name>
+                <resolution>3936</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.6377</waveLengthMin>
+                <waveLengthMax>0.7264</waveLengthMax>
+                <waveLengthRef>0.685</waveLengthRef>
+            </mode>
+
+            <mode>
                 <name>MR720</name>
-                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
-                <waveLengthMin>0.680</waveLengthMin>
-                <waveLengthMax>0.768</waveLengthMax>
+                <resolution>4134</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.6728</waveLengthMin>
+                <waveLengthMax>0.7616</waveLengthMax>
                 <waveLengthRef>0.720</waveLengthRef>
             </mode>
 
             <mode>
                 <name>MR800</name>
-                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
-                <waveLengthMin>0.760</waveLengthMin>
-                <waveLengthMax>0.848</waveLengthMax>
+                <resolution>4582</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.7557</waveLengthMin>
+                <waveLengthMax>0.8445</waveLengthMax>
                 <waveLengthRef>0.800</waveLengthRef>
             </mode>
 
             <mode>
-                <name>MR855</name>
-                <resolution>4344</resolution> <!-- not 4400 for 500 channels -->
-                <waveLengthMin>0.815</waveLengthMin>
-                <waveLengthMax>0.903</waveLengthMax>
-                <waveLengthRef>0.855</waveLengthRef>
+                <name>MR850</name>
+                <resolution>4978</resolution> <!-- not 4400 for 500 channels -->
+                <waveLengthMin>0.8285</waveLengthMin>
+                <waveLengthMax>0.9183</waveLengthMax>
+                <waveLengthRef>0.850</waveLengthRef>
             </mode>
 
             <mode>
