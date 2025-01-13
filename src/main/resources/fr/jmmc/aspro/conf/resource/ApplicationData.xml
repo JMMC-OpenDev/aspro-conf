@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2024.0909"/> <!-- 'YYYY.MMdd' -->
+    <program name="AsproConf" version="2025.0113"/> <!-- 'YYYY.MMdd' -->
     <compilation date="09/09/2024" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2025.0113">
+            <pubDate>Mon, 13 Jan 2025 16:00:00 GMT</pubDate>
+            <prerelease version="2025.0113 beta 1">
+                <change type="FEATURE">CHARA: add MR685, rename MR855->MR850 SPICA instrument modes</change>                
+            </prerelease>
+        </release>        
         <release version="2024.0909">
             <pubDate>Mon, 09 Sep 2024 16:00:00 GMT</pubDate>
             <prerelease version="2024.0909 beta 1">
