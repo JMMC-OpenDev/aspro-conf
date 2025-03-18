@@ -18,13 +18,20 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2025.0113"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="09/09/2024" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2025.0318"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="18/03/2025" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2025.0318">
+            <pubDate>Tue, 18 Mar 2025 16:00:00 GMT</pubDate>
+            <prerelease version="2025.0318 beta 1">
+                <change type="FEATURE">CHARA: added semester 2025B</change>
+                <change type="FEATURE">VLTI: added ESO Period 116 (= 115) but removed former medium configuration 'K0 G2 D0 J3'</change>
+            </prerelease>
+        </release>
         <release version="2025.0113">
             <pubDate>Mon, 13 Jan 2025 16:00:00 GMT</pubDate>
             <prerelease version="2025.0113 beta 1">
