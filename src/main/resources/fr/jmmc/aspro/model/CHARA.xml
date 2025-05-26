@@ -39,7 +39,9 @@
             <name>T</name>
             <diameter>1.0</diameter>
             <!-- if seeing is correct, it is possible point targets up to 88 deg; if not 85 deg is the max -->
-            <maxElevation>88.5</maxElevation>
+            <!-- 2025.5: lower max elevation to 85.0 as motors suffers rotating scope and report warning at 80.0  -->
+            <maxElevation>85.0</maxElevation>
+            <safeElevation>80.0</safeElevation>
 
             <adaptiveOptics>
                 <name>AO_CHARA</name>
