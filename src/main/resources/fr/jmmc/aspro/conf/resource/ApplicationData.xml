@@ -18,13 +18,21 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2025.0526"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="26/05/2025" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2025.0904"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="04/09/2025" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2025.0904">
+            <pubDate>Thu, 04 Sep 2025 10:00:00 GMT</pubDate>
+            <prerelease version="2025.0904 beta 1">
+                <change type="FEATURE">VLTI: updated GPAO_NGS parameters, added preliminary support for GPAO_LGS_VIS/IR offered in P117</change>
+                <change type="FEATURE">VLTI: fixed GRAVITY_FT/GRA4MAT magnitude limits</change>
+                <change type="FEATURE">VLTI: added ESO Period 117 (= 116)</change>
+            </prerelease>
+        </release>
         <release version="2025.0526">
             <pubDate>Mon, 26 May 2025 16:00:00 GMT</pubDate>
             <prerelease version="2025.0526 beta 1">
