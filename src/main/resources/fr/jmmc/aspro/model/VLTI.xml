@@ -72,14 +72,35 @@
                 <band>R</band>
                 <setup>
                     <name>GPAO_NGS_VIS</name>
-                    <numberSubPupils>1200</numberSubPupils>
-                    <numberActuators>800</numberActuators>
-                    <dit>1.0</dit> <!-- 1000 Hz -->
-                    <ron>0.25</ron>
+                    <numberSubPupils>1600</numberSubPupils>
+                    <numberActuators>1200</numberActuators>
+                    <dit>0.7</dit> <!-- 1000 Hz (tuned) -->
+                    <ron>0.2</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
+                    <magOffset>-1.0</magOffset>
+                    <strehlMax>0.90</strehlMax>
                 </setup>
                 <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 12.5 (max) -->
                 <magLimit>12.5</magLimit>
+            </adaptiveOptics>
+            <!-- 2025.08: fake LGS model (curve fitting) -->
+            <!-- Nsubap = 30x30
+            -->
+            <adaptiveOptics>
+                <name>AO_GPAO_LGS_VIS</name>
+                <band>R</band>
+                <setup>
+                    <name>GPAO_LGS_VIS</name>
+                    <numberSubPupils>900</numberSubPupils>
+                    <numberActuators>600</numberActuators>
+                    <dit>1.6</dit> <!-- 500 Hz (tuned) -->
+                    <ron>0.40</ron>
+                    <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
+                    <magOffset>-5.25</magOffset>
+                    <strehlMax>0.75</strehlMax>
+                </setup>
+                <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 17.0 (max) -->
+                <magLimit>17.0</magLimit>
             </adaptiveOptics>
 
             <adaptiveOptics>
@@ -96,6 +117,26 @@
                     <quantumEfficiency>0.70</quantumEfficiency>
                 </setup>
                 <!-- GPAO_NGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
+                <magLimit>10.0</magLimit>
+            </adaptiveOptics>
+
+            <!-- GPAO LGS IR (2026) -->
+            <!-- HO 30×30 LGS WFS -->
+            <adaptiveOptics>
+                <name>AO_GPAO_LGS_IR</name>
+                <band>K</band>
+                <instrumentBand>K</instrumentBand>
+                <setup>
+                    <name>GPAO_LGS_IR</name>
+                    <numberSubPupils>900</numberSubPupils>
+                    <numberActuators>600</numberActuators>
+                    <dit>1.6</dit> <!-- 500 Hz (tuned) -->
+                    <ron>0.40</ron>
+                    <quantumEfficiency>0.70</quantumEfficiency>
+                    <magOffset>-3.25</magOffset>
+                    <strehlMax>0.72</strehlMax>
+                </setup>
+                <!-- GPAO_LGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
                 <magLimit>10.0</magLimit>
             </adaptiveOptics>
 
@@ -6696,13 +6737,13 @@
             <!-- TODO: change transmission for on-axis / off-axis (1.0 or 0.5) -->
             <instrumentVisibility>1.0</instrumentVisibility>
 
-            <!-- K=8.0-10.0 max on UTs (+0.5 for off-axis) -->
-            <magLimit atmosphereQuality="Excellent" telescope="UT">10.5</magLimit>
-            <magLimit atmosphereQuality="Good" telescope="UT">10.0</magLimit>
-            <magLimit atmosphereQuality="Average" telescope="UT">9.5</magLimit>
-            <magLimit telescope="UT">8.5</magLimit> <!-- WORSE or lower atm (default) -->
+            <!-- K=11.0-13.0 max on UTs (+0.5 for off-axis) -->
+            <magLimit atmosphereQuality="Excellent" telescope="UT">13.0</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="UT">12.5</magLimit>
+            <magLimit atmosphereQuality="Average" telescope="UT">12.0</magLimit>
+            <magLimit telescope="UT">11.0</magLimit> <!-- WORSE or lower atm (default) -->
 
-            <!-- K=7.0-9.0 max on ATs (+0.5 for off-axis) -->
+            <!-- K=7.5-9.5 max on ATs (+0.5 for off-axis) -->
             <magLimit atmosphereQuality="Excellent" telescope="AT">9.5</magLimit>
             <magLimit atmosphereQuality="Good" telescope="AT">9.0</magLimit>
             <magLimit atmosphereQuality="Average" telescope="AT">8.5</magLimit>
@@ -6721,14 +6762,16 @@
             <!-- ideal for MATISSE -->
             <instrumentVisibility>1.0</instrumentVisibility>
 
-            <!-- K=9.0-10.5 max for MATISSE on UTs -->
-            <magLimit atmosphereQuality="Excellent" telescope="UT">10.5</magLimit>
-            <magLimit atmosphereQuality="Good" telescope="UT">10.0</magLimit>
-            <magLimit telescope="UT">9.0</magLimit> <!-- Average or lower atm (default) -->
+            <!-- K=10.5-12.5 max for MATISSE on UTs -->
+            <magLimit atmosphereQuality="Excellent" telescope="UT">12.5</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="UT">12.0</magLimit>
+            <magLimit atmosphereQuality="Average" telescope="UT">11.5</magLimit>
+            <magLimit telescope="UT">10.5</magLimit> <!-- WORSE or lower atm (default) -->
 
-            <!-- K=7.0-8.5 max for MATISSE on ATs -->
-            <magLimit atmosphereQuality="Excellent" telescope="AT">8.5</magLimit>
-            <magLimit atmosphereQuality="Good" telescope="AT">8.0</magLimit>
+            <!-- K=7.0-9.0 max for MATISSE on ATs -->
+            <magLimit atmosphereQuality="Excellent" telescope="AT">9.0</magLimit>
+            <magLimit atmosphereQuality="Good" telescope="AT">8.5</magLimit>
+            <magLimit atmosphereQuality="Average" telescope="AT">8.0</magLimit>
             <magLimit>7.0</magLimit> <!-- Average or lower atm (default) -->
 
             <!-- up to 10 seconds (see specific ft_dit in MATISSE instrument modes) -->
