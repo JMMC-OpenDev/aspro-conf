@@ -28,6 +28,7 @@
         <release version="2025.0916">
             <pubDate>Tue, 16 Sep 2025 18:00:00 GMT</pubDate>
             <prerelease version="2025.0916 beta 1">
+                <change type="FEATURE">CHARA: added semester 2026A</change>
                 <change type="FEATURE">VLTI: updated GPAO parameters for P117</change>
             </prerelease>
         </release>
