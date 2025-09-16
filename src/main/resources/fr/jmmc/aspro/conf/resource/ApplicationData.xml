@@ -25,6 +25,12 @@
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2025.0916">
+            <pubDate>Tue, 16 Sep 2025 18:00:00 GMT</pubDate>
+            <prerelease version="2025.0916 beta 1">
+                <change type="FEATURE">VLTI: updated GPAO parameters for P117</change>
+            </prerelease>
+        </release>
         <release version="2025.0904">
             <pubDate>Thu, 04 Sep 2025 10:00:00 GMT</pubDate>
             <prerelease version="2025.0904 beta 1">
