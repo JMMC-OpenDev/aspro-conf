@@ -38,7 +38,7 @@
                 <title>
                     <xsl:value-of select="$title"/>
                 </title>
-                <link rel="stylesheet" href="http://www.jmmc.fr/css/2col_leftNav.css" type="text/css" />
+                <link rel="stylesheet" href="//www.jmmc.fr/css/2col_leftNav.css" type="text/css" />
                 <style type="text/css">
                 .horizon div{
                     background-color: #00ff00;
