@@ -78,7 +78,7 @@
                     <ron>0.2</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
                     <magOffset>-1.0</magOffset>
-                    <strehlMax>0.73</strehlMax>
+                    <strehlMax>0.85</strehlMax>
                 </setup>
                 <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 12.5 (max) -->
                 <magLimit>12.5</magLimit>
@@ -91,13 +91,13 @@
                 <band>G_rp</band>
                 <setup>
                     <name>GPAO_LGS_VIS</name>
-                    <numberSubPupils>900</numberSubPupils>
-                    <numberActuators>600</numberActuators>
-                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <numberSubPupils>704</numberSubPupils>
+                    <numberActuators>500</numberActuators>
+                    <dit>1.0</dit> <!-- 1000 Hz -->
                     <ron>0.40</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
                     <magOffset>-3.25</magOffset>
-                    <strehlMax>0.85</strehlMax>
+                    <strehlMax>0.70</strehlMax>
                 </setup>
                 <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 17.0 (max) -->
                 <magLimit>17.0</magLimit>
@@ -128,13 +128,13 @@
                 <instrumentBand>K</instrumentBand>
                 <setup>
                     <name>GPAO_LGS_IR</name>
-                    <numberSubPupils>900</numberSubPupils>
-                    <numberActuators>600</numberActuators>
-                    <dit>2.0</dit> <!-- 500 Hz -->
+                    <numberSubPupils>704</numberSubPupils>
+                    <numberActuators>500</numberActuators>
+                    <dit>1.0</dit> <!-- 1000 Hz -->
                     <ron>0.40</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
                     <magOffset>0.5</magOffset>
-                    <strehlMax>0.85</strehlMax>
+                    <strehlMax>0.70</strehlMax>
                 </setup>
                 <!-- GPAO_LGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
                 <magLimit>10.0</magLimit>
