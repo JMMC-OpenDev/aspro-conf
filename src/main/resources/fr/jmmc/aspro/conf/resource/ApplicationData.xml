@@ -18,13 +18,19 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2025.0904"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="04/09/2025" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2025.1008"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="08/10/2025" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2025.1008">
+            <pubDate>Tue, 08 Oct 2025 09:00:00 GMT</pubDate>
+            <prerelease version="2025.1008 beta 1">
+                <change type="FEATURE">VLTI: updated GPAO (NGS / LGS max strehl) parameter for P117</change>
+            </prerelease>
+        </release>
         <release version="2025.0916">
             <pubDate>Tue, 16 Sep 2025 18:00:00 GMT</pubDate>
             <prerelease version="2025.0916 beta 1">
