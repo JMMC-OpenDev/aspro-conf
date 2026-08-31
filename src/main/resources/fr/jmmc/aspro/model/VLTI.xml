@@ -99,8 +99,15 @@
                     <magOffset>-3.25</magOffset>
                     <strehlMax>0.70</strehlMax>
                 </setup>
-                <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 17.0 (max) -->
-                <magLimit>17.0</magLimit>
+                <!-- GPAO NGS / VLTI:
+                The limiting magnitude of the LGS-VIS mode offered in P118 is:
+                    • Grp = 17 mag in TCAT ≤ 30%
+                    • Grp = 15.5 mag in TCAT ≥ 50%
+                -->
+                <magLimit atmosphereQuality="Excellent">17.0</magLimit>
+                <magLimit atmosphereQuality="Good">17.0</magLimit>
+                <magLimit atmosphereQuality="Better">17.0</magLimit>
+                <magLimit>15.5</magLimit>
             </adaptiveOptics>
 
             <adaptiveOptics>
@@ -141,17 +148,30 @@
             </adaptiveOptics>
 
             <!--
-              Moon Pointing Restrictions on UT = Same rules as AT
+              Moon Pointing Restrictions on UTs:
+                Table 3: Moon constraints on the NGS (FLI ≥95% for ATs and FLI ≥85% for UTs).
+
+                Telescopes      NGS distance to the Moon     NGS magnitude
+                UTs: NGS-modes        > 10 degrees            Grp  < 9 mag
+                                      > 20 degrees            Grp >= 9 mag
+                UTs: LGS-modes        > 20 degrees            Distance is set by AAS restrictions
             -->
             <moonPointingRestriction>
-                <warningThreshold>20.0</warningThreshold>
+                <warningThreshold>25.0</warningThreshold>
                 <restriction>
+                    <!--
+                        Mean values at opposition from Earth
+                        Moon Apparent diameter (seconds of arc) = 1896 (= 0.5267 deg)
+                          from https://web.archive.org/web/20100323165650/http://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+                    -->
                     <separation>1.0</separation>
                 </restriction>
+                <!-- NGS -->
                 <restriction>
                     <fli>85.0</fli>
+                    <aoSetupName>GPAO_NGS</aoSetupName>
                     <flux>
-                        <band>V</band>
+                        <band>G_rp</band>
                         <op>lower</op>
                         <value>9.0</value>
                     </flux>
@@ -159,11 +179,18 @@
                 </restriction>
                 <restriction>
                     <fli>85.0</fli>
+                    <aoSetupName>GPAO_NGS</aoSetupName>
                     <flux>
-                        <band>V</band>
+                        <band>G_rp</band>
                         <op>higher</op>
                         <value>9.0</value>
                     </flux>
+                    <separation>20.0</separation>
+                </restriction>
+                <!-- LGS -->
+                <restriction>
+                    <fli>85.0</fli>
+                    <aoSetupName>GPAO_LGS</aoSetupName>
                     <separation>20.0</separation>
                 </restriction>
             </moonPointingRestriction>
@@ -201,21 +228,27 @@
             </adaptiveOptics>
 
             <!--
-              Moon Pointing Restrictions on AT:
-              - If the FLI is ≥95%, and the guide star is fainter than 9th magnitude in the R-band,
-              guiding is not possible for distances to the moon lower than 5 degrees.
-              - If the FLI is ≥95%, and the guide star is brighter than 9th magnitude in the R-band,
-              guiding is not possible for distances to the moon lower than 3 degrees.
+              Moon Pointing Restrictions on ATs:
+                Table 3: Moon constraints on the NGS (FLI ≥95% for ATs and FLI ≥85% for UTs).
+
+                Telescopes      NGS distance to the Moon     NGS magnitude
+                ATs                   >  3 degrees            G    < 9 mag
+                                      >  5 degrees            G   >= 9 mag
             -->
             <moonPointingRestriction>
                 <warningThreshold>20.0</warningThreshold>
                 <restriction>
+                    <!--
+                        Mean values at opposition from Earth
+                        Moon Apparent diameter (seconds of arc) = 1896 (= 0.5267 deg)
+                          from https://web.archive.org/web/20100323165650/http://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html
+                    -->
                     <separation>1.0</separation>
                 </restriction>
                 <restriction>
                     <fli>95.0</fli>
                     <flux>
-                        <band>R</band>
+                        <band>G</band>
                         <op>lower</op>
                         <value>9.0</value>
                     </flux>
@@ -224,7 +257,7 @@
                 <restriction>
                     <fli>95.0</fli>
                     <flux>
-                        <band>R</band>
+                        <band>G</band>
                         <op>higher</op>
                         <value>9.0</value>
                     </flux>
@@ -19666,6 +19699,224 @@
 
 
     <!-- configurations are displayed (GUI) in the same order they are present below -->
+    <configuration>
+        <version>Period 118</version>
+        <interferometer>VLTI</interferometer>
+        <switchyard>sw_STS</switchyard>
+        <instrument>
+            <focalInstrument>GRAVITY</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2 DL5</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>GRAVITY_FT</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2 DL5</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <!-- MATISSE offered with same configurations as PIONIER -->
+        <instrument>
+            <focalInstrument>MATISSE_LM</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2 DL5</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <instrument>
+            <focalInstrument>MATISSE_N</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2 DL5</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+        <!-- Use PIONIER_2 (new setup) -->
+        <instrument>
+            <focalInstrument>PIONIER_2</focalInstrument>
+           <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL1 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL1 DL2 DL5</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+        </instrument>
+    </configuration>
+
     <configuration>
         <version>Period 117</version>
         <interferometer>VLTI</interferometer>

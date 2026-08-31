@@ -18,13 +18,21 @@
         <feedback_form_url>http://jmmc.fr/feedback/feedback.php</feedback_form_url>
     </company>
 
-    <program name="AsproConf" version="2025.1008"/> <!-- 'YYYY.MMdd' -->
-    <compilation date="08/10/2025" compiler="JDK 1.8.0"/>
+    <program name="AsproConf" version="2026.0831"/> <!-- 'YYYY.MMdd' -->
+    <compilation date="31/08/2026" compiler="JDK 1.8.0"/>
 
     <text>ASPRO 2 Configuration Module to describe supported interferometers and their instruments.</text>
     <authors>the JMMC Technical Group</authors>
 
     <releasenotes>
+        <release version="2026.0831">
+            <pubDate>Mon, 31 Aug 2026 16:00:00 GMT</pubDate>
+            <prerelease version="2026.0831 beta 1">
+                <change type="FEATURE">VLTI: fixed GPAO limiting magnitude (15.5 / 17 according to the atmosphere quality)</change>
+                <change type="FEATURE">VLTI: fixed moon pointing restrictions for GPAO NGS / LGS</change>
+                <change type="FEATURE">VLTI: added ESO Period 118 (= 117)</change>
+            </prerelease>
+        </release>
         <release version="2025.1008">
             <pubDate>Tue, 08 Oct 2025 09:00:00 GMT</pubDate>
             <prerelease version="2025.1008 beta 1">
