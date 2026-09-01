@@ -223,8 +223,12 @@
                     <ron>0.32</ron> <!-- 64e- / 200 -->
                     <quantumEfficiency>0.10</quantumEfficiency> <!-- transmission totale -->
                 </setup>
-                <!-- NAOMI / VLTI: The guide star must be brighter than G = 15 (max) -->
-                <magLimit>15.0</magLimit>
+                <!-- NAOMI / VLTI: The guide star must be brighter than G = 15 (max)
+                Service Mode T. Cat > 10% - Service Mode T. Cat = 10% - Visitor Mode
+                        G = 12.5                 G = 14                    G = 15
+                -->
+                <magLimit atmosphereQuality="Excellent">14.0</magLimit>
+                <magLimit>12.5</magLimit>
             </adaptiveOptics>
 
             <!--
