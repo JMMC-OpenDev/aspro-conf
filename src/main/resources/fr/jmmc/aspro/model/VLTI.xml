@@ -77,8 +77,8 @@
                     <dit>1.0</dit> <!-- 1000 Hz -->
                     <ron>0.2</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
-                    <magOffset>-1.0</magOffset>
-                    <strehlMax>0.85</strehlMax>
+                    <magOffset>0.5</magOffset>
+                    <strehlMax>0.90</strehlMax>
                 </setup>
                 <!-- GPAO NGS / VLTI: The guide star must be brighter than Grp = 12.5 (max) -->
                 <magLimit>12.5</magLimit>
@@ -96,8 +96,8 @@
                     <dit>1.0</dit> <!-- 1000 Hz -->
                     <ron>0.40</ron>
                     <quantumEfficiency>0.25</quantumEfficiency> <!-- transmission totale -->
-                    <magOffset>-3.25</magOffset>
-                    <strehlMax>0.70</strehlMax>
+                    <magOffset>1.0</magOffset>
+                    <strehlMax>1.00</strehlMax>
                 </setup>
                 <!-- GPAO NGS / VLTI:
                 The limiting magnitude of the LGS-VIS mode offered in P118 is:
@@ -122,6 +122,8 @@
                     <dit>2.0</dit> <!-- 500 Hz -->
                     <ron>60.0</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
+                    <magOffset>1.0</magOffset>
+                    <strehlMax>0.72</strehlMax>
                 </setup>
                 <!-- GPAO_NGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
                 <magLimit>10.0</magLimit>
@@ -140,8 +142,8 @@
                     <dit>1.0</dit> <!-- 1000 Hz -->
                     <ron>0.40</ron>
                     <quantumEfficiency>0.70</quantumEfficiency>
-                    <magOffset>0.5</magOffset>
-                    <strehlMax>0.70</strehlMax>
+                    <magOffset>2.0</magOffset>
+                    <strehlMax>1.00</strehlMax>
                 </setup>
                 <!-- GPAO_LGS_IR / VLTI: The guide star must be brighter than K = 10 (max) -->
                 <magLimit>10.0</magLimit>
@@ -6750,8 +6752,25 @@
             <maxIntegration>10</maxIntegration>
         </fringeTracker>
 
+        <!-- visitor instruments: ASGARD SUITE -->
+        <fringeTracker>
+            <name>HEIMDALLR</name>
+            <band>K</band>
+
+            <mode>FringeTrack HEIMDALLR</mode>
+
+            <!-- K unused by ASGARD science instruments -->
+            <instrumentVisibility>1.0</instrumentVisibility>
+
+            <magLimit telescope="UT">12.5</magLimit>
+            <magLimit telescope="AT">9.5</magLimit>
+
+            <!-- up to few Hz ie max 1/2 s ? -->
+            <maxIntegration>0.5</maxIntegration>
+        </fringeTracker>
 
 
+        <!-- instruments -->
         <focalInstrument>
             <name>AMBER</name>
             <description>AMBER instrument (3T) decomissioned in P102</description>
@@ -11022,8 +11041,7 @@
             <description>GRAVITY Fringe tracker (4T)</description>
 
             <oiVisData>true</oiVisData>
-            <oiVisAmpDiff>true</oiVisAmpDiff>
-            <oiVisPhiDiff>true</oiVisPhiDiff>
+            <oiVis>false</oiVis>
             <oiVis2Extra>true</oiVis2Extra>
 
             <setup>
@@ -19698,6 +19716,159 @@
             </mode>
         </focalInstrument>
 
+        <!-- visitor instruments: ASGARD suite -->
+
+        <!-- HEIMDALLR FT -->
+        <focalInstrument>
+            <name>HEIMDALLR_FT</name>
+            <description>HEIMDALLR Fringe tracker (4T)</description>
+
+            <oiVisData>true</oiVisData>
+            <oiVis>false</oiVis>
+            <oiVis2Extra>true</oiVis2Extra>
+
+            <setup>
+                <name>HEIMDALLR_FT_SETUP</name>
+                <description>HEIMDALLR Fringe tracker (4T)</description>
+
+                <!-- OSO: 2x 300s (Object) + 300s (Sky) -->
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
+                <defaultSamplingTime>60</defaultSamplingTime>
+
+                <!-- 1 khz -->
+                <dit>0.001</dit> <!-- shortest dit -->
+                <ron>0.5</ron>
+                <detectorSaturation>32768</detectorSaturation>
+                <quantumEfficiency>0.8</quantumEfficiency>
+
+                <fracFluxInInterferometry>1.0</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+                <!-- 1px per channel (4px for fringes ?) -->
+                <nbPixInterferometry>4.0</nbPixInterferometry>
+                <nbPixPhotometry>0</nbPixPhotometry>
+
+                <transmission>0.04</transmission>
+                <instrumentVisibility>1.0</instrumentVisibility>
+
+                <instrumentVisibilityBias>5.0</instrumentVisibilityBias>
+                <instrumentPhaseBias>1.0</instrumentPhaseBias>
+            </setup>
+
+            <mode>
+                <name>LOW</name>
+                <!-- use 2.18 microns as reference channel -->
+                <waveLengthRef>2.18</waveLengthRef>
+                <resolution>5</resolution>
+                <waveLengthMin>1.955</waveLengthMin>
+                <waveLengthMax>2.405</waveLengthMax>
+            </mode>
+        </focalInstrument>
+
+        <focalInstrument>
+            <name>BIFROST</name>
+            <description>BIFROST instrument (4T)</description>
+
+            <oiVisData>true</oiVisData>
+            <oiVisAmpDiff>true</oiVisAmpDiff>
+            <oiVisPhiDiff>true</oiVisPhiDiff>
+            <oiVis2Extra>true</oiVis2Extra>
+
+            <fringeTracker>HEIMDALLR_FT</fringeTracker>
+            <fringeTrackerRequired>true</fringeTrackerRequired>
+
+            <setup>
+                <name>BIFROST_SETUP</name>
+                <description>BIFROST instrument (4T)</description>
+
+                <!-- OSO: 2x 300s (Object) + 300s (Sky) -->
+                <defaultTotalIntegrationTime>600</defaultTotalIntegrationTime>
+                <defaultSamplingTime>60</defaultSamplingTime>
+
+                <dit>0.0003</dit> <!-- shortest dit ~ 3333 hz -->
+
+                <!-- Leonardo’s SAPHIRA chip50 that achieves a sub-electron read-noise at 3500 Hz -->
+                <ron>0.5</ron>
+                <detectorSaturation>32768</detectorSaturation>
+                <quantumEfficiency>0.8</quantumEfficiency>
+
+                <fracFluxInInterferometry>1.0</fracFluxInInterferometry>
+                <fracFluxInPhotometry>0.0</fracFluxInPhotometry>
+
+                <!-- 1px per channel (4px for fringes ?) -->
+                <nbPixInterferometry>4.0</nbPixInterferometry>
+                <nbPixPhotometry>0</nbPixPhotometry>
+
+                <transmission>0.01</transmission>
+                <instrumentVisibility>0.8</instrumentVisibility> <!-- fiber error -->
+
+                <instrumentVisibilityBias>0.5</instrumentVisibilityBias>
+                <instrumentPhaseBias>1.0</instrumentPhaseBias>
+            </setup>
+
+            <mode>
+                <name>LR-YJ</name>
+                <resolution>50</resolution>
+                <waveLengthMin>1.00</waveLengthMin>
+                <waveLengthMax>1.40</waveLengthMax>
+            </mode>
+            <mode>
+                <name>MR-YJ</name>
+                <resolution>1000</resolution>
+                <waveLengthMin>1.00</waveLengthMin>
+                <waveLengthMax>1.38</waveLengthMax>
+            </mode>
+            <mode>
+                <name>HR-Y</name>
+                <resolution>5000</resolution>
+                <waveLengthMin>1.06</waveLengthMin>
+                <waveLengthMax>1.13</waveLengthMax>
+            </mode>
+            <mode>
+                <name>HR-J</name>
+                <resolution>5000</resolution>
+                <waveLengthMin>1.22</waveLengthMin>
+                <waveLengthMax>1.30</waveLengthMax>
+            </mode>
+            <mode>
+                <name>VHR-PaG-HeI</name>
+                <resolution>25000</resolution>
+                <waveLengthMin>1.082</waveLengthMin>
+                <waveLengthMax>1.095</waveLengthMax>
+            </mode>
+            <mode>
+                <name>VHR-[FeII]</name>
+                <resolution>25000</resolution>
+                <waveLengthMin>1.249</waveLengthMin>
+                <waveLengthMax>1.265</waveLengthMax>
+            </mode>
+            <mode>
+                <name>VHR-PaB</name>
+                <resolution>25000</resolution>
+                <waveLengthMin>1.273</waveLengthMin>
+                <waveLengthMax>1.290</waveLengthMax>
+            </mode>
+
+            <mode>
+                <name>LR-H</name>
+                <resolution>50</resolution>
+                <waveLengthMin>1.40</waveLengthMin>
+                <waveLengthMax>1.80</waveLengthMax>
+            </mode>
+            <mode>
+                <name>MR-H</name>
+                <resolution>1000</resolution>
+                <waveLengthMin>1.28</waveLengthMin>
+                <waveLengthMax>1.77</waveLengthMax>
+            </mode>
+            <mode>
+                <name>HR-H</name>
+                <resolution>5000</resolution>
+                <waveLengthMin>1.56</waveLengthMin>
+                <waveLengthMax>1.66</waveLengthMax>
+            </mode>
+        </focalInstrument>
+
     </description>
 
 
@@ -27532,6 +27703,508 @@
                 <delayLineMode>DBL_PATH</delayLineMode>
             </configuration>
         </instrument>
+
+        <!-- visitor instruments: ASGARD suite -->
+        <instrument>
+            <focalInstrument>BIFROST</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105/P112: all relocations -->
+            <configuration>
+                <altName>Extended -&gt; Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B5 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 G1 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>K0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 D0 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G2 D0 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Extended</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B5 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G1 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Extended</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B5 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Small / Extended -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G1 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>K0 G1 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>K0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 B5 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 B5 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <!-- P112: new relocation with J6 = double-path DL -->
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 G2 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 G2 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B2 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Extended -&gt; Small</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B2 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 G1 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>K0 B5 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+        </instrument>
+
+        <instrument>
+            <focalInstrument>HEIMDALLR_FT</focalInstrument>
+            <configuration>
+                <altName>UTs</altName>
+                <altBaselines>UTs</altBaselines>
+                <stations>UT1 UT2 UT3 UT4</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL5 DL2 DL3 DL4</delayLines>
+            </configuration>
+            <!-- P112 Extended = double-path DL -->
+            <configuration>
+                <altName>Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <!-- P112 Large = P101 Astrometric Large (A0-G1-J2-K0) dual feed "all south" -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P112: new medium A0-B5-D0-G1 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 B5 D0 G1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Medium</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>K0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <!-- P105 -->
+            <configuration>
+                <altName>Large</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 G1 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <!-- P105/P112: all relocations -->
+            <configuration>
+                <altName>Extended -&gt; Small</altName>
+                <altBaselines>small</altBaselines>
+                <stations>A0 B5 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Small</altName>
+                <altBaselines>medium</altBaselines>
+                <stations>A0 G1 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>K0 B2 D0 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 D0 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G2 D0 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Extended</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B5 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 J2 K0</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G1 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Extended</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B5 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Small / Extended -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 J2 C1</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL2</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 G1 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>K0 G1 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Medium</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>K0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Small</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Large</altName>
+                <altBaselines>medium,large</altBaselines>
+                <stations>A0 B2 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 B5 J2 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>large</altBaselines>
+                <stations>A0 B5 D0 J3</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+            </configuration>
+            <!-- P112: new relocation with J6 = double-path DL -->
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 G2 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 G2 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B2 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Extended -&gt; Small</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B2 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Large -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 G1 J2 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL2 DL4 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Small -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>A0 B5 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL6 DL5 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+            <configuration>
+                <altName>Medium -&gt; Extended</altName>
+                <altBaselines>extended</altBaselines>
+                <stations>K0 B5 D0 J6</stations>
+                <channels>IP1 IP3 IP5 IP7</channels>
+                <delayLines>DL4 DL5 DL1 DL3</delayLines>
+                <delayLineMode>DBL_PATH</delayLineMode>
+            </configuration>
+        </instrument>
+
     </configuration>
 
 </a:interferometerSetting>
